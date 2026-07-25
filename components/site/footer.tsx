@@ -1,0 +1,108 @@
+import Link from "next/link";
+import { Logo } from "@/components/site/logo";
+import { XIcon, FacebookIcon, InstagramIcon, LinkedinIcon } from "@/components/site/social-icons";
+import { categories } from "@/lib/categories";
+import { getFeaturedCalculators } from "@/lib/calculators";
+import { siteConfig } from "@/lib/site";
+
+const legalLinks = [
+  { href: "/about", label: "About" },
+  { href: "/contact", label: "Contact" },
+  { href: "/privacy", label: "Privacy Policy" },
+  { href: "/terms", label: "Terms of Use" },
+];
+
+const socialLinks = [
+  { href: siteConfig.links.twitter, label: "X (Twitter)", icon: XIcon },
+  { href: siteConfig.links.facebook, label: "Facebook", icon: FacebookIcon },
+  { href: siteConfig.links.instagram, label: "Instagram", icon: InstagramIcon },
+  { href: siteConfig.links.linkedin, label: "LinkedIn", icon: LinkedinIcon },
+];
+
+export function Footer() {
+  const featured = getFeaturedCalculators();
+
+  return (
+    <footer className="border-t border-border/60 bg-secondary/30">
+      <div className="mx-auto max-w-7xl px-4 py-14 sm:px-6 lg:px-8">
+        <div className="grid grid-cols-2 gap-10 sm:grid-cols-4">
+          <div className="col-span-2 sm:col-span-4 lg:col-span-1">
+            <Logo />
+            <p className="mt-4 max-w-xs text-sm leading-relaxed text-muted-foreground">
+              {siteConfig.description}
+            </p>
+            <div className="mt-5 flex items-center gap-3">
+              {socialLinks.map((social) => (
+                <a
+                  key={social.label}
+                  href={social.href}
+                  aria-label={social.label}
+                  className="flex size-9 items-center justify-center rounded-full border border-border text-muted-foreground transition hover:border-primary/40 hover:text-primary"
+                >
+                  <social.icon className="size-4" aria-hidden="true" />
+                </a>
+              ))}
+            </div>
+          </div>
+
+          <div>
+            <h3 className="text-sm font-semibold text-foreground">Categories</h3>
+            <ul className="mt-4 space-y-3">
+              {categories.map((cat) => (
+                <li key={cat.slug}>
+                  <Link
+                    href={`/categories/${cat.slug}`}
+                    className="text-sm text-muted-foreground transition hover:text-foreground"
+                  >
+                    {cat.name}
+                  </Link>
+                </li>
+              ))}
+            </ul>
+          </div>
+
+          <div>
+            <h3 className="text-sm font-semibold text-foreground">Popular Calculators</h3>
+            <ul className="mt-4 space-y-3">
+              {featured.map((calc) => (
+                <li key={calc.slug}>
+                  <Link
+                    href={`/calculators/${calc.slug}`}
+                    className="text-sm text-muted-foreground transition hover:text-foreground"
+                  >
+                    {calc.shortName}
+                  </Link>
+                </li>
+              ))}
+            </ul>
+          </div>
+
+          <div>
+            <h3 className="text-sm font-semibold text-foreground">Legal</h3>
+            <ul className="mt-4 space-y-3">
+              {legalLinks.map((link) => (
+                <li key={link.href}>
+                  <Link
+                    href={link.href}
+                    className="text-sm text-muted-foreground transition hover:text-foreground"
+                  >
+                    {link.label}
+                  </Link>
+                </li>
+              ))}
+            </ul>
+          </div>
+        </div>
+
+        <div className="mt-12 flex flex-col items-center justify-between gap-4 border-t border-border/60 pt-8 sm:flex-row">
+          <p className="text-xs text-muted-foreground">
+            &copy; {new Date().getFullYear()} {siteConfig.name}. All rights reserved.
+          </p>
+          <p className="text-xs text-muted-foreground">
+            Calculators are for guidance only and do not constitute financial, tax or medical advice.
+          </p>
+        </div>
+      </div>
+    </footer>
+  );
+}
