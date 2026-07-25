@@ -31,6 +31,11 @@ import * as pension from "./pension-calculator-uk";
 import * as vat from "./vat-calculator-uk";
 import * as carLoan from "./car-loan-calculator-uk";
 import * as bmr from "./bmr-calculator-uk";
+import * as inheritanceTax from "./inheritance-tax-calculator-uk";
+import * as discount from "./discount-calculator-uk";
+import * as salaryIncrease from "./salary-increase-calculator-uk";
+import * as fuelEfficiencyComparison from "./fuel-efficiency-comparison-uk";
+import * as waterBill from "./water-bill-calculator-uk";
 
 interface CalculatorContent {
   SeoContent: ComponentType;
@@ -68,4 +73,9 @@ export const calculatorContent: Record<string, CalculatorContent> = {
   "vat-calculator-uk": vat,
   "car-loan-calculator-uk": carLoan,
   "bmr-calculator-uk": bmr,
+  "inheritance-tax-calculator-uk": inheritanceTax,
+  "discount-calculator-uk": discount,
+  "salary-increase-calculator-uk": salaryIncrease,
+  "fuel-efficiency-comparison-uk": fuelEfficiencyComparison,
+  "water-bill-calculator-uk": waterBill,
 };

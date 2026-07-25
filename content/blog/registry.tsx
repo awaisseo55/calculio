@@ -10,6 +10,9 @@ import * as bmiGuide from "./healthy-bmi-adults-uk";
 import * as selfEmployedTaxGuide from "./self-employed-tax-guide-uk-2026";
 import * as compoundInterestExplained from "./compound-interest-explained-uk";
 import * as londonDrivingCharges from "./london-driving-charges-2026";
+import * as statePensionGuide from "./uk-state-pension-guide-2026";
+import * as firstHomeCost from "./first-home-cost-uk-2026";
+import * as freelancerHourlyRate from "./freelancer-hourly-rate-uk-2026";
 
 interface BlogPostContent {
   ArticleContent: ComponentType;
@@ -26,4 +29,7 @@ export const blogContent: Record<string, BlogPostContent> = {
   "self-employed-tax-guide-uk-2026": selfEmployedTaxGuide,
   "compound-interest-explained-uk": compoundInterestExplained,
   "london-driving-charges-2026": londonDrivingCharges,
+  "uk-state-pension-guide-2026": statePensionGuide,
+  "first-home-cost-uk-2026": firstHomeCost,
+  "freelancer-hourly-rate-uk-2026": freelancerHourlyRate,
 };

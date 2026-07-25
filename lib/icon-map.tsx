@@ -30,6 +30,11 @@ import {
   ReceiptText,
   CarFront,
   Zap,
+  Scroll,
+  Tag,
+  ArrowUpCircle,
+  GitCompare,
+  Droplets,
   type LucideIcon,
 } from "lucide-react";
 
@@ -65,6 +70,11 @@ export const iconMap: Record<string, LucideIcon> = {
   ReceiptText,
   CarFront,
   Zap,
+  Scroll,
+  Tag,
+  ArrowUpCircle,
+  GitCompare,
+  Droplets,
 };
 
 export function getIcon(name: string): LucideIcon {

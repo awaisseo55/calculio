@@ -28,6 +28,11 @@ import { PensionCalculator } from "@/components/calculators/pension-calculator";
 import { VatCalculator } from "@/components/calculators/vat-calculator";
 import { CarLoanCalculator } from "@/components/calculators/car-loan-calculator";
 import { BmrCalculator } from "@/components/calculators/bmr-calculator";
+import { InheritanceTaxCalculator } from "@/components/calculators/inheritance-tax-calculator";
+import { DiscountCalculator } from "@/components/calculators/discount-calculator";
+import { SalaryIncreaseCalculator } from "@/components/calculators/salary-increase-calculator";
+import { FuelEfficiencyComparisonCalculator } from "@/components/calculators/fuel-efficiency-comparison-calculator";
+import { WaterBillCalculator } from "@/components/calculators/water-bill-calculator";
 import type { ComponentType } from "react";
 
 export const calculatorComponents: Record<string, ComponentType> = {
@@ -61,4 +66,9 @@ export const calculatorComponents: Record<string, ComponentType> = {
   "vat-calculator-uk": VatCalculator,
   "car-loan-calculator-uk": CarLoanCalculator,
   "bmr-calculator-uk": BmrCalculator,
+  "inheritance-tax-calculator-uk": InheritanceTaxCalculator,
+  "discount-calculator-uk": DiscountCalculator,
+  "salary-increase-calculator-uk": SalaryIncreaseCalculator,
+  "fuel-efficiency-comparison-uk": FuelEfficiencyComparisonCalculator,
+  "water-bill-calculator-uk": WaterBillCalculator,
 };

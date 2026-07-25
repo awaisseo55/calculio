@@ -199,3 +199,20 @@ export const PENSION_DRAWDOWN_RATE = 0.04;
 export const VAT_STANDARD_RATE = 20;
 export const VAT_REDUCED_RATE = 5;
 export const VAT_ZERO_RATE = 0;
+
+// --- Inheritance Tax (IHT), 2026/27 -------------------------------------------
+// The nil-rate band has been frozen at this level for many years and is
+// reviewed at each Budget. It can be transferred between spouses and civil
+// partners, so a surviving partner can potentially use up to double these
+// allowances.
+export const IHT_NIL_RATE_BAND = 325000;
+// The residence nil-rate band applies only when a main residence is left to
+// direct descendants (children, grandchildren, and their spouses), and tapers
+// away above the threshold below.
+export const IHT_RESIDENCE_NIL_RATE_BAND = 175000;
+export const IHT_RESIDENCE_NIL_RATE_TAPER_THRESHOLD = 2000000;
+export const IHT_STANDARD_RATE = 0.4;
+// A reduced 36% rate applies to the whole taxable estate if 10% or more of
+// the net estate (after other reliefs) is left to charity.
+export const IHT_REDUCED_RATE_WITH_CHARITY = 0.36;
+export const IHT_CHARITY_RATE_THRESHOLD_PERCENT = 10;

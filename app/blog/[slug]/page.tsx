@@ -81,6 +81,27 @@ const CTA_CONTENT: Record<
     buttonLabel: "Calculate my driving costs",
     href: "/calculators/congestion-charge-ulez-calculator-uk",
   },
+  "uk-state-pension-guide-2026": {
+    title: "Project your total retirement income",
+    description:
+      "See your projected pension pot, private pension income, and how it combines with your State Pension.",
+    buttonLabel: "Calculate my pension",
+    href: "/calculators/pension-calculator-uk",
+  },
+  "first-home-cost-uk-2026": {
+    title: "Calculate your mortgage repayments",
+    description:
+      "Enter your property price, deposit and rate for an instant monthly repayment and total interest figure.",
+    buttonLabel: "Calculate my repayments",
+    href: "/calculators/mortgage-calculator-uk",
+  },
+  "freelancer-hourly-rate-uk-2026": {
+    title: "Work out your self-employed tax bill",
+    description:
+      "Enter your profit and expenses for an instant Income Tax and Class 4 National Insurance breakdown.",
+    buttonLabel: "Calculate my tax bill",
+    href: "/calculators/self-employed-tax-calculator-uk",
+  },
 };
 
 const DISCLAIMER =
@@ -138,6 +159,24 @@ const RELATED_CALCULATOR_SLUGS: Record<string, string[]> = {
     "car-loan-calculator-uk",
     "road-tax-calculator-uk",
     "fuel-cost-calculator-uk",
+  ],
+  "uk-state-pension-guide-2026": [
+    "pension-calculator-uk",
+    "national-insurance-calculator-uk",
+    "take-home-pay-calculator-uk",
+    "isa-calculator-uk",
+  ],
+  "first-home-cost-uk-2026": [
+    "mortgage-calculator-uk",
+    "stamp-duty-calculator-uk",
+    "mortgage-overpayment-calculator-uk",
+    "isa-calculator-uk",
+  ],
+  "freelancer-hourly-rate-uk-2026": [
+    "self-employed-tax-calculator-uk",
+    "national-insurance-calculator-uk",
+    "take-home-pay-calculator-uk",
+    "vat-calculator-uk",
   ],
 };
 

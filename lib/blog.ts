@@ -181,6 +181,69 @@ export const blogPosts: BlogPostMeta[] = [
     featuredImageAlt: "London ULEZ and Congestion Charge zone sign for drivers",
     wordCount: 1300,
   },
+  {
+    slug: "uk-state-pension-guide-2026",
+    title: "How Much Is My State Pension Worth in 2026? UK State Pension Guide",
+    metaTitle: "UK State Pension 2026: How Much Will You Get? | Calculio",
+    metaDescription:
+      "How much the UK State Pension is worth in 2026, how to qualify with National Insurance years, State Pension age, deferring, and inherited pension rules.",
+    excerpt:
+      "The full new State Pension amount for 2026/27, how 35 qualifying years work, State Pension age changes, deferring, and what married couples can inherit.",
+    category: "Finance",
+    categorySlug: "finance",
+    categoryHref: "/categories/finance",
+    tags: ["state pension", "National Insurance", "retirement", "DWP", "State Pension age"],
+    authorSlug: "james-whitfield",
+    reviewerSlug: "emily-thorne",
+    publishDate: "2026-07-25",
+    updatedDate: "2026-07-25",
+    featuredImage:
+      "/og?title=How%20Much%20Is%20My%20State%20Pension%20Worth%20in%202026%3F%20UK%20State%20Pension%20Guide&subtitle=calculio.co.uk",
+    featuredImageAlt: "Calculio guide to the UK State Pension for 2026",
+    wordCount: 1437,
+  },
+  {
+    slug: "first-home-cost-uk-2026",
+    title: "The Real Cost of Buying Your First Home in the UK 2026",
+    metaTitle: "Real Cost of Buying Your First Home UK 2026 | Calculio",
+    metaDescription:
+      "Every cost of buying your first UK home in 2026: deposit, stamp duty, solicitor and survey fees, mortgage fees, insurance and moving costs, with an example.",
+    excerpt:
+      "Deposit, stamp duty, solicitor and survey fees, mortgage fees, insurance and moving costs, all worked through on a real £275,000 first home example.",
+    category: "Finance",
+    categorySlug: "finance",
+    categoryHref: "/categories/finance",
+    tags: ["first-time buyer", "mortgage", "stamp duty", "moving costs", "property"],
+    authorSlug: "james-whitfield",
+    reviewerSlug: "emily-thorne",
+    publishDate: "2026-07-25",
+    updatedDate: "2026-07-25",
+    featuredImage:
+      "/og?title=The%20Real%20Cost%20of%20Buying%20Your%20First%20Home%20in%20the%20UK%202026&subtitle=calculio.co.uk",
+    featuredImageAlt: "Calculio guide to the real cost of buying your first UK home",
+    wordCount: 1353,
+  },
+  {
+    slug: "freelancer-hourly-rate-uk-2026",
+    title: "How to Calculate Your True Hourly Rate as a UK Freelancer",
+    metaTitle: "True Freelance Hourly Rate Calculator Guide UK | Calculio",
+    metaDescription:
+      "How to work out your true hourly rate as a UK freelancer, after tax, National Insurance, expenses and unbilled hours, with a full worked example.",
+    excerpt:
+      "Why your gross hourly rate is misleading, and a simple formula to work out what you actually need to charge once tax, expenses and admin time are counted.",
+    category: "Tax",
+    categorySlug: "tax",
+    categoryHref: "/categories/tax",
+    tags: ["freelancer", "self-employed", "hourly rate", "pricing", "sole trader"],
+    authorSlug: "james-whitfield",
+    reviewerSlug: "emily-thorne",
+    publishDate: "2026-07-25",
+    updatedDate: "2026-07-25",
+    featuredImage:
+      "/og?title=How%20to%20Calculate%20Your%20True%20Hourly%20Rate%20as%20a%20UK%20Freelancer&subtitle=calculio.co.uk",
+    featuredImageAlt: "Calculio guide to calculating your true freelance hourly rate",
+    wordCount: 1413,
+  },
 ];
 
 export function getBlogPost(slug: string): BlogPostMeta | undefined {

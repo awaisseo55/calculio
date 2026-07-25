@@ -76,7 +76,7 @@ export function CalculatorSearch({ variant = "icon", className }: CalculatorSear
         >
           <Search className="size-5 shrink-0" aria-hidden="true" />
           <span className="flex-1 text-sm sm:text-base">
-            Search 30+ UK calculators: mortgage, tax, BMI, road tax&hellip;
+            Search 35+ UK calculators: mortgage, tax, BMI, road tax&hellip;
           </span>
           <kbd className="hidden shrink-0 rounded-md border border-border bg-muted px-2 py-1 text-xs font-medium text-muted-foreground sm:inline-block">
             /

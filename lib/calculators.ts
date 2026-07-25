@@ -458,6 +458,81 @@ export const calculators: CalculatorMeta[] = [
     icon: "Zap",
     schemaType: "SoftwareApplication",
   },
+  {
+    slug: "inheritance-tax-calculator-uk",
+    name: "Inheritance Tax Calculator",
+    shortName: "Inheritance Tax",
+    h1: "UK Inheritance Tax Calculator",
+    category: "tax",
+    description:
+      "Estimate the Inheritance Tax due on an estate, including the nil-rate band, residence nil-rate band, and the reduced rate for charity gifts.",
+    metaTitle: "Inheritance Tax Calculator UK 2026/27 | Calculio",
+    metaDescription:
+      "Estimate UK Inheritance Tax on an estate, including the nil-rate band, residence nil-rate band, gifts and charity donations, at 40% or a reduced 36%.",
+    keywords: ["inheritance tax calculator", "iht calculator uk", "inheritance tax calculator uk"],
+    icon: "Scroll",
+    schemaType: "SoftwareApplication",
+  },
+  {
+    slug: "discount-calculator-uk",
+    name: "Discount Calculator",
+    shortName: "Discount",
+    h1: "Discount Calculator",
+    category: "everyday",
+    description:
+      "Work out the final price after a percentage or fixed amount discount, and exactly how much you save.",
+    metaTitle: "Discount Calculator UK | Sale Price & Savings | Calculio",
+    metaDescription:
+      "Free discount calculator. Work out the final price after a percentage or fixed amount off, how much you save, and the effective discount rate.",
+    keywords: ["discount calculator", "sale price calculator", "percent off calculator"],
+    icon: "Tag",
+    schemaType: "SoftwareApplication",
+  },
+  {
+    slug: "salary-increase-calculator-uk",
+    name: "Salary Increase Calculator",
+    shortName: "Salary Increase",
+    h1: "UK Salary Increase Calculator",
+    category: "tax",
+    description:
+      "See your new gross and net salary after a pay rise, plus your extra monthly take-home pay after tax.",
+    metaTitle: "Salary Increase Calculator UK 2026/27 | Pay Rise | Calculio",
+    metaDescription:
+      "Work out your new take-home pay after a pay rise. Enter a percentage or fixed increase to see your new gross salary, net pay, and real-terms gain.",
+    keywords: ["salary increase calculator", "pay rise calculator uk", "pay rise take home calculator"],
+    icon: "ArrowUpCircle",
+    schemaType: "SoftwareApplication",
+  },
+  {
+    slug: "fuel-efficiency-comparison-uk",
+    name: "Fuel Efficiency Comparison Calculator",
+    shortName: "Fuel Efficiency Comparison",
+    h1: "UK Fuel Efficiency Comparison Calculator",
+    category: "motoring",
+    description:
+      "Compare the annual fuel cost of two vehicles side by side, based on mileage, MPG, fuel type and price per litre.",
+    metaTitle: "Fuel Efficiency Comparison Calculator UK | Calculio",
+    metaDescription:
+      "Compare two cars side by side on annual fuel cost, cost per mile, and the difference over 5 years, based on your own mileage and MPG.",
+    keywords: ["fuel efficiency comparison", "compare car fuel costs", "mpg comparison calculator"],
+    icon: "GitCompare",
+    schemaType: "SoftwareApplication",
+  },
+  {
+    slug: "water-bill-calculator-uk",
+    name: "Water Bill Calculator",
+    shortName: "Water Bill",
+    h1: "UK Water Bill Calculator",
+    category: "home",
+    description:
+      "Estimate your annual and monthly water bill based on your household size, region, and whether you're on a meter.",
+    metaTitle: "Water Bill Calculator UK | Annual & Monthly Cost | Calculio",
+    metaDescription:
+      "Estimate your UK water bill by household size and region, metered or unmetered, with a comparison to typical UK household water spend.",
+    keywords: ["water bill calculator", "water bill calculator uk", "average water bill uk"],
+    icon: "Droplets",
+    schemaType: "SoftwareApplication",
+  },
 ];
 
 export function getCalculator(slug: string): CalculatorMeta | undefined {
