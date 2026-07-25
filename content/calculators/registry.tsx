@@ -11,6 +11,21 @@ import * as bmi from "./bmi-calculator-uk";
 import * as pregnancy from "./pregnancy-due-date-calculator-uk";
 import * as age from "./age-calculator";
 import * as percentage from "./percentage-calculator";
+import * as compoundInterest from "./compound-interest-calculator-uk";
+import * as savingsGoal from "./savings-goal-calculator-uk";
+import * as loanRepayment from "./loan-repayment-calculator-uk";
+import * as creditCardPayoff from "./credit-card-payoff-calculator-uk";
+import * as mortgageOverpayment from "./mortgage-overpayment-calculator-uk";
+import * as nationalInsurance from "./national-insurance-calculator-uk";
+import * as selfEmployedTax from "./self-employed-tax-calculator-uk";
+import * as dividendTax from "./dividend-tax-calculator-uk";
+import * as capitalGainsTax from "./capital-gains-tax-calculator-uk";
+import * as mpg from "./mpg-calculator-uk";
+import * as congestionUlez from "./congestion-charge-ulez-calculator-uk";
+import * as tdee from "./tdee-calculator-uk";
+import * as idealWeight from "./ideal-weight-calculator-uk";
+import * as paintCoverage from "./paint-coverage-calculator-uk";
+import * as tip from "./tip-calculator-uk";
 
 interface CalculatorContent {
   SeoContent: ComponentType;
@@ -28,4 +43,19 @@ export const calculatorContent: Record<string, CalculatorContent> = {
   "pregnancy-due-date-calculator-uk": pregnancy,
   "age-calculator": age,
   "percentage-calculator": percentage,
+  "compound-interest-calculator-uk": compoundInterest,
+  "savings-goal-calculator-uk": savingsGoal,
+  "loan-repayment-calculator-uk": loanRepayment,
+  "credit-card-payoff-calculator-uk": creditCardPayoff,
+  "mortgage-overpayment-calculator-uk": mortgageOverpayment,
+  "national-insurance-calculator-uk": nationalInsurance,
+  "self-employed-tax-calculator-uk": selfEmployedTax,
+  "dividend-tax-calculator-uk": dividendTax,
+  "capital-gains-tax-calculator-uk": capitalGainsTax,
+  "mpg-calculator-uk": mpg,
+  "congestion-charge-ulez-calculator-uk": congestionUlez,
+  "tdee-calculator-uk": tdee,
+  "ideal-weight-calculator-uk": idealWeight,
+  "paint-coverage-calculator-uk": paintCoverage,
+  "tip-calculator-uk": tip,
 };

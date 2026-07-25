@@ -117,11 +117,17 @@ export function SeoContent() {
       <h2>Related calculations to check next</h2>
       <p>
         Buying a home almost always means paying Stamp Duty Land Tax (or LBTT in
-        Scotland, LTT in Wales) on top of your deposit and mortgage — use our{" "}
+        Scotland, LTT in Wales) on top of your deposit and mortgage, so use our{" "}
         <Link href="/calculators/stamp-duty-calculator-uk">stamp duty calculator</Link> to work
         out that cost before you make an offer. It&apos;s also worth checking your{" "}
         <Link href="/calculators/take-home-pay-calculator-uk">take-home pay</Link> to make sure
         the monthly repayment comfortably fits your budget alongside your other outgoings.
+        Once your mortgage is up and running, our{" "}
+        <Link href="/calculators/mortgage-overpayment-calculator-uk">
+          mortgage overpayment calculator
+        </Link>{" "}
+        shows how much time and interest you could save by paying a little extra
+        each month.
       </p>
     </div>
   );

@@ -105,7 +105,11 @@ export function SeoContent() {
       <p>
         Want to see the tax breakdown on its own, without pension and student loan
         deductions? Try our{" "}
-        <Link href="/calculators/income-tax-calculator-uk">Income Tax calculator</Link>. And if
+        <Link href="/calculators/income-tax-calculator-uk">Income Tax calculator</Link> or our{" "}
+        <Link href="/calculators/national-insurance-calculator-uk">
+          National Insurance calculator
+        </Link>{" "}
+        for that deduction on its own. And if
         you&apos;re weighing up a house purchase against your new take-home pay, check
         our <Link href="/calculators/mortgage-calculator-uk">mortgage calculator</Link> to see
         what you could comfortably afford.

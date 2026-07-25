@@ -123,7 +123,14 @@ export function SeoContent() {
         <Link href="/calculators/pregnancy-due-date-calculator-uk">
           pregnancy due date calculator
         </Link>{" "}
-        can help you keep track of key NHS milestones and appointments.
+        can help you keep track of key NHS milestones and appointments. For a
+        broader picture alongside BMI, our{" "}
+        <Link href="/calculators/tdee-calculator-uk">TDEE calculator</Link> covers
+        general daily calorie needs, and our{" "}
+        <Link href="/calculators/ideal-weight-calculator-uk">
+          ideal weight calculator
+        </Link>{" "}
+        shows a healthy weight range using a few different formulas.
       </p>
     </div>
   );

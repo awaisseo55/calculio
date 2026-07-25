@@ -108,8 +108,18 @@ export function SeoContent() {
         For the complete picture including National Insurance, pension contributions and
         student loan repayments, use our{" "}
         <Link href="/calculators/take-home-pay-calculator-uk">take-home pay calculator</Link>.
-        If you&apos;re self-employed or comparing a house purchase, our{" "}
-        <Link href="/calculators/stamp-duty-calculator-uk">stamp duty calculator</Link> and{" "}
+        Our dedicated{" "}
+        <Link href="/calculators/national-insurance-calculator-uk">
+          National Insurance calculator
+        </Link>{" "}
+        covers that deduction on its own, and if you also receive dividend income, our{" "}
+        <Link href="/calculators/dividend-tax-calculator-uk">dividend tax calculator</Link>{" "}
+        covers how that is taxed separately. If you&apos;re self-employed or comparing a house
+        purchase, our{" "}
+        <Link href="/calculators/self-employed-tax-calculator-uk">
+          self-employed tax calculator
+        </Link>
+        , <Link href="/calculators/stamp-duty-calculator-uk">stamp duty calculator</Link> and{" "}
         <Link href="/calculators/mortgage-calculator-uk">mortgage calculator</Link> can help
         you plan the bigger picture.
       </p>

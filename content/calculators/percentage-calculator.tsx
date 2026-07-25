@@ -106,7 +106,9 @@ export function SeoContent() {
         If you&apos;re working out a pay rise or salary change, our{" "}
         <Link href="/calculators/take-home-pay-calculator-uk">take-home pay calculator</Link>{" "}
         shows the full effect after tax and deductions, not just the gross percentage
-        increase.
+        increase. For a quick everyday use of percentages, our{" "}
+        <Link href="/calculators/tip-calculator-uk">tip calculator</Link> applies
+        the same maths to working out a tip and splitting a bill.
       </p>
     </div>
   );

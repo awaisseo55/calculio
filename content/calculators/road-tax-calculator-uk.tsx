@@ -113,9 +113,15 @@ export function SeoContent() {
       <h2>Related calculators</h2>
       <p>
         Once you&apos;ve worked out your annual VED, use our{" "}
-        <Link href="/calculators/fuel-cost-calculator-uk">fuel cost calculator</Link> to
+        <Link href="/calculators/fuel-cost-calculator-uk">fuel cost calculator</Link> and{" "}
+        <Link href="/calculators/mpg-calculator-uk">MPG calculator</Link> to
         estimate running costs for regular journeys, and factor both into your overall
-        motoring budget alongside insurance and maintenance.
+        motoring budget alongside insurance and maintenance. If you drive into
+        London regularly, our{" "}
+        <Link href="/calculators/congestion-charge-ulez-calculator-uk">
+          Congestion Charge and ULEZ calculator
+        </Link>{" "}
+        covers those additional daily costs too.
       </p>
     </div>
   );

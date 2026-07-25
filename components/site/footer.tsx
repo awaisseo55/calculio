@@ -10,6 +10,7 @@ const legalLinks = [
   { href: "/contact", label: "Contact" },
   { href: "/privacy", label: "Privacy Policy" },
   { href: "/terms", label: "Terms of Use" },
+  { href: "/disclaimer", label: "Disclaimer" },
 ];
 
 const socialLinks = [

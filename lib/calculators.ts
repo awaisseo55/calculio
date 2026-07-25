@@ -156,6 +156,231 @@ export const calculators: CalculatorMeta[] = [
     icon: "Percent",
     schemaType: "SoftwareApplication",
   },
+  {
+    slug: "compound-interest-calculator-uk",
+    name: "Compound Interest Calculator",
+    shortName: "Compound Interest",
+    h1: "UK Compound Interest Calculator",
+    category: "finance",
+    description:
+      "See how your savings grow over time with compound interest, including regular monthly contributions.",
+    metaTitle: "Compound Interest Calculator UK 2026 | Calculio",
+    metaDescription:
+      "Work out how your savings grow with compound interest. Add monthly contributions and see a year by year breakdown of your balance.",
+    keywords: ["compound interest calculator", "compound interest calculator uk", "savings growth calculator"],
+    icon: "TrendingUp",
+    schemaType: "SoftwareApplication",
+  },
+  {
+    slug: "savings-goal-calculator-uk",
+    name: "Savings Goal Calculator",
+    shortName: "Savings Goal",
+    h1: "UK Savings Goal Calculator",
+    category: "finance",
+    description:
+      "Find out how long it will take to reach your savings goal based on your monthly contributions and interest rate.",
+    metaTitle: "Savings Goal Calculator UK | How Long to Save | Calculio",
+    metaDescription:
+      "Calculate how long it will take to reach your savings target, based on your starting balance, monthly contribution and interest rate.",
+    keywords: ["savings goal calculator", "savings calculator uk", "how long to save"],
+    icon: "PiggyBank",
+    schemaType: "SoftwareApplication",
+  },
+  {
+    slug: "loan-repayment-calculator-uk",
+    name: "Loan Repayment Calculator",
+    shortName: "Loan Repayment",
+    h1: "UK Loan Repayment Calculator",
+    category: "finance",
+    description:
+      "Work out your monthly loan repayment, total interest and a full repayment schedule for any personal loan.",
+    metaTitle: "Loan Repayment Calculator UK | Monthly Cost | Calculio",
+    metaDescription:
+      "Free UK loan repayment calculator. Work out your monthly payment, total interest and full repayment schedule for any personal loan.",
+    keywords: ["loan repayment calculator", "loan calculator uk", "personal loan calculator"],
+    icon: "Banknote",
+    schemaType: "SoftwareApplication",
+  },
+  {
+    slug: "credit-card-payoff-calculator-uk",
+    name: "Credit Card Payoff Calculator",
+    shortName: "Credit Card Payoff",
+    h1: "UK Credit Card Payoff Calculator",
+    category: "finance",
+    description:
+      "See how long it will take to clear your credit card balance and how much interest you will pay at different payment levels.",
+    metaTitle: "Credit Card Payoff Calculator UK | Calculio",
+    metaDescription:
+      "Work out how long it takes to pay off a credit card balance and how much interest you will pay, based on your monthly payment and APR.",
+    keywords: ["credit card payoff calculator", "credit card calculator uk", "pay off credit card"],
+    icon: "CreditCard",
+    schemaType: "SoftwareApplication",
+  },
+  {
+    slug: "mortgage-overpayment-calculator-uk",
+    name: "Mortgage Overpayment Calculator",
+    shortName: "Mortgage Overpayment",
+    h1: "UK Mortgage Overpayment Calculator",
+    category: "finance",
+    description:
+      "Find out how much time and interest you could save by overpaying your mortgage each month.",
+    metaTitle: "Mortgage Overpayment Calculator UK | Calculio",
+    metaDescription:
+      "See how much interest and time you could save by overpaying your mortgage each month, with a new payoff date and total saving.",
+    keywords: ["mortgage overpayment calculator", "overpay mortgage calculator uk", "mortgage overpayment savings"],
+    icon: "CalendarCheck",
+    schemaType: "SoftwareApplication",
+  },
+  {
+    slug: "national-insurance-calculator-uk",
+    name: "National Insurance Calculator",
+    shortName: "National Insurance",
+    h1: "UK National Insurance Calculator",
+    category: "tax",
+    description:
+      "Calculate how much National Insurance you pay as an employee or if you're self-employed, for 2025/26 and 2026/27.",
+    metaTitle: "National Insurance Calculator UK 2026/27 | Calculio",
+    metaDescription:
+      "Work out your UK National Insurance contributions for 2026/27, whether you're employed or self-employed, with a full monthly breakdown.",
+    keywords: ["national insurance calculator", "ni calculator uk", "class 4 national insurance calculator"],
+    icon: "ShieldCheck",
+    schemaType: "SoftwareApplication",
+  },
+  {
+    slug: "self-employed-tax-calculator-uk",
+    name: "Self-Employed Tax Calculator",
+    shortName: "Self-Employed Tax",
+    h1: "UK Self-Employed Tax Calculator",
+    category: "tax",
+    description:
+      "Work out your Income Tax, Class 2 and Class 4 National Insurance as a self-employed sole trader.",
+    metaTitle: "Self-Employed Tax Calculator UK 2026/27 | Calculio",
+    metaDescription:
+      "Calculate your total tax bill as a self-employed sole trader, including Income Tax and Class 2 and Class 4 National Insurance.",
+    keywords: ["self employed tax calculator", "sole trader tax calculator uk", "self employed tax calculator uk"],
+    icon: "Briefcase",
+    schemaType: "SoftwareApplication",
+  },
+  {
+    slug: "dividend-tax-calculator-uk",
+    name: "Dividend Tax Calculator",
+    shortName: "Dividend Tax",
+    h1: "UK Dividend Tax Calculator",
+    category: "tax",
+    description:
+      "Calculate the tax you owe on dividend income above your tax-free dividend allowance.",
+    metaTitle: "Dividend Tax Calculator UK 2026/27 | Calculio",
+    metaDescription:
+      "Work out how much tax you owe on dividend income in 2026/27, after your salary and the tax-free dividend allowance.",
+    keywords: ["dividend tax calculator", "dividend tax calculator uk", "dividend allowance calculator"],
+    icon: "LineChart",
+    schemaType: "SoftwareApplication",
+  },
+  {
+    slug: "capital-gains-tax-calculator-uk",
+    name: "Capital Gains Tax Calculator",
+    shortName: "Capital Gains Tax",
+    h1: "UK Capital Gains Tax Calculator",
+    category: "tax",
+    description:
+      "Estimate the Capital Gains Tax owed on the sale of property, shares or other assets after your annual exempt amount.",
+    metaTitle: "Capital Gains Tax Calculator UK 2026/27 | Calculio",
+    metaDescription:
+      "Estimate your UK Capital Gains Tax bill on property or other assets, after the annual exempt amount and your Income Tax band.",
+    keywords: ["capital gains tax calculator", "cgt calculator uk", "capital gains tax calculator uk"],
+    icon: "ArrowUpRight",
+    schemaType: "SoftwareApplication",
+  },
+  {
+    slug: "mpg-calculator-uk",
+    name: "MPG Calculator",
+    shortName: "MPG",
+    h1: "UK MPG Calculator",
+    category: "motoring",
+    description:
+      "Work out your car's real fuel economy in miles per gallon, litres per 100km and cost per mile.",
+    metaTitle: "MPG Calculator UK | Miles Per Gallon | Calculio",
+    metaDescription:
+      "Calculate your car's real world MPG from distance driven and fuel used, plus litres per 100km and an estimated cost per mile.",
+    keywords: ["mpg calculator", "mpg calculator uk", "miles per gallon calculator"],
+    icon: "Gauge",
+    schemaType: "SoftwareApplication",
+  },
+  {
+    slug: "congestion-charge-ulez-calculator-uk",
+    name: "Congestion Charge and ULEZ Calculator",
+    shortName: "Congestion Charge & ULEZ",
+    h1: "London Congestion Charge and ULEZ Calculator",
+    category: "motoring",
+    description:
+      "Work out your daily, weekly and annual London Congestion Charge and ULEZ costs based on your vehicle and how often you drive in.",
+    metaTitle: "Congestion Charge & ULEZ Calculator UK | Calculio",
+    metaDescription:
+      "Estimate your London Congestion Charge and ULEZ costs by vehicle type, emissions standard and how many days a week you drive in.",
+    keywords: ["congestion charge calculator", "ulez calculator", "ulez charge calculator london"],
+    icon: "MapPin",
+    schemaType: "SoftwareApplication",
+  },
+  {
+    slug: "tdee-calculator-uk",
+    name: "TDEE Calculator",
+    shortName: "TDEE",
+    h1: "TDEE Calculator (Total Daily Energy Expenditure)",
+    category: "health",
+    description:
+      "Estimate your total daily energy expenditure and general calorie guides for maintaining, losing or gaining weight.",
+    metaTitle: "TDEE Calculator UK | Daily Calorie Needs | Calculio",
+    metaDescription:
+      "Estimate your total daily energy expenditure (TDEE) and general calorie guidance for maintenance, mild loss or mild gain.",
+    keywords: ["tdee calculator", "tdee calculator uk", "calorie calculator uk"],
+    icon: "Flame",
+    schemaType: "SoftwareApplication",
+  },
+  {
+    slug: "ideal-weight-calculator-uk",
+    name: "Ideal Weight Calculator",
+    shortName: "Ideal Weight",
+    h1: "UK Ideal Weight Calculator",
+    category: "health",
+    description:
+      "See an estimated healthy weight range for your height using several common formulas, alongside the NHS BMI range.",
+    metaTitle: "Ideal Weight Calculator UK | Healthy Weight Range | Calculio",
+    metaDescription:
+      "Estimate a healthy weight range for your height using the Devine, Robinson and NHS BMI methods. General guidance only, not medical advice.",
+    keywords: ["ideal weight calculator", "healthy weight calculator uk", "ideal body weight calculator"],
+    icon: "Scale",
+    schemaType: "SoftwareApplication",
+  },
+  {
+    slug: "paint-coverage-calculator-uk",
+    name: "Paint Coverage Calculator",
+    shortName: "Paint Coverage",
+    h1: "UK Paint Coverage Calculator",
+    category: "home",
+    description:
+      "Work out how many litres and tins of paint you need for a room, based on its size, coats and paint coverage rate.",
+    metaTitle: "Paint Coverage Calculator UK | How Much Paint | Calculio",
+    metaDescription:
+      "Calculate how many litres and tins of paint you need for any room, based on wall area, coats, doors, windows and coverage rate.",
+    keywords: ["paint calculator", "paint coverage calculator uk", "how much paint do i need"],
+    icon: "PaintBucket",
+    schemaType: "SoftwareApplication",
+  },
+  {
+    slug: "tip-calculator-uk",
+    name: "Tip Calculator",
+    shortName: "Tip Calculator",
+    h1: "UK Tip Calculator",
+    category: "everyday",
+    description:
+      "Work out how much to tip, your total bill and how much each person owes if you're splitting the bill.",
+    metaTitle: "Tip Calculator UK | Split the Bill | Calculio",
+    metaDescription:
+      "Work out how much to tip in the UK, your total bill including the tip, and how much each person owes if you're splitting it.",
+    keywords: ["tip calculator", "tip calculator uk", "bill splitting calculator"],
+    icon: "Receipt",
+    schemaType: "SoftwareApplication",
+  },
 ];
 
 export function getCalculator(slug: string): CalculatorMeta | undefined {

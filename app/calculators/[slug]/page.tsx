@@ -151,6 +151,14 @@ export default async function CalculatorPage({ params }: Props) {
       <div className="mt-16 border-t border-border/60 pt-14">
         <RelatedCalculators calculators={related} />
       </div>
+
+      <p className="mt-10 text-center text-xs text-muted-foreground">
+        Results are estimates only. See our{" "}
+        <Link href="/disclaimer" className="underline hover:text-foreground">
+          disclaimer
+        </Link>
+        .
+      </p>
     </div>
   );
 }

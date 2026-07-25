@@ -2,7 +2,7 @@
  * Centralised UK rate constants. Figures reflect publicly published HMRC / DVLA /
  * Revenue Scotland / Welsh Revenue Authority rates for the 2025/26 and 2026/27 tax
  * years at time of writing. Always confirm exact current figures on gov.uk before
- * making a financial decision — thresholds are reviewed at every Budget.
+ * making a financial decision. Thresholds are reviewed at every Budget.
  */
 
 export const TAX_YEARS = ["2025/26", "2026/27"] as const;
@@ -134,3 +134,38 @@ export const VED_PRE_2017_RATES = [
   { co2UpTo: 255, rate: 735 },
   { co2UpTo: Infinity, rate: 760 },
 ];
+
+// --- Dividend tax ------------------------------------------------------------
+export const DIVIDEND_ALLOWANCE = 500;
+// Dividend tax rates apply on top of whichever Income Tax band your total income
+// (salary plus dividends) falls into, after the tax-free dividend allowance.
+export const DIVIDEND_BASIC_RATE = 0.0875;
+export const DIVIDEND_HIGHER_RATE = 0.3375;
+export const DIVIDEND_ADDITIONAL_RATE = 0.3935;
+
+// --- Capital Gains Tax (CGT) --------------------------------------------------
+export const CGT_ANNUAL_EXEMPT_AMOUNT = 3000;
+// Since the 30 October 2024 Budget, residential property and other chargeable
+// assets (shares, personal possessions over £6,000, second homes) share the same
+// two rates, based on whether the gain falls in your basic or higher/additional
+// rate band. This calculator applies a simplified two-tier model: the whole gain
+// is taxed at one rate depending on the taxpayer toggle, rather than the more
+// precise blended calculation HMRC uses when a gain straddles both bands.
+export const CGT_BASIC_RATE = 0.18;
+export const CGT_HIGHER_RATE = 0.24;
+
+// --- Self-employed National Insurance -----------------------------------------
+// Class 2 NI became voluntary from 6 April 2024 for self-employed people with
+// profits above the small profits threshold: you're treated as having paid it for
+// state pension purposes without being charged. Below the threshold, it remains
+// optional, at a flat weekly rate, for anyone who wants to protect their National
+// Insurance record.
+export const CLASS2_SMALL_PROFITS_THRESHOLD = 6845;
+export const CLASS2_VOLUNTARY_WEEKLY_RATE = 3.45;
+
+// Class 4 NI is charged on self-employed profits, using the same lower profits
+// limit as the employee primary threshold, with a lower main rate than Class 1.
+export const CLASS4_LOWER_PROFITS_LIMIT = 12570;
+export const CLASS4_UPPER_PROFITS_LIMIT = 50270;
+export const CLASS4_MAIN_RATE = 0.06;
+export const CLASS4_UPPER_RATE = 0.02;
