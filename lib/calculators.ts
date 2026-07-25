@@ -533,6 +533,70 @@ export const calculators: CalculatorMeta[] = [
     icon: "Droplets",
     schemaType: "SoftwareApplication",
   },
+  {
+    slug: "flooring-calculator-uk",
+    name: "Flooring Calculator",
+    shortName: "Flooring",
+    h1: "UK Flooring Calculator",
+    category: "home",
+    description:
+      "Work out how much laminate, vinyl, wood, tile or carpet flooring you need, including wastage, and how many packs to buy.",
+    metaTitle: "Flooring Calculator UK | How Much Flooring Needed | Calculio",
+    metaDescription:
+      "Calculate how much flooring you need for any room, including wastage allowance, and how many packs of laminate, vinyl, wood or tile to buy.",
+    keywords: ["flooring calculator uk", "how much laminate flooring do i need", "flooring cost calculator"],
+    icon: "LayoutGrid",
+    featured: true,
+    schemaType: "SoftwareApplication",
+  },
+  {
+    slug: "concrete-calculator-uk",
+    name: "Concrete Calculator",
+    shortName: "Concrete",
+    h1: "UK Concrete Calculator",
+    category: "home",
+    description:
+      "Work out how much concrete you need for a slab, footing, post hole or column, in cubic metres, weight and ready-mix bags.",
+    metaTitle: "Concrete Calculator UK | Slabs, Footings & Post Holes | Calculio",
+    metaDescription:
+      "Calculate how much concrete you need for a slab, footing, post hole or column, including volume, weight and the number of ready-mix bags.",
+    keywords: ["concrete calculator uk", "how much concrete do i need", "concrete for post hole calculator"],
+    icon: "Construction",
+    featured: true,
+    schemaType: "SoftwareApplication",
+  },
+  {
+    slug: "kitchen-renovation-cost-calculator-uk",
+    name: "Kitchen Renovation Cost Calculator",
+    shortName: "Kitchen Renovation Cost",
+    h1: "UK Kitchen Renovation Cost Calculator",
+    category: "home",
+    description:
+      "Estimate the cost of a new kitchen by size and quality level, with a breakdown across units, worktops, appliances and more.",
+    metaTitle: "Kitchen Renovation Cost Calculator UK 2026 | Calculio",
+    metaDescription:
+      "Estimate your kitchen renovation cost in 2026 by size and quality, budget to premium, with a full cost breakdown by category.",
+    keywords: ["kitchen renovation cost uk", "how much does a new kitchen cost", "kitchen cost calculator uk"],
+    icon: "ChefHat",
+    featured: true,
+    schemaType: "SoftwareApplication",
+  },
+  {
+    slug: "loft-insulation-calculator-uk",
+    name: "Loft Insulation Calculator",
+    shortName: "Loft Insulation",
+    h1: "UK Loft Insulation Calculator",
+    category: "home",
+    description:
+      "Work out how much extra loft insulation you need to reach the recommended 270mm depth, and roughly what it could save on energy bills.",
+    metaTitle: "Loft Insulation Calculator UK | Rolls Needed | Calculio",
+    metaDescription:
+      "Calculate how many rolls of loft insulation you need to reach the recommended 270mm depth, plus a rough estimate of energy bill savings.",
+    keywords: ["loft insulation calculator uk", "how much loft insulation do i need", "loft insulation cost calculator"],
+    icon: "Layers",
+    featured: true,
+    schemaType: "SoftwareApplication",
+  },
 ];
 
 export function getCalculator(slug: string): CalculatorMeta | undefined {

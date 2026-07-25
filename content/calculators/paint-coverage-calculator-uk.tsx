@@ -130,6 +130,23 @@ export function SeoContent() {
         can help you see what is realistically left over each month for
         decorating and other home improvements.
       </p>
+      <p>
+        If painting is part of a bigger renovation, our{" "}
+        <Link href="/calculators/flooring-calculator-uk">
+          flooring calculator
+        </Link>{" "}
+        works out how much laminate, vinyl, wood or tile you need for the same
+        room, and our{" "}
+        <Link href="/calculators/kitchen-renovation-cost-calculator-uk">
+          kitchen renovation cost calculator
+        </Link>{" "}
+        gives a broader budget if you are refreshing a whole kitchen rather
+        than a single room. Pouring a new base or path outside first? Our{" "}
+        <Link href="/calculators/concrete-calculator-uk">
+          concrete calculator
+        </Link>{" "}
+        works out how much you need before you start.
+      </p>
     </div>
   );
 }

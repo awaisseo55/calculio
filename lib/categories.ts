@@ -36,9 +36,9 @@ export const categories: CategoryMeta[] = [
   {
     slug: "home",
     name: "Home & Property",
-    shortDescription: "Mortgages, stamp duty and moving costs",
+    shortDescription: "Mortgages, stamp duty, renovation and DIY",
     description:
-      "Everything to do with buying, moving and owning a home in the UK, from mortgage costs to stamp duty.",
+      "Everything to do with buying, moving, renovating and owning a home in the UK, from mortgage costs and stamp duty to flooring, concrete, kitchen renovation costs and loft insulation for your next DIY project.",
     icon: "Home",
   },
   {

@@ -35,6 +35,10 @@ import {
   ArrowUpCircle,
   GitCompare,
   Droplets,
+  LayoutGrid,
+  Construction,
+  ChefHat,
+  Layers,
   type LucideIcon,
 } from "lucide-react";
 
@@ -75,6 +79,10 @@ export const iconMap: Record<string, LucideIcon> = {
   ArrowUpCircle,
   GitCompare,
   Droplets,
+  LayoutGrid,
+  Construction,
+  ChefHat,
+  Layers,
 };
 
 export function getIcon(name: string): LucideIcon {

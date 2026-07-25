@@ -36,6 +36,10 @@ import * as discount from "./discount-calculator-uk";
 import * as salaryIncrease from "./salary-increase-calculator-uk";
 import * as fuelEfficiencyComparison from "./fuel-efficiency-comparison-uk";
 import * as waterBill from "./water-bill-calculator-uk";
+import * as flooring from "./flooring-calculator-uk";
+import * as concrete from "./concrete-calculator-uk";
+import * as kitchenRenovationCost from "./kitchen-renovation-cost-calculator-uk";
+import * as loftInsulation from "./loft-insulation-calculator-uk";
 
 interface CalculatorContent {
   SeoContent: ComponentType;
@@ -78,4 +82,8 @@ export const calculatorContent: Record<string, CalculatorContent> = {
   "salary-increase-calculator-uk": salaryIncrease,
   "fuel-efficiency-comparison-uk": fuelEfficiencyComparison,
   "water-bill-calculator-uk": waterBill,
+  "flooring-calculator-uk": flooring,
+  "concrete-calculator-uk": concrete,
+  "kitchen-renovation-cost-calculator-uk": kitchenRenovationCost,
+  "loft-insulation-calculator-uk": loftInsulation,
 };

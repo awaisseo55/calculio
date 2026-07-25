@@ -33,6 +33,10 @@ import { DiscountCalculator } from "@/components/calculators/discount-calculator
 import { SalaryIncreaseCalculator } from "@/components/calculators/salary-increase-calculator";
 import { FuelEfficiencyComparisonCalculator } from "@/components/calculators/fuel-efficiency-comparison-calculator";
 import { WaterBillCalculator } from "@/components/calculators/water-bill-calculator";
+import { FlooringCalculator } from "@/components/calculators/flooring-calculator";
+import { ConcreteCalculator } from "@/components/calculators/concrete-calculator";
+import { KitchenRenovationCostCalculator } from "@/components/calculators/kitchen-renovation-cost-calculator";
+import { LoftInsulationCalculator } from "@/components/calculators/loft-insulation-calculator";
 import type { ComponentType } from "react";
 
 export const calculatorComponents: Record<string, ComponentType> = {
@@ -71,4 +75,8 @@ export const calculatorComponents: Record<string, ComponentType> = {
   "salary-increase-calculator-uk": SalaryIncreaseCalculator,
   "fuel-efficiency-comparison-uk": FuelEfficiencyComparisonCalculator,
   "water-bill-calculator-uk": WaterBillCalculator,
+  "flooring-calculator-uk": FlooringCalculator,
+  "concrete-calculator-uk": ConcreteCalculator,
+  "kitchen-renovation-cost-calculator-uk": KitchenRenovationCostCalculator,
+  "loft-insulation-calculator-uk": LoftInsulationCalculator,
 };
