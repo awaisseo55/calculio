@@ -381,6 +381,83 @@ export const calculators: CalculatorMeta[] = [
     icon: "Receipt",
     schemaType: "SoftwareApplication",
   },
+  {
+    slug: "isa-calculator-uk",
+    name: "ISA Calculator",
+    shortName: "ISA",
+    h1: "UK ISA Calculator",
+    category: "finance",
+    description:
+      "Project how a Cash, Stocks and Shares, Lifetime or Junior ISA could grow, and see how much you keep tax-free.",
+    metaTitle: "ISA Calculator UK 2026/27 | Tax-Free Growth | Calculio",
+    metaDescription:
+      "Work out how your ISA could grow over time, tax-free, across Cash, Stocks and Shares, Lifetime and Junior ISAs, with a comparison to taxed savings.",
+    keywords: ["isa calculator", "isa calculator uk", "stocks and shares isa calculator", "lifetime isa calculator"],
+    icon: "Coins",
+    featured: true,
+    schemaType: "SoftwareApplication",
+  },
+  {
+    slug: "pension-calculator-uk",
+    name: "Pension Calculator",
+    shortName: "Pension",
+    h1: "UK Pension Calculator",
+    category: "finance",
+    description:
+      "Project your pension pot at retirement and an estimated annual income, alongside the new State Pension.",
+    metaTitle: "Pension Calculator UK 2026/27 | Retirement Pot | Calculio",
+    metaDescription:
+      "Estimate your pension pot at retirement and a possible annual income using the 4% drawdown rule, alongside your State Pension.",
+    keywords: ["pension calculator", "pension calculator uk", "retirement calculator uk", "pension pot calculator"],
+    icon: "Sunset",
+    schemaType: "SoftwareApplication",
+  },
+  {
+    slug: "vat-calculator-uk",
+    name: "VAT Calculator",
+    shortName: "VAT",
+    h1: "UK VAT Calculator",
+    category: "tax",
+    description:
+      "Add VAT to a net amount or extract VAT from a gross amount, at the standard, reduced or zero rate.",
+    metaTitle: "VAT Calculator UK 2026 | Add or Remove VAT | Calculio",
+    metaDescription:
+      "Free UK VAT calculator. Add VAT to a net price or extract VAT from a gross price at 20%, 5% or 0%, with a full net, VAT and gross breakdown.",
+    keywords: ["vat calculator", "vat calculator uk", "add vat calculator", "remove vat calculator"],
+    icon: "ReceiptText",
+    featured: true,
+    schemaType: "SoftwareApplication",
+  },
+  {
+    slug: "car-loan-calculator-uk",
+    name: "Car Loan Calculator",
+    shortName: "Car Loan",
+    h1: "UK Car Loan Calculator",
+    category: "motoring",
+    description:
+      "Work out your monthly payment for a car loan, HP agreement or PCP deal, including an optional balloon payment.",
+    metaTitle: "Car Loan Calculator UK | HP & PCP | Calculio",
+    metaDescription:
+      "Calculate your monthly car finance payment for a personal loan, HP agreement or PCP deal, including deposit, part-exchange and balloon payment.",
+    keywords: ["car loan calculator", "car finance calculator uk", "pcp calculator", "hp calculator car"],
+    icon: "CarFront",
+    schemaType: "SoftwareApplication",
+  },
+  {
+    slug: "bmr-calculator-uk",
+    name: "BMR Calculator",
+    shortName: "BMR",
+    h1: "BMR Calculator (Basal Metabolic Rate)",
+    category: "health",
+    description:
+      "Estimate the calories your body burns at complete rest, using the Mifflin-St Jeor or Harris-Benedict formula.",
+    metaTitle: "BMR Calculator UK | Basal Metabolic Rate | Calculio",
+    metaDescription:
+      "Free BMR calculator using the Mifflin-St Jeor or Harris-Benedict formula. Estimate the calories your body burns at rest each day.",
+    keywords: ["bmr calculator", "basal metabolic rate calculator", "mifflin st jeor calculator"],
+    icon: "Zap",
+    schemaType: "SoftwareApplication",
+  },
 ];
 
 export function getCalculator(slug: string): CalculatorMeta | undefined {

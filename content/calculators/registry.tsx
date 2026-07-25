@@ -26,6 +26,11 @@ import * as tdee from "./tdee-calculator-uk";
 import * as idealWeight from "./ideal-weight-calculator-uk";
 import * as paintCoverage from "./paint-coverage-calculator-uk";
 import * as tip from "./tip-calculator-uk";
+import * as isa from "./isa-calculator-uk";
+import * as pension from "./pension-calculator-uk";
+import * as vat from "./vat-calculator-uk";
+import * as carLoan from "./car-loan-calculator-uk";
+import * as bmr from "./bmr-calculator-uk";
 
 interface CalculatorContent {
   SeoContent: ComponentType;
@@ -58,4 +63,9 @@ export const calculatorContent: Record<string, CalculatorContent> = {
   "ideal-weight-calculator-uk": idealWeight,
   "paint-coverage-calculator-uk": paintCoverage,
   "tip-calculator-uk": tip,
+  "isa-calculator-uk": isa,
+  "pension-calculator-uk": pension,
+  "vat-calculator-uk": vat,
+  "car-loan-calculator-uk": carLoan,
+  "bmr-calculator-uk": bmr,
 };

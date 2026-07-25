@@ -121,6 +121,66 @@ export const blogPosts: BlogPostMeta[] = [
     featuredImageAlt: "Healthy BMI range chart for UK adults according to NHS",
     wordCount: 1210,
   },
+  {
+    slug: "self-employed-tax-guide-uk-2026",
+    title: "The Complete UK Self-Employed Tax Guide for 2026/27",
+    metaTitle: "Self-Employed Tax Guide UK 2026/27 | Income Tax & NI | Calculio",
+    metaDescription:
+      "A complete guide to self-employed tax in the UK for 2026/27: Income Tax, Class 2 and Class 4 National Insurance, allowable expenses, and a full worked example.",
+    excerpt:
+      "Income Tax, Class 2 and Class 4 National Insurance, allowable expenses and payments on account, explained in plain English with a full worked example.",
+    category: "Tax",
+    categorySlug: "tax",
+    categoryHref: "/categories/tax",
+    tags: ["self-employed", "self-assessment", "HMRC", "sole trader", "tax"],
+    authorSlug: "james-whitfield",
+    reviewerSlug: "emily-thorne",
+    publishDate: "2026-07-25",
+    updatedDate: "2026-07-25",
+    featuredImage: "/blog/self-employed-tax-guide-2026.jpg",
+    featuredImageAlt: "Self-employed sole trader working out UK tax for 2026/27",
+    wordCount: 2650,
+  },
+  {
+    slug: "compound-interest-explained-uk",
+    title: "Compound Interest Explained: The Simple Formula That Makes You Rich Slowly",
+    metaTitle: "Compound Interest Explained: The Formula That Builds Wealth",
+    metaDescription:
+      "How compound interest actually works, the formula behind it, why time matters more than the rate, and how the same maths can work against you on debt.",
+    excerpt:
+      "The formula behind compound interest, why starting early beats saving more later, and how the same maths that grows your savings can grow your debt.",
+    category: "Finance",
+    categorySlug: "finance",
+    categoryHref: "/categories/finance",
+    tags: ["compound interest", "savings", "investing", "ISA", "personal finance"],
+    authorSlug: "james-whitfield",
+    reviewerSlug: "emily-thorne",
+    publishDate: "2026-07-25",
+    updatedDate: "2026-07-25",
+    featuredImage: "/blog/compound-interest-explained.jpg",
+    featuredImageAlt: "Compound interest growth chart showing savings compounding over time",
+    wordCount: 1600,
+  },
+  {
+    slug: "london-driving-charges-2026",
+    title: "Driving in London 2026: ULEZ, Congestion Charge, and What You Actually Pay",
+    metaTitle: "London Driving Charges 2026: ULEZ & Congestion Charge Guide",
+    metaDescription:
+      "A clear guide to London's ULEZ and Congestion Charge in 2026: who pays, how much, how to check if your car is exempt, and how to avoid a penalty.",
+    excerpt:
+      "Who pays the ULEZ and Congestion Charge, how much it costs combined, which vehicles are exempt, and how the daily cost adds up over a working month.",
+    category: "Motoring",
+    categorySlug: "motoring",
+    categoryHref: "/categories/motoring",
+    tags: ["ULEZ", "congestion charge", "London driving", "TfL", "motoring costs"],
+    authorSlug: "james-whitfield",
+    reviewerSlug: "daniel-ashcroft",
+    publishDate: "2026-07-25",
+    updatedDate: "2026-07-25",
+    featuredImage: "/blog/ulez-london-driving-guide.jpg",
+    featuredImageAlt: "London ULEZ and Congestion Charge zone sign for drivers",
+    wordCount: 1300,
+  },
 ];
 
 export function getBlogPost(slug: string): BlogPostMeta | undefined {

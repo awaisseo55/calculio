@@ -60,6 +60,27 @@ const CTA_CONTENT: Record<
     buttonLabel: "Calculate my BMI",
     href: "/calculators/bmi-calculator-uk",
   },
+  "self-employed-tax-guide-uk-2026": {
+    title: "Work out your self-employed tax bill",
+    description:
+      "Enter your profit and expenses for an instant Income Tax and Class 4 National Insurance breakdown.",
+    buttonLabel: "Calculate my tax bill",
+    href: "/calculators/self-employed-tax-calculator-uk",
+  },
+  "compound-interest-explained-uk": {
+    title: "See your own savings grow",
+    description:
+      "Enter your starting balance, monthly contribution and interest rate for an instant compound growth projection.",
+    buttonLabel: "Calculate my savings growth",
+    href: "/calculators/compound-interest-calculator-uk",
+  },
+  "london-driving-charges-2026": {
+    title: "Work out your London driving costs",
+    description:
+      "Enter your vehicle and how often you drive in for an instant Congestion Charge and ULEZ cost breakdown.",
+    buttonLabel: "Calculate my driving costs",
+    href: "/calculators/congestion-charge-ulez-calculator-uk",
+  },
 };
 
 const DISCLAIMER =
@@ -99,6 +120,24 @@ const RELATED_CALCULATOR_SLUGS: Record<string, string[]> = {
     "pregnancy-due-date-calculator-uk",
     "age-calculator",
     "percentage-calculator",
+  ],
+  "self-employed-tax-guide-uk-2026": [
+    "self-employed-tax-calculator-uk",
+    "national-insurance-calculator-uk",
+    "income-tax-calculator-uk",
+    "vat-calculator-uk",
+  ],
+  "compound-interest-explained-uk": [
+    "compound-interest-calculator-uk",
+    "isa-calculator-uk",
+    "savings-goal-calculator-uk",
+    "credit-card-payoff-calculator-uk",
+  ],
+  "london-driving-charges-2026": [
+    "congestion-charge-ulez-calculator-uk",
+    "car-loan-calculator-uk",
+    "road-tax-calculator-uk",
+    "fuel-cost-calculator-uk",
   ],
 };
 

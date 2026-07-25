@@ -25,6 +25,11 @@ import {
   Flame,
   Scale,
   PaintBucket,
+  Coins,
+  Sunset,
+  ReceiptText,
+  CarFront,
+  Zap,
   type LucideIcon,
 } from "lucide-react";
 
@@ -55,6 +60,11 @@ export const iconMap: Record<string, LucideIcon> = {
   Flame,
   Scale,
   PaintBucket,
+  Coins,
+  Sunset,
+  ReceiptText,
+  CarFront,
+  Zap,
 };
 
 export function getIcon(name: string): LucideIcon {

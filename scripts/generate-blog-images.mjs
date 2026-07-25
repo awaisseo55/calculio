@@ -39,19 +39,19 @@ function svg({ title, subtitle }) {
 
 const images = [
   {
-    file: "income-tax-2026.jpg",
-    title: "UK Income Tax 2026/27",
-    subtitle: "Bands, rates and take-home pay explained",
+    file: "self-employed-tax-guide-2026.jpg",
+    title: "Self-Employed Tax Guide",
+    subtitle: "Income Tax, NI and expenses for 2026/27",
   },
   {
-    file: "car-tax-2026.jpg",
-    title: "UK Car Tax 2026",
-    subtitle: "Complete VED guide by fuel type",
+    file: "compound-interest-explained.jpg",
+    title: "Compound Interest Explained",
+    subtitle: "The formula that grows your savings",
   },
   {
-    file: "bmi-guide-uk.jpg",
-    title: "Healthy BMI Guide",
-    subtitle: "NHS ranges for UK adults",
+    file: "ulez-london-driving-guide.jpg",
+    title: "Driving in London 2026",
+    subtitle: "ULEZ, congestion charge and what you pay",
   },
 ];
 

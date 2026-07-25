@@ -7,6 +7,9 @@ import * as incomeTax2026 from "./uk-income-tax-2026-27";
 import * as mortgageDeposit2026 from "./mortgage-deposit-uk-2026";
 import * as carTax2026 from "./uk-car-tax-2026-ved-guide";
 import * as bmiGuide from "./healthy-bmi-adults-uk";
+import * as selfEmployedTaxGuide from "./self-employed-tax-guide-uk-2026";
+import * as compoundInterestExplained from "./compound-interest-explained-uk";
+import * as londonDrivingCharges from "./london-driving-charges-2026";
 
 interface BlogPostContent {
   ArticleContent: ComponentType;
@@ -20,4 +23,7 @@ export const blogContent: Record<string, BlogPostContent> = {
   "mortgage-deposit-uk-2026": mortgageDeposit2026,
   "uk-car-tax-2026-ved-guide": carTax2026,
   "healthy-bmi-adults-uk": bmiGuide,
+  "self-employed-tax-guide-uk-2026": selfEmployedTaxGuide,
+  "compound-interest-explained-uk": compoundInterestExplained,
+  "london-driving-charges-2026": londonDrivingCharges,
 };

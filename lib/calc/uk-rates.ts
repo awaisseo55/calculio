@@ -169,3 +169,33 @@ export const CLASS4_LOWER_PROFITS_LIMIT = 12570;
 export const CLASS4_UPPER_PROFITS_LIMIT = 50270;
 export const CLASS4_MAIN_RATE = 0.06;
 export const CLASS4_UPPER_RATE = 0.02;
+
+// --- ISA allowances (2026/27) ------------------------------------------------
+// The overall ISA allowance can be split across account types in any combination,
+// except the Lifetime ISA, which has its own lower sub-limit within the total.
+export const ISA_ANNUAL_ALLOWANCE = 20000;
+export const LISA_ANNUAL_ALLOWANCE = 4000;
+export const LISA_GOVERNMENT_BONUS_RATE = 0.25;
+export const JUNIOR_ISA_ANNUAL_ALLOWANCE = 9000;
+
+// --- Personal Savings Allowance (used to compare ISA vs taxed savings) ------
+export const PERSONAL_SAVINGS_ALLOWANCE_BASIC = 1000;
+export const PERSONAL_SAVINGS_ALLOWANCE_HIGHER = 500;
+// Additional rate taxpayers (over £125,140) get no Personal Savings Allowance.
+
+// --- State Pension (used as context alongside private pension projections) --
+// New State Pension, 2026/27, for people with a full 35-year National Insurance
+// record. Paid from State Pension age, currently 66, rising to 67 by 2028.
+export const NEW_STATE_PENSION_WEEKLY = 241.05;
+export const NEW_STATE_PENSION_ANNUAL = NEW_STATE_PENSION_WEEKLY * 52;
+
+// A commonly cited rule of thumb for sustainable annual drawdown from a pension
+// pot, popularised by the "4% rule". It is a guide, not a guarantee: actual safe
+// withdrawal rates depend on investment returns, inflation and how long the pot
+// needs to last, so this is presented with clear caveats wherever it is used.
+export const PENSION_DRAWDOWN_RATE = 0.04;
+
+// --- VAT ----------------------------------------------------------------------
+export const VAT_STANDARD_RATE = 20;
+export const VAT_REDUCED_RATE = 5;
+export const VAT_ZERO_RATE = 0;

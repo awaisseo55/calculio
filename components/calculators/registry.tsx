@@ -23,6 +23,11 @@ import { TdeeCalculator } from "@/components/calculators/tdee-calculator";
 import { IdealWeightCalculator } from "@/components/calculators/ideal-weight-calculator";
 import { PaintCoverageCalculator } from "@/components/calculators/paint-coverage-calculator";
 import { TipCalculator } from "@/components/calculators/tip-calculator";
+import { IsaCalculator } from "@/components/calculators/isa-calculator";
+import { PensionCalculator } from "@/components/calculators/pension-calculator";
+import { VatCalculator } from "@/components/calculators/vat-calculator";
+import { CarLoanCalculator } from "@/components/calculators/car-loan-calculator";
+import { BmrCalculator } from "@/components/calculators/bmr-calculator";
 import type { ComponentType } from "react";
 
 export const calculatorComponents: Record<string, ComponentType> = {
@@ -51,4 +56,9 @@ export const calculatorComponents: Record<string, ComponentType> = {
   "ideal-weight-calculator-uk": IdealWeightCalculator,
   "paint-coverage-calculator-uk": PaintCoverageCalculator,
   "tip-calculator-uk": TipCalculator,
+  "isa-calculator-uk": IsaCalculator,
+  "pension-calculator-uk": PensionCalculator,
+  "vat-calculator-uk": VatCalculator,
+  "car-loan-calculator-uk": CarLoanCalculator,
+  "bmr-calculator-uk": BmrCalculator,
 };
