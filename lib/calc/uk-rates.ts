@@ -216,3 +216,59 @@ export const IHT_STANDARD_RATE = 0.4;
 // the net estate (after other reliefs) is left to charity.
 export const IHT_REDUCED_RATE_WITH_CHARITY = 0.36;
 export const IHT_CHARITY_RATE_THRESHOLD_PERCENT = 10;
+
+// --- National Living Wage / National Minimum Wage (from 1 April 2026) -------
+// Set annually by the government following Low Pay Commission recommendations.
+// Always confirm the current rate on gov.uk, since rates are reviewed every April.
+export const NATIONAL_LIVING_WAGE_HOURLY = 12.71; // age 21 and over
+export const NATIONAL_MINIMUM_WAGE_18_20_HOURLY = 10.85;
+export const NATIONAL_MINIMUM_WAGE_UNDER_18_HOURLY = 8.0;
+export const APPRENTICE_RATE_HOURLY = 8.0;
+
+// --- Council Tax (England), 2026/27 ------------------------------------------
+// Band multipliers are fixed in law as ninths of the Band D charge and do not
+// change. The average Band D figure below is an illustrative, rounded typical
+// figure for guidance only: actual bills are set independently by each council
+// (plus police, fire and parish precepts) and vary significantly. Check your
+// own council's website or your bill for the exact figure.
+export const COUNCIL_TAX_BAND_MULTIPLIERS = {
+  A: 6 / 9,
+  B: 7 / 9,
+  C: 8 / 9,
+  D: 9 / 9,
+  E: 11 / 9,
+  F: 13 / 9,
+  G: 15 / 9,
+  H: 18 / 9,
+} as const;
+export const COUNCIL_TAX_ENGLAND_AVERAGE_BAND_D = 2280;
+export const COUNCIL_TAX_SINGLE_OCCUPANT_DISCOUNT = 0.25;
+// Since April 2025, councils in England have been able to charge a premium of
+// up to 100% on most second homes. Not every council applies the maximum, so
+// this is a common illustrative figure rather than a universal rule.
+export const COUNCIL_TAX_SECOND_HOME_PREMIUM = 1.0;
+// Illustrative typical split of a council tax bill by service, since this varies
+// a lot by council and area. For guidance only.
+export const COUNCIL_TAX_SERVICE_BREAKDOWN_PERCENT = {
+  councilServices: 63,
+  adultSocialCare: 11,
+  policeAndCrimeCommissioner: 12,
+  fireAndRescue: 3,
+  parishAndOther: 11,
+} as const;
+
+// --- Domestic energy (Ofgem-style unit rates and typical consumption) -------
+// Illustrative default unit rates and standing charges, reflecting the general
+// level of the Ofgem energy price cap for a typical dual-fuel direct debit
+// customer at time of writing. The cap changes every three months, so these
+// are editable starting points, not a live quote. Check ofgem.gov.uk or a
+// recent bill for the current cap.
+export const ENERGY_ELECTRICITY_UNIT_RATE_PENCE = 25.7;
+export const ENERGY_ELECTRICITY_STANDING_CHARGE_PENCE_PER_DAY = 51.0;
+export const ENERGY_GAS_UNIT_RATE_PENCE = 6.3;
+export const ENERGY_GAS_STANDING_CHARGE_PENCE_PER_DAY = 30.0;
+export const ENERGY_OIL_PRICE_PENCE_PER_LITRE = 68.0;
+// Ofgem's published Typical Domestic Consumption Values (TDCV), used as the
+// industry standard reference for a "medium" gas and electricity user.
+export const ENERGY_TDCV_ELECTRICITY_MEDIUM_KWH = 2700;
+export const ENERGY_TDCV_GAS_MEDIUM_KWH = 11500;

@@ -102,6 +102,20 @@ const CTA_CONTENT: Record<
     buttonLabel: "Calculate my tax bill",
     href: "/calculators/self-employed-tax-calculator-uk",
   },
+  "uk-council-tax-guide-2026": {
+    title: "Calculate your council tax",
+    description:
+      "Get an instant estimate of your annual and monthly council tax bill by band and region, including single occupant discount and second home premium.",
+    buttonLabel: "Calculate my council tax",
+    href: "/calculators/council-tax-calculator-uk",
+  },
+  "reduce-uk-energy-bills-2026": {
+    title: "Calculate your energy bill",
+    description:
+      "Estimate your annual and monthly gas and electricity bill based on your household size, property type, heating system and unit rates.",
+    buttonLabel: "Calculate my energy bill",
+    href: "/calculators/energy-bill-calculator-uk",
+  },
 };
 
 const DISCLAIMER =
@@ -177,6 +191,18 @@ const RELATED_CALCULATOR_SLUGS: Record<string, string[]> = {
     "national-insurance-calculator-uk",
     "take-home-pay-calculator-uk",
     "vat-calculator-uk",
+  ],
+  "uk-council-tax-guide-2026": [
+    "council-tax-calculator-uk",
+    "mortgage-calculator-uk",
+    "stamp-duty-calculator-uk",
+    "savings-goal-calculator-uk",
+  ],
+  "reduce-uk-energy-bills-2026": [
+    "energy-bill-calculator-uk",
+    "loft-insulation-calculator-uk",
+    "water-bill-calculator-uk",
+    "savings-goal-calculator-uk",
   ],
 };
 

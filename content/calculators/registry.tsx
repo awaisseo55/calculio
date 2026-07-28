@@ -40,6 +40,11 @@ import * as flooring from "./flooring-calculator-uk";
 import * as concrete from "./concrete-calculator-uk";
 import * as kitchenRenovationCost from "./kitchen-renovation-cost-calculator-uk";
 import * as loftInsulation from "./loft-insulation-calculator-uk";
+import * as councilTax from "./council-tax-calculator-uk";
+import * as energyBill from "./energy-bill-calculator-uk";
+import * as salaryToHourly from "./salary-to-hourly-calculator-uk";
+import * as pregnancyWeeks from "./pregnancy-weeks-calculator-uk";
+import * as ovulation from "./ovulation-calculator-uk";
 
 interface CalculatorContent {
   SeoContent: ComponentType;
@@ -86,4 +91,9 @@ export const calculatorContent: Record<string, CalculatorContent> = {
   "concrete-calculator-uk": concrete,
   "kitchen-renovation-cost-calculator-uk": kitchenRenovationCost,
   "loft-insulation-calculator-uk": loftInsulation,
+  "council-tax-calculator-uk": councilTax,
+  "energy-bill-calculator-uk": energyBill,
+  "salary-to-hourly-calculator-uk": salaryToHourly,
+  "pregnancy-weeks-calculator-uk": pregnancyWeeks,
+  "ovulation-calculator-uk": ovulation,
 };

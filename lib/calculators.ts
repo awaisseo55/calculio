@@ -597,6 +597,83 @@ export const calculators: CalculatorMeta[] = [
     featured: true,
     schemaType: "SoftwareApplication",
   },
+  {
+    slug: "council-tax-calculator-uk",
+    name: "Council Tax Calculator",
+    shortName: "Council Tax",
+    h1: "UK Council Tax Calculator 2026/27",
+    category: "home",
+    description:
+      "Estimate your annual and monthly council tax bill by band and region, including single occupant discount and second home premium.",
+    metaTitle: "Council Tax Calculator UK 2026/27 | By Band | Calculio",
+    metaDescription:
+      "Estimate your UK council tax bill for 2026/27 by band and region, with single occupant discount, second home premium and a national average comparison.",
+    keywords: ["council tax calculator uk", "how much is my council tax 2026", "council tax band calculator"],
+    icon: "Landmark",
+    featured: true,
+    schemaType: "SoftwareApplication",
+  },
+  {
+    slug: "energy-bill-calculator-uk",
+    name: "Energy Bill Calculator",
+    shortName: "Energy Bill",
+    h1: "UK Energy Bill Calculator 2026",
+    category: "home",
+    description:
+      "Estimate your annual gas and electricity bill based on household size, property type, heating system and unit rates.",
+    metaTitle: "Energy Bill Calculator UK 2026 | Gas & Electric | Calculio",
+    metaDescription:
+      "Calculate your UK gas and electricity bill for 2026. Enter your household size, property type and heating system for an annual and monthly cost estimate.",
+    keywords: ["energy bill calculator uk", "how much is my energy bill 2026", "gas and electric cost calculator"],
+    icon: "Plug",
+    featured: true,
+    schemaType: "SoftwareApplication",
+  },
+  {
+    slug: "salary-to-hourly-calculator-uk",
+    name: "Salary to Hourly Rate Calculator",
+    shortName: "Salary to Hourly",
+    h1: "UK Salary to Hourly Rate Calculator",
+    category: "tax",
+    description:
+      "Convert your annual salary into a gross and net hourly rate, accounting for holidays, sick days and UK tax.",
+    metaTitle: "Salary to Hourly Rate Calculator UK | Calculio",
+    metaDescription:
+      "Convert your UK annual salary into an hourly rate. See your gross and net hourly pay after tax, plus a comparison to the National Living Wage.",
+    keywords: ["salary to hourly uk", "hourly rate calculator uk", "convert annual salary to hourly"],
+    icon: "Clock",
+    schemaType: "SoftwareApplication",
+  },
+  {
+    slug: "pregnancy-weeks-calculator-uk",
+    name: "Pregnancy Weeks Calculator",
+    shortName: "Pregnancy Weeks",
+    h1: "How Many Weeks Pregnant Am I? Calculator",
+    category: "health",
+    description:
+      "Track your current gestational week and day, trimester, and next NHS milestone from your last period, conception or IVF transfer date.",
+    metaTitle: "Pregnancy Weeks Calculator UK | How Far Along | Calculio",
+    metaDescription:
+      "Find out exactly how many weeks and days pregnant you are, your trimester, and your next NHS milestone, from your last period or conception date.",
+    keywords: ["how many weeks pregnant calculator", "pregnancy weeks calculator uk", "gestational age calculator"],
+    icon: "CalendarDays",
+    schemaType: "SoftwareApplication",
+  },
+  {
+    slug: "ovulation-calculator-uk",
+    name: "Ovulation Calculator",
+    shortName: "Ovulation",
+    h1: "UK Ovulation and Fertility Calculator",
+    category: "health",
+    description:
+      "Estimate your ovulation date, fertile window and next expected period from your last period date and average cycle length.",
+    metaTitle: "Ovulation Calculator UK | Fertile Window | Calculio",
+    metaDescription:
+      "Estimate your ovulation date and fertile window from your last period and cycle length, plus your next 3 projected cycles. Estimate only, NHS-aligned.",
+    keywords: ["ovulation calculator uk", "fertile window calculator", "when am i most fertile uk"],
+    icon: "Heart",
+    schemaType: "SoftwareApplication",
+  },
 ];
 
 export function getCalculator(slug: string): CalculatorMeta | undefined {

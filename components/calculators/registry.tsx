@@ -37,6 +37,11 @@ import { FlooringCalculator } from "@/components/calculators/flooring-calculator
 import { ConcreteCalculator } from "@/components/calculators/concrete-calculator";
 import { KitchenRenovationCostCalculator } from "@/components/calculators/kitchen-renovation-cost-calculator";
 import { LoftInsulationCalculator } from "@/components/calculators/loft-insulation-calculator";
+import { CouncilTaxCalculator } from "@/components/calculators/council-tax-calculator";
+import { EnergyBillCalculator } from "@/components/calculators/energy-bill-calculator";
+import { SalaryToHourlyCalculator } from "@/components/calculators/salary-to-hourly-calculator";
+import { PregnancyWeeksCalculator } from "@/components/calculators/pregnancy-weeks-calculator";
+import { OvulationCalculator } from "@/components/calculators/ovulation-calculator";
 import type { ComponentType } from "react";
 
 export const calculatorComponents: Record<string, ComponentType> = {
@@ -79,4 +84,9 @@ export const calculatorComponents: Record<string, ComponentType> = {
   "concrete-calculator-uk": ConcreteCalculator,
   "kitchen-renovation-cost-calculator-uk": KitchenRenovationCostCalculator,
   "loft-insulation-calculator-uk": LoftInsulationCalculator,
+  "council-tax-calculator-uk": CouncilTaxCalculator,
+  "energy-bill-calculator-uk": EnergyBillCalculator,
+  "salary-to-hourly-calculator-uk": SalaryToHourlyCalculator,
+  "pregnancy-weeks-calculator-uk": PregnancyWeeksCalculator,
+  "ovulation-calculator-uk": OvulationCalculator,
 };

@@ -13,6 +13,8 @@ import * as londonDrivingCharges from "./london-driving-charges-2026";
 import * as statePensionGuide from "./uk-state-pension-guide-2026";
 import * as firstHomeCost from "./first-home-cost-uk-2026";
 import * as freelancerHourlyRate from "./freelancer-hourly-rate-uk-2026";
+import * as councilTaxGuide from "./uk-council-tax-guide-2026";
+import * as reduceEnergyBills from "./reduce-uk-energy-bills-2026";
 
 interface BlogPostContent {
   ArticleContent: ComponentType;
@@ -32,4 +34,6 @@ export const blogContent: Record<string, BlogPostContent> = {
   "uk-state-pension-guide-2026": statePensionGuide,
   "first-home-cost-uk-2026": firstHomeCost,
   "freelancer-hourly-rate-uk-2026": freelancerHourlyRate,
+  "uk-council-tax-guide-2026": councilTaxGuide,
+  "reduce-uk-energy-bills-2026": reduceEnergyBills,
 };

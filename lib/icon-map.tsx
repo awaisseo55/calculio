@@ -39,6 +39,10 @@ import {
   Construction,
   ChefHat,
   Layers,
+  Plug,
+  Clock,
+  CalendarDays,
+  Heart,
   type LucideIcon,
 } from "lucide-react";
 
@@ -83,6 +87,10 @@ export const iconMap: Record<string, LucideIcon> = {
   Construction,
   ChefHat,
   Layers,
+  Plug,
+  Clock,
+  CalendarDays,
+  Heart,
 };
 
 export function getIcon(name: string): LucideIcon {

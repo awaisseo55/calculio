@@ -244,6 +244,48 @@ export const blogPosts: BlogPostMeta[] = [
     featuredImageAlt: "Calculio guide to calculating your true freelance hourly rate",
     wordCount: 1413,
   },
+  {
+    slug: "uk-council-tax-guide-2026",
+    title: "The Complete UK Council Tax Guide for 2026/27",
+    metaTitle: "UK Council Tax Guide 2026/27: Bands, Discounts | Calculio",
+    metaDescription:
+      "A complete guide to UK council tax for 2026/27: bands A to H explained, how bills are calculated, discounts and exemptions, and how to challenge your band.",
+    excerpt:
+      "Council tax bands A to H explained, how your bill is calculated, who gets a discount or exemption, and what happens if you do not pay.",
+    category: "Home",
+    categorySlug: "home",
+    categoryHref: "/categories/home",
+    tags: ["council tax", "council tax bands", "local government", "UK property", "household bills"],
+    authorSlug: "james-whitfield",
+    reviewerSlug: "emily-thorne",
+    publishDate: "2026-07-29",
+    updatedDate: "2026-07-29",
+    featuredImage:
+      "/og?title=The%20Complete%20UK%20Council%20Tax%20Guide%20for%202026%2F27&subtitle=calculio.co.uk",
+    featuredImageAlt: "Calculio guide to UK council tax bands and bills for 2026/27",
+    wordCount: 2350,
+  },
+  {
+    slug: "reduce-uk-energy-bills-2026",
+    title: "How to Reduce Your UK Energy Bills in 2026",
+    metaTitle: "How to Reduce Your UK Energy Bills in 2026 | Calculio",
+    metaDescription:
+      "Practical ways to cut your UK gas and electricity bills in 2026: the Ofgem price cap explained, room-by-room savings, insulation payback, and grants available.",
+    excerpt:
+      "The Ofgem price cap explained, room-by-room ways to save, which home improvements actually pay back, and the grants and schemes worth checking.",
+    category: "Home",
+    categorySlug: "home",
+    categoryHref: "/categories/home",
+    tags: ["energy bills", "Ofgem", "gas and electricity", "home improvements", "cost of living"],
+    authorSlug: "james-whitfield",
+    reviewerSlug: "emily-thorne",
+    publishDate: "2026-07-29",
+    updatedDate: "2026-07-29",
+    featuredImage:
+      "/og?title=How%20to%20Reduce%20Your%20UK%20Energy%20Bills%20in%202026&subtitle=calculio.co.uk",
+    featuredImageAlt: "Calculio guide to reducing UK gas and electricity bills in 2026",
+    wordCount: 2350,
+  },
 ];
 
 export function getBlogPost(slug: string): BlogPostMeta | undefined {
