@@ -286,6 +286,90 @@ export const blogPosts: BlogPostMeta[] = [
     featuredImageAlt: "Calculio guide to reducing UK gas and electricity bills in 2026",
     wordCount: 2350,
   },
+  {
+    slug: "electric-vs-petrol-cost-comparison-uk-2026",
+    title: "Is an Electric Car Cheaper Than Petrol in the UK in 2026?",
+    metaTitle: "Electric vs Petrol Car Costs UK 2026 | Calculio",
+    metaDescription:
+      "A full UK cost comparison of electric vs petrol cars for 2026: upfront price, running costs, charging, depreciation, and when an EV actually saves money.",
+    excerpt:
+      "Upfront price, running costs, charging practicalities, depreciation and the mileage break-even point that decides whether an EV actually saves you money.",
+    category: "Motoring",
+    categorySlug: "motoring",
+    categoryHref: "/categories/motoring",
+    tags: ["electric cars", "EV", "petrol", "motoring costs", "road tax"],
+    authorSlug: "james-whitfield",
+    reviewerSlug: "daniel-ashcroft",
+    publishDate: "2026-08-01",
+    updatedDate: "2026-08-01",
+    featuredImage:
+      "/og?title=Is%20an%20Electric%20Car%20Cheaper%20Than%20Petrol%20in%20the%20UK%20in%202026%3F&subtitle=calculio.co.uk",
+    featuredImageAlt: "Calculio guide comparing electric and petrol car costs in the UK for 2026",
+    wordCount: 1420,
+  },
+  {
+    slug: "uk-redundancy-guide-2026",
+    title: "UK Redundancy Rights and Pay Explained for 2026",
+    metaTitle: "UK Redundancy Rights and Pay Guide 2026 | Calculio",
+    metaDescription:
+      "A complete guide to UK redundancy in 2026: statutory pay rules, notice periods, tax on redundancy pay, enhanced packages, and your rights during the process.",
+    excerpt:
+      "Statutory redundancy pay by age band, notice periods, the £30,000 tax-free limit, enhanced packages, and what to check before signing anything.",
+    category: "Tax",
+    categorySlug: "tax",
+    categoryHref: "/categories/tax",
+    tags: ["redundancy", "employment rights", "HMRC", "ACAS", "notice period"],
+    authorSlug: "james-whitfield",
+    reviewerSlug: "emily-thorne",
+    publishDate: "2026-08-01",
+    updatedDate: "2026-08-01",
+    featuredImage:
+      "/og?title=UK%20Redundancy%20Rights%20and%20Pay%20Explained%20for%202026&subtitle=calculio.co.uk",
+    featuredImageAlt: "Calculio guide to UK redundancy rights and pay for 2026",
+    wordCount: 1400,
+  },
+  {
+    slug: "uk-sick-pay-guide-2026",
+    title: "Understanding UK Sick Pay: Your Rights Explained",
+    metaTitle: "UK Sick Pay Rules Explained 2026 | SSP Guide | Calculio",
+    metaDescription:
+      "How UK sick pay works in 2026: the new SSP rate and day-one rules, company sick pay schemes, self-employed options, and your rights when off sick.",
+    excerpt:
+      "The new 2026 SSP rate and day-one rules, how company sick pay schemes usually work, and what self-employed workers can claim instead.",
+    category: "Tax",
+    categorySlug: "tax",
+    categoryHref: "/categories/tax",
+    tags: ["sick pay", "SSP", "employment rights", "self-employed", "HMRC"],
+    authorSlug: "james-whitfield",
+    reviewerSlug: "emily-thorne",
+    publishDate: "2026-08-01",
+    updatedDate: "2026-08-01",
+    featuredImage:
+      "/og?title=Understanding%20UK%20Sick%20Pay%3A%20Your%20Rights%20Explained&subtitle=calculio.co.uk",
+    featuredImageAlt: "Calculio guide to UK sick pay rights and Statutory Sick Pay",
+    wordCount: 1380,
+  },
+  {
+    slug: "winter-fuel-payment-guide-2026",
+    title: "The Winter Fuel Payment: Everything You Need to Know for 2026",
+    metaTitle: "Winter Fuel Payment 2026 Guide: Eligibility & Amount",
+    metaDescription:
+      "Everything about the UK Winter Fuel Payment for 2026/27: who qualifies, how much you get, how to apply, and other cold weather support available.",
+    excerpt:
+      "Who qualifies for the Winter Fuel Payment in 2026/27, how much you could get, the income clawback rules, and other winter energy support to check.",
+    category: "Finance",
+    categorySlug: "finance",
+    categoryHref: "/categories/finance",
+    tags: ["Winter Fuel Payment", "DWP", "pensioners", "energy bills", "benefits"],
+    authorSlug: "james-whitfield",
+    reviewerSlug: "emily-thorne",
+    publishDate: "2026-08-01",
+    updatedDate: "2026-08-01",
+    featuredImage:
+      "/og?title=The%20Winter%20Fuel%20Payment%3A%20Everything%20You%20Need%20to%20Know%20for%202026&subtitle=calculio.co.uk",
+    featuredImageAlt: "Calculio guide to the UK Winter Fuel Payment for 2026/27",
+    wordCount: 1360,
+  },
 ];
 
 export function getBlogPost(slug: string): BlogPostMeta | undefined {

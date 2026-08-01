@@ -112,7 +112,16 @@ export function SeoContent() {
         for that deduction on its own. And if
         you&apos;re weighing up a house purchase against your new take-home pay, check
         our <Link href="/calculators/mortgage-calculator-uk">mortgage calculator</Link> to see
-        what you could comfortably afford.
+        what you could comfortably afford. If you are moving to part-time or
+        reduced hours, our{" "}
+        <Link href="/calculators/reduced-hours-pay-calculator-uk">
+          reduced hours pay calculator
+        </Link>{" "}
+        shows exactly how your take-home pay changes, and our{" "}
+        <Link href="/calculators/sick-pay-calculator-uk">
+          sick pay calculator
+        </Link>{" "}
+        covers what you are owed during a period of sickness.
       </p>
     </div>
   );

@@ -121,7 +121,13 @@ export function SeoContent() {
         <Link href="/calculators/congestion-charge-ulez-calculator-uk">
           Congestion Charge and ULEZ calculator
         </Link>{" "}
-        covers those additional daily costs too.
+        covers those additional daily costs too. If you are weighing up a
+        switch to electric, our{" "}
+        <Link href="/calculators/electric-car-running-cost-calculator-uk">
+          electric car running cost calculator
+        </Link>{" "}
+        compares total running costs, VED included, against an equivalent
+        petrol car.
       </p>
     </div>
   );

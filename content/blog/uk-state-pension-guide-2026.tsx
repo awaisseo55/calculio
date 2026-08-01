@@ -223,7 +223,12 @@ export function ArticleContent() {
           compound interest
         </Link>{" "}
         explains why starting private saving early makes such a difference
-        over a working lifetime.
+        over a working lifetime. Once you reach State Pension age, it is
+        also worth checking our{" "}
+        <Link href="/calculators/winter-fuel-payment-calculator-uk">
+          Winter Fuel Payment calculator
+        </Link>{" "}
+        for a separate, tax-free payment towards your winter heating costs.
       </p>
 
       <h2 id="faq">Frequently asked questions</h2>

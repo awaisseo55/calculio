@@ -219,6 +219,11 @@ export function ArticleContent() {
         VED is sorted, our{" "}
         <Link href="/calculators/fuel-cost-calculator-uk">fuel cost calculator</Link>{" "}
         is the next place to check for a full picture of your annual motoring budget.
+        If you are weighing up an electric car now that EVs pay VED too, our{" "}
+        <Link href="/calculators/electric-car-running-cost-calculator-uk">
+          electric car running cost calculator
+        </Link>{" "}
+        compares the full running cost against an equivalent petrol car.
       </p>
 
       <h2 id="faq">Frequently asked questions</h2>

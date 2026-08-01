@@ -409,7 +409,14 @@ export function ArticleContent() {
         liabilities and penalties. Our{" "}
         <Link href="/calculators/vat-calculator-uk">VAT calculator</Link> can
         help you understand how VAT would affect your pricing once you cross
-        that point.
+        that point. It is also worth planning for the lack of Statutory Sick
+        Pay as a sole trader; our{" "}
+        <Link href="/calculators/sick-pay-calculator-uk">
+          sick pay calculator
+        </Link>{" "}
+        shows what an employee in a similar role would be entitled to,
+        useful context for deciding how much of a buffer to build for
+        yourself.
       </p>
 
       <h2 id="faq">Frequently asked questions</h2>

@@ -228,7 +228,7 @@ export function ArticleContent() {
       </p>
       <p>
         The Warm Home Discount provides a one-off annual reduction applied
-        directly to eligible households' electricity bills, generally
+        directly to eligible households&apos; electricity bills, generally
         targeted at people receiving certain means-tested benefits. The Cold
         Weather Payment is a separate, automatic payment triggered when
         average local temperatures fall below a set threshold for a sustained
@@ -299,7 +299,7 @@ export function ArticleContent() {
         electricity produced is used directly in the home rather than
         exported back to the grid, since export rates are typically lower
         than what you would otherwise pay to import electricity. Payback
-        periods vary widely depending on your roof's orientation, any
+        periods vary widely depending on your roof&apos;s orientation, any
         shading from nearby buildings or trees, your usage patterns, and the
         upfront cost, so a personalised quote from an accredited installer is
         far more useful than a generic UK-wide average.

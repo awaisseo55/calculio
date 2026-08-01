@@ -75,7 +75,7 @@ export function ArticleContent() {
         raised typically funds a wide range of local services: waste
         collection, road maintenance, libraries, and social services, plus a
         portion passed to your local police and fire services through
-        separate precepts added on top of the council's own charge.
+        separate precepts added on top of the council&apos;s own charge.
       </p>
       <p>
         In most cases, the person liable to pay is the resident who owns the
@@ -116,7 +116,7 @@ export function ArticleContent() {
         Every residential property in England, Scotland and Wales is placed
         into one of eight council tax bands, from A to H, based on an
         estimated property value at a fixed historical valuation date, not
-        today's market value. In England, that date is 1 April 1991. In
+        today&apos;s market value. In England, that date is 1 April 1991. In
         Wales, properties were revalued and rebanded based on 1 April 2003
         values. In Scotland, the same 1991 valuation date as England is used.
         This is why a home that has doubled in value since the 1990s usually
@@ -144,7 +144,7 @@ export function ArticleContent() {
         of the Band D charge. Bands A to C pay progressively less than Band
         D, while Bands E to H pay progressively more, all the way up to
         Band H, which pays exactly double the Band D rate. You can check your
-        own property's band for free on GOV.UK, or estimate your bill
+        own property&apos;s band for free on GOV.UK, or estimate your bill
         directly with our{" "}
         <Link href="/calculators/council-tax-calculator-uk">
           council tax calculator
@@ -160,7 +160,7 @@ export function ArticleContent() {
         bands and the same 1991 valuation date as England, but sets its own
         Band D charge and local precepts independently through its own
         councils. If you are comparing a move between nations, do not assume
-        a property's English band automatically tells you what it would be
+        a property&apos;s English band automatically tells you what it would be
         banded at in Wales or Scotland.
       </p>
 
@@ -168,16 +168,16 @@ export function ArticleContent() {
       <p>
         Each council sets its own Band D charge every year, based on its
         budget requirements, government funding, and any additional
-        precepts. Every other band's charge is then worked out as a fixed
+        precepts. Every other band&apos;s charge is then worked out as a fixed
         proportion of that Band D figure: Band A pays six ninths, Band E
         pays eleven ninths, Band H pays eighteen ninths (double), and so on
         through the full A to H scale. This means a council raising its Band
-        D rate by 5% raises every other band's bill by roughly the same
+        D rate by 5% raises every other band&apos;s bill by roughly the same
         percentage, since the underlying ratios between bands are fixed by
         law and do not change.
       </p>
       <p>
-        On top of the council's own charge, most bills include separate
+        On top of the council&apos;s own charge, most bills include separate
         precepts: a police and crime commissioner precept, a fire and rescue
         precept, and in some areas, a parish or town council precept or a
         mayoral precept. Each of these is set independently and added to
@@ -235,7 +235,7 @@ export function ArticleContent() {
         People who are severely mentally impaired, along with the person
         they live with in some circumstances, can also qualify for a
         discount or exemption, and a disability reduction scheme exists that
-        can move a property's effective band down by one full band if it has
+        can move a property&apos;s effective band down by one full band if it has
         been adapted to meet the needs of a disabled resident, for example
         with a wheelchair-accessible room or an extra bathroom needed for
         their condition.
@@ -259,7 +259,7 @@ export function ArticleContent() {
       </p>
       <p>
         A lesser-known discount applies to annexes: a self-contained annexe
-        used by the resident's family, or one left empty because it is
+        used by the resident&apos;s family, or one left empty because it is
         unsuitable to let out separately, can qualify for a 50% reduction on
         top of any other discount that applies. Rules like this vary in
         detail between councils, so if your property has an annexe, granny
@@ -274,8 +274,8 @@ export function ArticleContent() {
         letter from your council, giving you a short period to catch up.
         Continuing to miss payments after a reminder typically means losing
         the right to pay in instalments altogether, with the full remaining
-        year's bill becoming due immediately. If it still goes unpaid, the
-        council can apply to the magistrates' court for a liability order,
+        year&apos;s bill becoming due immediately. If it still goes unpaid, the
+        council can apply to the magistrates&apos; court for a liability order,
         adding court costs to what you owe, and ultimately pursue enforcement
         through bailiffs (enforcement agents), deductions directly from
         wages or certain benefits, or in the most serious and rare cases, a

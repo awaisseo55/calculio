@@ -674,6 +674,97 @@ export const calculators: CalculatorMeta[] = [
     icon: "Heart",
     schemaType: "SoftwareApplication",
   },
+  {
+    slug: "reduced-hours-pay-calculator-uk",
+    name: "Reduced Hours Pay Calculator",
+    shortName: "Reduced Hours Pay",
+    h1: "UK Reduced Hours & Part-Time Pay Calculator",
+    category: "tax",
+    description:
+      "Work out your new gross salary and take-home pay if you move to reduced or part-time hours, including the impact on your pension.",
+    metaTitle: "Reduced Hours Pay Calculator UK 2026 | Part-Time Salary",
+    metaDescription:
+      "Calculate your new salary and take-home pay for reduced or part-time hours in the UK. See the impact on tax, National Insurance and your pension.",
+    keywords: ["reduced hours pay calculator uk", "furlough pay calculator", "part time salary calculator uk"],
+    icon: "Clock",
+    schemaType: "SoftwareApplication",
+  },
+  {
+    slug: "electric-car-running-cost-calculator-uk",
+    name: "Electric Car Running Cost Calculator",
+    shortName: "EV Running Cost",
+    h1: "UK Electric Car Running Cost Calculator",
+    category: "motoring",
+    description:
+      "Estimate your annual electric car running cost from mileage, efficiency and charging habits, and compare it to an equivalent petrol car.",
+    metaTitle: "EV Running Cost Calculator UK 2026 | Electric Car Costs",
+    metaDescription:
+      "Calculate your UK electric car running cost for 2026, including home and public charging, insurance, servicing and VED, plus savings vs petrol.",
+    keywords: ["ev running cost calculator uk", "electric car cost calculator", "is an electric car cheaper uk 2026"],
+    icon: "Zap",
+    featured: true,
+    schemaType: "SoftwareApplication",
+  },
+  {
+    slug: "winter-fuel-payment-calculator-uk",
+    name: "Winter Fuel Payment Calculator",
+    shortName: "Winter Fuel Payment",
+    h1: "UK Winter Fuel Payment Eligibility Calculator",
+    category: "finance",
+    description:
+      "Check whether you are likely to be eligible for the Winter Fuel Payment and estimate how much you could get this winter.",
+    metaTitle: "Winter Fuel Payment Calculator 2026 | Am I Eligible?",
+    metaDescription:
+      "Check your Winter Fuel Payment eligibility for 2026/27 and estimate your payment amount based on your age, household and income.",
+    keywords: ["winter fuel payment calculator 2026", "am i eligible for winter fuel payment uk", "winter fuel payment amount"],
+    icon: "Sunset",
+    schemaType: "SoftwareApplication",
+  },
+  {
+    slug: "sick-pay-calculator-uk",
+    name: "Sick Pay Calculator",
+    shortName: "Sick Pay",
+    h1: "UK Sick Pay Calculator (SSP & Company Pay)",
+    category: "tax",
+    description:
+      "Estimate your Statutory Sick Pay and any company sick pay entitlement, with a breakdown of what your employer pays and when SSP runs out.",
+    metaTitle: "Sick Pay Calculator UK 2026 | SSP & Company Pay",
+    metaDescription:
+      "Work out how much sick pay you'll get in the UK for 2026/27. See your Statutory Sick Pay and company sick pay breakdown for any number of sick days.",
+    keywords: ["sick pay calculator uk", "ssp calculator 2026", "how much sick pay will i get uk"],
+    icon: "ShieldCheck",
+    schemaType: "SoftwareApplication",
+  },
+  {
+    slug: "redundancy-pay-calculator-uk",
+    name: "Redundancy Pay Calculator",
+    shortName: "Redundancy Pay",
+    h1: "UK Redundancy Pay Calculator 2026",
+    category: "tax",
+    description:
+      "Calculate your statutory redundancy pay based on your age, length of service and weekly pay, plus an enhanced package comparison.",
+    metaTitle: "Redundancy Pay Calculator UK 2026 | Statutory & Enhanced",
+    metaDescription:
+      "Calculate your UK statutory redundancy pay for 2026/27 based on age, years of service and weekly pay, with a tax-free amount and enhanced pay comparison.",
+    keywords: ["redundancy pay calculator uk 2026", "how much redundancy will i get", "statutory redundancy calculator"],
+    icon: "Briefcase",
+    schemaType: "SoftwareApplication",
+  },
+  {
+    slug: "split-bill-calculator-uk",
+    name: "Split Bill Calculator",
+    shortName: "Split Bill",
+    h1: "UK Split Bill & Tip Calculator",
+    category: "everyday",
+    description:
+      "Split a restaurant bill evenly or by what everyone ordered, with tip included, and see exactly what each person owes.",
+    metaTitle: "Split Bill Calculator UK | Restaurant Bill Splitter",
+    metaDescription:
+      "Split any bill between friends, with or without tip. Divide evenly or by what each person ordered and see a clear per-person breakdown.",
+    keywords: ["split bill calculator uk", "restaurant bill splitter", "who pays what calculator"],
+    icon: "LayoutGrid",
+    schemaType: "SoftwareApplication",
+  },
 ];
 
 export function getCalculator(slug: string): CalculatorMeta | undefined {

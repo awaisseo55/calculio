@@ -272,3 +272,41 @@ export const ENERGY_OIL_PRICE_PENCE_PER_LITRE = 68.0;
 // industry standard reference for a "medium" gas and electricity user.
 export const ENERGY_TDCV_ELECTRICITY_MEDIUM_KWH = 2700;
 export const ENERGY_TDCV_GAS_MEDIUM_KWH = 11500;
+
+// --- Statutory Sick Pay (SSP), 2026/27 ---------------------------------------
+// From 6 April 2026, reforms under the Employment Rights Act 2025 made SSP
+// payable from day one of sickness (removing the old 3-day waiting period) and
+// removed the Lower Earnings Limit that used to exclude the lowest earners.
+// SSP is now the lower of the flat weekly rate below or 80% of average weekly
+// earnings. Always confirm the current rate on gov.uk, since it is reviewed
+// every April.
+export const SSP_WEEKLY_RATE = 123.25;
+export const SSP_RATE_CAP_PERCENT_OF_AWE = 0.8;
+export const SSP_MAX_WEEKS = 28;
+
+// --- Statutory Redundancy Pay, 2026/27 ---------------------------------------
+// The weekly pay figure used in the statutory formula is capped at this
+// amount, regardless of actual earnings. Reviewed every April. Full statutory
+// redundancy pay is also tax-free up to the combined limit below.
+export const REDUNDANCY_WEEKLY_PAY_CAP = 751;
+export const REDUNDANCY_MAX_YEARS_SERVICE = 20;
+export const REDUNDANCY_TAX_FREE_LIMIT = 30000;
+// Multiplier applied to a capped week's pay for each full year of service,
+// based on the employee's age during that year of service.
+export const REDUNDANCY_AGE_BAND_MULTIPLIERS = {
+  under22: 0.5,
+  age22to40: 1.0,
+  over41: 1.5,
+} as const;
+
+// --- Winter Fuel Payment, 2026/27 --------------------------------------------
+// Paid once per household to people who have reached State Pension age by the
+// qualifying date, usually in mid-to-late September, set each year. Since
+// 2025/26 all pensioner households qualify, but anyone with taxable income
+// above the threshold below has the payment recovered through their tax
+// return unless they opt out. Always confirm the current qualifying date and
+// threshold on gov.uk, since DWP reviews these each year.
+export const WINTER_FUEL_PAYMENT_STANDARD = 200;
+export const WINTER_FUEL_PAYMENT_OVER_80 = 300;
+export const WINTER_FUEL_PAYMENT_INCOME_THRESHOLD = 35000;
+export const STATE_PENSION_AGE = 66;

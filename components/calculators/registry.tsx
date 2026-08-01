@@ -42,6 +42,12 @@ import { EnergyBillCalculator } from "@/components/calculators/energy-bill-calcu
 import { SalaryToHourlyCalculator } from "@/components/calculators/salary-to-hourly-calculator";
 import { PregnancyWeeksCalculator } from "@/components/calculators/pregnancy-weeks-calculator";
 import { OvulationCalculator } from "@/components/calculators/ovulation-calculator";
+import { ReducedHoursPayCalculator } from "@/components/calculators/reduced-hours-pay-calculator";
+import { ElectricCarRunningCostCalculator } from "@/components/calculators/electric-car-running-cost-calculator";
+import { WinterFuelPaymentCalculator } from "@/components/calculators/winter-fuel-payment-calculator";
+import { SickPayCalculator } from "@/components/calculators/sick-pay-calculator";
+import { RedundancyPayCalculator } from "@/components/calculators/redundancy-pay-calculator";
+import { SplitBillCalculator } from "@/components/calculators/split-bill-calculator";
 import type { ComponentType } from "react";
 
 export const calculatorComponents: Record<string, ComponentType> = {
@@ -89,4 +95,10 @@ export const calculatorComponents: Record<string, ComponentType> = {
   "salary-to-hourly-calculator-uk": SalaryToHourlyCalculator,
   "pregnancy-weeks-calculator-uk": PregnancyWeeksCalculator,
   "ovulation-calculator-uk": OvulationCalculator,
+  "reduced-hours-pay-calculator-uk": ReducedHoursPayCalculator,
+  "electric-car-running-cost-calculator-uk": ElectricCarRunningCostCalculator,
+  "winter-fuel-payment-calculator-uk": WinterFuelPaymentCalculator,
+  "sick-pay-calculator-uk": SickPayCalculator,
+  "redundancy-pay-calculator-uk": RedundancyPayCalculator,
+  "split-bill-calculator-uk": SplitBillCalculator,
 };

@@ -155,7 +155,12 @@ export function SeoContent() {
           take-home pay
         </Link>{" "}
         will help you see how much room you realistically have to increase
-        your pension contributions. For more on how pension contributions
+        your pension contributions. Once you reach State Pension age, our{" "}
+        <Link href="/calculators/winter-fuel-payment-calculator-uk">
+          Winter Fuel Payment calculator
+        </Link>{" "}
+        is worth checking too, since it is a separate payment on top of
+        your pension income. For more on how pension contributions
         interact with tax, see our{" "}
         <Link href="/blog/uk-income-tax-2026-27">income tax guide</Link>, and
         for the maths behind long-term growth, read our guide to{" "}

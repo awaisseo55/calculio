@@ -45,6 +45,12 @@ import * as energyBill from "./energy-bill-calculator-uk";
 import * as salaryToHourly from "./salary-to-hourly-calculator-uk";
 import * as pregnancyWeeks from "./pregnancy-weeks-calculator-uk";
 import * as ovulation from "./ovulation-calculator-uk";
+import * as reducedHoursPay from "./reduced-hours-pay-calculator-uk";
+import * as electricCarRunningCost from "./electric-car-running-cost-calculator-uk";
+import * as winterFuelPayment from "./winter-fuel-payment-calculator-uk";
+import * as sickPay from "./sick-pay-calculator-uk";
+import * as redundancyPay from "./redundancy-pay-calculator-uk";
+import * as splitBill from "./split-bill-calculator-uk";
 
 interface CalculatorContent {
   SeoContent: ComponentType;
@@ -96,4 +102,10 @@ export const calculatorContent: Record<string, CalculatorContent> = {
   "salary-to-hourly-calculator-uk": salaryToHourly,
   "pregnancy-weeks-calculator-uk": pregnancyWeeks,
   "ovulation-calculator-uk": ovulation,
+  "reduced-hours-pay-calculator-uk": reducedHoursPay,
+  "electric-car-running-cost-calculator-uk": electricCarRunningCost,
+  "winter-fuel-payment-calculator-uk": winterFuelPayment,
+  "sick-pay-calculator-uk": sickPay,
+  "redundancy-pay-calculator-uk": redundancyPay,
+  "split-bill-calculator-uk": splitBill,
 };

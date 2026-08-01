@@ -209,7 +209,12 @@ export function ArticleContent() {
         periodically. Our{" "}
         <Link href="/blog/uk-car-tax-2026-ved-guide">UK car tax guide</Link>{" "}
         covers how emissions also affect your annual VED bill, if you&apos;re
-        weighing up switching to a lower-emission car.
+        weighing up switching to a lower-emission car. Since electric cars
+        are exempt from ULEZ, our{" "}
+        <Link href="/calculators/electric-car-running-cost-calculator-uk">
+          electric car running cost calculator
+        </Link>{" "}
+        can help you see the combined saving for a regular London commute.
       </p>
 
       <h2 id="faq">Frequently asked questions</h2>

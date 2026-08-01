@@ -116,6 +116,34 @@ const CTA_CONTENT: Record<
     buttonLabel: "Calculate my energy bill",
     href: "/calculators/energy-bill-calculator-uk",
   },
+  "electric-vs-petrol-cost-comparison-uk-2026": {
+    title: "Work out your EV running cost",
+    description:
+      "Estimate your annual electric car running cost from your mileage and charging habits, and compare it directly against an equivalent petrol car.",
+    buttonLabel: "Calculate my EV running cost",
+    href: "/calculators/electric-car-running-cost-calculator-uk",
+  },
+  "uk-redundancy-guide-2026": {
+    title: "Calculate your redundancy pay",
+    description:
+      "Work out your statutory redundancy pay based on your age, years of service and weekly pay, plus an enhanced package comparison.",
+    buttonLabel: "Calculate my redundancy pay",
+    href: "/calculators/redundancy-pay-calculator-uk",
+  },
+  "uk-sick-pay-guide-2026": {
+    title: "Calculate your sick pay",
+    description:
+      "Estimate your Statutory Sick Pay and any company sick pay entitlement, with a full breakdown of what you're owed.",
+    buttonLabel: "Calculate my sick pay",
+    href: "/calculators/sick-pay-calculator-uk",
+  },
+  "winter-fuel-payment-guide-2026": {
+    title: "Check your Winter Fuel Payment eligibility",
+    description:
+      "Find out whether you're likely to be eligible for the Winter Fuel Payment this winter and estimate how much you could get.",
+    buttonLabel: "Check my eligibility",
+    href: "/calculators/winter-fuel-payment-calculator-uk",
+  },
 };
 
 const DISCLAIMER =
@@ -203,6 +231,30 @@ const RELATED_CALCULATOR_SLUGS: Record<string, string[]> = {
     "loft-insulation-calculator-uk",
     "water-bill-calculator-uk",
     "savings-goal-calculator-uk",
+  ],
+  "electric-vs-petrol-cost-comparison-uk-2026": [
+    "electric-car-running-cost-calculator-uk",
+    "fuel-cost-calculator-uk",
+    "road-tax-calculator-uk",
+    "congestion-charge-ulez-calculator-uk",
+  ],
+  "uk-redundancy-guide-2026": [
+    "redundancy-pay-calculator-uk",
+    "take-home-pay-calculator-uk",
+    "income-tax-calculator-uk",
+    "savings-goal-calculator-uk",
+  ],
+  "uk-sick-pay-guide-2026": [
+    "sick-pay-calculator-uk",
+    "take-home-pay-calculator-uk",
+    "self-employed-tax-calculator-uk",
+    "national-insurance-calculator-uk",
+  ],
+  "winter-fuel-payment-guide-2026": [
+    "winter-fuel-payment-calculator-uk",
+    "pension-calculator-uk",
+    "energy-bill-calculator-uk",
+    "council-tax-calculator-uk",
   ],
 };
 

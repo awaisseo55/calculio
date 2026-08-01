@@ -161,7 +161,12 @@ export function SeoContent() {
         <Link href="/blog/reduce-uk-energy-bills-2026">
           how to reduce your energy bills in 2026
         </Link>{" "}
-        for more detailed, room-by-room tips.
+        for more detailed, room-by-room tips. If you are over State Pension
+        age, also check our{" "}
+        <Link href="/calculators/winter-fuel-payment-calculator-uk">
+          Winter Fuel Payment calculator
+        </Link>{" "}
+        to see whether you are eligible for extra help towards this bill.
       </p>
     </div>
   );

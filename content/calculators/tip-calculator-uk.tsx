@@ -122,7 +122,12 @@ export function SeoContent() {
         </Link>{" "}
         so your dining out budget fits comfortably alongside everything else, and
         our <Link href="/calculators/age-calculator">age calculator</Link> for
-        other quick everyday sums.
+        other quick everyday sums. If you are splitting a bigger group bill
+        where people ordered different amounts, our{" "}
+        <Link href="/calculators/split-bill-calculator-uk">
+          split bill calculator
+        </Link>{" "}
+        handles that directly.
       </p>
     </div>
   );
