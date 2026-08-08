@@ -299,6 +299,58 @@ export const REDUNDANCY_AGE_BAND_MULTIPLIERS = {
   over41: 1.5,
 } as const;
 
+// --- Child Benefit, 2026/27 ---------------------------------------------------
+// Paid every 4 weeks, tax-free, to anyone responsible for a child under 16 (or
+// under 20 in approved education or training). Always confirm the current
+// rate on gov.uk, since it is reviewed every April.
+export const CHILD_BENEFIT_ELDEST_WEEKLY = 26.05;
+export const CHILD_BENEFIT_ADDITIONAL_CHILD_WEEKLY = 17.25;
+// The High Income Child Benefit Charge claws back Child Benefit at 1% for
+// every complete £200 of the higher earner's adjusted net income between
+// these two thresholds, reaching a full 100% clawback at the upper threshold.
+export const HICBC_THRESHOLD_LOW = 60000;
+export const HICBC_THRESHOLD_HIGH = 80000;
+export const HICBC_TAPER_WIDTH = HICBC_THRESHOLD_HIGH - HICBC_THRESHOLD_LOW;
+
+// --- Universal Credit, 2026/27 -------------------------------------------------
+// Simplified monthly figures reflecting the current DWP structure. Universal
+// Credit assessment is more detailed than shown here (it can include
+// transitional protection, benefit cap effects, and other elements), so this
+// is a guide only. Always use the official gov.uk benefits calculator or a
+// benefits adviser for an exact figure.
+export const UC_STANDARD_ALLOWANCE_SINGLE_UNDER_25 = 316.98;
+export const UC_STANDARD_ALLOWANCE_SINGLE_25_PLUS = 400.14;
+export const UC_STANDARD_ALLOWANCE_COUPLE_UNDER_25 = 497.55;
+export const UC_STANDARD_ALLOWANCE_COUPLE_25_PLUS = 628.1;
+export const UC_CHILD_ELEMENT_MONTHLY = 292.81;
+// Universal Credit generally only pays the child element for a maximum of two
+// children, unless an exception applies (for example multiple births).
+export const UC_CHILD_ELEMENT_MAX_CHILDREN = 2;
+export const UC_LCWRA_ELEMENT_MONTHLY = 423.27;
+export const UC_WORK_ALLOWANCE_HIGHER = 411; // no housing element in the award
+export const UC_WORK_ALLOWANCE_LOWER = 198; // housing element included
+export const UC_TAPER_RATE = 0.55;
+export const UC_SAVINGS_LOWER_LIMIT = 6000;
+export const UC_SAVINGS_UPPER_LIMIT = 16000;
+export const UC_SAVINGS_TARIFF_INCOME_PER_BLOCK = 4.35;
+export const UC_SAVINGS_TARIFF_BLOCK_SIZE = 250;
+
+// --- Statutory Maternity Pay (SMP) and Maternity Allowance, 2026/27 ---------
+// The first 6 weeks are paid at 90% of average weekly earnings with no cap.
+// The remaining weeks are paid at the lower of the flat weekly rate or 90% of
+// average weekly earnings. Always confirm the current rate on gov.uk, since it
+// is reviewed every April.
+export const SMP_WEEKLY_RATE = 187.18;
+export const SMP_HIGHER_RATE_PERCENT = 0.9;
+export const SMP_HIGHER_RATE_WEEKS = 6;
+export const SMP_STANDARD_RATE_WEEKS = 33;
+export const SMP_TOTAL_PAID_WEEKS = SMP_HIGHER_RATE_WEEKS + SMP_STANDARD_RATE_WEEKS;
+export const MATERNITY_LEAVE_MAX_WEEKS = 52;
+export const SMP_LOWER_EARNINGS_LIMIT_WEEKLY = 125;
+export const SMP_MIN_WEEKS_EMPLOYED = 26;
+export const MATERNITY_ALLOWANCE_WEEKLY_RATE = 187.18;
+export const MATERNITY_ALLOWANCE_MAX_WEEKS = 39;
+
 // --- Winter Fuel Payment, 2026/27 --------------------------------------------
 // Paid once per household to people who have reached State Pension age by the
 // qualifying date, usually in mid-to-late September, set each year. Since

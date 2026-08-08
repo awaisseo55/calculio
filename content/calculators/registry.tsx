@@ -51,6 +51,10 @@ import * as winterFuelPayment from "./winter-fuel-payment-calculator-uk";
 import * as sickPay from "./sick-pay-calculator-uk";
 import * as redundancyPay from "./redundancy-pay-calculator-uk";
 import * as splitBill from "./split-bill-calculator-uk";
+import * as childBenefit from "./child-benefit-calculator-uk";
+import * as universalCredit from "./universal-credit-calculator-uk";
+import * as maternityPay from "./maternity-pay-calculator-uk";
+import * as salaryNegotiation from "./salary-negotiation-calculator-uk";
 
 interface CalculatorContent {
   SeoContent: ComponentType;
@@ -108,4 +112,8 @@ export const calculatorContent: Record<string, CalculatorContent> = {
   "sick-pay-calculator-uk": sickPay,
   "redundancy-pay-calculator-uk": redundancyPay,
   "split-bill-calculator-uk": splitBill,
+  "child-benefit-calculator-uk": childBenefit,
+  "universal-credit-calculator-uk": universalCredit,
+  "maternity-pay-calculator-uk": maternityPay,
+  "salary-negotiation-calculator-uk": salaryNegotiation,
 };

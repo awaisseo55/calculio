@@ -765,6 +765,66 @@ export const calculators: CalculatorMeta[] = [
     icon: "LayoutGrid",
     schemaType: "SoftwareApplication",
   },
+  {
+    slug: "child-benefit-calculator-uk",
+    name: "Child Benefit Calculator",
+    shortName: "Child Benefit",
+    h1: "UK Child Benefit Calculator 2026/27",
+    category: "finance",
+    description:
+      "Work out your weekly and annual Child Benefit, plus any High Income Child Benefit Charge if you or your partner earn over £60,000.",
+    metaTitle: "Child Benefit Calculator UK 2026/27 | HICBC | Calculio",
+    metaDescription:
+      "Calculate your UK Child Benefit for 2026/27 and any High Income Child Benefit Charge. See your weekly rate, annual total and net amount after HICBC.",
+    keywords: ["child benefit calculator uk 2026", "high income child benefit charge calculator", "how much child benefit will i get"],
+    icon: "Users",
+    schemaType: "SoftwareApplication",
+  },
+  {
+    slug: "universal-credit-calculator-uk",
+    name: "Universal Credit Calculator",
+    shortName: "Universal Credit",
+    h1: "UK Universal Credit Calculator 2026/27",
+    category: "finance",
+    description:
+      "Estimate your monthly Universal Credit, including the standard allowance, child element, housing element and earnings taper.",
+    metaTitle: "Universal Credit Calculator UK 2026/27 | Estimate Your UC",
+    metaDescription:
+      "Estimate how much Universal Credit you could get in 2026/27. See your standard allowance, child and housing elements, and the earnings taper reduction.",
+    keywords: ["universal credit calculator uk 2026", "how much universal credit will i get", "uc calculator uk"],
+    icon: "HandCoins",
+    schemaType: "SoftwareApplication",
+  },
+  {
+    slug: "maternity-pay-calculator-uk",
+    name: "Maternity Pay Calculator",
+    shortName: "Maternity Pay",
+    h1: "UK Maternity Pay Calculator 2026/27",
+    category: "tax",
+    description:
+      "Work out your Statutory Maternity Pay across your full maternity leave, including the 90% rate, the standard rate and any unpaid weeks.",
+    metaTitle: "Maternity Pay Calculator UK 2026/27 | SMP Calculator",
+    metaDescription:
+      "Calculate your UK maternity pay for 2026/27. See your 90% rate weeks, standard SMP rate weeks, unpaid weeks and a monthly breakdown across your leave.",
+    keywords: ["maternity pay calculator uk 2026", "smp calculator", "how much maternity pay will i get"],
+    icon: "Baby",
+    schemaType: "SoftwareApplication",
+  },
+  {
+    slug: "salary-negotiation-calculator-uk",
+    name: "Salary Negotiation Calculator",
+    shortName: "Salary Negotiation",
+    h1: "UK Salary Negotiation Calculator",
+    category: "tax",
+    description:
+      "See the real take-home value of a pay rise offer, including bonus, pension and benefits changes, plus its 5-year value.",
+    metaTitle: "Salary Negotiation Calculator UK | Pay Rise Value",
+    metaDescription:
+      "Work out the real take-home value of a salary negotiation. Compare current and target pay, bonus, pension and benefits, plus the 5-year value of the increase.",
+    keywords: ["salary negotiation calculator uk", "should i ask for a pay rise calculator", "salary negotiation uk"],
+    icon: "Handshake",
+    schemaType: "SoftwareApplication",
+  },
 ];
 
 export function getCalculator(slug: string): CalculatorMeta | undefined {

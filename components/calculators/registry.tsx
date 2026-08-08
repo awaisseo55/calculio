@@ -48,6 +48,10 @@ import { WinterFuelPaymentCalculator } from "@/components/calculators/winter-fue
 import { SickPayCalculator } from "@/components/calculators/sick-pay-calculator";
 import { RedundancyPayCalculator } from "@/components/calculators/redundancy-pay-calculator";
 import { SplitBillCalculator } from "@/components/calculators/split-bill-calculator";
+import { ChildBenefitCalculator } from "@/components/calculators/child-benefit-calculator";
+import { UniversalCreditCalculator } from "@/components/calculators/universal-credit-calculator";
+import { MaternityPayCalculator } from "@/components/calculators/maternity-pay-calculator";
+import { SalaryNegotiationCalculator } from "@/components/calculators/salary-negotiation-calculator";
 import type { ComponentType } from "react";
 
 export const calculatorComponents: Record<string, ComponentType> = {
@@ -101,4 +105,8 @@ export const calculatorComponents: Record<string, ComponentType> = {
   "sick-pay-calculator-uk": SickPayCalculator,
   "redundancy-pay-calculator-uk": RedundancyPayCalculator,
   "split-bill-calculator-uk": SplitBillCalculator,
+  "child-benefit-calculator-uk": ChildBenefitCalculator,
+  "universal-credit-calculator-uk": UniversalCreditCalculator,
+  "maternity-pay-calculator-uk": MaternityPayCalculator,
+  "salary-negotiation-calculator-uk": SalaryNegotiationCalculator,
 };

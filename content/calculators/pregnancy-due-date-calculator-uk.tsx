@@ -111,7 +111,12 @@ export function SeoContent() {
         Tracking your own health alongside your pregnancy? Our{" "}
         <Link href="/calculators/bmi-calculator-uk">BMI calculator</Link> and{" "}
         <Link href="/calculators/age-calculator">age calculator</Link> are quick, free tools
-        for other everyday health and date calculations.
+        for other everyday health and date calculations. Once you have a
+        due date, our{" "}
+        <Link href="/calculators/maternity-pay-calculator-uk">
+          maternity pay calculator
+        </Link>{" "}
+        can help you plan your finances for maternity leave.
       </p>
     </div>
   );

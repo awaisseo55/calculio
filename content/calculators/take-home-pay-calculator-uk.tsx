@@ -121,7 +121,17 @@ export function SeoContent() {
         <Link href="/calculators/sick-pay-calculator-uk">
           sick pay calculator
         </Link>{" "}
-        covers what you are owed during a period of sickness.
+        covers what you are owed during a period of sickness. If you have
+        children, our{" "}
+        <Link href="/calculators/child-benefit-calculator-uk">
+          Child Benefit calculator
+        </Link>{" "}
+        adds that into your household income picture, and our{" "}
+        <Link href="/calculators/universal-credit-calculator-uk">
+          Universal Credit calculator
+        </Link>{" "}
+        can help if your take-home pay is low enough that you might be
+        entitled to additional support.
       </p>
     </div>
   );

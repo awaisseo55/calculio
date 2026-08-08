@@ -166,7 +166,13 @@ export function SeoContent() {
         <Link href="/blog/uk-income-tax-2026-27">income tax guide</Link>{" "}
         explains the UK tax bands and the 60% tax trap in more detail, which
         is particularly useful if a pay rise is bringing you close to
-        £100,000.
+        £100,000. If you are still negotiating your pay rise rather than
+        comparing an agreed figure, our{" "}
+        <Link href="/calculators/salary-negotiation-calculator-uk">
+          salary negotiation calculator
+        </Link>{" "}
+        also factors in bonus, pension and benefits changes, plus the
+        5-year value of the increase.
       </p>
     </div>
   );

@@ -153,6 +153,13 @@ export function SeoContent() {
         everything a first-time buyer needs to budget for, including council
         tax as an ongoing cost, see our guide to{" "}
         <Link href="/blog/first-home-cost-uk-2026">the real cost of buying your first home</Link>.
+        If your income is low enough that you might be entitled to
+        additional support, our{" "}
+        <Link href="/calculators/universal-credit-calculator-uk">
+          Universal Credit calculator
+        </Link>{" "}
+        can give you an estimate, though Council Tax Reduction itself is
+        claimed separately from your local council.
       </p>
     </div>
   );

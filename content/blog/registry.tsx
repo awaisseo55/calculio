@@ -19,6 +19,8 @@ import * as electricVsPetrol from "./electric-vs-petrol-cost-comparison-uk-2026"
 import * as redundancyGuide from "./uk-redundancy-guide-2026";
 import * as sickPayGuide from "./uk-sick-pay-guide-2026";
 import * as winterFuelGuide from "./winter-fuel-payment-guide-2026";
+import * as childBenefitGuide from "./uk-child-benefit-guide-2026";
+import * as maternityPayGuide from "./uk-maternity-pay-guide-2026";
 
 interface BlogPostContent {
   ArticleContent: ComponentType;
@@ -44,4 +46,6 @@ export const blogContent: Record<string, BlogPostContent> = {
   "uk-redundancy-guide-2026": redundancyGuide,
   "uk-sick-pay-guide-2026": sickPayGuide,
   "winter-fuel-payment-guide-2026": winterFuelGuide,
+  "uk-child-benefit-guide-2026": childBenefitGuide,
+  "uk-maternity-pay-guide-2026": maternityPayGuide,
 };

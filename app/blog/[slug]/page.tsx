@@ -144,6 +144,20 @@ const CTA_CONTENT: Record<
     buttonLabel: "Check my eligibility",
     href: "/calculators/winter-fuel-payment-calculator-uk",
   },
+  "uk-child-benefit-guide-2026": {
+    title: "Calculate your Child Benefit",
+    description:
+      "Work out your weekly and annual Child Benefit, plus any High Income Child Benefit Charge based on your household income.",
+    buttonLabel: "Calculate my Child Benefit",
+    href: "/calculators/child-benefit-calculator-uk",
+  },
+  "uk-maternity-pay-guide-2026": {
+    title: "Calculate your maternity pay",
+    description:
+      "Enter your salary, leave length and employer policy for an instant week-by-week and month-by-month maternity pay breakdown.",
+    buttonLabel: "Calculate my maternity pay",
+    href: "/calculators/maternity-pay-calculator-uk",
+  },
 };
 
 const DISCLAIMER =
@@ -255,6 +269,18 @@ const RELATED_CALCULATOR_SLUGS: Record<string, string[]> = {
     "pension-calculator-uk",
     "energy-bill-calculator-uk",
     "council-tax-calculator-uk",
+  ],
+  "uk-child-benefit-guide-2026": [
+    "child-benefit-calculator-uk",
+    "income-tax-calculator-uk",
+    "take-home-pay-calculator-uk",
+    "pension-calculator-uk",
+  ],
+  "uk-maternity-pay-guide-2026": [
+    "maternity-pay-calculator-uk",
+    "take-home-pay-calculator-uk",
+    "income-tax-calculator-uk",
+    "self-employed-tax-calculator-uk",
   ],
 };
 

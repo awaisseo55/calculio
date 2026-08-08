@@ -370,6 +370,48 @@ export const blogPosts: BlogPostMeta[] = [
     featuredImageAlt: "Calculio guide to the UK Winter Fuel Payment for 2026/27",
     wordCount: 1360,
   },
+  {
+    slug: "uk-child-benefit-guide-2026",
+    title: "The Complete UK Child Benefit Guide 2026",
+    metaTitle: "UK Child Benefit Guide 2026: Rates & HICBC | Calculio",
+    metaDescription:
+      "A complete guide to UK Child Benefit for 2026/27: current rates, the High Income Child Benefit Charge, whether to claim, and how to apply.",
+    excerpt:
+      "Current Child Benefit rates for 2026/27, how the High Income Child Benefit Charge works between £60,000 and £80,000, and why it can still be worth claiming.",
+    category: "Finance",
+    categorySlug: "finance",
+    categoryHref: "/categories/finance",
+    tags: ["Child Benefit", "HICBC", "HMRC", "families", "benefits"],
+    authorSlug: "james-whitfield",
+    reviewerSlug: "emily-thorne",
+    publishDate: "2026-08-08",
+    updatedDate: "2026-08-08",
+    featuredImage:
+      "/og?title=The%20Complete%20UK%20Child%20Benefit%20Guide%202026&subtitle=calculio.co.uk",
+    featuredImageAlt: "Calculio guide to UK Child Benefit and the High Income Child Benefit Charge for 2026",
+    wordCount: 2252,
+  },
+  {
+    slug: "uk-maternity-pay-guide-2026",
+    title: "How Much Maternity Pay Will You Get in the UK 2026",
+    metaTitle: "UK Maternity Pay 2026: SMP Rates Explained | Calculio",
+    metaDescription:
+      "How much maternity pay you'll get in the UK for 2026/27: SMP rates, enhanced employer schemes, Maternity Allowance, and planning your finances.",
+    excerpt:
+      "Statutory Maternity Pay rates for 2026/27, what happens after week 39, enhanced employer schemes, and Maternity Allowance for the self-employed.",
+    category: "Tax",
+    categorySlug: "tax",
+    categoryHref: "/categories/tax",
+    tags: ["maternity pay", "SMP", "HMRC", "pregnancy", "employment rights"],
+    authorSlug: "james-whitfield",
+    reviewerSlug: "emily-thorne",
+    publishDate: "2026-08-08",
+    updatedDate: "2026-08-08",
+    featuredImage:
+      "/og?title=How%20Much%20Maternity%20Pay%20Will%20You%20Get%20in%20the%20UK%202026&subtitle=calculio.co.uk",
+    featuredImageAlt: "Calculio guide to UK maternity pay and Statutory Maternity Pay rates for 2026/27",
+    wordCount: 2206,
+  },
 ];
 
 export function getBlogPost(slug: string): BlogPostMeta | undefined {

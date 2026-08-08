@@ -249,7 +249,12 @@ export function ArticleContent() {
         <Link href="/blog/self-employed-tax-guide-uk-2026">
           self-employed tax guide
         </Link>
-        .
+        . If your time off is related to pregnancy or maternity leave
+        rather than general sickness, our{" "}
+        <Link href="/calculators/maternity-pay-calculator-uk">
+          maternity pay calculator
+        </Link>{" "}
+        covers Statutory Maternity Pay and Maternity Allowance separately.
       </p>
 
       <h2 id="faq">Frequently asked questions</h2>

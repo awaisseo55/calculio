@@ -155,7 +155,17 @@ export function SeoContent() {
           National Insurance calculator
         </Link>{" "}
         and <Link href="/blog/uk-income-tax-2026-27">income tax guide</Link> have
-        more detail on how each part of the system works.
+        more detail on how each part of the system works. If you are
+        planning a period of maternity leave, our{" "}
+        <Link href="/calculators/maternity-pay-calculator-uk">
+          maternity pay calculator
+        </Link>{" "}
+        covers Maternity Allowance for the self-employed, and our{" "}
+        <Link href="/calculators/child-benefit-calculator-uk">
+          Child Benefit calculator
+        </Link>{" "}
+        can help if your profit puts you close to the High Income Child
+        Benefit Charge threshold.
       </p>
     </div>
   );
