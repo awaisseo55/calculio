@@ -42,7 +42,7 @@ export function SeoContent() {
         leave, starting higher, dropping to a standard rate, then stopping
         altogether if you take your full 52 weeks. This calculator works
         out exactly what you can expect to receive, week by week and month
-        by month, based on your salary and your employer's maternity
+        by month, based on your salary and your employer&apos;s maternity
         policy.
       </p>
 
@@ -51,7 +51,7 @@ export function SeoContent() {
         Enter your current weekly salary and how many weeks of maternity
         leave you plan to take, up to the maximum of 52. Add the start date
         of your leave so we can give you a monthly breakdown, and select
-        your employer's maternity policy: statutory pay only, an enhanced
+        your employer&apos;s maternity policy: statutory pay only, an enhanced
         scheme with a set number of weeks of full pay before dropping to
         SMP, or an option for when you are not sure and want the statutory
         minimum as a baseline.
@@ -66,7 +66,7 @@ export function SeoContent() {
         the flat statutory rate, £187.18 a week, or 90% of your earnings,
         which means most people move onto the flat rate once their initial
         6 weeks are over. Any weeks beyond 39, up to the 52-week maximum,
-        are unpaid unless your employer's scheme covers them. Our{" "}
+        are unpaid unless your employer&apos;s scheme covers them. Our{" "}
         <Link href="/calculators/take-home-pay-calculator-uk">
           take-home pay calculator
         </Link>{" "}

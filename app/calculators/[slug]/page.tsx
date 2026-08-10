@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import Link from "next/link";
-import { ChevronRight } from "lucide-react";
+import { ChevronRight, User, CalendarDays } from "lucide-react";
 import { JsonLd } from "@/components/site/json-ld";
 import { Reveal } from "@/components/site/reveal";
 import { FaqAccordion } from "@/components/calculators/faq-accordion";
@@ -11,6 +11,18 @@ import { calculatorContent } from "@/content/calculators/registry";
 import { calculators, getCalculator, getRelatedCalculators } from "@/lib/calculators";
 import { getCategory } from "@/lib/categories";
 import { siteConfig } from "@/lib/site";
+import type { CategorySlug } from "@/lib/types";
+
+const CONTENT_REVIEWED_DATE = "11 August 2026";
+
+const CATEGORY_SOURCES: Record<CategorySlug, string> = {
+  finance: "HMRC and GOV.UK",
+  tax: "HMRC and GOV.UK",
+  motoring: "the DVLA and GOV.UK",
+  health: "NHS guidance",
+  home: "HMRC, GOV.UK and the DVLA",
+  everyday: "GOV.UK and other official UK sources",
+};
 
 interface Props {
   params: Promise<{ slug: string }>;
@@ -128,6 +140,16 @@ export default async function CalculatorPage({ params }: Props) {
           <p className="mt-4 text-lg leading-relaxed text-muted-foreground">
             {calculator.description}
           </p>
+          <div className="mt-4 flex flex-wrap items-center gap-x-5 gap-y-2 text-sm text-muted-foreground">
+            <span className="flex items-center gap-1.5">
+              <User className="size-4" aria-hidden="true" />
+              Written by The Calculio Team
+            </span>
+            <span className="flex items-center gap-1.5 rounded-full bg-success/10 px-2.5 py-1 text-xs font-medium text-success">
+              <CalendarDays className="size-3.5" aria-hidden="true" />
+              Last updated {CONTENT_REVIEWED_DATE}
+            </span>
+          </div>
         </div>
       </Reveal>
 
@@ -152,13 +174,23 @@ export default async function CalculatorPage({ params }: Props) {
         <RelatedCalculators calculators={related} />
       </div>
 
-      <p className="mt-10 text-center text-xs text-muted-foreground">
-        Results are estimates only. See our{" "}
-        <Link href="/disclaimer" className="underline hover:text-foreground">
-          disclaimer
-        </Link>
-        .
-      </p>
+      <div className="mt-10 text-center text-xs text-muted-foreground">
+        <p>
+          This calculator uses rates and thresholds published by {CATEGORY_SOURCES[calculator.category]}.
+          Results are estimates only. See our{" "}
+          <Link href="/disclaimer" className="underline hover:text-foreground">
+            disclaimer
+          </Link>
+          .
+        </p>
+        <p className="mt-1.5">
+          Spotted an error or have feedback?{" "}
+          <Link href="/contact" className="underline hover:text-foreground">
+            Contact us
+          </Link>
+          .
+        </p>
+      </div>
     </div>
   );
 }

@@ -5,6 +5,7 @@ import { ThemeProvider } from "@/components/site/theme-provider";
 import { Header } from "@/components/site/header";
 import { Footer } from "@/components/site/footer";
 import { JsonLd } from "@/components/site/json-ld";
+import { CookieConsent } from "@/components/site/cookie-consent";
 import { siteConfig } from "@/lib/site";
 
 const geistSans = Geist({
@@ -49,14 +50,26 @@ export const metadata: Metadata = {
     images: [siteConfig.ogImage],
   },
   icons: {
-    icon: "/favicon.ico",
+    icon: [
+      { url: "/favicon.ico", sizes: "any" },
+      { url: "/favicon.svg", type: "image/svg+xml" },
+      { url: "/icon-192.png", sizes: "192x192", type: "image/png" },
+      { url: "/icon-512.png", sizes: "512x512", type: "image/png" },
+    ],
+    apple: "/apple-touch-icon.png",
+    shortcut: "/favicon.ico",
   },
+  manifest: "/manifest.json",
   alternates: {
     canonical: "/",
   },
   verification: {
     google: "d-BFMrCr63gnON-p7lEWMIm2A0ml3uf27wycvXk5lYQ",
   },
+};
+
+export const viewport = {
+  themeColor: "#2563EB",
 };
 
 export default function RootLayout({
@@ -97,6 +110,12 @@ export default function RootLayout({
       className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
     >
       <body className="flex min-h-full flex-col">
+        <a
+          href="#main-content"
+          className="sr-only focus:not-sr-only focus:fixed focus:top-3 focus:left-3 focus:z-[100] focus:rounded-lg focus:bg-primary focus:px-4 focus:py-2 focus:text-sm focus:font-medium focus:text-primary-foreground"
+        >
+          Skip to main content
+        </a>
         <ThemeProvider
           attribute="class"
           defaultTheme="dark"
@@ -106,8 +125,11 @@ export default function RootLayout({
           <JsonLd data={organizationSchema} />
           <JsonLd data={websiteSchema} />
           <Header />
-          <main className="flex-1">{children}</main>
+          <main id="main-content" className="flex-1">
+            {children}
+          </main>
           <Footer />
+          <CookieConsent />
         </ThemeProvider>
       </body>
     </html>

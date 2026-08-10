@@ -60,7 +60,7 @@ export function ArticleContent() {
           maternity pay calculator
         </Link>{" "}
         works out your week-by-week and month-by-month figures based on
-        your own salary and your employer's policy, and this guide explains
+        your own salary and your employer&apos;s policy, and this guide explains
         exactly how those numbers are calculated, from the statutory
         minimum through to enhanced employer schemes and Maternity
         Allowance for the self-employed.
@@ -123,7 +123,7 @@ export function ArticleContent() {
         employer can ask for this in writing, and will usually confirm
         your leave and pay dates back to you within 28 days. You can
         change your planned start date later if you give at least 28
-        days' notice of the new date, which gives some flexibility if your
+        days&apos; notice of the new date, which gives some flexibility if your
         circumstances change or your baby arrives earlier or later than
         expected. If you go into labour before your chosen start date,
         your maternity leave and pay generally begin automatically from
@@ -146,7 +146,7 @@ export function ArticleContent() {
         Maternity Leave, regardless of how long you have worked for your
         employer. Statutory Maternity Pay, however, only covers the first{" "}
         <strong>39 weeks</strong>, leaving the final 13 weeks unpaid unless
-        your employer's own scheme extends pay further.
+        your employer&apos;s own scheme extends pay further.
       </p>
       <p>
         During unpaid maternity leave, you continue to accrue statutory

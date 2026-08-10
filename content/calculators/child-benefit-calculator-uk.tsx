@@ -42,7 +42,7 @@ export function SeoContent() {
         child, but the High Income Child Benefit Charge means many families
         are not sure how much they will actually keep. This calculator
         works out your gross Child Benefit, any HICBC clawback based on the
-        higher earner's income, and the net amount you actually end up
+        higher earner&apos;s income, and the net amount you actually end up
         with.
       </p>
 
@@ -50,7 +50,7 @@ export function SeoContent() {
       <p>
         Enter the number of children you are claiming for, then tell us
         whether you have a partner. Add your annual income, and your
-        partner's income if you have one. The calculator always uses
+        partner&apos;s income if you have one. The calculator always uses
         whichever income is higher in the household to work out the High
         Income Child Benefit Charge, since that is how HMRC applies the
         rule, regardless of which of you actually receives the payments.
@@ -61,7 +61,7 @@ export function SeoContent() {
         Child Benefit pays £26.05 a week for your eldest or only child and
         £17.25 a week for each additional child, with no upper limit on the
         number of children covered. Multiply the weekly total by 52 to get
-        your gross annual Child Benefit. If the higher earner's income is
+        your gross annual Child Benefit. If the higher earner&apos;s income is
         £60,000 or below, that is the end of the calculation, you keep the
         full amount tax-free.
       </p>
@@ -85,19 +85,19 @@ export function SeoContent() {
       </p>
       <p>
         Gross Child Benefit for 2 children is £43.30 a week, or{" "}
-        <strong>£2,251.60</strong> a year. Since the higher earner's income
+        <strong>£2,251.60</strong> a year. Since the higher earner&apos;s income
         of £65,000 is £5,000 above the £60,000 threshold, that is 25
         complete blocks of £200, so the HICBC rate is{" "}
         <strong>25%</strong>. The charge comes to{" "}
         <strong>£562.90</strong>, leaving the family with a net Child
         Benefit of around <strong>£1,688.70</strong> for the year, paid as
-        usual but repaid gradually through the higher earner's Self
+        usual but repaid gradually through the higher earner&apos;s Self
         Assessment or tax code.
       </p>
 
       <h2>Common mistakes when working out Child Benefit</h2>
       <p>
-        A common mistake is adding both partners' incomes together to check
+        A common mistake is adding both partners&apos; incomes together to check
         against the £60,000 threshold. The rule only looks at the higher
         individual income, not the combined household income, so two
         partners each earning £55,000 pay no HICBC at all, while one

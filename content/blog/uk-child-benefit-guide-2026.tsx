@@ -96,7 +96,7 @@ export function ArticleContent() {
         Only one person can claim Child Benefit for a particular child, so
         if parents separate or share care, they usually need to agree
         between themselves who makes the claim, since HMRC will not split
-        a single child's payment between two households. Foster carers and
+        a single child&apos;s payment between two households. Foster carers and
         kinship carers, such as grandparents raising a grandchild, can
         usually claim too, provided the child is not already being claimed
         for by someone else and the carer meets the normal residency
@@ -266,7 +266,7 @@ export function ArticleContent() {
         are not otherwise working or paying National Insurance, and these
         credits count towards a full State Pension record. If the
         stay-at-home parent in a household does not claim, purely because
-        the other partner's income means the money would be repaid anyway,
+        the other partner&apos;s income means the money would be repaid anyway,
         they can end up with real gaps in their National Insurance record
         that are far more costly to fix later than the HICBC ever was. Our{" "}
         <Link href="/blog/uk-state-pension-guide-2026">
@@ -322,11 +322,11 @@ export function ArticleContent() {
       <p>
         Claims are usually made online through your Personal Tax Account or
         the HMRC app, and the process is generally quick if you have your
-        child's birth certificate details and your own National Insurance
+        child&apos;s birth certificate details and your own National Insurance
         number to hand. You will also need your bank details for payment,
         and if this is your first child, your own passport or another form
         of identity document may be requested to confirm who you are. The
-        claim can be started as soon as your baby's birth is registered or,
+        claim can be started as soon as your baby&apos;s birth is registered or,
         in some cases, before this if you use the newer online registration
         and claim process HMRC has introduced, which links birth
         registration and the Child Benefit claim into a single step in many
@@ -334,7 +334,7 @@ export function ArticleContent() {
       </p>
       <p>
         First payments typically arrive within a few weeks of a completed
-        claim, though this can vary depending on HMRC's current processing
+        claim, though this can vary depending on HMRC&apos;s current processing
         times, especially around busy periods. Importantly, Child Benefit
         can be backdated by up to 3 months from the date HMRC receives your
         claim, so it is worth claiming as soon as possible after your child
@@ -373,7 +373,7 @@ export function ArticleContent() {
         paid apprenticeship, higher education, or full-time work, Child
         Benefit generally stops, since these do not usually count as
         approved education under the scheme. If you are budgeting for your
-        child's move into further study or work, our{" "}
+        child&apos;s move into further study or work, our{" "}
         <Link href="/calculators/income-tax-calculator-uk">
           income tax calculator
         </Link>{" "}

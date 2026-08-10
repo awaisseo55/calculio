@@ -2,15 +2,29 @@ import Link from "next/link";
 import { Logo } from "@/components/site/logo";
 import { XIcon, FacebookIcon, InstagramIcon, LinkedinIcon } from "@/components/site/social-icons";
 import { categories } from "@/lib/categories";
-import { getFeaturedCalculators } from "@/lib/calculators";
+import { getCalculator } from "@/lib/calculators";
 import { siteConfig } from "@/lib/site";
 
-const legalLinks = [
+const TOP_CALCULATOR_SLUGS = [
+  "take-home-pay-calculator-uk",
+  "mortgage-calculator-uk",
+  "stamp-duty-calculator-uk",
+  "income-tax-calculator-uk",
+  "council-tax-calculator-uk",
+  "pension-calculator-uk",
+];
+
+const companyLinks = [
   { href: "/about", label: "About" },
   { href: "/contact", label: "Contact" },
+  { href: "/blog", label: "Blog" },
+];
+
+const legalLinks = [
   { href: "/privacy", label: "Privacy Policy" },
   { href: "/terms", label: "Terms of Use" },
   { href: "/disclaimer", label: "Disclaimer" },
+  { href: "/cookie-policy", label: "Cookie Policy" },
 ];
 
 const socialLinks = [
@@ -21,13 +35,15 @@ const socialLinks = [
 ];
 
 export function Footer() {
-  const featured = getFeaturedCalculators();
+  const topCalculators = TOP_CALCULATOR_SLUGS.map((slug) => getCalculator(slug)).filter(
+    (calc): calc is NonNullable<typeof calc> => Boolean(calc)
+  );
 
   return (
     <footer className="border-t border-border/60 bg-secondary/30">
       <div className="mx-auto max-w-7xl px-4 py-14 sm:px-6 lg:px-8">
-        <div className="grid grid-cols-2 gap-10 sm:grid-cols-4">
-          <div className="col-span-2 sm:col-span-4 lg:col-span-1">
+        <div className="grid grid-cols-2 gap-10 sm:grid-cols-3 lg:grid-cols-5">
+          <div className="col-span-2 sm:col-span-3 lg:col-span-1">
             <Logo />
             <p className="mt-4 max-w-xs text-sm leading-relaxed text-muted-foreground">
               {siteConfig.description}
@@ -63,15 +79,37 @@ export function Footer() {
           </div>
 
           <div>
-            <h3 className="text-sm font-semibold text-foreground">Popular Calculators</h3>
+            <h3 className="text-sm font-semibold text-foreground">Top Calculators</h3>
             <ul className="mt-4 space-y-3">
-              {featured.map((calc) => (
+              {topCalculators.map((calc) => (
                 <li key={calc.slug}>
                   <Link
                     href={`/calculators/${calc.slug}`}
                     className="text-sm text-muted-foreground transition hover:text-foreground"
                   >
                     {calc.shortName}
+                  </Link>
+                </li>
+              ))}
+            </ul>
+            <Link
+              href="/calculators"
+              className="mt-3 inline-block text-sm font-medium text-primary transition hover:text-primary/80"
+            >
+              View all 50+ calculators &rarr;
+            </Link>
+          </div>
+
+          <div>
+            <h3 className="text-sm font-semibold text-foreground">Company</h3>
+            <ul className="mt-4 space-y-3">
+              {companyLinks.map((link) => (
+                <li key={link.href}>
+                  <Link
+                    href={link.href}
+                    className="text-sm text-muted-foreground transition hover:text-foreground"
+                  >
+                    {link.label}
                   </Link>
                 </li>
               ))}
@@ -100,7 +138,8 @@ export function Footer() {
             &copy; {new Date().getFullYear()} {siteConfig.name}. All rights reserved.
           </p>
           <p className="text-xs text-muted-foreground">
-            Calculators are for guidance only and do not constitute financial, tax or medical advice.
+            {siteConfig.name} is not a financial or legal adviser. Calculations are estimates
+            only.
           </p>
         </div>
       </div>
