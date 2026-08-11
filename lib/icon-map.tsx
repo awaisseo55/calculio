@@ -54,6 +54,14 @@ import {
   PoundSterling,
   Hourglass,
   Sun,
+  PawPrint,
+  Dumbbell,
+  GraduationCap,
+  ArrowLeftRight,
+  Target,
+  Dog,
+  Cat,
+  Footprints,
   type LucideIcon,
 } from "lucide-react";
 
@@ -113,6 +121,14 @@ export const iconMap: Record<string, LucideIcon> = {
   PoundSterling,
   Hourglass,
   Sun,
+  PawPrint,
+  Dumbbell,
+  GraduationCap,
+  ArrowLeftRight,
+  Target,
+  Dog,
+  Cat,
+  Footprints,
 };
 
 export function getIcon(name: string): LucideIcon {

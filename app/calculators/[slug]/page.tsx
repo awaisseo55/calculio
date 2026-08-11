@@ -22,6 +22,10 @@ const CATEGORY_SOURCES: Record<CategorySlug, string> = {
   health: "NHS guidance",
   home: "HMRC, GOV.UK and the DVLA",
   everyday: "GOV.UK and other official UK sources",
+  business: "HMRC and Companies House",
+  pets: "veterinary and animal welfare guidance",
+  fitness: "sports science and NHS guidance",
+  education: "the Student Loans Company and GOV.UK",
 };
 
 interface Props {

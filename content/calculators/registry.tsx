@@ -65,6 +65,16 @@ import * as overtimePay from "./overtime-pay-calculator-uk";
 import * as paternityPay from "./paternity-pay-calculator-uk";
 import * as carDepreciation from "./car-depreciation-calculator-uk";
 import * as solarPanelSavings from "./solar-panel-savings-calculator-uk";
+import * as corporationTax from "./corporation-tax-calculator-uk";
+import * as dividendVsSalary from "./dividend-vs-salary-calculator-uk";
+import * as breakEven from "./break-even-calculator-uk";
+import * as profitMargin from "./profit-margin-calculator-uk";
+import * as dogAge from "./dog-age-calculator-uk";
+import * as catAge from "./cat-age-calculator-uk";
+import * as runningPace from "./running-pace-calculator-uk";
+import * as oneRepMax from "./one-rep-max-calculator-uk";
+import * as studentLoanRepayment from "./student-loan-repayment-calculator-uk";
+import * as studentBudget from "./student-budget-calculator-uk";
 
 interface CalculatorContent {
   SeoContent: ComponentType;
@@ -136,4 +146,14 @@ export const calculatorContent: Record<string, CalculatorContent> = {
   "paternity-pay-calculator-uk": paternityPay,
   "car-depreciation-calculator-uk": carDepreciation,
   "solar-panel-savings-calculator-uk": solarPanelSavings,
+  "corporation-tax-calculator-uk": corporationTax,
+  "dividend-vs-salary-calculator-uk": dividendVsSalary,
+  "break-even-calculator-uk": breakEven,
+  "profit-margin-calculator-uk": profitMargin,
+  "dog-age-calculator-uk": dogAge,
+  "cat-age-calculator-uk": catAge,
+  "running-pace-calculator-uk": runningPace,
+  "one-rep-max-calculator-uk": oneRepMax,
+  "student-loan-repayment-calculator-uk": studentLoanRepayment,
+  "student-budget-calculator-uk": studentBudget,
 };

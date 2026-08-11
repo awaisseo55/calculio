@@ -62,6 +62,16 @@ import { OvertimePayCalculator } from "@/components/calculators/overtime-pay-cal
 import { PaternityPayCalculator } from "@/components/calculators/paternity-pay-calculator";
 import { CarDepreciationCalculator } from "@/components/calculators/car-depreciation-calculator";
 import { SolarPanelSavingsCalculator } from "@/components/calculators/solar-panel-savings-calculator";
+import { CorporationTaxCalculator } from "@/components/calculators/corporation-tax-calculator";
+import { DividendVsSalaryCalculator } from "@/components/calculators/dividend-vs-salary-calculator";
+import { BreakEvenCalculator } from "@/components/calculators/break-even-calculator";
+import { ProfitMarginCalculator } from "@/components/calculators/profit-margin-calculator";
+import { DogAgeCalculator } from "@/components/calculators/dog-age-calculator";
+import { CatAgeCalculator } from "@/components/calculators/cat-age-calculator";
+import { RunningPaceCalculator } from "@/components/calculators/running-pace-calculator";
+import { OneRepMaxCalculator } from "@/components/calculators/one-rep-max-calculator";
+import { StudentLoanRepaymentCalculator } from "@/components/calculators/student-loan-repayment-calculator";
+import { StudentBudgetCalculator } from "@/components/calculators/student-budget-calculator";
 import type { ComponentType } from "react";
 
 export const calculatorComponents: Record<string, ComponentType> = {
@@ -129,4 +139,14 @@ export const calculatorComponents: Record<string, ComponentType> = {
   "paternity-pay-calculator-uk": PaternityPayCalculator,
   "car-depreciation-calculator-uk": CarDepreciationCalculator,
   "solar-panel-savings-calculator-uk": SolarPanelSavingsCalculator,
+  "corporation-tax-calculator-uk": CorporationTaxCalculator,
+  "dividend-vs-salary-calculator-uk": DividendVsSalaryCalculator,
+  "break-even-calculator-uk": BreakEvenCalculator,
+  "profit-margin-calculator-uk": ProfitMarginCalculator,
+  "dog-age-calculator-uk": DogAgeCalculator,
+  "cat-age-calculator-uk": CatAgeCalculator,
+  "running-pace-calculator-uk": RunningPaceCalculator,
+  "one-rep-max-calculator-uk": OneRepMaxCalculator,
+  "student-loan-repayment-calculator-uk": StudentLoanRepaymentCalculator,
+  "student-budget-calculator-uk": StudentBudgetCalculator,
 };

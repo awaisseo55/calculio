@@ -975,6 +975,156 @@ export const calculators: CalculatorMeta[] = [
     icon: "Sun",
     schemaType: "SoftwareApplication",
   },
+  {
+    slug: "corporation-tax-calculator-uk",
+    name: "Corporation Tax Calculator",
+    shortName: "Corporation Tax",
+    h1: "UK Corporation Tax Calculator",
+    category: "business",
+    description:
+      "Work out your Corporation Tax bill, including marginal relief, for any level of company profit.",
+    metaTitle: "Corporation Tax Calculator UK 2026/27 | Marginal Relief",
+    metaDescription:
+      "Calculate UK Corporation Tax for 2026/27, including the small profits rate, main rate and marginal relief, for any level of company profit.",
+    keywords: ["corporation tax calculator uk", "corporation tax calculator", "marginal relief calculator"],
+    icon: "Building2",
+    schemaType: "SoftwareApplication",
+  },
+  {
+    slug: "dividend-vs-salary-calculator-uk",
+    name: "Dividend vs Salary Calculator",
+    shortName: "Dividend vs Salary",
+    h1: "UK Dividend vs Salary Calculator",
+    category: "business",
+    description:
+      "Compare take-home pay from taking company profit as salary versus dividends, after Corporation Tax, Income Tax and National Insurance.",
+    metaTitle: "Dividend vs Salary Calculator UK | Take-Home Pay",
+    metaDescription:
+      "Compare salary and dividends for UK limited company directors. See take-home pay after Corporation Tax, Income Tax, employer NI and dividend tax.",
+    keywords: ["dividend vs salary calculator uk", "salary vs dividends calculator", "director pay calculator uk"],
+    icon: "ArrowLeftRight",
+    schemaType: "SoftwareApplication",
+  },
+  {
+    slug: "break-even-calculator-uk",
+    name: "Break-Even Calculator",
+    shortName: "Break-Even",
+    h1: "UK Break-Even Calculator",
+    category: "business",
+    description:
+      "Work out how many units you need to sell, and at what revenue, to cover your fixed and variable costs.",
+    metaTitle: "Break-Even Calculator UK | Units and Revenue",
+    metaDescription:
+      "Calculate your break-even point in units and revenue from your fixed costs, price per unit and variable cost per unit, plus units needed for a target profit.",
+    keywords: ["break even calculator", "break even calculator uk", "break even point calculator"],
+    icon: "Target",
+    schemaType: "SoftwareApplication",
+  },
+  {
+    slug: "profit-margin-calculator-uk",
+    name: "Profit Margin Calculator",
+    shortName: "Profit Margin",
+    h1: "UK Profit Margin Calculator",
+    category: "business",
+    description:
+      "Work out your profit margin, markup percentage and profit from a cost price and selling price.",
+    metaTitle: "Profit Margin Calculator UK | Margin and Markup",
+    metaDescription:
+      "Calculate profit margin and markup from a cost price and selling price, or work out the selling price needed to hit a target profit margin.",
+    keywords: ["profit margin calculator", "markup calculator", "profit margin calculator uk"],
+    icon: "TrendingUp",
+    schemaType: "SoftwareApplication",
+  },
+  {
+    slug: "dog-age-calculator-uk",
+    name: "Dog Age Calculator",
+    shortName: "Dog Age",
+    h1: "Dog Age Calculator: Dog Years to Human Years",
+    category: "pets",
+    description:
+      "Convert your dog's age into human years using a vet-referenced formula, more accurate than the old multiply-by-7 rule.",
+    metaTitle: "Dog Age Calculator | Dog Years to Human Years",
+    metaDescription:
+      "Convert your dog's age into human years using a vet-referenced ageing formula, more accurate than the traditional multiply-by-7 rule of thumb.",
+    keywords: ["dog age calculator", "dog years to human years", "dog age in human years calculator"],
+    icon: "Dog",
+    schemaType: "SoftwareApplication",
+  },
+  {
+    slug: "cat-age-calculator-uk",
+    name: "Cat Age Calculator",
+    shortName: "Cat Age",
+    h1: "Cat Age Calculator: Cat Years to Human Years",
+    category: "pets",
+    description:
+      "Convert your cat's age into human years using the standard age chart used by vets and cat welfare charities.",
+    metaTitle: "Cat Age Calculator | Cat Years to Human Years",
+    metaDescription:
+      "Convert your cat's age into human years using the standard cat ageing chart, showing which human life stage your cat has reached.",
+    keywords: ["cat age calculator", "cat years to human years", "cat age in human years calculator"],
+    icon: "Cat",
+    schemaType: "SoftwareApplication",
+  },
+  {
+    slug: "running-pace-calculator-uk",
+    name: "Running Pace Calculator",
+    shortName: "Running Pace",
+    h1: "UK Running Pace Calculator",
+    category: "fitness",
+    description:
+      "Work out your running pace per km or mile, and predict your finish time for other race distances.",
+    metaTitle: "Running Pace Calculator | Pace and Race Predictor",
+    metaDescription:
+      "Calculate your running pace per km or mile from a distance and time, and predict your finish time for 5k, 10k, half marathon and marathon distances.",
+    keywords: ["running pace calculator", "race time predictor", "marathon pace calculator"],
+    icon: "Footprints",
+    schemaType: "SoftwareApplication",
+  },
+  {
+    slug: "one-rep-max-calculator-uk",
+    name: "One Rep Max Calculator",
+    shortName: "One Rep Max",
+    h1: "One Rep Max (1RM) Calculator",
+    category: "fitness",
+    description:
+      "Estimate your one-rep max from a weight and rep count, plus a training percentage table.",
+    metaTitle: "One Rep Max Calculator | 1RM Estimator",
+    metaDescription:
+      "Estimate your one-rep max (1RM) from the weight and reps you lifted, using the Epley formula, plus a percentage table for training loads.",
+    keywords: ["one rep max calculator", "1rm calculator", "epley formula calculator"],
+    icon: "Dumbbell",
+    schemaType: "SoftwareApplication",
+  },
+  {
+    slug: "student-loan-repayment-calculator-uk",
+    name: "Student Loan Repayment Calculator",
+    shortName: "Student Loan",
+    h1: "UK Student Loan Repayment Calculator",
+    category: "education",
+    description:
+      "See how much you will repay towards your student loan each month, based on your salary and repayment plan.",
+    metaTitle: "Student Loan Repayment Calculator UK 2026/27",
+    metaDescription:
+      "Calculate your UK student loan repayments for 2026/27 by salary and plan type (Plan 1, 2, 4, 5 or Postgraduate Loan), monthly and annually.",
+    keywords: ["student loan repayment calculator", "student loan calculator uk", "plan 2 student loan calculator"],
+    icon: "GraduationCap",
+    schemaType: "SoftwareApplication",
+  },
+  {
+    slug: "student-budget-calculator-uk",
+    name: "Student Budget Calculator",
+    shortName: "Student Budget",
+    h1: "UK Student Budget Calculator",
+    category: "education",
+    description:
+      "Plan your monthly student budget, comparing your loan, grants and other income against rent, food and other costs.",
+    metaTitle: "Student Budget Calculator UK | Plan Your Money",
+    metaDescription:
+      "Plan your university budget with this UK student budget calculator. Compare your maintenance loan and other income against rent, food and living costs.",
+    keywords: ["student budget calculator uk", "university budget calculator", "student budget planner"],
+    icon: "Wallet",
+    schemaType: "SoftwareApplication",
+  },
 ];
 
 export function getCalculator(slug: string): CalculatorMeta | undefined {

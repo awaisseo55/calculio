@@ -4,7 +4,11 @@ export type CategorySlug =
   | "motoring"
   | "health"
   | "home"
-  | "everyday";
+  | "everyday"
+  | "business"
+  | "pets"
+  | "fitness"
+  | "education";
 
 export interface CategoryMeta {
   slug: CategorySlug;

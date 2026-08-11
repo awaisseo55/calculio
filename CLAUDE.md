@@ -23,6 +23,18 @@ Because the site is being built for an eventual sale, prioritise clean, consiste
 - Deployed on Vercel, auto-deploy from the GitHub `main` branch
 - Dark mode as default, with a light mode toggle (next-themes)
 
+## Categories
+
+The site has 10 calculator categories, defined in `lib/categories.ts` (`CategorySlug` in `lib/types.ts`):
+
+- **Finance, Tax, Motoring, Health, Home & Property, Everyday**: the original six, covering personal UK finance, tax, vehicles, health, property/DIY, and quick everyday maths.
+- **Business**: UK small business owners and limited company directors (Corporation Tax, dividend vs salary, break-even, profit margin, and similar).
+- **Pets**: pet owners (dog and cat age calculators, and similar).
+- **Fitness**: runners and gym-goers (running pace, one-rep max, and similar).
+- **Education**: UK students and graduates (student loan repayment, student budgeting, and similar).
+
+Check this list before adding a new calculator or category, so it lands in the right existing category rather than creating a near-duplicate one. Adding a new category requires updating `lib/types.ts` (`CategorySlug`), `lib/categories.ts`, and `CATEGORY_SOURCES` in `app/calculators/[slug]/page.tsx` (a `Record<CategorySlug, string>`, so TypeScript will error if a category is missing from it).
+
 ## Writing style rules (strict)
 
 These apply to every piece of user-facing content: calculator copy, blog posts, FAQs, meta titles, meta descriptions, headings, and UI text.
@@ -121,6 +133,9 @@ Every blog post must include:
 - No aggressive weight loss or dieting language in health calculators.
 - No specific investment recommendations in finance calculators.
 - No specific legal advice in property or tax calculators.
+- No veterinary or animal health advice in pet calculators (dog/cat age, and similar); encourage a vet for any health or behaviour concern.
+- No extreme, unsafe, or medical-sounding claims in fitness calculators (pace, one-rep max, and similar); present results as general training estimates, not guarantees.
+- No specific legal, business formation, or investment advice in business calculators; encourage a qualified accountant for company-specific decisions.
 - Always include appropriate disclaimers.
 - Encourage professional advice for personal decisions (a regulated financial adviser, a GP, HMRC, or a solicitor, as relevant).
 

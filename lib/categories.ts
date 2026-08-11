@@ -46,8 +46,40 @@ export const categories: CategoryMeta[] = [
     name: "Everyday",
     shortDescription: "Age, percentages and quick maths",
     description:
-      "Quick, handy calculators for everyday questions — ages, percentages and more, solved in seconds.",
+      "Quick, handy calculators for everyday questions, ages, percentages and more, solved in seconds.",
     icon: "Sparkles",
+  },
+  {
+    slug: "business",
+    name: "Business",
+    shortDescription: "Corporation tax, dividends and pricing",
+    description:
+      "Calculators for UK small business owners, sole traders and limited company directors, covering corporation tax, dividend versus salary planning, break-even and profit margin.",
+    icon: "Briefcase",
+  },
+  {
+    slug: "pets",
+    name: "Pets",
+    shortDescription: "Dog and cat age calculators",
+    description:
+      "Convert your dog or cat's age into human years using vet-referenced age charts, for a fun and useful estimate of their life stage.",
+    icon: "PawPrint",
+  },
+  {
+    slug: "fitness",
+    name: "Fitness",
+    shortDescription: "Running pace and strength training",
+    description:
+      "Training calculators for runners and gym-goers, from race pace and finish time predictions to estimating your one-rep max.",
+    icon: "Dumbbell",
+  },
+  {
+    slug: "education",
+    name: "Education",
+    shortDescription: "Student loans and student budgeting",
+    description:
+      "Calculators for UK students and graduates, covering student loan repayments and budgeting for university life.",
+    icon: "GraduationCap",
   },
 ];
 

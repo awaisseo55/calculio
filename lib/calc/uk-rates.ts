@@ -428,3 +428,23 @@ export const SOLAR_TYPICAL_EXPORT_RATE_PENCE = 15;
 export const CAR_DEPRECIATION_YEAR1_PERCENT = 20;
 export const CAR_DEPRECIATION_YEAR2_TO_5_PERCENT = 15;
 export const CAR_DEPRECIATION_AFTER_YEAR5_PERCENT = 8;
+
+// --- Corporation Tax, 2026/27 --------------------------------------------------
+// The small profits rate applies in full to annual profits of £50,000 or less.
+// The main rate applies in full to profits of £250,000 or more. Profits between
+// these limits get marginal relief, which tapers the effective rate smoothly
+// between 19% and 25%, using HMRC's standard marginal relief fraction.
+export const CORPORATION_TAX_SMALL_PROFITS_RATE = 0.19;
+export const CORPORATION_TAX_MAIN_RATE = 0.25;
+export const CORPORATION_TAX_LOWER_LIMIT = 50000;
+export const CORPORATION_TAX_UPPER_LIMIT = 250000;
+export const CORPORATION_TAX_MARGINAL_RELIEF_FRACTION = 3 / 200;
+
+// --- Employer National Insurance (Class 1, secondary), 2026/27 ---------------
+// Paid by the employer on top of gross pay, above the secondary threshold.
+// Most employers can offset this against their Employment Allowance each tax
+// year, though companies where the only employee is also a director who owns
+// more than 50% of the company do not qualify for the allowance.
+export const EMPLOYER_NI_RATE = 0.15;
+export const EMPLOYER_NI_SECONDARY_THRESHOLD = 5000;
+export const EMPLOYMENT_ALLOWANCE = 10500;

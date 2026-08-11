@@ -122,7 +122,7 @@ export default function HomePage() {
               Browse by category
             </h2>
             <p className="max-w-2xl text-muted-foreground sm:text-base">
-              Six categories, one home for every UK calculation you need.
+              Ten categories, one home for every UK calculation you need.
             </p>
           </div>
         </Reveal>
