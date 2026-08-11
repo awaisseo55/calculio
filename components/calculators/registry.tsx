@@ -52,6 +52,16 @@ import { ChildBenefitCalculator } from "@/components/calculators/child-benefit-c
 import { UniversalCreditCalculator } from "@/components/calculators/universal-credit-calculator";
 import { MaternityPayCalculator } from "@/components/calculators/maternity-pay-calculator";
 import { SalaryNegotiationCalculator } from "@/components/calculators/salary-negotiation-calculator";
+import { MortgageAffordabilityCalculator } from "@/components/calculators/mortgage-affordability-calculator";
+import { RentalYieldCalculator } from "@/components/calculators/rental-yield-calculator";
+import { SimpleInterestCalculator } from "@/components/calculators/simple-interest-calculator";
+import { StatePensionAgeCalculator } from "@/components/calculators/state-pension-age-calculator";
+import { DebtPayoffCalculator } from "@/components/calculators/debt-payoff-calculator";
+import { MinimumWageCalculator } from "@/components/calculators/minimum-wage-calculator";
+import { OvertimePayCalculator } from "@/components/calculators/overtime-pay-calculator";
+import { PaternityPayCalculator } from "@/components/calculators/paternity-pay-calculator";
+import { CarDepreciationCalculator } from "@/components/calculators/car-depreciation-calculator";
+import { SolarPanelSavingsCalculator } from "@/components/calculators/solar-panel-savings-calculator";
 import type { ComponentType } from "react";
 
 export const calculatorComponents: Record<string, ComponentType> = {
@@ -109,4 +119,14 @@ export const calculatorComponents: Record<string, ComponentType> = {
   "universal-credit-calculator-uk": UniversalCreditCalculator,
   "maternity-pay-calculator-uk": MaternityPayCalculator,
   "salary-negotiation-calculator-uk": SalaryNegotiationCalculator,
+  "mortgage-affordability-calculator-uk": MortgageAffordabilityCalculator,
+  "rental-yield-calculator-uk": RentalYieldCalculator,
+  "simple-interest-calculator-uk": SimpleInterestCalculator,
+  "state-pension-age-calculator-uk": StatePensionAgeCalculator,
+  "debt-payoff-calculator-uk": DebtPayoffCalculator,
+  "minimum-wage-calculator-uk": MinimumWageCalculator,
+  "overtime-pay-calculator-uk": OvertimePayCalculator,
+  "paternity-pay-calculator-uk": PaternityPayCalculator,
+  "car-depreciation-calculator-uk": CarDepreciationCalculator,
+  "solar-panel-savings-calculator-uk": SolarPanelSavingsCalculator,
 };

@@ -96,7 +96,7 @@ export function Footer() {
               href="/calculators"
               className="mt-3 inline-block text-sm font-medium text-primary transition hover:text-primary/80"
             >
-              View all 50+ calculators &rarr;
+              View all 64+ calculators &rarr;
             </Link>
           </div>
 

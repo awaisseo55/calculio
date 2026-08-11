@@ -825,6 +825,156 @@ export const calculators: CalculatorMeta[] = [
     icon: "Handshake",
     schemaType: "SoftwareApplication",
   },
+  {
+    slug: "mortgage-affordability-calculator-uk",
+    name: "Mortgage Affordability Calculator",
+    shortName: "Mortgage Affordability",
+    h1: "UK Mortgage Affordability Calculator",
+    category: "finance",
+    description:
+      "Estimate how much you could borrow for a mortgage based on your income, existing debts and deposit.",
+    metaTitle: "Mortgage Affordability Calculator UK | How Much Can I Borrow",
+    metaDescription:
+      "Estimate how much you could borrow for a UK mortgage based on your income, joint income, existing debts and deposit, plus a stress-tested repayment.",
+    keywords: ["mortgage affordability calculator uk", "how much can i borrow calculator", "mortgage borrowing calculator uk"],
+    icon: "KeyRound",
+    schemaType: "SoftwareApplication",
+  },
+  {
+    slug: "rental-yield-calculator-uk",
+    name: "Rental Yield Calculator",
+    shortName: "Rental Yield",
+    h1: "UK Buy-to-Let Rental Yield Calculator",
+    category: "finance",
+    description:
+      "Work out gross and net rental yield, monthly cash flow and cash-on-cash return for a buy-to-let property.",
+    metaTitle: "Rental Yield Calculator UK | Buy-to-Let Returns",
+    metaDescription:
+      "Calculate gross and net rental yield for a UK buy-to-let property, plus monthly cash flow and cash-on-cash return after mortgage, fees and running costs.",
+    keywords: ["rental yield calculator uk", "buy to let yield calculator", "property investment calculator uk"],
+    icon: "Building2",
+    schemaType: "SoftwareApplication",
+  },
+  {
+    slug: "simple-interest-calculator-uk",
+    name: "Simple Interest Calculator",
+    shortName: "Simple Interest",
+    h1: "UK Simple Interest Calculator",
+    category: "finance",
+    description:
+      "Calculate simple interest on savings or a loan over any term, with a year-by-year breakdown.",
+    metaTitle: "Simple Interest Calculator UK | Interest on Savings",
+    metaDescription:
+      "Work out simple interest on a savings balance or loan for any principal, rate and time period, with a clear year-by-year breakdown of interest earned.",
+    keywords: ["simple interest calculator uk", "simple interest calculator", "how to calculate simple interest"],
+    icon: "Calculator",
+    schemaType: "SoftwareApplication",
+  },
+  {
+    slug: "state-pension-age-calculator-uk",
+    name: "State Pension Age Calculator",
+    shortName: "State Pension Age",
+    h1: "UK State Pension Age Calculator",
+    category: "finance",
+    description:
+      "Find your State Pension age based on your date of birth, and see an estimated new State Pension amount.",
+    metaTitle: "State Pension Age Calculator UK | Check Your Date",
+    metaDescription:
+      "Check your UK State Pension age based on your date of birth, how many years until you reach it, and an estimated new State Pension weekly amount.",
+    keywords: ["state pension age calculator", "check my state pension age", "when can i retire uk calculator"],
+    icon: "CalendarClock",
+    schemaType: "SoftwareApplication",
+  },
+  {
+    slug: "debt-payoff-calculator-uk",
+    name: "Debt Payoff Calculator",
+    shortName: "Debt Payoff",
+    h1: "UK Debt Payoff Calculator (Snowball vs Avalanche)",
+    category: "finance",
+    description:
+      "Compare the snowball and avalanche methods to see how fast you could clear multiple debts, and the interest saved.",
+    metaTitle: "Debt Payoff Calculator UK | Snowball vs Avalanche",
+    metaDescription:
+      "Compare the debt snowball and debt avalanche methods for multiple UK debts. See how many months to debt-free and how much interest each approach saves.",
+    keywords: ["debt payoff calculator uk", "debt snowball calculator", "debt avalanche calculator uk"],
+    icon: "TrendingDown",
+    schemaType: "SoftwareApplication",
+  },
+  {
+    slug: "minimum-wage-calculator-uk",
+    name: "National Minimum Wage Calculator",
+    shortName: "Minimum Wage",
+    h1: "UK National Minimum Wage Calculator",
+    category: "tax",
+    description:
+      "Check whether your pay meets the National Living Wage or National Minimum Wage for your age group.",
+    metaTitle: "Minimum Wage Calculator UK 2026 | Am I Paid Enough",
+    metaDescription:
+      "Check your pay against the 2026 UK National Living Wage and National Minimum Wage rates for your age group, and see your minimum legal weekly and annual pay.",
+    keywords: ["minimum wage calculator uk", "national living wage calculator", "am i being paid minimum wage uk"],
+    icon: "PoundSterling",
+    schemaType: "SoftwareApplication",
+  },
+  {
+    slug: "overtime-pay-calculator-uk",
+    name: "Overtime Pay Calculator",
+    shortName: "Overtime Pay",
+    h1: "UK Overtime Pay Calculator",
+    category: "tax",
+    description:
+      "Work out your overtime pay at time-and-a-half, double time or a custom rate, plus your total weekly pay.",
+    metaTitle: "Overtime Pay Calculator UK | Time and a Half",
+    metaDescription:
+      "Calculate your UK overtime pay at time-and-a-half, double time or a custom multiplier, and see your total pay for the week including standard hours.",
+    keywords: ["overtime pay calculator uk", "time and a half calculator", "overtime calculator uk"],
+    icon: "Hourglass",
+    schemaType: "SoftwareApplication",
+  },
+  {
+    slug: "paternity-pay-calculator-uk",
+    name: "Paternity Pay Calculator",
+    shortName: "Paternity Pay",
+    h1: "UK Statutory Paternity Pay Calculator 2026/27",
+    category: "tax",
+    description:
+      "Work out your Statutory Paternity Pay for 1 or 2 weeks of leave, and your net pay after tax and National Insurance.",
+    metaTitle: "Paternity Pay Calculator UK 2026/27 | SPP Calculator",
+    metaDescription:
+      "Calculate your UK Statutory Paternity Pay for 2026/27 across 1 or 2 weeks of leave, including the 90% earnings rate and net pay after tax and NI.",
+    keywords: ["paternity pay calculator uk", "statutory paternity pay calculator", "spp calculator uk"],
+    icon: "Baby",
+    schemaType: "SoftwareApplication",
+  },
+  {
+    slug: "car-depreciation-calculator-uk",
+    name: "Car Depreciation Calculator",
+    shortName: "Car Depreciation",
+    h1: "UK Car Depreciation Calculator",
+    category: "motoring",
+    description:
+      "Estimate how much a car could be worth after 1, 3, 5 or more years, and how much value it will lose.",
+    metaTitle: "Car Depreciation Calculator UK | Future Value",
+    metaDescription:
+      "Estimate how much a car will depreciate over time. See its likely resale value after each year of ownership and total value lost using typical UK rates.",
+    keywords: ["car depreciation calculator uk", "car value calculator uk", "how much will my car be worth"],
+    icon: "Car",
+    schemaType: "SoftwareApplication",
+  },
+  {
+    slug: "solar-panel-savings-calculator-uk",
+    name: "Solar Panel Savings Calculator",
+    shortName: "Solar Panel Savings",
+    h1: "UK Solar Panel Savings Calculator",
+    category: "home",
+    description:
+      "Estimate annual savings, export income and payback period for a home solar PV system.",
+    metaTitle: "Solar Panel Savings Calculator UK | Payback Period",
+    metaDescription:
+      "Estimate how much a home solar PV system could save on electricity bills, plus export income and payback period, based on system size and UK energy prices.",
+    keywords: ["solar panel savings calculator uk", "solar panel payback calculator", "is solar worth it uk calculator"],
+    icon: "Sun",
+    schemaType: "SoftwareApplication",
+  },
 ];
 
 export function getCalculator(slug: string): CalculatorMeta | undefined {

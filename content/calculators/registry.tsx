@@ -55,6 +55,16 @@ import * as childBenefit from "./child-benefit-calculator-uk";
 import * as universalCredit from "./universal-credit-calculator-uk";
 import * as maternityPay from "./maternity-pay-calculator-uk";
 import * as salaryNegotiation from "./salary-negotiation-calculator-uk";
+import * as mortgageAffordability from "./mortgage-affordability-calculator-uk";
+import * as rentalYield from "./rental-yield-calculator-uk";
+import * as simpleInterest from "./simple-interest-calculator-uk";
+import * as statePensionAge from "./state-pension-age-calculator-uk";
+import * as debtPayoff from "./debt-payoff-calculator-uk";
+import * as minimumWage from "./minimum-wage-calculator-uk";
+import * as overtimePay from "./overtime-pay-calculator-uk";
+import * as paternityPay from "./paternity-pay-calculator-uk";
+import * as carDepreciation from "./car-depreciation-calculator-uk";
+import * as solarPanelSavings from "./solar-panel-savings-calculator-uk";
 
 interface CalculatorContent {
   SeoContent: ComponentType;
@@ -116,4 +126,14 @@ export const calculatorContent: Record<string, CalculatorContent> = {
   "universal-credit-calculator-uk": universalCredit,
   "maternity-pay-calculator-uk": maternityPay,
   "salary-negotiation-calculator-uk": salaryNegotiation,
+  "mortgage-affordability-calculator-uk": mortgageAffordability,
+  "rental-yield-calculator-uk": rentalYield,
+  "simple-interest-calculator-uk": simpleInterest,
+  "state-pension-age-calculator-uk": statePensionAge,
+  "debt-payoff-calculator-uk": debtPayoff,
+  "minimum-wage-calculator-uk": minimumWage,
+  "overtime-pay-calculator-uk": overtimePay,
+  "paternity-pay-calculator-uk": paternityPay,
+  "car-depreciation-calculator-uk": carDepreciation,
+  "solar-panel-savings-calculator-uk": solarPanelSavings,
 };

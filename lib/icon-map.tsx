@@ -46,6 +46,14 @@ import {
   Users,
   HandCoins,
   Handshake,
+  KeyRound,
+  Building2,
+  Calculator,
+  CalendarClock,
+  TrendingDown,
+  PoundSterling,
+  Hourglass,
+  Sun,
   type LucideIcon,
 } from "lucide-react";
 
@@ -97,6 +105,14 @@ export const iconMap: Record<string, LucideIcon> = {
   Users,
   HandCoins,
   Handshake,
+  KeyRound,
+  Building2,
+  Calculator,
+  CalendarClock,
+  TrendingDown,
+  PoundSterling,
+  Hourglass,
+  Sun,
 };
 
 export function getIcon(name: string): LucideIcon {

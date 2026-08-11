@@ -362,3 +362,69 @@ export const WINTER_FUEL_PAYMENT_STANDARD = 200;
 export const WINTER_FUEL_PAYMENT_OVER_80 = 300;
 export const WINTER_FUEL_PAYMENT_INCOME_THRESHOLD = 35000;
 export const STATE_PENSION_AGE = 66;
+
+// --- State Pension age timetable ----------------------------------------------
+// Set out in the Pensions Act 2014. State Pension age is already equalised at 66
+// for everyone born before 6 April 1960. It then rises gradually to 67 for people
+// born between 6 April 1960 and 5 March 1961 (the exact date within this narrow
+// band depends on month of birth, so we point people in this window to the
+// official GOV.UK checker rather than guessing a precise date). Everyone born
+// from 6 March 1961 to 5 April 1977 has a State Pension age of exactly 67. Under
+// current law (Pensions Act 2007) it then rises to 68 for anyone born on or
+// after 6 April 1977, phased in between 2044 and 2046, though this date has been
+// subject to periodic government review and could change.
+export const STATE_PENSION_TRANSITION_66_67_START = "1960-04-06";
+export const STATE_PENSION_TRANSITION_66_67_END = "1961-03-05";
+export const STATE_PENSION_AGE_68_FROM_DOB = "1977-04-06";
+
+// --- Statutory Paternity Pay (SPP), 2026/27 -----------------------------------
+// Paid at the lower of the flat weekly rate below or 90% of average weekly
+// earnings, for up to 2 weeks, taken as one block or two separate weeks.
+// Requires 26 weeks' continuous employment by the 15th week before the expected
+// week of childbirth, and average weekly earnings at or above the Lower Earnings
+// Limit. Always confirm the current rate on gov.uk, since it is reviewed every
+// April alongside Statutory Maternity Pay.
+export const SPP_WEEKLY_RATE = 187.18;
+export const SPP_HIGHER_RATE_PERCENT = 0.9;
+export const SPP_MAX_WEEKS = 2;
+export const SPP_LOWER_EARNINGS_LIMIT_WEEKLY = 125;
+export const SPP_MIN_WEEKS_EMPLOYED = 26;
+
+// --- Mortgage affordability (illustrative lending assumptions) ---------------
+// Most mainstream UK lenders cap standard borrowing at around 4 to 4.5 times
+// annual income, with affordability then stress-tested against outgoings and a
+// higher "stressed" interest rate. These are typical, editable planning
+// assumptions, not a quote from any specific lender: actual borrowing limits
+// vary by lender, credit history and individual affordability assessment.
+export const MORTGAGE_AFFORDABILITY_INCOME_MULTIPLE = 4.5;
+export const MORTGAGE_AFFORDABILITY_STRESS_TEST_ADDITION_PERCENT = 1;
+
+// --- Buy-to-let rental yield (illustrative running-cost assumptions) ---------
+// Typical rule-of-thumb running costs for a rented property, used as editable
+// starting defaults. Actual costs vary significantly by property, letting
+// agent and region.
+export const BTL_TYPICAL_MANAGEMENT_FEE_PERCENT = 12;
+export const BTL_TYPICAL_MAINTENANCE_PERCENT = 10;
+export const BTL_TYPICAL_VOID_WEEKS_PER_YEAR = 2;
+
+// --- Solar panel savings (illustrative generation and export assumptions) ---
+// A well-sited UK solar PV system typically generates somewhere in the region
+// of 850 to 1,050 kWh per kWp of installed capacity per year, depending on
+// location, orientation and shading; 950 kWh/kWp is used here as a reasonable
+// mid-range planning default. Smart Export Guarantee (SEG) rates for unused
+// electricity exported to the grid vary widely by supplier, roughly 4p to 30p
+// per kWh; 15p/kWh is used as an illustrative default. Always check actual
+// quotes and current SEG tariffs before making a purchase decision.
+export const SOLAR_TYPICAL_GENERATION_PER_KWP_ANNUAL_KWH = 950;
+export const SOLAR_TYPICAL_SELF_CONSUMPTION_PERCENT = 40;
+export const SOLAR_TYPICAL_EXPORT_RATE_PENCE = 15;
+
+// --- Car depreciation (illustrative typical curve) ----------------------------
+// A commonly cited rule of thumb for a typical new petrol or diesel car: a
+// larger first-year drop as it becomes "used", followed by a steadier annual
+// decline that gradually slows. Actual depreciation varies enormously by make,
+// model, mileage, condition and market demand, so this is a planning estimate
+// only, not a valuation.
+export const CAR_DEPRECIATION_YEAR1_PERCENT = 20;
+export const CAR_DEPRECIATION_YEAR2_TO_5_PERCENT = 15;
+export const CAR_DEPRECIATION_AFTER_YEAR5_PERCENT = 8;
