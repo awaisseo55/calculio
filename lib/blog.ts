@@ -412,6 +412,27 @@ export const blogPosts: BlogPostMeta[] = [
     featuredImageAlt: "Calculio guide to UK maternity pay and Statutory Maternity Pay rates for 2026/27",
     wordCount: 2206,
   },
+  {
+    slug: "uk-student-loan-repayment-guide-2026",
+    title: "UK Student Loan Repayment 2026: Plans 1, 2, 4, 5 and Postgraduate Explained",
+    metaTitle: "UK Student Loan Repayment 2026: All Plans Explained",
+    metaDescription:
+      "How UK student loan repayment works in 2026: thresholds and rates for Plans 1, 2, 4, 5 and Postgraduate loans, interest, write-off rules, and a worked example.",
+    excerpt:
+      "Repayment thresholds and rates for every UK student loan plan, a worked example on a £35,000 salary, how interest and write-off periods work, and whether overpaying makes sense.",
+    category: "Education",
+    categorySlug: "education",
+    categoryHref: "/categories/education",
+    tags: ["student loan", "Plan 2", "graduates", "repayment", "education"],
+    authorSlug: "james-whitfield",
+    reviewerSlug: "emily-thorne",
+    publishDate: "2026-08-13",
+    updatedDate: "2026-08-13",
+    featuredImage:
+      "/og?title=UK%20Student%20Loan%20Repayment%202026%3A%20Plans%201%2C%202%2C%204%2C%205%20and%20Postgraduate%20Explained&subtitle=calculio.co.uk",
+    featuredImageAlt: "Calculio guide to UK student loan repayment plans and thresholds for 2026",
+    wordCount: 1480,
+  },
 ];
 
 export function getBlogPost(slug: string): BlogPostMeta | undefined {

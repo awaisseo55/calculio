@@ -158,6 +158,13 @@ const CTA_CONTENT: Record<
     buttonLabel: "Calculate my maternity pay",
     href: "/calculators/maternity-pay-calculator-uk",
   },
+  "uk-student-loan-repayment-guide-2026": {
+    title: "Calculate your student loan repayment",
+    description:
+      "Enter your salary and plan for an instant monthly and annual repayment figure, compared across every plan.",
+    buttonLabel: "Calculate my repayment",
+    href: "/calculators/student-loan-repayment-calculator-uk",
+  },
 };
 
 const DISCLAIMER =
@@ -281,6 +288,12 @@ const RELATED_CALCULATOR_SLUGS: Record<string, string[]> = {
     "take-home-pay-calculator-uk",
     "income-tax-calculator-uk",
     "self-employed-tax-calculator-uk",
+  ],
+  "uk-student-loan-repayment-guide-2026": [
+    "student-loan-repayment-calculator-uk",
+    "student-budget-calculator-uk",
+    "take-home-pay-calculator-uk",
+    "income-tax-calculator-uk",
   ],
 };
 

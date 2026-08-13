@@ -21,6 +21,7 @@ import * as sickPayGuide from "./uk-sick-pay-guide-2026";
 import * as winterFuelGuide from "./winter-fuel-payment-guide-2026";
 import * as childBenefitGuide from "./uk-child-benefit-guide-2026";
 import * as maternityPayGuide from "./uk-maternity-pay-guide-2026";
+import * as studentLoanRepaymentGuide from "./uk-student-loan-repayment-guide-2026";
 
 interface BlogPostContent {
   ArticleContent: ComponentType;
@@ -48,4 +49,5 @@ export const blogContent: Record<string, BlogPostContent> = {
   "winter-fuel-payment-guide-2026": winterFuelGuide,
   "uk-child-benefit-guide-2026": childBenefitGuide,
   "uk-maternity-pay-guide-2026": maternityPayGuide,
+  "uk-student-loan-repayment-guide-2026": studentLoanRepaymentGuide,
 };
