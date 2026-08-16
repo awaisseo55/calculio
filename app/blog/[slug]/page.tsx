@@ -165,6 +165,13 @@ const CTA_CONTENT: Record<
     buttonLabel: "Calculate my repayment",
     href: "/calculators/student-loan-repayment-calculator-uk",
   },
+  "how-much-mortgage-can-i-afford-uk-2026": {
+    title: "Estimate your mortgage affordability",
+    description:
+      "Enter your household income, deposit and monthly commitments to estimate your borrowing range, property budget and repayments.",
+    buttonLabel: "Calculate what I could afford",
+    href: "/calculators/mortgage-affordability-calculator-uk",
+  },
 };
 
 const DISCLAIMER =
@@ -294,6 +301,12 @@ const RELATED_CALCULATOR_SLUGS: Record<string, string[]> = {
     "student-budget-calculator-uk",
     "take-home-pay-calculator-uk",
     "income-tax-calculator-uk",
+  ],
+  "how-much-mortgage-can-i-afford-uk-2026": [
+    "mortgage-affordability-calculator-uk",
+    "mortgage-calculator-uk",
+    "stamp-duty-calculator-uk",
+    "mortgage-overpayment-calculator-uk",
   ],
 };
 

@@ -433,6 +433,26 @@ export const blogPosts: BlogPostMeta[] = [
     featuredImageAlt: "Calculio guide to UK student loan repayment plans and thresholds for 2026",
     wordCount: 1480,
   },
+  {
+    slug: "how-much-mortgage-can-i-afford-uk-2026",
+    title: "How Much Mortgage Can I Afford in the UK in 2026?",
+    metaTitle: "How Much Mortgage Can I Afford UK 2026? | Calculio",
+    metaDescription:
+      "Estimate how much mortgage you can afford in the UK in 2026. Learn how income multiples, deposits, outgoings and interest rates affect your budget.",
+    excerpt:
+      "Learn how lenders use income, outgoings, deposits and interest rates to assess mortgage affordability, with a clear worked example and practical checks.",
+    category: "Finance",
+    categorySlug: "finance",
+    categoryHref: "/categories/finance",
+    tags: ["mortgage affordability", "house buying", "income multiple", "deposit", "LTV"],
+    authorSlug: "james-whitfield",
+    reviewerSlug: "emily-thorne",
+    publishDate: "2026-08-17",
+    updatedDate: "2026-08-17",
+    featuredImage: "/blog/mortgage-affordability-uk-2026.jpg",
+    featuredImageAlt: "Couple reviewing their mortgage affordability and household budget in a UK home",
+    wordCount: 1295,
+  },
 ];
 
 export function getBlogPost(slug: string): BlogPostMeta | undefined {
