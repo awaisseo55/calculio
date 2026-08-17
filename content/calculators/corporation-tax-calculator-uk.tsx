@@ -176,7 +176,12 @@ export function SeoContent() {
         <Link href="/blog/self-employed-tax-guide-uk-2026">
           self-employed tax guide
         </Link>{" "}
-        covers the sole trader side of that comparison.
+        covers the sole trader side of that comparison. If a client is
+        overdue on an invoice, our{" "}
+        <Link href="/calculators/late-payment-interest-calculator-uk">
+          late payment interest calculator
+        </Link>{" "}
+        works out the statutory interest and compensation you can claim.
       </p>
     </div>
   );

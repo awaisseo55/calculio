@@ -166,7 +166,12 @@ export function SeoContent() {
           running pace calculator
         </Link>{" "}
         can help you plan your next run together, whatever life stage you
-        are both currently at.
+        are both currently at. To help work out a fair daily portion, our{" "}
+        <Link href="/calculators/dog-food-calculator-uk">
+          dog food calculator
+        </Link>{" "}
+        estimates how much to feed them based on their weight and activity
+        level.
       </p>
     </div>
   );

@@ -72,6 +72,11 @@ import { RunningPaceCalculator } from "@/components/calculators/running-pace-cal
 import { OneRepMaxCalculator } from "@/components/calculators/one-rep-max-calculator";
 import { StudentLoanRepaymentCalculator } from "@/components/calculators/student-loan-repayment-calculator";
 import { StudentBudgetCalculator } from "@/components/calculators/student-budget-calculator";
+import { DegreeClassificationCalculator } from "@/components/calculators/degree-classification-calculator";
+import { HeartRateZoneCalculator } from "@/components/calculators/heart-rate-zone-calculator";
+import { LatePaymentInterestCalculator } from "@/components/calculators/late-payment-interest-calculator";
+import { DogFoodCalculator } from "@/components/calculators/dog-food-calculator";
+import { TimeDurationCalculator } from "@/components/calculators/time-duration-calculator";
 import type { ComponentType } from "react";
 
 export const calculatorComponents: Record<string, ComponentType> = {
@@ -149,4 +154,9 @@ export const calculatorComponents: Record<string, ComponentType> = {
   "one-rep-max-calculator-uk": OneRepMaxCalculator,
   "student-loan-repayment-calculator-uk": StudentLoanRepaymentCalculator,
   "student-budget-calculator-uk": StudentBudgetCalculator,
+  "degree-classification-calculator-uk": DegreeClassificationCalculator,
+  "heart-rate-zone-calculator-uk": HeartRateZoneCalculator,
+  "late-payment-interest-calculator-uk": LatePaymentInterestCalculator,
+  "dog-food-calculator-uk": DogFoodCalculator,
+  "time-duration-calculator-uk": TimeDurationCalculator,
 };

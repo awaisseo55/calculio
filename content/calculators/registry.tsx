@@ -75,6 +75,11 @@ import * as runningPace from "./running-pace-calculator-uk";
 import * as oneRepMax from "./one-rep-max-calculator-uk";
 import * as studentLoanRepayment from "./student-loan-repayment-calculator-uk";
 import * as studentBudget from "./student-budget-calculator-uk";
+import * as degreeClassification from "./degree-classification-calculator-uk";
+import * as heartRateZone from "./heart-rate-zone-calculator-uk";
+import * as latePaymentInterest from "./late-payment-interest-calculator-uk";
+import * as dogFood from "./dog-food-calculator-uk";
+import * as timeDuration from "./time-duration-calculator-uk";
 
 interface CalculatorContent {
   SeoContent: ComponentType;
@@ -156,4 +161,9 @@ export const calculatorContent: Record<string, CalculatorContent> = {
   "one-rep-max-calculator-uk": oneRepMax,
   "student-loan-repayment-calculator-uk": studentLoanRepayment,
   "student-budget-calculator-uk": studentBudget,
+  "degree-classification-calculator-uk": degreeClassification,
+  "heart-rate-zone-calculator-uk": heartRateZone,
+  "late-payment-interest-calculator-uk": latePaymentInterest,
+  "dog-food-calculator-uk": dogFood,
+  "time-duration-calculator-uk": timeDuration,
 };

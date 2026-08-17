@@ -168,7 +168,13 @@ export function SeoContent() {
           compound interest
         </Link>{" "}
         explains why even small amounts saved early can add up over time,
-        a habit worth starting even on a student budget.
+        a habit worth starting even on a student budget. If you want to see
+        how you are tracking academically, our{" "}
+        <Link href="/calculators/degree-classification-calculator-uk">
+          degree classification calculator
+        </Link>{" "}
+        estimates your likely classification from your Year 2 and Year 3
+        marks.
       </p>
     </div>
   );

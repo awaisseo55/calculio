@@ -125,6 +125,12 @@ export function SeoContent() {
           working out your true hourly rate
         </Link>{" "}
         is also useful if you are comparing employed and self-employed pay.
+        To work out your total hours from a start and end time before
+        applying any of these rates, try our{" "}
+        <Link href="/calculators/time-duration-calculator-uk">
+          time duration calculator
+        </Link>
+        .
       </p>
     </div>
   );

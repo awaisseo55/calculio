@@ -1125,6 +1125,81 @@ export const calculators: CalculatorMeta[] = [
     icon: "Wallet",
     schemaType: "SoftwareApplication",
   },
+  {
+    slug: "degree-classification-calculator-uk",
+    name: "Degree Classification Calculator",
+    shortName: "Degree Classification",
+    h1: "UK Degree Classification Calculator",
+    category: "education",
+    description:
+      "Estimate your UK degree classification from your Year 2 and Year 3 marks, using common university weighting schemes.",
+    metaTitle: "Degree Classification Calculator UK | First, 2:1, 2:2 | Calculio",
+    metaDescription:
+      "Estimate your UK degree classification from your Year 2 and Year 3 average marks. Try different weighting schemes and see how close you are to the next band.",
+    keywords: ["degree classification calculator", "degree classification calculator uk", "2:1 calculator"],
+    icon: "Scroll",
+    schemaType: "SoftwareApplication",
+  },
+  {
+    slug: "heart-rate-zone-calculator-uk",
+    name: "Heart Rate Zone Calculator",
+    shortName: "Heart Rate Zones",
+    h1: "Heart Rate Zone Calculator",
+    category: "fitness",
+    description:
+      "Work out your estimated maximum heart rate and training zones, from easy recovery pace to maximum effort.",
+    metaTitle: "Heart Rate Zone Calculator | Training Zones by Age | Calculio",
+    metaDescription:
+      "Calculate your estimated maximum heart rate and 5 training zones from your age, with an optional Karvonen method using your resting heart rate.",
+    keywords: ["heart rate zone calculator", "target heart rate calculator", "max heart rate calculator"],
+    icon: "Heart",
+    schemaType: "SoftwareApplication",
+  },
+  {
+    slug: "late-payment-interest-calculator-uk",
+    name: "Late Payment Interest Calculator",
+    shortName: "Late Payment Interest",
+    h1: "UK Late Payment Interest Calculator",
+    category: "business",
+    description:
+      "Work out statutory interest and compensation you can claim on an overdue business invoice under UK late payment law.",
+    metaTitle: "Late Payment Interest Calculator UK | Statutory Interest | Calculio",
+    metaDescription:
+      "Calculate statutory interest and fixed compensation on an overdue UK business invoice under the Late Payment of Commercial Debts Act 1998.",
+    keywords: ["late payment interest calculator", "statutory interest calculator uk", "late payment calculator uk"],
+    icon: "HandCoins",
+    schemaType: "SoftwareApplication",
+  },
+  {
+    slug: "dog-food-calculator-uk",
+    name: "Dog Food Calculator",
+    shortName: "Dog Food",
+    h1: "Dog Food Calculator",
+    category: "pets",
+    description:
+      "Estimate how much to feed your dog each day, based on their weight, activity level and their food's energy content.",
+    metaTitle: "Dog Food Calculator UK | Daily Portion Estimate | Calculio",
+    metaDescription:
+      "Work out an estimated daily food portion for your dog based on their weight, activity level and food's kcal content. A helpful starting point, not vet advice.",
+    keywords: ["dog food calculator", "how much to feed my dog", "dog portion calculator"],
+    icon: "Dog",
+    schemaType: "SoftwareApplication",
+  },
+  {
+    slug: "time-duration-calculator-uk",
+    name: "Time Duration Calculator",
+    shortName: "Time Duration",
+    h1: "Time Duration Calculator",
+    category: "everyday",
+    description:
+      "Calculate the hours and minutes between two times, deduct unpaid breaks, and work out pay from an hourly rate.",
+    metaTitle: "Time Duration Calculator | Hours Between Two Times | Calculio",
+    metaDescription:
+      "Calculate hours and minutes worked between two times, deduct unpaid breaks, and see decimal hours and pay for timesheets or freelance billing.",
+    keywords: ["time duration calculator", "hours calculator", "time card calculator uk"],
+    icon: "Clock",
+    schemaType: "SoftwareApplication",
+  },
 ];
 
 export function getCalculator(slug: string): CalculatorMeta | undefined {

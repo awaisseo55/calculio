@@ -169,7 +169,12 @@ export function SeoContent() {
         gives a general healthy weight range to consider alongside training
         goals, not as a target to chase aggressively. None of these figures
         should be treated as a strict target, since fitness and healthy
-        weight both depend on far more than any single number.
+        weight both depend on far more than any single number. To train at
+        the right intensity, our{" "}
+        <Link href="/calculators/heart-rate-zone-calculator-uk">
+          heart rate zone calculator
+        </Link>{" "}
+        works out your estimated training zones from your age.
       </p>
     </div>
   );
