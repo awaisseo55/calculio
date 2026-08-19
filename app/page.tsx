@@ -6,8 +6,10 @@ import { CategoryCard } from "@/components/site/category-card";
 import { CalculatorCard } from "@/components/site/calculator-card";
 import { Reveal } from "@/components/site/reveal";
 import { Button } from "@/components/ui/button";
+import { BlogPostCard } from "@/components/blog/blog-post-card";
 import { categories } from "@/lib/categories";
 import { getFeaturedCalculators } from "@/lib/calculators";
+import { getAllBlogPosts } from "@/lib/blog";
 import { siteConfig } from "@/lib/site";
 
 export const metadata: Metadata = {
@@ -46,6 +48,7 @@ const valueProps = [
 
 export default function HomePage() {
   const featured = getFeaturedCalculators();
+  const latestPosts = getAllBlogPosts().slice(0, 3);
 
   return (
     <>
@@ -170,6 +173,72 @@ export default function HomePage() {
                   {item.description}
                 </p>
               </div>
+            </Reveal>
+          ))}
+        </div>
+      </section>
+
+      <section className="border-t border-border/60 bg-secondary/20">
+        <div className="mx-auto max-w-3xl px-4 py-20 sm:px-6 lg:px-8">
+          <Reveal>
+            <h2 className="text-center text-2xl font-semibold tracking-tight text-foreground sm:text-3xl">
+              About {siteConfig.name}
+            </h2>
+            <div className="prose prose-neutral dark:prose-invert mt-6 max-w-none text-center sm:text-left">
+              <p>
+                {siteConfig.name} is a free calculator hub built for people living in the
+                UK. Every tool on the site uses UK rules from the ground up, including
+                HMRC income tax bands, DVLA vehicle tax rates and NHS health guidance,
+                rather than a generic calculator with the currency symbol changed. There
+                is no sign-up wall and no paywall. Type in your numbers and get an answer
+                straight away.
+              </p>
+              <p>
+                We cover ten categories, from tax and mortgages to motoring, health,
+                business and pets. Alongside each calculator, you will find a plain
+                English explanation of the formula, a worked example using real UK
+                numbers, and answers to the questions people ask most. Where a topic goes
+                deeper than one calculator can cover, our{" "}
+                <Link href="/blog">blog</Link> looks at UK money and property questions in
+                more detail.
+              </p>
+              <p>
+                Every calculator and guide on {siteConfig.name} is written for general
+                information only, not personal financial, tax, medical or legal advice.
+                For any decision with real consequences, we always recommend speaking to
+                a suitably qualified professional, such as an FCA-regulated adviser, an
+                accountant, a solicitor or your GP. Read more about how we work on our{" "}
+                <Link href="/about">About page</Link>.
+              </p>
+            </div>
+          </Reveal>
+        </div>
+      </section>
+
+      <section className="mx-auto max-w-7xl px-4 py-16 sm:px-6 lg:px-8">
+        <Reveal>
+          <div className="flex flex-col gap-2 text-center sm:flex-row sm:items-end sm:justify-between sm:text-left">
+            <div>
+              <h2 className="text-2xl font-semibold tracking-tight text-foreground sm:text-3xl">
+                From the blog
+              </h2>
+              <p className="mt-2 max-w-2xl text-muted-foreground sm:text-base">
+                In-depth UK money and property guides to go with the numbers.
+              </p>
+            </div>
+            <Link
+              href="/blog"
+              className="inline-flex items-center justify-center gap-1.5 text-sm font-medium text-primary hover:underline sm:justify-start"
+            >
+              View all articles
+              <ArrowRight className="size-3.5" aria-hidden="true" />
+            </Link>
+          </div>
+        </Reveal>
+        <div className="mt-8 grid grid-cols-1 gap-5 sm:grid-cols-2 lg:grid-cols-3">
+          {latestPosts.map((post, i) => (
+            <Reveal key={post.slug} delay={i * 0.05}>
+              <BlogPostCard post={post} />
             </Reveal>
           ))}
         </div>
