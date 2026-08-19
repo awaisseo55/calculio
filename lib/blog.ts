@@ -44,7 +44,7 @@ export const blogPosts: BlogPostMeta[] = [
   {
     slug: "uk-income-tax-2026-27",
     title: "UK Income Tax 2026/27: Bands, Rates, and How Much You'll Pay",
-    metaTitle: "UK Income Tax 2026/27: Bands, Rates Explained | Calculio",
+    metaTitle: "UK Income Tax 2026/27: Bands, Rates Explained",
     metaDescription:
       "UK Income Tax bands and rates for 2026/27, including the Scottish bands, the 60% tax trap, and National Insurance, with worked examples.",
     excerpt:
@@ -64,7 +64,7 @@ export const blogPosts: BlogPostMeta[] = [
   {
     slug: "mortgage-deposit-uk-2026",
     title: "How Much Deposit Do I Need for a Mortgage in 2026?",
-    metaTitle: "How Much Mortgage Deposit Do You Need in 2026? | Calculio",
+    metaTitle: "How Much Mortgage Deposit Do You Need in 2026?",
     metaDescription:
       "UK mortgage deposit requirements for 2026, from 5% to 25% deposits, government schemes that help, and how deposit size affects your rate.",
     excerpt:
@@ -84,7 +84,7 @@ export const blogPosts: BlogPostMeta[] = [
   {
     slug: "uk-car-tax-2026-ved-guide",
     title: "UK Car Tax Rates 2026: Complete VED Guide by Fuel Type",
-    metaTitle: "UK Car Tax (VED) Rates 2026: Complete Guide | Calculio",
+    metaTitle: "UK Car Tax (VED) Rates 2026: Complete Guide",
     metaDescription:
       "UK car tax rates for 2026 covering petrol, diesel, hybrid and electric vehicles, first-year VED bands, the expensive car supplement, and how to pay.",
     excerpt:
@@ -104,7 +104,7 @@ export const blogPosts: BlogPostMeta[] = [
   {
     slug: "healthy-bmi-adults-uk",
     title: "BMI Calculator UK: What's a Healthy BMI for Adults?",
-    metaTitle: "Healthy BMI Range for UK Adults Explained | Calculio",
+    metaTitle: "Healthy BMI Range for UK Adults Explained",
     metaDescription:
       "What counts as a healthy BMI for UK adults, NHS categories explained, healthy weight ranges by height, and why BMI isn't the whole picture.",
     excerpt:
@@ -124,7 +124,7 @@ export const blogPosts: BlogPostMeta[] = [
   {
     slug: "self-employed-tax-guide-uk-2026",
     title: "The Complete UK Self-Employed Tax Guide for 2026/27",
-    metaTitle: "Self-Employed Tax Guide UK 2026/27 | Income Tax & NI | Calculio",
+    metaTitle: "Self-Employed Tax Guide UK 2026/27 | Income Tax & NI",
     metaDescription:
       "A complete guide to self-employed tax in the UK for 2026/27: Income Tax, Class 2 and Class 4 National Insurance, allowable expenses, and a full worked example.",
     excerpt:
@@ -184,7 +184,7 @@ export const blogPosts: BlogPostMeta[] = [
   {
     slug: "uk-state-pension-guide-2026",
     title: "How Much Is My State Pension Worth in 2026? UK State Pension Guide",
-    metaTitle: "UK State Pension 2026: How Much Will You Get? | Calculio",
+    metaTitle: "UK State Pension 2026: How Much Will You Get?",
     metaDescription:
       "How much the UK State Pension is worth in 2026, how to qualify with National Insurance years, State Pension age, deferring, and inherited pension rules.",
     excerpt:
@@ -205,7 +205,7 @@ export const blogPosts: BlogPostMeta[] = [
   {
     slug: "first-home-cost-uk-2026",
     title: "The Real Cost of Buying Your First Home in the UK 2026",
-    metaTitle: "Real Cost of Buying Your First Home UK 2026 | Calculio",
+    metaTitle: "Real Cost of Buying Your First Home UK 2026",
     metaDescription:
       "Every cost of buying your first UK home in 2026: deposit, stamp duty, solicitor and survey fees, mortgage fees, insurance and moving costs, with an example.",
     excerpt:
@@ -226,7 +226,7 @@ export const blogPosts: BlogPostMeta[] = [
   {
     slug: "freelancer-hourly-rate-uk-2026",
     title: "How to Calculate Your True Hourly Rate as a UK Freelancer",
-    metaTitle: "True Freelance Hourly Rate Calculator Guide UK | Calculio",
+    metaTitle: "True Freelance Hourly Rate Calculator Guide UK",
     metaDescription:
       "How to work out your true hourly rate as a UK freelancer, after tax, National Insurance, expenses and unbilled hours, with a full worked example.",
     excerpt:
@@ -247,7 +247,7 @@ export const blogPosts: BlogPostMeta[] = [
   {
     slug: "uk-council-tax-guide-2026",
     title: "The Complete UK Council Tax Guide for 2026/27",
-    metaTitle: "UK Council Tax Guide 2026/27: Bands, Discounts | Calculio",
+    metaTitle: "UK Council Tax Guide 2026/27: Bands, Discounts",
     metaDescription:
       "A complete guide to UK council tax for 2026/27: bands A to H explained, how bills are calculated, discounts and exemptions, and how to challenge your band.",
     excerpt:
@@ -268,7 +268,7 @@ export const blogPosts: BlogPostMeta[] = [
   {
     slug: "reduce-uk-energy-bills-2026",
     title: "How to Reduce Your UK Energy Bills in 2026",
-    metaTitle: "How to Reduce Your UK Energy Bills in 2026 | Calculio",
+    metaTitle: "How to Reduce Your UK Energy Bills in 2026",
     metaDescription:
       "Practical ways to cut your UK gas and electricity bills in 2026: the Ofgem price cap explained, room-by-room savings, insulation payback, and grants available.",
     excerpt:
@@ -289,7 +289,7 @@ export const blogPosts: BlogPostMeta[] = [
   {
     slug: "electric-vs-petrol-cost-comparison-uk-2026",
     title: "Is an Electric Car Cheaper Than Petrol in the UK in 2026?",
-    metaTitle: "Electric vs Petrol Car Costs UK 2026 | Calculio",
+    metaTitle: "Electric vs Petrol Car Costs UK 2026",
     metaDescription:
       "A full UK cost comparison of electric vs petrol cars for 2026: upfront price, running costs, charging, depreciation, and when an EV actually saves money.",
     excerpt:
@@ -310,7 +310,7 @@ export const blogPosts: BlogPostMeta[] = [
   {
     slug: "uk-redundancy-guide-2026",
     title: "UK Redundancy Rights and Pay Explained for 2026",
-    metaTitle: "UK Redundancy Rights and Pay Guide 2026 | Calculio",
+    metaTitle: "UK Redundancy Rights and Pay Guide 2026",
     metaDescription:
       "A complete guide to UK redundancy in 2026: statutory pay rules, notice periods, tax on redundancy pay, enhanced packages, and your rights during the process.",
     excerpt:
@@ -331,7 +331,7 @@ export const blogPosts: BlogPostMeta[] = [
   {
     slug: "uk-sick-pay-guide-2026",
     title: "Understanding UK Sick Pay: Your Rights Explained",
-    metaTitle: "UK Sick Pay Rules Explained 2026 | SSP Guide | Calculio",
+    metaTitle: "UK Sick Pay Rules Explained 2026 | SSP Guide",
     metaDescription:
       "How UK sick pay works in 2026: the new SSP rate and day-one rules, company sick pay schemes, self-employed options, and your rights when off sick.",
     excerpt:
@@ -373,7 +373,7 @@ export const blogPosts: BlogPostMeta[] = [
   {
     slug: "uk-child-benefit-guide-2026",
     title: "The Complete UK Child Benefit Guide 2026",
-    metaTitle: "UK Child Benefit Guide 2026: Rates & HICBC | Calculio",
+    metaTitle: "UK Child Benefit Guide 2026: Rates & HICBC",
     metaDescription:
       "A complete guide to UK Child Benefit for 2026/27: current rates, the High Income Child Benefit Charge, whether to claim, and how to apply.",
     excerpt:
@@ -394,7 +394,7 @@ export const blogPosts: BlogPostMeta[] = [
   {
     slug: "uk-maternity-pay-guide-2026",
     title: "How Much Maternity Pay Will You Get in the UK 2026",
-    metaTitle: "UK Maternity Pay 2026: SMP Rates Explained | Calculio",
+    metaTitle: "UK Maternity Pay 2026: SMP Rates Explained",
     metaDescription:
       "How much maternity pay you'll get in the UK for 2026/27: SMP rates, enhanced employer schemes, Maternity Allowance, and planning your finances.",
     excerpt:
@@ -436,7 +436,7 @@ export const blogPosts: BlogPostMeta[] = [
   {
     slug: "how-much-mortgage-can-i-afford-uk-2026",
     title: "How Much Mortgage Can I Afford in the UK in 2026?",
-    metaTitle: "How Much Mortgage Can I Afford UK 2026? | Calculio",
+    metaTitle: "How Much Mortgage Can I Afford UK 2026?",
     metaDescription:
       "Estimate how much mortgage you can afford in the UK in 2026. Learn how income multiples, deposits, outgoings and interest rates affect your budget.",
     excerpt:

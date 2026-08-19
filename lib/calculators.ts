@@ -9,7 +9,7 @@ export const calculators: CalculatorMeta[] = [
     category: "home",
     description:
       "Estimate your monthly mortgage repayments, total interest and full amortisation schedule.",
-    metaTitle: "Mortgage Calculator UK 2026 | Monthly Repayments | Calculio",
+    metaTitle: "Mortgage Calculator UK 2026 | Monthly Repayments",
     metaDescription:
       "Free UK mortgage calculator. Work out monthly repayments, total interest and total cost for any property price, deposit, term and rate.",
     keywords: ["mortgage calculator uk", "monthly mortgage repayments", "mortgage repayment calculator"],
@@ -25,7 +25,7 @@ export const calculators: CalculatorMeta[] = [
     category: "home",
     description:
       "Calculate Stamp Duty Land Tax, Land and Buildings Transaction Tax or Land Transaction Tax on your property purchase.",
-    metaTitle: "Stamp Duty Calculator 2026 | SDLT, LBTT & LTT | Calculio",
+    metaTitle: "Stamp Duty Calculator 2026 | SDLT, LBTT & LTT",
     metaDescription:
       "Work out how much stamp duty you'll pay in England, Scotland or Wales in 2026, with a full band-by-band breakdown for your buyer type.",
     keywords: ["stamp duty calculator", "sdlt calculator", "lbtt calculator", "ltt calculator wales"],
@@ -41,7 +41,7 @@ export const calculators: CalculatorMeta[] = [
     category: "finance",
     description:
       "See your net monthly and annual pay after Income Tax, National Insurance, pension and student loan deductions.",
-    metaTitle: "Take-Home Pay Calculator UK 2026 | Net Salary | Calculio",
+    metaTitle: "Take-Home Pay Calculator UK 2026 | Net Salary",
     metaDescription:
       "Calculate your UK take-home pay for 2026/27. See net salary after tax, National Insurance, pension and student loan repayments.",
     keywords: ["take home pay calculator", "net salary calculator uk", "salary calculator uk"],
@@ -57,7 +57,7 @@ export const calculators: CalculatorMeta[] = [
     category: "tax",
     description:
       "Break down exactly how much Income Tax you owe by band, for England, Wales, Northern Ireland or Scotland.",
-    metaTitle: "Income Tax Calculator UK 2026/27 | By Tax Band | Calculio",
+    metaTitle: "Income Tax Calculator UK 2026/27 | By Tax Band",
     metaDescription:
       "Calculate your UK Income Tax for 2025/26 or 2026/27. Full breakdown by personal allowance and tax band for all UK nations.",
     keywords: ["income tax calculator uk", "uk tax bands 2026", "income tax calculator"],
@@ -72,7 +72,7 @@ export const calculators: CalculatorMeta[] = [
     category: "motoring",
     description:
       "Find your Vehicle Excise Duty rate based on fuel type, CO2 emissions, list price and first registration date.",
-    metaTitle: "Road Tax Calculator UK 2026 | VED Rates | Calculio",
+    metaTitle: "Road Tax Calculator UK 2026 | VED Rates",
     metaDescription:
       "Calculate UK car tax (VED) for 2026. First-year and standard rates for petrol, diesel, hybrid and electric vehicles.",
     keywords: ["road tax calculator", "ved calculator", "car tax calculator uk"],
@@ -88,7 +88,7 @@ export const calculators: CalculatorMeta[] = [
     category: "motoring",
     description:
       "Work out how much a journey or trip will cost in fuel, based on distance, MPG and fuel price.",
-    metaTitle: "Fuel Cost Calculator UK | Journey & Trip Cost | Calculio",
+    metaTitle: "Fuel Cost Calculator UK | Journey & Trip Cost",
     metaDescription:
       "Calculate the fuel cost of any journey. Enter distance, MPG and fuel price per litre to get total cost and cost per mile.",
     keywords: ["fuel cost calculator", "petrol cost calculator", "mpg calculator uk"],
@@ -103,7 +103,7 @@ export const calculators: CalculatorMeta[] = [
     category: "health",
     description:
       "Calculate your Body Mass Index and see which NHS weight category you fall into, plus a healthy weight range.",
-    metaTitle: "BMI Calculator UK | NHS Categories | Calculio",
+    metaTitle: "BMI Calculator UK | NHS Categories",
     metaDescription:
       "Free BMI calculator using metric or imperial units. See your NHS BMI category and healthy weight range instantly.",
     keywords: ["bmi calculator", "bmi calculator nhs", "body mass index calculator uk"],
@@ -119,7 +119,7 @@ export const calculators: CalculatorMeta[] = [
     category: "health",
     description:
       "Estimate your due date and current gestational week from your last period, conception date or IVF transfer date.",
-    metaTitle: "Pregnancy Due Date Calculator UK | NHS Milestones | Calculio",
+    metaTitle: "Pregnancy Due Date Calculator UK | NHS Milestones",
     metaDescription:
       "Work out your estimated due date and current week of pregnancy, plus key NHS antenatal milestones like your scans.",
     keywords: ["pregnancy due date calculator", "due date calculator uk", "gestational age calculator"],
@@ -134,7 +134,7 @@ export const calculators: CalculatorMeta[] = [
     category: "everyday",
     description:
       "Calculate exact age in years, months and days from any date of birth, plus total days, weeks and hours lived.",
-    metaTitle: "Age Calculator | Exact Age in Years, Months, Days | Calculio",
+    metaTitle: "Age Calculator | Exact Age in Years, Months, Days",
     metaDescription:
       "Calculate your exact age in years, months and days, total days lived, and a countdown to your next birthday.",
     keywords: ["age calculator", "date of birth calculator", "how old am i"],
@@ -149,7 +149,7 @@ export const calculators: CalculatorMeta[] = [
     category: "everyday",
     description:
       "Four calculators in one: find a percentage of a number, work out percentage change, and more.",
-    metaTitle: "Percentage Calculator | % of, Change, Increase | Calculio",
+    metaTitle: "Percentage Calculator | % of, Change, Increase",
     metaDescription:
       "Free online percentage calculator. Find what X% of Y is, percentage change, and increase or decrease in seconds.",
     keywords: ["percentage calculator", "percentage increase calculator", "percentage change calculator"],
@@ -164,7 +164,7 @@ export const calculators: CalculatorMeta[] = [
     category: "finance",
     description:
       "See how your savings grow over time with compound interest, including regular monthly contributions.",
-    metaTitle: "Compound Interest Calculator UK 2026 | Calculio",
+    metaTitle: "Compound Interest Calculator UK 2026",
     metaDescription:
       "Work out how your savings grow with compound interest. Add monthly contributions and see a year by year breakdown of your balance.",
     keywords: ["compound interest calculator", "compound interest calculator uk", "savings growth calculator"],
@@ -179,7 +179,7 @@ export const calculators: CalculatorMeta[] = [
     category: "finance",
     description:
       "Find out how long it will take to reach your savings goal based on your monthly contributions and interest rate.",
-    metaTitle: "Savings Goal Calculator UK | How Long to Save | Calculio",
+    metaTitle: "Savings Goal Calculator UK | How Long to Save",
     metaDescription:
       "Calculate how long it will take to reach your savings target, based on your starting balance, monthly contribution and interest rate.",
     keywords: ["savings goal calculator", "savings calculator uk", "how long to save"],
@@ -194,7 +194,7 @@ export const calculators: CalculatorMeta[] = [
     category: "finance",
     description:
       "Work out your monthly loan repayment, total interest and a full repayment schedule for any personal loan.",
-    metaTitle: "Loan Repayment Calculator UK | Monthly Cost | Calculio",
+    metaTitle: "Loan Repayment Calculator UK | Monthly Cost",
     metaDescription:
       "Free UK loan repayment calculator. Work out your monthly payment, total interest and full repayment schedule for any personal loan.",
     keywords: ["loan repayment calculator", "loan calculator uk", "personal loan calculator"],
@@ -209,7 +209,7 @@ export const calculators: CalculatorMeta[] = [
     category: "finance",
     description:
       "See how long it will take to clear your credit card balance and how much interest you will pay at different payment levels.",
-    metaTitle: "Credit Card Payoff Calculator UK | Calculio",
+    metaTitle: "Credit Card Payoff Calculator UK",
     metaDescription:
       "Work out how long it takes to pay off a credit card balance and how much interest you will pay, based on your monthly payment and APR.",
     keywords: ["credit card payoff calculator", "credit card calculator uk", "pay off credit card"],
@@ -224,7 +224,7 @@ export const calculators: CalculatorMeta[] = [
     category: "finance",
     description:
       "Find out how much time and interest you could save by overpaying your mortgage each month.",
-    metaTitle: "Mortgage Overpayment Calculator UK | Calculio",
+    metaTitle: "Mortgage Overpayment Calculator UK",
     metaDescription:
       "See how much interest and time you could save by overpaying your mortgage each month, with a new payoff date and total saving.",
     keywords: ["mortgage overpayment calculator", "overpay mortgage calculator uk", "mortgage overpayment savings"],
@@ -239,7 +239,7 @@ export const calculators: CalculatorMeta[] = [
     category: "tax",
     description:
       "Calculate how much National Insurance you pay as an employee or if you're self-employed, for 2025/26 and 2026/27.",
-    metaTitle: "National Insurance Calculator UK 2026/27 | Calculio",
+    metaTitle: "National Insurance Calculator UK 2026/27",
     metaDescription:
       "Work out your UK National Insurance contributions for 2026/27, whether you're employed or self-employed, with a full monthly breakdown.",
     keywords: ["national insurance calculator", "ni calculator uk", "class 4 national insurance calculator"],
@@ -254,7 +254,7 @@ export const calculators: CalculatorMeta[] = [
     category: "tax",
     description:
       "Work out your Income Tax, Class 2 and Class 4 National Insurance as a self-employed sole trader.",
-    metaTitle: "Self-Employed Tax Calculator UK 2026/27 | Calculio",
+    metaTitle: "Self-Employed Tax Calculator UK 2026/27",
     metaDescription:
       "Calculate your total tax bill as a self-employed sole trader, including Income Tax and Class 2 and Class 4 National Insurance.",
     keywords: ["self employed tax calculator", "sole trader tax calculator uk", "self employed tax calculator uk"],
@@ -269,7 +269,7 @@ export const calculators: CalculatorMeta[] = [
     category: "tax",
     description:
       "Calculate the tax you owe on dividend income above your tax-free dividend allowance.",
-    metaTitle: "Dividend Tax Calculator UK 2026/27 | Calculio",
+    metaTitle: "Dividend Tax Calculator UK 2026/27",
     metaDescription:
       "Work out how much tax you owe on dividend income in 2026/27, after your salary and the tax-free dividend allowance.",
     keywords: ["dividend tax calculator", "dividend tax calculator uk", "dividend allowance calculator"],
@@ -284,7 +284,7 @@ export const calculators: CalculatorMeta[] = [
     category: "tax",
     description:
       "Estimate the Capital Gains Tax owed on the sale of property, shares or other assets after your annual exempt amount.",
-    metaTitle: "Capital Gains Tax Calculator UK 2026/27 | Calculio",
+    metaTitle: "Capital Gains Tax Calculator UK 2026/27",
     metaDescription:
       "Estimate your UK Capital Gains Tax bill on property or other assets, after the annual exempt amount and your Income Tax band.",
     keywords: ["capital gains tax calculator", "cgt calculator uk", "capital gains tax calculator uk"],
@@ -299,7 +299,7 @@ export const calculators: CalculatorMeta[] = [
     category: "motoring",
     description:
       "Work out your car's real fuel economy in miles per gallon, litres per 100km and cost per mile.",
-    metaTitle: "MPG Calculator UK | Miles Per Gallon | Calculio",
+    metaTitle: "MPG Calculator UK | Miles Per Gallon",
     metaDescription:
       "Calculate your car's real world MPG from distance driven and fuel used, plus litres per 100km and an estimated cost per mile.",
     keywords: ["mpg calculator", "mpg calculator uk", "miles per gallon calculator"],
@@ -314,7 +314,7 @@ export const calculators: CalculatorMeta[] = [
     category: "motoring",
     description:
       "Work out your daily, weekly and annual London Congestion Charge and ULEZ costs based on your vehicle and how often you drive in.",
-    metaTitle: "Congestion Charge & ULEZ Calculator UK | Calculio",
+    metaTitle: "Congestion Charge & ULEZ Calculator UK",
     metaDescription:
       "Estimate your London Congestion Charge and ULEZ costs by vehicle type, emissions standard and how many days a week you drive in.",
     keywords: ["congestion charge calculator", "ulez calculator", "ulez charge calculator london"],
@@ -329,7 +329,7 @@ export const calculators: CalculatorMeta[] = [
     category: "health",
     description:
       "Estimate your total daily energy expenditure and general calorie guides for maintaining, losing or gaining weight.",
-    metaTitle: "TDEE Calculator UK | Daily Calorie Needs | Calculio",
+    metaTitle: "TDEE Calculator UK | Daily Calorie Needs",
     metaDescription:
       "Estimate your total daily energy expenditure (TDEE) and general calorie guidance for maintenance, mild loss or mild gain.",
     keywords: ["tdee calculator", "tdee calculator uk", "calorie calculator uk"],
@@ -344,7 +344,7 @@ export const calculators: CalculatorMeta[] = [
     category: "health",
     description:
       "See an estimated healthy weight range for your height using several common formulas, alongside the NHS BMI range.",
-    metaTitle: "Ideal Weight Calculator UK | Healthy Weight Range | Calculio",
+    metaTitle: "Ideal Weight Calculator UK | Healthy Weight Range",
     metaDescription:
       "Estimate a healthy weight range for your height using the Devine, Robinson and NHS BMI methods. General guidance only, not medical advice.",
     keywords: ["ideal weight calculator", "healthy weight calculator uk", "ideal body weight calculator"],
@@ -359,7 +359,7 @@ export const calculators: CalculatorMeta[] = [
     category: "home",
     description:
       "Work out how many litres and tins of paint you need for a room, based on its size, coats and paint coverage rate.",
-    metaTitle: "Paint Coverage Calculator UK | How Much Paint | Calculio",
+    metaTitle: "Paint Coverage Calculator UK | How Much Paint",
     metaDescription:
       "Calculate how many litres and tins of paint you need for any room, based on wall area, coats, doors, windows and coverage rate.",
     keywords: ["paint calculator", "paint coverage calculator uk", "how much paint do i need"],
@@ -374,7 +374,7 @@ export const calculators: CalculatorMeta[] = [
     category: "everyday",
     description:
       "Work out how much to tip, your total bill and how much each person owes if you're splitting the bill.",
-    metaTitle: "Tip Calculator UK | Split the Bill | Calculio",
+    metaTitle: "Tip Calculator UK | Split the Bill",
     metaDescription:
       "Work out how much to tip in the UK, your total bill including the tip, and how much each person owes if you're splitting it.",
     keywords: ["tip calculator", "tip calculator uk", "bill splitting calculator"],
@@ -389,7 +389,7 @@ export const calculators: CalculatorMeta[] = [
     category: "finance",
     description:
       "Project how a Cash, Stocks and Shares, Lifetime or Junior ISA could grow, and see how much you keep tax-free.",
-    metaTitle: "ISA Calculator UK 2026/27 | Tax-Free Growth | Calculio",
+    metaTitle: "ISA Calculator UK 2026/27 | Tax-Free Growth",
     metaDescription:
       "Work out how your ISA could grow over time, tax-free, across Cash, Stocks and Shares, Lifetime and Junior ISAs, with a comparison to taxed savings.",
     keywords: ["isa calculator", "isa calculator uk", "stocks and shares isa calculator", "lifetime isa calculator"],
@@ -405,7 +405,7 @@ export const calculators: CalculatorMeta[] = [
     category: "finance",
     description:
       "Project your pension pot at retirement and an estimated annual income, alongside the new State Pension.",
-    metaTitle: "Pension Calculator UK 2026/27 | Retirement Pot | Calculio",
+    metaTitle: "Pension Calculator UK 2026/27 | Retirement Pot",
     metaDescription:
       "Estimate your pension pot at retirement and a possible annual income using the 4% drawdown rule, alongside your State Pension.",
     keywords: ["pension calculator", "pension calculator uk", "retirement calculator uk", "pension pot calculator"],
@@ -420,7 +420,7 @@ export const calculators: CalculatorMeta[] = [
     category: "tax",
     description:
       "Add VAT to a net amount or extract VAT from a gross amount, at the standard, reduced or zero rate.",
-    metaTitle: "VAT Calculator UK 2026 | Add or Remove VAT | Calculio",
+    metaTitle: "VAT Calculator UK 2026 | Add or Remove VAT",
     metaDescription:
       "Free UK VAT calculator. Add VAT to a net price or extract VAT from a gross price at 20%, 5% or 0%, with a full net, VAT and gross breakdown.",
     keywords: ["vat calculator", "vat calculator uk", "add vat calculator", "remove vat calculator"],
@@ -436,7 +436,7 @@ export const calculators: CalculatorMeta[] = [
     category: "motoring",
     description:
       "Work out your monthly payment for a car loan, HP agreement or PCP deal, including an optional balloon payment.",
-    metaTitle: "Car Loan Calculator UK | HP & PCP | Calculio",
+    metaTitle: "Car Loan Calculator UK | HP & PCP",
     metaDescription:
       "Calculate your monthly car finance payment for a personal loan, HP agreement or PCP deal, including deposit, part-exchange and balloon payment.",
     keywords: ["car loan calculator", "car finance calculator uk", "pcp calculator", "hp calculator car"],
@@ -451,7 +451,7 @@ export const calculators: CalculatorMeta[] = [
     category: "health",
     description:
       "Estimate the calories your body burns at complete rest, using the Mifflin-St Jeor or Harris-Benedict formula.",
-    metaTitle: "BMR Calculator UK | Basal Metabolic Rate | Calculio",
+    metaTitle: "BMR Calculator UK | Basal Metabolic Rate",
     metaDescription:
       "Free BMR calculator using the Mifflin-St Jeor or Harris-Benedict formula. Estimate the calories your body burns at rest each day.",
     keywords: ["bmr calculator", "basal metabolic rate calculator", "mifflin st jeor calculator"],
@@ -466,7 +466,7 @@ export const calculators: CalculatorMeta[] = [
     category: "tax",
     description:
       "Estimate the Inheritance Tax due on an estate, including the nil-rate band, residence nil-rate band, and the reduced rate for charity gifts.",
-    metaTitle: "Inheritance Tax Calculator UK 2026/27 | Calculio",
+    metaTitle: "Inheritance Tax Calculator UK 2026/27",
     metaDescription:
       "Estimate UK Inheritance Tax on an estate, including the nil-rate band, residence nil-rate band, gifts and charity donations, at 40% or a reduced 36%.",
     keywords: ["inheritance tax calculator", "iht calculator uk", "inheritance tax calculator uk"],
@@ -481,7 +481,7 @@ export const calculators: CalculatorMeta[] = [
     category: "everyday",
     description:
       "Work out the final price after a percentage or fixed amount discount, and exactly how much you save.",
-    metaTitle: "Discount Calculator UK | Sale Price & Savings | Calculio",
+    metaTitle: "Discount Calculator UK | Sale Price & Savings",
     metaDescription:
       "Free discount calculator. Work out the final price after a percentage or fixed amount off, how much you save, and the effective discount rate.",
     keywords: ["discount calculator", "sale price calculator", "percent off calculator"],
@@ -496,7 +496,7 @@ export const calculators: CalculatorMeta[] = [
     category: "tax",
     description:
       "See your new gross and net salary after a pay rise, plus your extra monthly take-home pay after tax.",
-    metaTitle: "Salary Increase Calculator UK 2026/27 | Pay Rise | Calculio",
+    metaTitle: "Salary Increase Calculator UK 2026/27 | Pay Rise",
     metaDescription:
       "Work out your new take-home pay after a pay rise. Enter a percentage or fixed increase to see your new gross salary, net pay, and real-terms gain.",
     keywords: ["salary increase calculator", "pay rise calculator uk", "pay rise take home calculator"],
@@ -511,7 +511,7 @@ export const calculators: CalculatorMeta[] = [
     category: "motoring",
     description:
       "Compare the annual fuel cost of two vehicles side by side, based on mileage, MPG, fuel type and price per litre.",
-    metaTitle: "Fuel Efficiency Comparison Calculator UK | Calculio",
+    metaTitle: "Fuel Efficiency Comparison Calculator UK",
     metaDescription:
       "Compare two cars side by side on annual fuel cost, cost per mile, and the difference over 5 years, based on your own mileage and MPG.",
     keywords: ["fuel efficiency comparison", "compare car fuel costs", "mpg comparison calculator"],
@@ -526,7 +526,7 @@ export const calculators: CalculatorMeta[] = [
     category: "home",
     description:
       "Estimate your annual and monthly water bill based on your household size, region, and whether you're on a meter.",
-    metaTitle: "Water Bill Calculator UK | Annual & Monthly Cost | Calculio",
+    metaTitle: "Water Bill Calculator UK | Annual & Monthly Cost",
     metaDescription:
       "Estimate your UK water bill by household size and region, metered or unmetered, with a comparison to typical UK household water spend.",
     keywords: ["water bill calculator", "water bill calculator uk", "average water bill uk"],
@@ -541,7 +541,7 @@ export const calculators: CalculatorMeta[] = [
     category: "home",
     description:
       "Work out how much laminate, vinyl, wood, tile or carpet flooring you need, including wastage, and how many packs to buy.",
-    metaTitle: "Flooring Calculator UK | How Much Flooring Needed | Calculio",
+    metaTitle: "Flooring Calculator UK | How Much Flooring Needed",
     metaDescription:
       "Calculate how much flooring you need for any room, including wastage allowance, and how many packs of laminate, vinyl, wood or tile to buy.",
     keywords: ["flooring calculator uk", "how much laminate flooring do i need", "flooring cost calculator"],
@@ -557,7 +557,7 @@ export const calculators: CalculatorMeta[] = [
     category: "home",
     description:
       "Work out how much concrete you need for a slab, footing, post hole or column, in cubic metres, weight and ready-mix bags.",
-    metaTitle: "Concrete Calculator UK | Slabs, Footings & Post Holes | Calculio",
+    metaTitle: "Concrete Calculator UK | Slabs, Footings & Post Holes",
     metaDescription:
       "Calculate how much concrete you need for a slab, footing, post hole or column, including volume, weight and the number of ready-mix bags.",
     keywords: ["concrete calculator uk", "how much concrete do i need", "concrete for post hole calculator"],
@@ -573,7 +573,7 @@ export const calculators: CalculatorMeta[] = [
     category: "home",
     description:
       "Estimate the cost of a new kitchen by size and quality level, with a breakdown across units, worktops, appliances and more.",
-    metaTitle: "Kitchen Renovation Cost Calculator UK 2026 | Calculio",
+    metaTitle: "Kitchen Renovation Cost Calculator UK 2026",
     metaDescription:
       "Estimate your kitchen renovation cost in 2026 by size and quality, budget to premium, with a full cost breakdown by category.",
     keywords: ["kitchen renovation cost uk", "how much does a new kitchen cost", "kitchen cost calculator uk"],
@@ -589,7 +589,7 @@ export const calculators: CalculatorMeta[] = [
     category: "home",
     description:
       "Work out how much extra loft insulation you need to reach the recommended 270mm depth, and roughly what it could save on energy bills.",
-    metaTitle: "Loft Insulation Calculator UK | Rolls Needed | Calculio",
+    metaTitle: "Loft Insulation Calculator UK | Rolls Needed",
     metaDescription:
       "Calculate how many rolls of loft insulation you need to reach the recommended 270mm depth, plus a rough estimate of energy bill savings.",
     keywords: ["loft insulation calculator uk", "how much loft insulation do i need", "loft insulation cost calculator"],
@@ -605,7 +605,7 @@ export const calculators: CalculatorMeta[] = [
     category: "home",
     description:
       "Estimate your annual and monthly council tax bill by band and region, including single occupant discount and second home premium.",
-    metaTitle: "Council Tax Calculator UK 2026/27 | By Band | Calculio",
+    metaTitle: "Council Tax Calculator UK 2026/27 | By Band",
     metaDescription:
       "Estimate your UK council tax bill for 2026/27 by band and region, with single occupant discount, second home premium and a national average comparison.",
     keywords: ["council tax calculator uk", "how much is my council tax 2026", "council tax band calculator"],
@@ -621,7 +621,7 @@ export const calculators: CalculatorMeta[] = [
     category: "home",
     description:
       "Estimate your annual gas and electricity bill based on household size, property type, heating system and unit rates.",
-    metaTitle: "Energy Bill Calculator UK 2026 | Gas & Electric | Calculio",
+    metaTitle: "Energy Bill Calculator UK 2026 | Gas & Electric",
     metaDescription:
       "Calculate your UK gas and electricity bill for 2026. Enter your household size, property type and heating system for an annual and monthly cost estimate.",
     keywords: ["energy bill calculator uk", "how much is my energy bill 2026", "gas and electric cost calculator"],
@@ -637,7 +637,7 @@ export const calculators: CalculatorMeta[] = [
     category: "tax",
     description:
       "Convert your annual salary into a gross and net hourly rate, accounting for holidays, sick days and UK tax.",
-    metaTitle: "Salary to Hourly Rate Calculator UK | Calculio",
+    metaTitle: "Salary to Hourly Rate Calculator UK",
     metaDescription:
       "Convert your UK annual salary into an hourly rate. See your gross and net hourly pay after tax, plus a comparison to the National Living Wage.",
     keywords: ["salary to hourly uk", "hourly rate calculator uk", "convert annual salary to hourly"],
@@ -652,7 +652,7 @@ export const calculators: CalculatorMeta[] = [
     category: "health",
     description:
       "Track your current gestational week and day, trimester, and next NHS milestone from your last period, conception or IVF transfer date.",
-    metaTitle: "Pregnancy Weeks Calculator UK | How Far Along | Calculio",
+    metaTitle: "Pregnancy Weeks Calculator UK | How Far Along",
     metaDescription:
       "Find out exactly how many weeks and days pregnant you are, your trimester, and your next NHS milestone, from your last period or conception date.",
     keywords: ["how many weeks pregnant calculator", "pregnancy weeks calculator uk", "gestational age calculator"],
@@ -667,7 +667,7 @@ export const calculators: CalculatorMeta[] = [
     category: "health",
     description:
       "Estimate your ovulation date, fertile window and next expected period from your last period date and average cycle length.",
-    metaTitle: "Ovulation Calculator UK | Fertile Window | Calculio",
+    metaTitle: "Ovulation Calculator UK | Fertile Window",
     metaDescription:
       "Estimate your ovulation date and fertile window from your last period and cycle length, plus your next 3 projected cycles. Estimate only, NHS-aligned.",
     keywords: ["ovulation calculator uk", "fertile window calculator", "when am i most fertile uk"],
@@ -773,7 +773,7 @@ export const calculators: CalculatorMeta[] = [
     category: "finance",
     description:
       "Work out your weekly and annual Child Benefit, plus any High Income Child Benefit Charge if you or your partner earn over £60,000.",
-    metaTitle: "Child Benefit Calculator UK 2026/27 | HICBC | Calculio",
+    metaTitle: "Child Benefit Calculator UK 2026/27 | HICBC",
     metaDescription:
       "Calculate your UK Child Benefit for 2026/27 and any High Income Child Benefit Charge. See your weekly rate, annual total and net amount after HICBC.",
     keywords: ["child benefit calculator uk 2026", "high income child benefit charge calculator", "how much child benefit will i get"],
@@ -1133,7 +1133,7 @@ export const calculators: CalculatorMeta[] = [
     category: "education",
     description:
       "Estimate your UK degree classification from your Year 2 and Year 3 marks, using common university weighting schemes.",
-    metaTitle: "Degree Classification Calculator UK | First, 2:1, 2:2 | Calculio",
+    metaTitle: "Degree Classification Calculator UK | First, 2:1, 2:2",
     metaDescription:
       "Estimate your UK degree classification from your Year 2 and Year 3 average marks. Try different weighting schemes and see how close you are to the next band.",
     keywords: ["degree classification calculator", "degree classification calculator uk", "2:1 calculator"],
@@ -1148,7 +1148,7 @@ export const calculators: CalculatorMeta[] = [
     category: "fitness",
     description:
       "Work out your estimated maximum heart rate and training zones, from easy recovery pace to maximum effort.",
-    metaTitle: "Heart Rate Zone Calculator | Training Zones by Age | Calculio",
+    metaTitle: "Heart Rate Zone Calculator | Training Zones by Age",
     metaDescription:
       "Calculate your estimated maximum heart rate and 5 training zones from your age, with an optional Karvonen method using your resting heart rate.",
     keywords: ["heart rate zone calculator", "target heart rate calculator", "max heart rate calculator"],
@@ -1163,7 +1163,7 @@ export const calculators: CalculatorMeta[] = [
     category: "business",
     description:
       "Work out statutory interest and compensation you can claim on an overdue business invoice under UK late payment law.",
-    metaTitle: "Late Payment Interest Calculator UK | Statutory Interest | Calculio",
+    metaTitle: "Late Payment Interest Calculator UK | Statutory Interest",
     metaDescription:
       "Calculate statutory interest and fixed compensation on an overdue UK business invoice under the Late Payment of Commercial Debts Act 1998.",
     keywords: ["late payment interest calculator", "statutory interest calculator uk", "late payment calculator uk"],
@@ -1178,7 +1178,7 @@ export const calculators: CalculatorMeta[] = [
     category: "pets",
     description:
       "Estimate how much to feed your dog each day, based on their weight, activity level and their food's energy content.",
-    metaTitle: "Dog Food Calculator UK | Daily Portion Estimate | Calculio",
+    metaTitle: "Dog Food Calculator UK | Daily Portion Estimate",
     metaDescription:
       "Work out an estimated daily food portion for your dog based on their weight, activity level and food's kcal content. A helpful starting point, not vet advice.",
     keywords: ["dog food calculator", "how much to feed my dog", "dog portion calculator"],
@@ -1193,7 +1193,7 @@ export const calculators: CalculatorMeta[] = [
     category: "everyday",
     description:
       "Calculate the hours and minutes between two times, deduct unpaid breaks, and work out pay from an hourly rate.",
-    metaTitle: "Time Duration Calculator | Hours Between Two Times | Calculio",
+    metaTitle: "Time Duration Calculator | Hours Between Two Times",
     metaDescription:
       "Calculate hours and minutes worked between two times, deduct unpaid breaks, and see decimal hours and pay for timesheets or freelance billing.",
     keywords: ["time duration calculator", "hours calculator", "time card calculator uk"],
