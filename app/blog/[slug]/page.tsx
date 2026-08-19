@@ -10,6 +10,7 @@ import { RelatedCalculators } from "@/components/calculators/related-calculators
 import { AuthorByline } from "@/components/blog/author-byline";
 import { TableOfContents } from "@/components/blog/table-of-contents";
 import { RelatedArticles } from "@/components/blog/related-articles";
+import { SourcesPanel } from "@/components/site/sources-panel";
 import { blogContent } from "@/content/blog/registry";
 import {
   blogPosts,
@@ -481,6 +482,14 @@ export default async function BlogPostPage({ params }: Props) {
           <div className="mt-6">
             <FaqAccordion items={faq} />
           </div>
+
+          <SourcesPanel
+            sources={post.sources}
+            methodology={post.methodology}
+            effectivePeriod={post.effectivePeriod}
+            lastVerifiedDate={post.lastVerifiedDate}
+            assumptions={post.assumptions}
+          />
 
           {cta && (
             <section

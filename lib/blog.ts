@@ -1,5 +1,6 @@
 import { calculateReadingTime } from "./reading-time";
 import type { CategorySlug } from "./types";
+import { officialSources, type OfficialSource } from "./official-sources";
 
 export interface BlogPostMeta {
   slug: string;
@@ -18,6 +19,11 @@ export interface BlogPostMeta {
   featuredImage: string;
   featuredImageAlt: string;
   wordCount: number;
+  sources: OfficialSource[];
+  methodology: string;
+  effectivePeriod?: string;
+  lastVerifiedDate: string; // ISO date, only bumped on an actual figure review, not a redeploy
+  assumptions?: string[];
 }
 
 export const blogPosts: BlogPostMeta[] = [
@@ -40,6 +46,16 @@ export const blogPosts: BlogPostMeta[] = [
     featuredImage: "/blog/stamp-duty-2026.jpg",
     featuredImageAlt: "UK terraced houses with stamp duty calculator overlay for 2026",
     wordCount: 2300,
+
+    sources: [officialSources.stampDuty, officialSources.stampDutyResidential],
+    methodology:
+      "SDLT thresholds and rates are taken directly from HMRC's residential property rate bands and applied to the example purchase prices used in this guide.",
+    effectivePeriod: "2026/27 tax year",
+    lastVerifiedDate: "2026-08-20",
+    assumptions: [
+      "Assumes a purchase in England or Northern Ireland; Scotland and Wales use separate Land and Buildings Transaction Tax and Land Transaction Tax systems.",
+      "Assumes a standard freehold residential purchase, not a leasehold with an unusual premium structure.",
+    ],
   },
   {
     slug: "uk-income-tax-2026-27",
@@ -60,6 +76,16 @@ export const blogPosts: BlogPostMeta[] = [
     featuredImage: "/blog/income-tax-2026.jpg",
     featuredImageAlt: "UK income tax bands and rates 2026/27 with HMRC illustration",
     wordCount: 1276,
+
+    sources: [officialSources.incomeTax, officialSources.scottishIncomeTax, officialSources.nationalInsuranceHowMuch],
+    methodology:
+      "Income Tax bands and rates are taken directly from HMRC's published Personal Allowance and tax band figures for 2026/27, cross-checked against the separate Scottish Income Tax bands where relevant.",
+    effectivePeriod: "2026/27 tax year",
+    lastVerifiedDate: "2026-08-20",
+    assumptions: [
+      "Assumes income taxed through PAYE or Self Assessment; other income types, such as dividends, are taxed under separate rules.",
+      "Personal Allowance tapering above £100,000 is applied as published; it does not account for salary sacrifice or pension contributions that could change your adjusted net income.",
+    ],
   },
   {
     slug: "mortgage-deposit-uk-2026",
@@ -80,6 +106,15 @@ export const blogPosts: BlogPostMeta[] = [
     featuredImage: "/blog/mortgage-deposit-2026.jpg",
     featuredImageAlt: "First-time buyer saving for UK mortgage deposit in 2026",
     wordCount: 1229,
+
+    sources: [officialSources.mortgageAffordability, officialSources.firstTimeBuyer],
+    methodology:
+      "Deposit and loan-to-value figures are based on typical UK mortgage lending tiers and MoneyHelper's independent guidance on mortgage affordability, rather than any single lender's specific criteria.",
+    lastVerifiedDate: "2026-08-20",
+    assumptions: [
+      "Individual lender criteria vary; this guide describes general LTV tiers, not a guaranteed offer from any specific lender.",
+      "Government scheme details are correct as published but may be withdrawn or changed by the relevant lender or government body.",
+    ],
   },
   {
     slug: "uk-car-tax-2026-ved-guide",
@@ -100,6 +135,16 @@ export const blogPosts: BlogPostMeta[] = [
     featuredImage: "/blog/car-tax-2026.jpg",
     featuredImageAlt: "UK car tax VED rates 2026 with fuel type breakdown",
     wordCount: 1209,
+
+    sources: [officialSources.vehicleTax, officialSources.vehicleTaxEV],
+    methodology:
+      "VED bands and rates are taken directly from DVLA/HMRC's published vehicle tax rate tables for cars registered on or after 1 April 2017, including the separate rules for electric and low-emission vehicles.",
+    effectivePeriod: "2026/27",
+    lastVerifiedDate: "2026-08-20",
+    assumptions: [
+      "Assumes a car registered on or after 1 April 2017; different rules apply to older vehicles.",
+      "The expensive car supplement threshold and premium rate are applied as published and may not reflect optional extras added after the list price was set.",
+    ],
   },
   {
     slug: "healthy-bmi-adults-uk",
@@ -120,6 +165,15 @@ export const blogPosts: BlogPostMeta[] = [
     featuredImage: "/blog/bmi-guide-uk.jpg",
     featuredImageAlt: "Healthy BMI range chart for UK adults according to NHS",
     wordCount: 1210,
+
+    sources: [officialSources.nhsBmiAdults, officialSources.nhsHealthyWeight],
+    methodology:
+      "BMI categories and healthy weight ranges are taken directly from NHS guidance for adults.",
+    lastVerifiedDate: "2026-08-20",
+    assumptions: [
+      "BMI is a general screening measure, not a diagnosis; it does not account for muscle mass, bone density or body composition.",
+      "NHS guidance notes that healthy BMI thresholds differ for Black, Asian and some other minority ethnic groups; this is reflected in the ranges given.",
+    ],
   },
   {
     slug: "self-employed-tax-guide-uk-2026",
@@ -140,6 +194,16 @@ export const blogPosts: BlogPostMeta[] = [
     featuredImage: "/blog/self-employed-tax-guide-2026.jpg",
     featuredImageAlt: "Self-employed sole trader working out UK tax for 2026/27",
     wordCount: 2650,
+
+    sources: [officialSources.incomeTax, officialSources.nationalInsurance, officialSources.selfAssessment],
+    methodology:
+      "Income Tax and Class 2/Class 4 National Insurance figures are taken directly from HMRC's published rates for the self-employed, applied to the worked example in this guide.",
+    effectivePeriod: "2026/27 tax year",
+    lastVerifiedDate: "2026-08-20",
+    assumptions: [
+      "Assumes standard sole trader trading income; different rules apply to limited companies and partnerships.",
+      "Allowable expenses are described in general terms; individual circumstances affect exactly what can be claimed.",
+    ],
   },
   {
     slug: "compound-interest-explained-uk",
@@ -160,6 +224,15 @@ export const blogPosts: BlogPostMeta[] = [
     featuredImage: "/blog/compound-interest-explained.jpg",
     featuredImageAlt: "Compound interest growth chart showing savings compounding over time",
     wordCount: 1600,
+
+    sources: [officialSources.isaAllowance],
+    methodology:
+      "The compound interest formula shown is the standard mathematical formula used across the financial industry; ISA allowance figures are taken from HMRC's published rules.",
+    lastVerifiedDate: "2026-08-20",
+    assumptions: [
+      "Assumes a fixed interest or growth rate for the full period shown; real returns vary year to year, especially for investments rather than savings accounts.",
+      "Does not account for tax on interest earned outside a tax-free wrapper such as an ISA.",
+    ],
   },
   {
     slug: "london-driving-charges-2026",
@@ -180,6 +253,15 @@ export const blogPosts: BlogPostMeta[] = [
     featuredImage: "/blog/ulez-london-driving-guide.jpg",
     featuredImageAlt: "London ULEZ and Congestion Charge zone sign for drivers",
     wordCount: 1300,
+
+    sources: [officialSources.congestionCharge, officialSources.ulez],
+    methodology:
+      "Congestion Charge and ULEZ operating hours, zones and daily rates are taken directly from Transport for London's published guidance.",
+    lastVerifiedDate: "2026-08-20",
+    assumptions: [
+      "Assumes a standard passenger car; rates and exemptions differ for vans, HGVs, motorcycles and other vehicle types.",
+      "Boundary and exemption rules can change; always confirm your specific vehicle and route on the TfL website before travelling.",
+    ],
   },
   {
     slug: "uk-state-pension-guide-2026",
@@ -201,6 +283,16 @@ export const blogPosts: BlogPostMeta[] = [
       "/og?title=How%20Much%20Is%20My%20State%20Pension%20Worth%20in%202026%3F%20UK%20State%20Pension%20Guide&subtitle=calculio.co.uk",
     featuredImageAlt: "Calculio guide to the UK State Pension for 2026",
     wordCount: 1437,
+
+    sources: [officialSources.statePensionHowMuch, officialSources.newStatePension, officialSources.statePensionAge],
+    methodology:
+      "State Pension amounts and qualifying year requirements are taken directly from GOV.UK's published new State Pension guidance.",
+    effectivePeriod: "2026/27",
+    lastVerifiedDate: "2026-08-20",
+    assumptions: [
+      "Assumes eligibility for the new State Pension (men born on or after 6 April 1951, women born on or after 6 April 1953); different rules apply to the basic State Pension.",
+      "Your actual amount depends on your individual National Insurance record; only GOV.UK's State Pension forecast tool can give a personal figure.",
+    ],
   },
   {
     slug: "first-home-cost-uk-2026",
@@ -222,6 +314,16 @@ export const blogPosts: BlogPostMeta[] = [
       "/og?title=The%20Real%20Cost%20of%20Buying%20Your%20First%20Home%20in%20the%20UK%202026&subtitle=calculio.co.uk",
     featuredImageAlt: "Calculio guide to the real cost of buying your first UK home",
     wordCount: 1353,
+
+    sources: [officialSources.stampDuty, officialSources.mortgageAffordability, officialSources.firstTimeBuyer],
+    methodology:
+      "Stamp Duty and mortgage cost figures are taken from HMRC's SDLT rates and MoneyHelper's mortgage guidance, applied to the example costs discussed in this guide.",
+    effectivePeriod: "2026/27",
+    lastVerifiedDate: "2026-08-20",
+    assumptions: [
+      "Assumes a standard residential purchase in England or Northern Ireland.",
+      "Additional costs such as surveys, solicitor fees and removals vary by provider and are given as general ranges, not fixed quotes.",
+    ],
   },
   {
     slug: "freelancer-hourly-rate-uk-2026",
@@ -243,6 +345,16 @@ export const blogPosts: BlogPostMeta[] = [
       "/og?title=How%20to%20Calculate%20Your%20True%20Hourly%20Rate%20as%20a%20UK%20Freelancer&subtitle=calculio.co.uk",
     featuredImageAlt: "Calculio guide to calculating your true freelance hourly rate",
     wordCount: 1413,
+
+    sources: [officialSources.incomeTax, officialSources.nationalInsurance, officialSources.selfAssessment],
+    methodology:
+      "Tax and National Insurance figures used in the worked examples are taken from HMRC's published rates for the self-employed.",
+    effectivePeriod: "2026/27 tax year",
+    lastVerifiedDate: "2026-08-20",
+    assumptions: [
+      "Assumes sole trader status; limited company contractors are taxed differently.",
+      "Does not account for IR35 status, which can significantly change take-home pay for some contractors.",
+    ],
   },
   {
     slug: "uk-council-tax-guide-2026",
@@ -264,6 +376,16 @@ export const blogPosts: BlogPostMeta[] = [
       "/og?title=The%20Complete%20UK%20Council%20Tax%20Guide%20for%202026%2F27&subtitle=calculio.co.uk",
     featuredImageAlt: "Calculio guide to UK council tax bands and bills for 2026/27",
     wordCount: 2350,
+
+    sources: [officialSources.councilTax],
+    methodology:
+      "Council Tax band structure and valuation approach are taken directly from GOV.UK's guidance; exact charges are set independently by each local council.",
+    effectivePeriod: "2026/27",
+    lastVerifiedDate: "2026-08-20",
+    assumptions: [
+      "Council Tax bands are based on 1991 property values in England, not current market value.",
+      "Individual council charges, discounts and local precepts vary by area and are not fixed nationally.",
+    ],
   },
   {
     slug: "reduce-uk-energy-bills-2026",
@@ -285,6 +407,15 @@ export const blogPosts: BlogPostMeta[] = [
       "/og?title=How%20to%20Reduce%20Your%20UK%20Energy%20Bills%20in%202026&subtitle=calculio.co.uk",
     featuredImageAlt: "Calculio guide to reducing UK gas and electricity bills in 2026",
     wordCount: 2350,
+
+    sources: [officialSources.energyPriceCap],
+    methodology:
+      "Unit rate and standing charge figures are taken directly from Ofgem's published energy price cap.",
+    lastVerifiedDate: "2026-08-20",
+    assumptions: [
+      "The price cap applies to default/standard variable tariffs; fixed-rate deals can be higher or lower.",
+      "The price cap sets a maximum rate per unit, not a maximum bill; actual bills still depend on how much energy you use.",
+    ],
   },
   {
     slug: "electric-vs-petrol-cost-comparison-uk-2026",
@@ -306,6 +437,16 @@ export const blogPosts: BlogPostMeta[] = [
       "/og?title=Is%20an%20Electric%20Car%20Cheaper%20Than%20Petrol%20in%20the%20UK%20in%202026%3F&subtitle=calculio.co.uk",
     featuredImageAlt: "Calculio guide comparing electric and petrol car costs in the UK for 2026",
     wordCount: 1420,
+
+    sources: [officialSources.vehicleTaxEV, officialSources.vehicleTax],
+    methodology:
+      "Vehicle tax figures are taken from DVLA/HMRC's published vehicle tax rate tables, including the rules for electric vehicles.",
+    effectivePeriod: "2026/27",
+    lastVerifiedDate: "2026-08-20",
+    assumptions: [
+      "Running cost comparisons use example fuel/electricity prices at the time of writing, which change regularly.",
+      "Does not account for individual insurance, servicing or depreciation differences between specific models.",
+    ],
   },
   {
     slug: "uk-redundancy-guide-2026",
@@ -327,6 +468,16 @@ export const blogPosts: BlogPostMeta[] = [
       "/og?title=UK%20Redundancy%20Rights%20and%20Pay%20Explained%20for%202026&subtitle=calculio.co.uk",
     featuredImageAlt: "Calculio guide to UK redundancy rights and pay for 2026",
     wordCount: 1400,
+
+    sources: [officialSources.redundancyPay, officialSources.redundancyRights],
+    methodology:
+      "Statutory redundancy pay figures and the weekly pay cap are taken directly from GOV.UK's published redundancy calculator rules.",
+    effectivePeriod: "2026/27",
+    lastVerifiedDate: "2026-08-20",
+    assumptions: [
+      "Assumes at least 2 years' continuous employment, the minimum needed to qualify for statutory redundancy pay.",
+      "Employers may offer enhanced redundancy pay above the statutory minimum; this guide covers the statutory entitlement only.",
+    ],
   },
   {
     slug: "uk-sick-pay-guide-2026",
@@ -348,6 +499,16 @@ export const blogPosts: BlogPostMeta[] = [
       "/og?title=Understanding%20UK%20Sick%20Pay%3A%20Your%20Rights%20Explained&subtitle=calculio.co.uk",
     featuredImageAlt: "Calculio guide to UK sick pay rights and Statutory Sick Pay",
     wordCount: 1380,
+
+    sources: [officialSources.statutorySickPay],
+    methodology:
+      "Statutory Sick Pay rates and eligibility rules are taken directly from GOV.UK's published SSP guidance.",
+    effectivePeriod: "2026/27",
+    lastVerifiedDate: "2026-08-20",
+    assumptions: [
+      "Assumes eligibility for SSP; some employees are not eligible and some employers offer enhanced contractual sick pay instead.",
+      "SSP is not payable for the first 3 qualifying waiting days in most cases.",
+    ],
   },
   {
     slug: "winter-fuel-payment-guide-2026",
@@ -369,6 +530,16 @@ export const blogPosts: BlogPostMeta[] = [
       "/og?title=The%20Winter%20Fuel%20Payment%3A%20Everything%20You%20Need%20to%20Know%20for%202026&subtitle=calculio.co.uk",
     featuredImageAlt: "Calculio guide to the UK Winter Fuel Payment for 2026/27",
     wordCount: 1360,
+
+    sources: [officialSources.winterFuelPayment],
+    methodology:
+      "Eligibility and payment amounts are taken directly from GOV.UK's published Winter Fuel Payment guidance.",
+    effectivePeriod: "winter 2026 to 2027",
+    lastVerifiedDate: "2026-08-20",
+    assumptions: [
+      "Eligibility depends on your date of birth and, since recent changes, your income; check GOV.UK for your personal position.",
+      "Payments are usually automatic; this guide does not cover every edge case, such as living abroad or in a care home.",
+    ],
   },
   {
     slug: "uk-child-benefit-guide-2026",
@@ -390,6 +561,16 @@ export const blogPosts: BlogPostMeta[] = [
       "/og?title=The%20Complete%20UK%20Child%20Benefit%20Guide%202026&subtitle=calculio.co.uk",
     featuredImageAlt: "Calculio guide to UK Child Benefit and the High Income Child Benefit Charge for 2026",
     wordCount: 2252,
+
+    sources: [officialSources.childBenefit, officialSources.childBenefitTaxCharge],
+    methodology:
+      "Child Benefit rates and the High Income Child Benefit Charge thresholds are taken directly from GOV.UK's published guidance.",
+    effectivePeriod: "2026/27",
+    lastVerifiedDate: "2026-08-20",
+    assumptions: [
+      "The High Income Child Benefit Charge is based on the higher earner's individual adjusted net income, not household income.",
+      "Rates shown are the standard weekly rates; backdating and other edge cases are not covered in full.",
+    ],
   },
   {
     slug: "uk-maternity-pay-guide-2026",
@@ -411,6 +592,16 @@ export const blogPosts: BlogPostMeta[] = [
       "/og?title=How%20Much%20Maternity%20Pay%20Will%20You%20Get%20in%20the%20UK%202026&subtitle=calculio.co.uk",
     featuredImageAlt: "Calculio guide to UK maternity pay and Statutory Maternity Pay rates for 2026/27",
     wordCount: 2206,
+
+    sources: [officialSources.maternityPayLeave],
+    methodology:
+      "Statutory Maternity Pay rates and the 90%/flat-rate structure are taken directly from GOV.UK's published maternity pay and leave guidance.",
+    effectivePeriod: "2026/27",
+    lastVerifiedDate: "2026-08-20",
+    assumptions: [
+      "Assumes eligibility for Statutory Maternity Pay; those who don't qualify may be eligible for Maternity Allowance instead, which has different rules.",
+      "Does not cover enhanced contractual maternity pay, which many employers offer above the statutory minimum.",
+    ],
   },
   {
     slug: "uk-student-loan-repayment-guide-2026",
@@ -432,6 +623,16 @@ export const blogPosts: BlogPostMeta[] = [
       "/og?title=UK%20Student%20Loan%20Repayment%202026%3A%20Plans%201%2C%202%2C%204%2C%205%20and%20Postgraduate%20Explained&subtitle=calculio.co.uk",
     featuredImageAlt: "Calculio guide to UK student loan repayment plans and thresholds for 2026",
     wordCount: 1480,
+
+    sources: [officialSources.studentLoanRepayment],
+    methodology:
+      "Repayment thresholds and rates for each student loan plan are taken directly from GOV.UK's published student loan repayment guidance.",
+    effectivePeriod: "2026/27",
+    lastVerifiedDate: "2026-08-20",
+    assumptions: [
+      "Assumes repayment through UK PAYE employment; self-employed and overseas repayment rules differ slightly.",
+      "Threshold figures are UK-wide; Plan 1 has separate thresholds for Scotland and Northern Ireland in some years.",
+    ],
   },
   {
     slug: "how-much-mortgage-can-i-afford-uk-2026",
@@ -452,6 +653,15 @@ export const blogPosts: BlogPostMeta[] = [
     featuredImage: "/blog/mortgage-affordability-uk-2026.jpg",
     featuredImageAlt: "Couple reviewing their mortgage affordability and household budget in a UK home",
     wordCount: 1295,
+
+    sources: [officialSources.mortgageAffordability, officialSources.firstTimeBuyer],
+    methodology:
+      "Affordability ranges are based on typical UK mortgage lending multiples and MoneyHelper's independent mortgage affordability guidance, not any single lender's underwriting model.",
+    lastVerifiedDate: "2026-08-20",
+    assumptions: [
+      "Individual lender affordability assessments vary considerably and depend on credit history, existing debt and outgoings.",
+      "This guide gives a general estimate only; a mortgage broker or lender's own affordability calculator is needed for a figure you can rely on.",
+    ],
   },
 ];
 
