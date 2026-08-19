@@ -663,6 +663,65 @@ export const blogPosts: BlogPostMeta[] = [
       "This guide gives a general estimate only; a mortgage broker or lender's own affordability calculator is needed for a figure you can rely on.",
     ],
   },
+  {
+    slug: "salary-vs-dividends-uk-2026",
+    title: "Salary vs Dividends: How UK Limited Company Directors Should Pay Themselves in 2026/27",
+    metaTitle: "Salary vs Dividends UK 2026/27: Director's Guide",
+    metaDescription:
+      "How UK limited company directors should split salary and dividends in 2026/27, with a worked example, current dividend tax rates, and common mistakes to avoid.",
+    excerpt:
+      "How Income Tax, National Insurance and Corporation Tax interact when you pay yourself salary versus dividends, with a worked £10,000 example and the small-salary strategy most directors use.",
+    category: "Business",
+    categorySlug: "business",
+    categoryHref: "/categories/business",
+    tags: ["salary vs dividends", "limited company", "corporation tax", "dividend tax", "director pay"],
+    authorSlug: "james-whitfield",
+    reviewerSlug: "emily-thorne",
+    publishDate: "2026-08-20",
+    updatedDate: "2026-08-20",
+    featuredImage: "/blog/salary-vs-dividends-2026.jpg",
+    featuredImageAlt: "UK limited company director reviewing salary and dividend paperwork for 2026/27",
+    wordCount: 1280,
+
+    sources: [officialSources.dividendTax, officialSources.corporationTax, officialSources.nationalInsuranceHowMuch],
+    methodology:
+      "Income Tax, National Insurance and dividend tax figures are taken directly from HMRC's published rates for 2026/27, applied to the worked example in this guide.",
+    effectivePeriod: "2026/27 tax year",
+    lastVerifiedDate: "2026-08-20",
+    assumptions: [
+      "Assumes a single director-shareholder taking a straightforward salary and dividend split from a UK limited company.",
+      "The worked example looks at personal tax only; it does not fold in employer National Insurance or the Corporation Tax already paid on profit before a dividend can be distributed, both of which are separate company-side costs.",
+    ],
+  },
+  {
+    slug: "tdee-vs-bmr-calories-explained",
+    title: "TDEE vs BMR: How Many Calories Do You Actually Need Each Day?",
+    metaTitle: "TDEE vs BMR Explained: How Many Calories You Need",
+    metaDescription:
+      "The difference between BMR and TDEE explained, the Mifflin-St Jeor formula behind both, activity multipliers, and a full worked calorie example.",
+    excerpt:
+      "What BMR and TDEE actually measure, the Mifflin-St Jeor formula used to estimate both, and a worked example showing exactly how activity level changes your daily calorie needs.",
+    category: "Health",
+    categorySlug: "health",
+    categoryHref: "/categories/health",
+    tags: ["TDEE", "BMR", "calories", "weight management", "metabolism"],
+    authorSlug: "james-whitfield",
+    reviewerSlug: "sophie-whitmore",
+    publishDate: "2026-08-20",
+    updatedDate: "2026-08-20",
+    featuredImage: "/blog/tdee-vs-bmr-guide.jpg",
+    featuredImageAlt: "Person planning meals and tracking calories based on their TDEE and BMR",
+    wordCount: 1180,
+
+    sources: [officialSources.nhsPhysicalActivity],
+    methodology:
+      "BMR is calculated using the Mifflin-St Jeor formula, the equation generally considered most accurate for modern adults; TDEE activity multipliers follow the general activity bands referenced in NHS physical activity guidance for adults.",
+    lastVerifiedDate: "2026-08-20",
+    assumptions: [
+      "BMR and TDEE formulas are population-average estimates; individual metabolism can reasonably vary 10-15% either side of the calculated figure.",
+      "Does not account for individual body composition (muscle vs fat mass), which affects resting calorie burn but isn't captured by the formula's inputs.",
+    ],
+  },
 ];
 
 export function getBlogPost(slug: string): BlogPostMeta | undefined {

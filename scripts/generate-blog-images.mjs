@@ -53,6 +53,16 @@ const images = [
     title: "Driving in London 2026",
     subtitle: "ULEZ, congestion charge and what you pay",
   },
+  {
+    file: "salary-vs-dividends-2026.jpg",
+    title: "Salary vs Dividends",
+    subtitle: "How UK directors should pay themselves in 2026/27",
+  },
+  {
+    file: "tdee-vs-bmr-guide.jpg",
+    title: "TDEE vs BMR",
+    subtitle: "How many calories you actually need",
+  },
 ];
 
 for (const img of images) {

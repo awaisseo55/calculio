@@ -23,6 +23,8 @@ import * as childBenefitGuide from "./uk-child-benefit-guide-2026";
 import * as maternityPayGuide from "./uk-maternity-pay-guide-2026";
 import * as studentLoanRepaymentGuide from "./uk-student-loan-repayment-guide-2026";
 import * as mortgageAffordabilityGuide from "./how-much-mortgage-can-i-afford-uk-2026";
+import * as salaryVsDividends from "./salary-vs-dividends-uk-2026";
+import * as tdeeVsBmr from "./tdee-vs-bmr-calories-explained";
 
 interface BlogPostContent {
   ArticleContent: ComponentType;
@@ -52,4 +54,6 @@ export const blogContent: Record<string, BlogPostContent> = {
   "uk-maternity-pay-guide-2026": maternityPayGuide,
   "uk-student-loan-repayment-guide-2026": studentLoanRepaymentGuide,
   "how-much-mortgage-can-i-afford-uk-2026": mortgageAffordabilityGuide,
+  "salary-vs-dividends-uk-2026": salaryVsDividends,
+  "tdee-vs-bmr-calories-explained": tdeeVsBmr,
 };

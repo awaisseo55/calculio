@@ -173,6 +173,20 @@ const CTA_CONTENT: Record<
     buttonLabel: "Calculate what I could afford",
     href: "/calculators/mortgage-affordability-calculator-uk",
   },
+  "salary-vs-dividends-uk-2026": {
+    title: "Compare your own salary vs dividend split",
+    description:
+      "Enter your company's profit and see how a salary, dividend, or mixed approach compares after Income Tax, National Insurance and Corporation Tax.",
+    buttonLabel: "Compare salary vs dividends",
+    href: "/calculators/dividend-vs-salary-calculator-uk",
+  },
+  "tdee-vs-bmr-calories-explained": {
+    title: "Calculate your own BMR and TDEE",
+    description:
+      "Enter your weight, height, age and activity level for an instant, personalised BMR and TDEE estimate.",
+    buttonLabel: "Calculate my TDEE",
+    href: "/calculators/tdee-calculator-uk",
+  },
 };
 
 const DISCLAIMER =
@@ -308,6 +322,18 @@ const RELATED_CALCULATOR_SLUGS: Record<string, string[]> = {
     "mortgage-calculator-uk",
     "stamp-duty-calculator-uk",
     "mortgage-overpayment-calculator-uk",
+  ],
+  "salary-vs-dividends-uk-2026": [
+    "dividend-vs-salary-calculator-uk",
+    "corporation-tax-calculator-uk",
+    "income-tax-calculator-uk",
+    "take-home-pay-calculator-uk",
+  ],
+  "tdee-vs-bmr-calories-explained": [
+    "tdee-calculator-uk",
+    "bmr-calculator-uk",
+    "ideal-weight-calculator-uk",
+    "bmi-calculator-uk",
   ],
 };
 
