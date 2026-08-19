@@ -65,6 +65,7 @@ Every calculator must include:
 - Internal links within the body to at least 3 relevant existing calculators and 1 or 2 relevant existing blog posts.
 - A disclaimer link at the page bottom: "Results are estimates only. See our disclaimer."
 - Currency formatted with the £ symbol and thousand separators (£1,234.56).
+- A `SourcesPanel` (see `components/site/sources-panel.tsx`), populated via `sources`, `methodology`, `effectivePeriod`, `lastVerifiedDate`, and `assumptions` on the calculator's `CalculatorMeta` entry in `lib/calculators.ts`. See "Sources, methodology, and the last-verified date" below for the rules on filling these in.
 
 ## Blog post standards
 
@@ -82,6 +83,17 @@ Every blog post must include:
 - A related calculators grid (4 cards).
 - A related articles section.
 - A disclaimer link at the bottom pointing to `/disclaimer`.
+- A `SourcesPanel`, populated via `sources`, `methodology`, `effectivePeriod`, `lastVerifiedDate`, and `assumptions` on the post's `BlogPostMeta` entry in `lib/blog.ts`. See "Sources, methodology, and the last-verified date" below.
+
+## Sources, methodology, and the last-verified date
+
+Every calculator and blog post carries a `SourcesPanel` (`components/site/sources-panel.tsx`), driven by fields on its metadata entry (`CalculatorMeta` in `lib/calculators.ts`, `BlogPostMeta` in `lib/blog.ts`):
+
+- `sources`: real links to the exact official pages the figures come from (HMRC, GOV.UK, NHS, DVLA, DWP, FCA, Ofgem, TfL, MoneyHelper, and similar). Pull from `lib/official-sources.ts` where a topic is already covered; add a new entry there rather than inlining a URL, so a page move only needs updating in one place. **Never add a URL without verifying it actually resolves first** (a web search or fetch), never guess a URL from a pattern. If no genuine official regulator or body applies to a topic (most pure-maths, pets, and everyday calculators), leave `sources` as an empty array rather than forcing a citation that doesn't really exist; the panel hides the "Official sources" block automatically when empty.
+- `methodology`: one or two sentences on how the figure is actually calculated (the formula, or which published rates it applies).
+- `effectivePeriod`: the tax year or period the figures apply to (for example `"2026/27 tax year"`), omitted where the topic isn't tied to a specific period.
+- `lastVerifiedDate`: the date someone actually checked this page's figures against the cited source. **This must only move when a real check happens, not on every redeploy or unrelated edit.** Do not bulk-touch this field as part of an unrelated commit; it is meant to answer "when did we last confirm this is still correct," not "when did this file last change" (that's what git history and `updatedDate`/`publishDate` are for).
+- `assumptions`: short, honest notes on what the calculation does and doesn't account for (residency assumptions, statutory vs enhanced entitlements, and similar).
 
 ## SEO requirements on every page
 
@@ -104,7 +116,7 @@ Every blog post must include:
 
 - All UK tax constants (Income Tax bands, National Insurance rates, VED bands, Stamp Duty bands, dividend allowance, Capital Gains Tax exempt amount, ISA allowances, and similar) live in `lib/calc/uk-rates.ts`. This is the single source of truth; do not duplicate rate constants in individual calculator files.
 - Include the tax year in comments (for example, 2026/27).
-- When rates change, usually after a Budget, update only this one file.
+- When rates change, usually after a Budget, update only this one file, then bump `lastVerifiedDate` (see "Sources, methodology, and the last-verified date") on every calculator and blog post whose figures were actually re-checked against the new rates, not the whole site.
 
 ## Git and deployment workflow
 
@@ -145,7 +157,7 @@ Every blog post must include:
 2. Add the calculation logic in `lib/calc/`.
 3. Add the UI component in `components/calculators/` and register it in `components/calculators/registry.tsx`.
 4. Add the SEO content and FAQ in `content/calculators/` and register it in `content/calculators/registry.tsx`.
-5. Add the calculator's metadata entry to `lib/calculators.ts` (this automatically updates the `/calculators` listing, the relevant `/categories/[slug]` page, and `sitemap.xml`).
+5. Add the calculator's metadata entry to `lib/calculators.ts` (this automatically updates the `/calculators` listing, the relevant `/categories/[slug]` page, and `sitemap.xml`), including `sources`, `methodology`, `effectivePeriod`, `lastVerifiedDate` and `assumptions` (see "Sources, methodology, and the last-verified date").
 6. Update the homepage if it displays a calculator count or curated list.
 7. Update the internal search index if it is not automatically driven by `lib/calculators.ts`.
 8. Verify the new route builds and loads before committing.
@@ -153,7 +165,7 @@ Every blog post must include:
 ## When adding new blog posts
 
 1. Check the `/blog` listing first, to avoid duplicating topics already covered.
-2. Add the post metadata to `lib/blog.ts` (this automatically updates `sitemap.xml` and the `/blog` listing, sorted newest first).
+2. Add the post metadata to `lib/blog.ts` (this automatically updates `sitemap.xml` and the `/blog` listing, sorted newest first), including `sources`, `methodology`, `effectivePeriod`, `lastVerifiedDate` and `assumptions` (see "Sources, methodology, and the last-verified date").
 3. Write the article content and FAQ in `content/blog/` and register it in `content/blog/registry.tsx`.
 4. Add entries for the new post to the `CTA_CONTENT` and `RELATED_CALCULATOR_SLUGS` maps in `app/blog/[slug]/page.tsx`. Posts missing from these maps will silently show no calculator CTA or the wrong related calculators, so do not skip this step.
 5. Generate or source a featured image at the expected path in `/public/blog/`, using a lowercase, hyphenated filename that matches the `featuredImage` field.
