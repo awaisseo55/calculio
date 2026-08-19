@@ -14,7 +14,7 @@ import { blogContent } from "@/content/blog/registry";
 import {
   blogPosts,
   getBlogPost,
-  getOtherBlogPosts,
+  getRelatedBlogPosts,
   getPostReadingTime,
 } from "@/lib/blog";
 import { getCalculator } from "@/lib/calculators";
@@ -364,7 +364,7 @@ export default async function BlogPostPage({ params }: Props) {
 
   const { ArticleContent, faq, toc } = content;
   const readingTime = getPostReadingTime(post);
-  const otherPosts = getOtherBlogPosts(slug);
+  const otherPosts = getRelatedBlogPosts(slug);
   const relatedCalculators = (RELATED_CALCULATOR_SLUGS[slug] ?? [])
     .map((s) => getCalculator(s))
     .filter((c): c is NonNullable<typeof c> => Boolean(c));

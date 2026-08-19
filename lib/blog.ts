@@ -469,6 +469,15 @@ export function getOtherBlogPosts(slug: string): BlogPostMeta[] {
   return getAllBlogPosts().filter((p) => p.slug !== slug);
 }
 
+export function getRelatedBlogPosts(slug: string, count = 3): BlogPostMeta[] {
+  const current = getBlogPost(slug);
+  const others = getOtherBlogPosts(slug);
+  if (!current) return others.slice(0, count);
+  const sameCategory = others.filter((p) => p.categorySlug === current.categorySlug);
+  const rest = others.filter((p) => p.categorySlug !== current.categorySlug);
+  return [...sameCategory, ...rest].slice(0, count);
+}
+
 export function getBlogPostsByCategory(categorySlug: CategorySlug): BlogPostMeta[] {
   return getAllBlogPosts().filter((p) => p.categorySlug === categorySlug);
 }
