@@ -18,6 +18,7 @@ const companyLinks = [
   { href: "/about", label: "About" },
   { href: "/contact", label: "Contact" },
   { href: "/blog", label: "Blog" },
+  { href: "/authors", label: "Authors" },
 ];
 
 const legalLinks = [

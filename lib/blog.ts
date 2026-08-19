@@ -482,6 +482,14 @@ export function getBlogPostsByCategory(categorySlug: CategorySlug): BlogPostMeta
   return getAllBlogPosts().filter((p) => p.categorySlug === categorySlug);
 }
 
+export function getArticlesWrittenBy(authorSlug: string): BlogPostMeta[] {
+  return getAllBlogPosts().filter((p) => p.authorSlug === authorSlug);
+}
+
+export function getArticlesReviewedBy(reviewerSlug: string): BlogPostMeta[] {
+  return getAllBlogPosts().filter((p) => p.reviewerSlug === reviewerSlug);
+}
+
 export function getPostReadingTime(post: BlogPostMeta): number {
   return calculateReadingTime(post.wordCount);
 }

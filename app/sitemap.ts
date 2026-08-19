@@ -2,6 +2,7 @@ import type { MetadataRoute } from "next";
 import { calculators } from "@/lib/calculators";
 import { categories } from "@/lib/categories";
 import { blogPosts } from "@/lib/blog";
+import { getAllAuthors } from "@/lib/authors";
 import { siteConfig } from "@/lib/site";
 
 export default function sitemap(): MetadataRoute.Sitemap {
@@ -17,7 +18,15 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${siteConfig.url}/disclaimer`, lastModified: now, changeFrequency: "yearly", priority: 0.2 },
     { url: `${siteConfig.url}/cookie-policy`, lastModified: now, changeFrequency: "yearly", priority: 0.2 },
     { url: `${siteConfig.url}/blog`, lastModified: now, changeFrequency: "monthly", priority: 0.3 },
+    { url: `${siteConfig.url}/authors`, lastModified: now, changeFrequency: "monthly", priority: 0.3 },
   ];
+
+  const authorRoutes: MetadataRoute.Sitemap = getAllAuthors().map((author) => ({
+    url: `${siteConfig.url}/authors/${author.slug}`,
+    lastModified: now,
+    changeFrequency: "monthly",
+    priority: 0.3,
+  }));
 
   const categoryRoutes: MetadataRoute.Sitemap = categories.map((c) => ({
     url: `${siteConfig.url}/categories/${c.slug}`,
@@ -40,5 +49,5 @@ export default function sitemap(): MetadataRoute.Sitemap {
     priority: 0.7,
   }));
 
-  return [...staticRoutes, ...categoryRoutes, ...calculatorRoutes, ...blogRoutes];
+  return [...staticRoutes, ...categoryRoutes, ...calculatorRoutes, ...blogRoutes, ...authorRoutes];
 }

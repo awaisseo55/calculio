@@ -1,6 +1,6 @@
+import Link from "next/link";
 import { CalendarDays, Clock, ShieldCheck, User } from "lucide-react";
 import { formatDate } from "@/lib/format";
-import { AuthorDialog } from "@/components/blog/author-dialog";
 import type { AuthorMeta } from "@/lib/authors";
 
 interface AuthorBylineProps {
@@ -27,16 +27,22 @@ export function AuthorByline({
         <span className="flex items-center gap-1.5">
           <User className="size-4" aria-hidden="true" />
           Written by{" "}
-          <AuthorDialog author={author} label="Written by">
+          <Link
+            href={`/authors/${author.slug}`}
+            className="font-medium text-foreground underline decoration-dotted underline-offset-4 transition hover:text-primary"
+          >
             {author.name}
-          </AuthorDialog>
+          </Link>
         </span>
         <span className="flex items-center gap-1.5">
           <ShieldCheck className="size-4" aria-hidden="true" />
           Reviewed by{" "}
-          <AuthorDialog author={reviewer} label="Reviewed by">
+          <Link
+            href={`/authors/${reviewer.slug}`}
+            className="font-medium text-foreground underline decoration-dotted underline-offset-4 transition hover:text-primary"
+          >
             {reviewer.name}
-          </AuthorDialog>
+          </Link>
         </span>
         <span className="flex items-center gap-1.5">
           <CalendarDays className="size-4" aria-hidden="true" />
