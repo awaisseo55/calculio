@@ -5,12 +5,6 @@ export const siteConfig = {
     "Free, fast UK calculators for mortgages, tax, motoring, health and everyday maths — built for the UK, no sign-up required.",
   tagline: "UK calculators, done properly.",
   ogImage: "/og",
-  links: {
-    twitter: "#",
-    facebook: "#",
-    instagram: "#",
-    linkedin: "#",
-  },
   email: "hello@calculio.co.uk",
 } as const;
 

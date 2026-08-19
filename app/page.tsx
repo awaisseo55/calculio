@@ -44,26 +44,6 @@ const valueProps = [
   },
 ];
 
-const testimonials = [
-  {
-    quote:
-      "Worked out our stamp duty in under a minute before we made an offer. Simple and clear.",
-    name: "Home mover",
-    role: "Placeholder testimonial",
-  },
-  {
-    quote:
-      "Finally a take-home pay calculator that accounts for my student loan plan properly.",
-    name: "Calculio user",
-    role: "Placeholder testimonial",
-  },
-  {
-    quote: "Clean, quick, and it doesn't try to sell me a mortgage broker every five seconds.",
-    name: "Calculio user",
-    role: "Placeholder testimonial",
-  },
-];
-
 export default function HomePage() {
   const featured = getFeaturedCalculators();
 
@@ -192,32 +172,6 @@ export default function HomePage() {
               </div>
             </Reveal>
           ))}
-        </div>
-      </section>
-
-      <section className="border-t border-border/60 bg-secondary/20">
-        <div className="mx-auto max-w-7xl px-4 py-16 sm:px-6 lg:px-8">
-          <Reveal>
-            <h2 className="text-center text-2xl font-semibold tracking-tight text-foreground sm:text-3xl">
-              What people say
-            </h2>
-          </Reveal>
-          <div className="mt-10 grid grid-cols-1 gap-6 sm:grid-cols-3">
-            {testimonials.map((t, i) => (
-              <Reveal key={t.quote} delay={i * 0.05}>
-                <figure className="flex h-full flex-col justify-between gap-4 rounded-2xl border border-border bg-card p-6">
-                  <blockquote className="text-sm leading-relaxed text-foreground">
-                    &ldquo;{t.quote}&rdquo;
-                  </blockquote>
-                  <figcaption className="text-xs text-muted-foreground">
-                    <span className="font-medium text-foreground">{t.name}</span>
-                    {" · "}
-                    {t.role}
-                  </figcaption>
-                </figure>
-              </Reveal>
-            ))}
-          </div>
         </div>
       </section>
     </>

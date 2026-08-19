@@ -1,6 +1,6 @@
 import Link from "next/link";
 import { Logo } from "@/components/site/logo";
-import { XIcon, FacebookIcon, InstagramIcon, LinkedinIcon } from "@/components/site/social-icons";
+import { NewsletterSignup } from "@/components/site/newsletter-signup";
 import { categories } from "@/lib/categories";
 import { calculators, getCalculator } from "@/lib/calculators";
 import { siteConfig } from "@/lib/site";
@@ -27,13 +27,6 @@ const legalLinks = [
   { href: "/cookie-policy", label: "Cookie Policy" },
 ];
 
-const socialLinks = [
-  { href: siteConfig.links.twitter, label: "X (Twitter)", icon: XIcon },
-  { href: siteConfig.links.facebook, label: "Facebook", icon: FacebookIcon },
-  { href: siteConfig.links.instagram, label: "Instagram", icon: InstagramIcon },
-  { href: siteConfig.links.linkedin, label: "LinkedIn", icon: LinkedinIcon },
-];
-
 export function Footer() {
   const topCalculators = TOP_CALCULATOR_SLUGS.map((slug) => getCalculator(slug)).filter(
     (calc): calc is NonNullable<typeof calc> => Boolean(calc)
@@ -48,18 +41,7 @@ export function Footer() {
             <p className="mt-4 max-w-xs text-sm leading-relaxed text-muted-foreground">
               {siteConfig.description}
             </p>
-            <div className="mt-5 flex items-center gap-3">
-              {socialLinks.map((social) => (
-                <span
-                  key={social.label}
-                  role="img"
-                  aria-label={social.label}
-                  className="flex size-9 items-center justify-center rounded-full border border-border text-muted-foreground"
-                >
-                  <social.icon className="size-4" aria-hidden="true" />
-                </span>
-              ))}
-            </div>
+            <NewsletterSignup />
           </div>
 
           <div>
