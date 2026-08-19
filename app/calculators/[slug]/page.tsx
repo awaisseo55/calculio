@@ -6,27 +6,13 @@ import { JsonLd } from "@/components/site/json-ld";
 import { Reveal } from "@/components/site/reveal";
 import { FaqAccordion } from "@/components/calculators/faq-accordion";
 import { RelatedCalculators } from "@/components/calculators/related-calculators";
+import { SourcesPanel } from "@/components/site/sources-panel";
 import { calculatorComponents } from "@/components/calculators/registry";
 import { calculatorContent } from "@/content/calculators/registry";
 import { calculators, getCalculator, getRelatedCalculators } from "@/lib/calculators";
 import { getCategory } from "@/lib/categories";
+import { formatDate } from "@/lib/format";
 import { siteConfig } from "@/lib/site";
-import type { CategorySlug } from "@/lib/types";
-
-const CONTENT_REVIEWED_DATE = "11 August 2026";
-
-const CATEGORY_SOURCES: Record<CategorySlug, string> = {
-  finance: "HMRC and GOV.UK",
-  tax: "HMRC and GOV.UK",
-  motoring: "the DVLA and GOV.UK",
-  health: "NHS guidance",
-  home: "HMRC, GOV.UK and the DVLA",
-  everyday: "GOV.UK and other official UK sources",
-  business: "HMRC and Companies House",
-  pets: "veterinary and animal welfare guidance",
-  fitness: "sports science and NHS guidance",
-  education: "the Student Loans Company and GOV.UK",
-};
 
 interface Props {
   params: Promise<{ slug: string }>;
@@ -151,7 +137,7 @@ export default async function CalculatorPage({ params }: Props) {
             </span>
             <span className="flex items-center gap-1.5 rounded-full bg-success/10 px-2.5 py-1 text-xs font-medium text-success">
               <CalendarDays className="size-3.5" aria-hidden="true" />
-              Last updated {CONTENT_REVIEWED_DATE}
+              Last verified {formatDate(new Date(calculator.lastVerifiedDate))}
             </span>
           </div>
         </div>
@@ -172,6 +158,16 @@ export default async function CalculatorPage({ params }: Props) {
         <div className="mt-6 max-w-3xl">
           <FaqAccordion items={faq} />
         </div>
+
+        <div className="max-w-3xl">
+          <SourcesPanel
+            sources={calculator.sources}
+            methodology={calculator.methodology}
+            effectivePeriod={calculator.effectivePeriod}
+            lastVerifiedDate={calculator.lastVerifiedDate}
+            assumptions={calculator.assumptions}
+          />
+        </div>
       </div>
 
       <div className="mt-16 border-t border-border/60 pt-14">
@@ -180,7 +176,6 @@ export default async function CalculatorPage({ params }: Props) {
 
       <div className="mt-10 text-center text-xs text-muted-foreground">
         <p>
-          This calculator uses rates and thresholds published by {CATEGORY_SOURCES[calculator.category]}.
           Results are estimates only. See our{" "}
           <Link href="/disclaimer" className="underline hover:text-foreground">
             disclaimer

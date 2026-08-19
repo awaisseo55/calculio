@@ -25,6 +25,11 @@ export interface FaqItem {
   answer: string;
 }
 
+export interface OfficialSourceRef {
+  label: string;
+  url: string;
+}
+
 export interface CalculatorMeta {
   slug: string;
   name: string;
@@ -38,4 +43,9 @@ export interface CalculatorMeta {
   icon: string;
   featured?: boolean;
   schemaType: SchemaType;
+  sources: OfficialSourceRef[];
+  methodology: string;
+  effectivePeriod?: string;
+  lastVerifiedDate: string; // ISO date, only bumped on an actual figure review, not a redeploy
+  assumptions?: string[];
 }

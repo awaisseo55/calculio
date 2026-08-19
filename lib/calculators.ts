@@ -1,4 +1,5 @@
 import type { CalculatorMeta } from "./types";
+import { officialSources } from "./official-sources";
 
 export const calculators: CalculatorMeta[] = [
   {
@@ -16,6 +17,14 @@ export const calculators: CalculatorMeta[] = [
     icon: "Home",
     featured: true,
     schemaType: "SoftwareApplication",
+
+    sources: [officialSources.mortgageAffordability, officialSources.firstTimeBuyer],
+    methodology:
+      "Repayment figures use the standard capital repayment (amortisation) formula applied to your rate, term and loan amount; affordability ranges are benchmarked against MoneyHelper's independent mortgage guidance.",
+    lastVerifiedDate: "2026-08-20",
+    assumptions: [
+      "Individual lender criteria, product fees and rate offers vary; this is an estimate, not a mortgage offer.",
+    ],
   },
   {
     slug: "stamp-duty-calculator-uk",
@@ -32,6 +41,15 @@ export const calculators: CalculatorMeta[] = [
     icon: "FileText",
     featured: true,
     schemaType: "SoftwareApplication",
+
+    sources: [officialSources.stampDuty, officialSources.stampDutyResidential],
+    methodology:
+      "SDLT is calculated using HMRC's published residential rate bands applied to your purchase price and buyer status.",
+    effectivePeriod: "2026/27 tax year",
+    lastVerifiedDate: "2026-08-20",
+    assumptions: [
+      "Assumes a residential purchase in England or Northern Ireland; Scotland and Wales use separate LBTT/LTT systems.",
+    ],
   },
   {
     slug: "take-home-pay-calculator-uk",
@@ -48,6 +66,16 @@ export const calculators: CalculatorMeta[] = [
     icon: "Wallet",
     featured: true,
     schemaType: "SoftwareApplication",
+
+    sources: [officialSources.incomeTax, officialSources.nationalInsuranceHowMuch, officialSources.scottishIncomeTax],
+    methodology:
+      "Take-home pay is calculated by applying HMRC's Income Tax bands and National Insurance thresholds to your gross salary.",
+    effectivePeriod: "2026/27 tax year",
+    lastVerifiedDate: "2026-08-20",
+    assumptions: [
+      "Assumes standard PAYE employment with no salary sacrifice, student loan, or pension contribution unless entered.",
+      "Scottish taxpayers use separate bands, applied where selected.",
+    ],
   },
   {
     slug: "income-tax-calculator-uk",
@@ -63,6 +91,15 @@ export const calculators: CalculatorMeta[] = [
     keywords: ["income tax calculator uk", "uk tax bands 2026", "income tax calculator"],
     icon: "Percent",
     schemaType: "SoftwareApplication",
+
+    sources: [officialSources.incomeTax, officialSources.scottishIncomeTax],
+    methodology:
+      "Tax owed is calculated by applying HMRC's Personal Allowance and Income Tax band rates directly to your taxable income.",
+    effectivePeriod: "2026/27 tax year",
+    lastVerifiedDate: "2026-08-20",
+    assumptions: [
+      "Assumes standard employment income; other income types such as dividends are taxed under separate rules.",
+    ],
   },
   {
     slug: "road-tax-calculator-uk",
@@ -79,6 +116,15 @@ export const calculators: CalculatorMeta[] = [
     icon: "Car",
     featured: true,
     schemaType: "SoftwareApplication",
+
+    sources: [officialSources.vehicleTax, officialSources.vehicleTaxEV],
+    methodology:
+      "VED is calculated using DVLA/HMRC's published vehicle tax rate tables for your vehicle's registration date, fuel type and CO2 band.",
+    effectivePeriod: "2026/27",
+    lastVerifiedDate: "2026-08-20",
+    assumptions: [
+      "Assumes a car registered on or after 1 April 2017; different rules apply to older vehicles.",
+    ],
   },
   {
     slug: "fuel-cost-calculator-uk",
@@ -94,6 +140,14 @@ export const calculators: CalculatorMeta[] = [
     keywords: ["fuel cost calculator", "petrol cost calculator", "mpg calculator uk"],
     icon: "Fuel",
     schemaType: "SoftwareApplication",
+
+    sources: [],
+    methodology:
+      "Fuel cost is calculated by dividing your journey distance by your vehicle's fuel economy, then multiplying by the fuel price you enter.",
+    lastVerifiedDate: "2026-08-20",
+    assumptions: [
+      "Fuel prices vary daily and by retailer; enter a current local price for the most accurate estimate.",
+    ],
   },
   {
     slug: "bmi-calculator-uk",
@@ -110,6 +164,15 @@ export const calculators: CalculatorMeta[] = [
     icon: "HeartPulse",
     featured: true,
     schemaType: "SoftwareApplication",
+
+    sources: [officialSources.nhsBmiAdults, officialSources.nhsHealthyWeight],
+    methodology:
+      "BMI is calculated using the standard formula (weight in kg divided by height in metres squared) and categorised using NHS adult BMI bands.",
+    lastVerifiedDate: "2026-08-20",
+    assumptions: [
+      "BMI is a general screening measure; it does not account for muscle mass, bone density or body composition.",
+      "NHS guidance notes healthy BMI thresholds differ for Black, Asian and some other minority ethnic groups.",
+    ],
   },
   {
     slug: "pregnancy-due-date-calculator-uk",
@@ -125,6 +188,15 @@ export const calculators: CalculatorMeta[] = [
     keywords: ["pregnancy due date calculator", "due date calculator uk", "gestational age calculator"],
     icon: "Baby",
     schemaType: "SoftwareApplication",
+
+    sources: [officialSources.nhsPregnancyDueDate],
+    methodology:
+      "Your estimated due date is calculated as 280 days (40 weeks) from the first day of your last menstrual period, the same method used by the NHS.",
+    lastVerifiedDate: "2026-08-20",
+    assumptions: [
+      "This is an estimate; only around 5% of babies arrive on their exact due date.",
+      "If you know your conception date or have had a dating scan, that estimate may be more accurate than this calculation.",
+    ],
   },
   {
     slug: "age-calculator",
@@ -140,6 +212,11 @@ export const calculators: CalculatorMeta[] = [
     keywords: ["age calculator", "date of birth calculator", "how old am i"],
     icon: "Cake",
     schemaType: "SoftwareApplication",
+
+    sources: [],
+    methodology:
+      "Age is calculated as the exact calendar difference between the date you enter and today, or a date you specify.",
+    lastVerifiedDate: "2026-08-20",
   },
   {
     slug: "percentage-calculator",
@@ -155,6 +232,11 @@ export const calculators: CalculatorMeta[] = [
     keywords: ["percentage calculator", "percentage increase calculator", "percentage change calculator"],
     icon: "Percent",
     schemaType: "SoftwareApplication",
+
+    sources: [],
+    methodology:
+      "Percentage results use standard arithmetic (part divided by whole, multiplied by 100) for each calculation mode.",
+    lastVerifiedDate: "2026-08-20",
   },
   {
     slug: "compound-interest-calculator-uk",
@@ -170,6 +252,15 @@ export const calculators: CalculatorMeta[] = [
     keywords: ["compound interest calculator", "compound interest calculator uk", "savings growth calculator"],
     icon: "TrendingUp",
     schemaType: "SoftwareApplication",
+
+    sources: [officialSources.isaAllowance],
+    methodology:
+      "Growth is calculated using the standard compound interest formula, applied to your starting amount, contributions, rate and term.",
+    lastVerifiedDate: "2026-08-20",
+    assumptions: [
+      "Assumes a fixed interest or growth rate for the full period; real returns vary year to year.",
+      "Does not account for tax outside a tax-free wrapper such as an ISA.",
+    ],
   },
   {
     slug: "savings-goal-calculator-uk",
@@ -185,6 +276,14 @@ export const calculators: CalculatorMeta[] = [
     keywords: ["savings goal calculator", "savings calculator uk", "how long to save"],
     icon: "PiggyBank",
     schemaType: "SoftwareApplication",
+
+    sources: [officialSources.isaAllowance],
+    methodology:
+      "Contribution figures are calculated by dividing your goal amount and timeframe, then projecting growth using the standard compound interest formula.",
+    lastVerifiedDate: "2026-08-20",
+    assumptions: [
+      "Assumes a fixed contribution and growth rate for the full period; actual returns vary.",
+    ],
   },
   {
     slug: "loan-repayment-calculator-uk",
@@ -200,6 +299,14 @@ export const calculators: CalculatorMeta[] = [
     keywords: ["loan repayment calculator", "loan calculator uk", "personal loan calculator"],
     icon: "Banknote",
     schemaType: "SoftwareApplication",
+
+    sources: [],
+    methodology:
+      "Repayments use the standard amortising loan formula, applied to your loan amount, interest rate and term.",
+    lastVerifiedDate: "2026-08-20",
+    assumptions: [
+      "Assumes a fixed interest rate for the full term; variable-rate loans will differ.",
+    ],
   },
   {
     slug: "credit-card-payoff-calculator-uk",
@@ -215,6 +322,14 @@ export const calculators: CalculatorMeta[] = [
     keywords: ["credit card payoff calculator", "credit card calculator uk", "pay off credit card"],
     icon: "CreditCard",
     schemaType: "SoftwareApplication",
+
+    sources: [],
+    methodology:
+      "Payoff time and interest are calculated by applying your card's interest rate and payment amount month by month until the balance reaches zero.",
+    lastVerifiedDate: "2026-08-20",
+    assumptions: [
+      "Assumes no further spending is added to the card balance during the payoff period.",
+    ],
   },
   {
     slug: "mortgage-overpayment-calculator-uk",
@@ -230,6 +345,14 @@ export const calculators: CalculatorMeta[] = [
     keywords: ["mortgage overpayment calculator", "overpay mortgage calculator uk", "mortgage overpayment savings"],
     icon: "CalendarCheck",
     schemaType: "SoftwareApplication",
+
+    sources: [officialSources.mortgageAffordability],
+    methodology:
+      "Interest and term savings are calculated by comparing your standard amortisation schedule against the same schedule with overpayments applied.",
+    lastVerifiedDate: "2026-08-20",
+    assumptions: [
+      "Assumes your lender allows the overpayment amount entered without an early repayment charge; check your mortgage terms.",
+    ],
   },
   {
     slug: "national-insurance-calculator-uk",
@@ -245,6 +368,15 @@ export const calculators: CalculatorMeta[] = [
     keywords: ["national insurance calculator", "ni calculator uk", "class 4 national insurance calculator"],
     icon: "ShieldCheck",
     schemaType: "SoftwareApplication",
+
+    sources: [officialSources.nationalInsurance, officialSources.nationalInsuranceHowMuch],
+    methodology:
+      "National Insurance is calculated using HMRC's published Class 1 thresholds and rates applied to your gross pay.",
+    effectivePeriod: "2026/27 tax year",
+    lastVerifiedDate: "2026-08-20",
+    assumptions: [
+      "Assumes standard employee (Class 1) National Insurance; self-employed contributions use separate Class 2/4 rates.",
+    ],
   },
   {
     slug: "self-employed-tax-calculator-uk",
@@ -260,6 +392,15 @@ export const calculators: CalculatorMeta[] = [
     keywords: ["self employed tax calculator", "sole trader tax calculator uk", "self employed tax calculator uk"],
     icon: "Briefcase",
     schemaType: "SoftwareApplication",
+
+    sources: [officialSources.incomeTax, officialSources.nationalInsurance, officialSources.selfAssessment],
+    methodology:
+      "Tax and National Insurance are calculated using HMRC's published Income Tax bands and Class 2/4 National Insurance rates for the self-employed, applied to your profit after expenses.",
+    effectivePeriod: "2026/27 tax year",
+    lastVerifiedDate: "2026-08-20",
+    assumptions: [
+      "Assumes standard sole trader trading income; limited companies and partnerships are taxed differently.",
+    ],
   },
   {
     slug: "dividend-tax-calculator-uk",
@@ -275,6 +416,15 @@ export const calculators: CalculatorMeta[] = [
     keywords: ["dividend tax calculator", "dividend tax calculator uk", "dividend allowance calculator"],
     icon: "LineChart",
     schemaType: "SoftwareApplication",
+
+    sources: [officialSources.dividendTax],
+    methodology:
+      "Dividend tax is calculated using HMRC's dividend allowance and dividend tax rates, applied on top of your other taxable income.",
+    effectivePeriod: "2026/27 tax year",
+    lastVerifiedDate: "2026-08-20",
+    assumptions: [
+      "Assumes dividends from UK companies; different rules can apply to overseas dividends.",
+    ],
   },
   {
     slug: "capital-gains-tax-calculator-uk",
@@ -290,6 +440,15 @@ export const calculators: CalculatorMeta[] = [
     keywords: ["capital gains tax calculator", "cgt calculator uk", "capital gains tax calculator uk"],
     icon: "ArrowUpRight",
     schemaType: "SoftwareApplication",
+
+    sources: [officialSources.capitalGainsTax],
+    methodology:
+      "Capital Gains Tax is calculated by applying HMRC's annual exempt amount and CGT rates to your gain after allowable costs.",
+    effectivePeriod: "2026/27 tax year",
+    lastVerifiedDate: "2026-08-20",
+    assumptions: [
+      "Assumes a standard chargeable asset; property, business assets and shares can have different reliefs available.",
+    ],
   },
   {
     slug: "mpg-calculator-uk",
@@ -305,6 +464,11 @@ export const calculators: CalculatorMeta[] = [
     keywords: ["mpg calculator", "mpg calculator uk", "miles per gallon calculator"],
     icon: "Gauge",
     schemaType: "SoftwareApplication",
+
+    sources: [],
+    methodology:
+      "MPG is calculated from the distance travelled and fuel used you enter, converted between imperial and metric units as needed.",
+    lastVerifiedDate: "2026-08-20",
   },
   {
     slug: "congestion-charge-ulez-calculator-uk",
@@ -320,6 +484,15 @@ export const calculators: CalculatorMeta[] = [
     keywords: ["congestion charge calculator", "ulez calculator", "ulez charge calculator london"],
     icon: "MapPin",
     schemaType: "SoftwareApplication",
+
+    sources: [officialSources.congestionCharge, officialSources.ulez],
+    methodology:
+      "Charges are calculated using Transport for London's published Congestion Charge and ULEZ daily rates and operating hours for your vehicle type.",
+    lastVerifiedDate: "2026-08-20",
+    assumptions: [
+      "Assumes a standard passenger car; rates and exemptions differ for vans, HGVs and motorcycles.",
+      "Zone boundaries and exemption rules can change; always confirm on the TfL website before travelling.",
+    ],
   },
   {
     slug: "tdee-calculator-uk",
@@ -335,6 +508,14 @@ export const calculators: CalculatorMeta[] = [
     keywords: ["tdee calculator", "tdee calculator uk", "calorie calculator uk"],
     icon: "Flame",
     schemaType: "SoftwareApplication",
+
+    sources: [officialSources.nhsPhysicalActivity],
+    methodology:
+      "TDEE is calculated using the Mifflin-St Jeor formula for basal metabolic rate, multiplied by an activity factor based on NHS physical activity guidance.",
+    lastVerifiedDate: "2026-08-20",
+    assumptions: [
+      "This is a population-average estimate; individual metabolism can vary by up to 10-15%.",
+    ],
   },
   {
     slug: "ideal-weight-calculator-uk",
@@ -350,6 +531,14 @@ export const calculators: CalculatorMeta[] = [
     keywords: ["ideal weight calculator", "healthy weight calculator uk", "ideal body weight calculator"],
     icon: "Scale",
     schemaType: "SoftwareApplication",
+
+    sources: [officialSources.nhsHealthyWeight],
+    methodology:
+      "Ideal weight range is calculated from your height using standard healthy BMI band thresholds (18.5 to 24.9) referenced by the NHS.",
+    lastVerifiedDate: "2026-08-20",
+    assumptions: [
+      "This is a general range, not a personal target; healthy weight depends on build, muscle mass and other factors a calculator can't measure.",
+    ],
   },
   {
     slug: "paint-coverage-calculator-uk",
@@ -365,6 +554,14 @@ export const calculators: CalculatorMeta[] = [
     keywords: ["paint calculator", "paint coverage calculator uk", "how much paint do i need"],
     icon: "PaintBucket",
     schemaType: "SoftwareApplication",
+
+    sources: [],
+    methodology:
+      "Paint required is calculated by dividing your total wall area (after deducting doors and windows) by your paint's stated coverage rate per litre.",
+    lastVerifiedDate: "2026-08-20",
+    assumptions: [
+      "Coverage rates vary by paint brand, wall texture and number of coats; check your specific product's data sheet.",
+    ],
   },
   {
     slug: "tip-calculator-uk",
@@ -380,6 +577,14 @@ export const calculators: CalculatorMeta[] = [
     keywords: ["tip calculator", "tip calculator uk", "bill splitting calculator"],
     icon: "Receipt",
     schemaType: "SoftwareApplication",
+
+    sources: [],
+    methodology:
+      "The suggested tip is calculated as your chosen percentage of the bill total, with the option to split evenly across a group.",
+    lastVerifiedDate: "2026-08-20",
+    assumptions: [
+      "Tipping in the UK is discretionary; this calculator suggests an amount, it doesn't set a rule.",
+    ],
   },
   {
     slug: "isa-calculator-uk",
@@ -396,6 +601,15 @@ export const calculators: CalculatorMeta[] = [
     icon: "Coins",
     featured: true,
     schemaType: "SoftwareApplication",
+
+    sources: [officialSources.isaAllowance],
+    methodology:
+      "Contribution room is calculated against HMRC's published annual ISA allowance, split across the ISA types you specify.",
+    effectivePeriod: "2026/27",
+    lastVerifiedDate: "2026-08-20",
+    assumptions: [
+      "Assumes standard adult ISA allowances; Junior ISAs and Lifetime ISAs have their own separate limits.",
+    ],
   },
   {
     slug: "pension-calculator-uk",
@@ -411,6 +625,14 @@ export const calculators: CalculatorMeta[] = [
     keywords: ["pension calculator", "pension calculator uk", "retirement calculator uk", "pension pot calculator"],
     icon: "Sunset",
     schemaType: "SoftwareApplication",
+
+    sources: [officialSources.workplacePensions],
+    methodology:
+      "Projected pension value is calculated using the standard compound growth formula, applied to your contributions, employer match and assumed growth rate.",
+    lastVerifiedDate: "2026-08-20",
+    assumptions: [
+      "Assumes a fixed contribution and growth rate for the full period; real pension fund returns vary year to year and are not guaranteed.",
+    ],
   },
   {
     slug: "vat-calculator-uk",
@@ -427,6 +649,14 @@ export const calculators: CalculatorMeta[] = [
     icon: "ReceiptText",
     featured: true,
     schemaType: "SoftwareApplication",
+
+    sources: [officialSources.vat, officialSources.vatRates],
+    methodology:
+      "VAT is calculated using HMRC's standard, reduced and zero VAT rates, applied to add or remove VAT from the amount you enter.",
+    lastVerifiedDate: "2026-08-20",
+    assumptions: [
+      "Assumes the standard 20% rate unless you select a reduced or zero-rated category; not all goods and services qualify for reduced rates.",
+    ],
   },
   {
     slug: "car-loan-calculator-uk",
@@ -442,6 +672,14 @@ export const calculators: CalculatorMeta[] = [
     keywords: ["car loan calculator", "car finance calculator uk", "pcp calculator", "hp calculator car"],
     icon: "CarFront",
     schemaType: "SoftwareApplication",
+
+    sources: [],
+    methodology:
+      "Repayments use the standard amortising loan formula, applied to your loan amount, interest rate and term.",
+    lastVerifiedDate: "2026-08-20",
+    assumptions: [
+      "Assumes a fixed interest rate for the full term; dealer finance and PCP agreements can have different structures.",
+    ],
   },
   {
     slug: "bmr-calculator-uk",
@@ -457,6 +695,14 @@ export const calculators: CalculatorMeta[] = [
     keywords: ["bmr calculator", "basal metabolic rate calculator", "mifflin st jeor calculator"],
     icon: "Zap",
     schemaType: "SoftwareApplication",
+
+    sources: [],
+    methodology:
+      "BMR is calculated using the Mifflin-St Jeor equation, a standard formula based on your weight, height, age and sex.",
+    lastVerifiedDate: "2026-08-20",
+    assumptions: [
+      "This is a population-average estimate; individual metabolism can vary.",
+    ],
   },
   {
     slug: "inheritance-tax-calculator-uk",
@@ -472,6 +718,15 @@ export const calculators: CalculatorMeta[] = [
     keywords: ["inheritance tax calculator", "iht calculator uk", "inheritance tax calculator uk"],
     icon: "Scroll",
     schemaType: "SoftwareApplication",
+
+    sources: [officialSources.inheritanceTax],
+    methodology:
+      "Inheritance Tax is calculated using HMRC's published nil-rate band and residence nil-rate band thresholds, applied to your estate value.",
+    effectivePeriod: "2026/27",
+    lastVerifiedDate: "2026-08-20",
+    assumptions: [
+      "Assumes a standard estate; trusts, business relief and agricultural relief can significantly change the amount due.",
+    ],
   },
   {
     slug: "discount-calculator-uk",
@@ -487,6 +742,11 @@ export const calculators: CalculatorMeta[] = [
     keywords: ["discount calculator", "sale price calculator", "percent off calculator"],
     icon: "Tag",
     schemaType: "SoftwareApplication",
+
+    sources: [],
+    methodology:
+      "The discounted price is calculated by applying your percentage or fixed discount to the original price you enter.",
+    lastVerifiedDate: "2026-08-20",
   },
   {
     slug: "salary-increase-calculator-uk",
@@ -502,6 +762,15 @@ export const calculators: CalculatorMeta[] = [
     keywords: ["salary increase calculator", "pay rise calculator uk", "pay rise take home calculator"],
     icon: "ArrowUpCircle",
     schemaType: "SoftwareApplication",
+
+    sources: [officialSources.incomeTax, officialSources.nationalInsuranceHowMuch],
+    methodology:
+      "Take-home pay before and after your increase is calculated by applying HMRC's Income Tax and National Insurance rates to both salary figures.",
+    effectivePeriod: "2026/27 tax year",
+    lastVerifiedDate: "2026-08-20",
+    assumptions: [
+      "Assumes standard PAYE employment with no other changes to your tax code or deductions.",
+    ],
   },
   {
     slug: "fuel-efficiency-comparison-uk",
@@ -517,6 +786,14 @@ export const calculators: CalculatorMeta[] = [
     keywords: ["fuel efficiency comparison", "compare car fuel costs", "mpg comparison calculator"],
     icon: "GitCompare",
     schemaType: "SoftwareApplication",
+
+    sources: [],
+    methodology:
+      "Cost per mile and annual cost are calculated from the fuel economy, fuel price and annual mileage figures you enter for each vehicle.",
+    lastVerifiedDate: "2026-08-20",
+    assumptions: [
+      "Fuel prices vary daily and by retailer; results are only as accurate as the figures entered.",
+    ],
   },
   {
     slug: "water-bill-calculator-uk",
@@ -532,6 +809,14 @@ export const calculators: CalculatorMeta[] = [
     keywords: ["water bill calculator", "water bill calculator uk", "average water bill uk"],
     icon: "Droplets",
     schemaType: "SoftwareApplication",
+
+    sources: [],
+    methodology:
+      "Estimated water bill is calculated from your entered usage or household size, applied to typical UK water company charging structures.",
+    lastVerifiedDate: "2026-08-20",
+    assumptions: [
+      "Individual water company tariffs and standing charges vary by region; this is a general estimate, not a bill from your supplier.",
+    ],
   },
   {
     slug: "flooring-calculator-uk",
@@ -548,6 +833,14 @@ export const calculators: CalculatorMeta[] = [
     icon: "LayoutGrid",
     featured: true,
     schemaType: "SoftwareApplication",
+
+    sources: [],
+    methodology:
+      "Materials required are calculated by dividing your room's floor area by the coverage of your chosen flooring type, with an allowance for waste and cuts.",
+    lastVerifiedDate: "2026-08-20",
+    assumptions: [
+      "Assumes a standard rectangular room layout; complex layouts may need more material than estimated.",
+    ],
   },
   {
     slug: "concrete-calculator-uk",
@@ -564,6 +857,14 @@ export const calculators: CalculatorMeta[] = [
     icon: "Construction",
     featured: true,
     schemaType: "SoftwareApplication",
+
+    sources: [],
+    methodology:
+      "Concrete volume is calculated from the dimensions you enter using standard volume formulas, then converted to bags or ready-mix quantities.",
+    lastVerifiedDate: "2026-08-20",
+    assumptions: [
+      "Assumes a standard concrete mix; specialist mixes may have different yield rates.",
+    ],
   },
   {
     slug: "kitchen-renovation-cost-calculator-uk",
@@ -580,6 +881,14 @@ export const calculators: CalculatorMeta[] = [
     icon: "ChefHat",
     featured: true,
     schemaType: "SoftwareApplication",
+
+    sources: [],
+    methodology:
+      "Cost estimate is built from typical UK price ranges for units, worktops, appliances, fitting and finishing, scaled to the kitchen size and spec level you select.",
+    lastVerifiedDate: "2026-08-20",
+    assumptions: [
+      "Actual costs vary significantly by region, tradesperson and material choice; treat this as a planning estimate, not a quote.",
+    ],
   },
   {
     slug: "loft-insulation-calculator-uk",
@@ -596,6 +905,14 @@ export const calculators: CalculatorMeta[] = [
     icon: "Layers",
     featured: true,
     schemaType: "SoftwareApplication",
+
+    sources: [],
+    methodology:
+      "Material quantity and estimated savings are calculated from your loft area, target insulation depth and typical UK energy price figures.",
+    lastVerifiedDate: "2026-08-20",
+    assumptions: [
+      "Actual savings depend on your home's construction, existing insulation and energy usage patterns.",
+    ],
   },
   {
     slug: "council-tax-calculator-uk",
@@ -612,6 +929,16 @@ export const calculators: CalculatorMeta[] = [
     icon: "Landmark",
     featured: true,
     schemaType: "SoftwareApplication",
+
+    sources: [officialSources.councilTax],
+    methodology:
+      "Council Tax is calculated using your selected valuation band and local authority rate; band structure follows GOV.UK's published guidance.",
+    effectivePeriod: "2026/27",
+    lastVerifiedDate: "2026-08-20",
+    assumptions: [
+      "Council Tax bands are based on 1991 property values in England, not current market value.",
+      "Exact charges, discounts and local precepts are set independently by each council.",
+    ],
   },
   {
     slug: "energy-bill-calculator-uk",
@@ -628,6 +955,15 @@ export const calculators: CalculatorMeta[] = [
     icon: "Plug",
     featured: true,
     schemaType: "SoftwareApplication",
+
+    sources: [officialSources.energyPriceCap],
+    methodology:
+      "Estimated bill is calculated from your usage and Ofgem's published energy price cap unit rates and standing charges.",
+    lastVerifiedDate: "2026-08-20",
+    assumptions: [
+      "The price cap applies to default/standard variable tariffs; fixed-rate deals can be higher or lower.",
+      "The cap limits the rate per unit, not your total bill, which still depends on how much energy you use.",
+    ],
   },
   {
     slug: "salary-to-hourly-calculator-uk",
@@ -643,6 +979,15 @@ export const calculators: CalculatorMeta[] = [
     keywords: ["salary to hourly uk", "hourly rate calculator uk", "convert annual salary to hourly"],
     icon: "Clock",
     schemaType: "SoftwareApplication",
+
+    sources: [officialSources.minimumWage],
+    methodology:
+      "Hourly rate is calculated by dividing your annual or monthly salary by your standard working hours, referenced against GOV.UK's published minimum wage rates.",
+    effectivePeriod: "2026/27",
+    lastVerifiedDate: "2026-08-20",
+    assumptions: [
+      "Assumes a standard working pattern with no unpaid overtime or irregular hours.",
+    ],
   },
   {
     slug: "pregnancy-weeks-calculator-uk",
@@ -658,6 +1003,14 @@ export const calculators: CalculatorMeta[] = [
     keywords: ["how many weeks pregnant calculator", "pregnancy weeks calculator uk", "gestational age calculator"],
     icon: "CalendarDays",
     schemaType: "SoftwareApplication",
+
+    sources: [officialSources.nhsPregnancyDueDate],
+    methodology:
+      "Your current week of pregnancy is calculated from the first day of your last menstrual period, the same dating method used by the NHS.",
+    lastVerifiedDate: "2026-08-20",
+    assumptions: [
+      "This is an estimate; a dating scan gives a more precise gestational age if available.",
+    ],
   },
   {
     slug: "ovulation-calculator-uk",
@@ -673,6 +1026,15 @@ export const calculators: CalculatorMeta[] = [
     keywords: ["ovulation calculator uk", "fertile window calculator", "when am i most fertile uk"],
     icon: "Heart",
     schemaType: "SoftwareApplication",
+
+    sources: [],
+    methodology:
+      "Fertile window is estimated using the standard menstrual cycle calculation method, based on the average cycle length you enter.",
+    lastVerifiedDate: "2026-08-20",
+    assumptions: [
+      "Cycle length and ovulation timing vary between individuals and cycles; this is a general estimate, not a fertility diagnosis.",
+      "For personal fertility guidance, speak to your GP or a fertility specialist.",
+    ],
   },
   {
     slug: "reduced-hours-pay-calculator-uk",
@@ -688,6 +1050,15 @@ export const calculators: CalculatorMeta[] = [
     keywords: ["reduced hours pay calculator uk", "furlough pay calculator", "part time salary calculator uk"],
     icon: "Clock",
     schemaType: "SoftwareApplication",
+
+    sources: [officialSources.incomeTax, officialSources.nationalInsuranceHowMuch],
+    methodology:
+      "Adjusted take-home pay is calculated by applying HMRC's Income Tax and National Insurance rates to your reduced salary figure.",
+    effectivePeriod: "2026/27 tax year",
+    lastVerifiedDate: "2026-08-20",
+    assumptions: [
+      "Assumes standard PAYE employment; salary sacrifice, pension or benefit changes are not included unless entered.",
+    ],
   },
   {
     slug: "electric-car-running-cost-calculator-uk",
@@ -704,6 +1075,15 @@ export const calculators: CalculatorMeta[] = [
     icon: "Zap",
     featured: true,
     schemaType: "SoftwareApplication",
+
+    sources: [officialSources.vehicleTaxEV],
+    methodology:
+      "Running cost is calculated from your electricity price, vehicle efficiency and annual mileage, referenced against DVLA/HMRC's published EV vehicle tax rules.",
+    effectivePeriod: "2026/27",
+    lastVerifiedDate: "2026-08-20",
+    assumptions: [
+      "Electricity and home charging costs vary by tariff and region; public rapid charging is typically more expensive than home charging.",
+    ],
   },
   {
     slug: "winter-fuel-payment-calculator-uk",
@@ -719,6 +1099,15 @@ export const calculators: CalculatorMeta[] = [
     keywords: ["winter fuel payment calculator 2026", "am i eligible for winter fuel payment uk", "winter fuel payment amount"],
     icon: "Sunset",
     schemaType: "SoftwareApplication",
+
+    sources: [officialSources.winterFuelPayment],
+    methodology:
+      "Payment amount is calculated using GOV.UK's published Winter Fuel Payment eligibility bands and rates.",
+    effectivePeriod: "winter 2026 to 2027",
+    lastVerifiedDate: "2026-08-20",
+    assumptions: [
+      "Eligibility depends on your date of birth and, since recent changes, your income; check GOV.UK for your personal position.",
+    ],
   },
   {
     slug: "sick-pay-calculator-uk",
@@ -734,6 +1123,15 @@ export const calculators: CalculatorMeta[] = [
     keywords: ["sick pay calculator uk", "ssp calculator 2026", "how much sick pay will i get uk"],
     icon: "ShieldCheck",
     schemaType: "SoftwareApplication",
+
+    sources: [officialSources.statutorySickPay],
+    methodology:
+      "Sick pay is calculated using GOV.UK's published Statutory Sick Pay weekly rate, applied to your qualifying sick days.",
+    effectivePeriod: "2026/27",
+    lastVerifiedDate: "2026-08-20",
+    assumptions: [
+      "Assumes eligibility for SSP; some employees aren't eligible and some employers offer enhanced contractual sick pay instead.",
+    ],
   },
   {
     slug: "redundancy-pay-calculator-uk",
@@ -749,6 +1147,16 @@ export const calculators: CalculatorMeta[] = [
     keywords: ["redundancy pay calculator uk 2026", "how much redundancy will i get", "statutory redundancy calculator"],
     icon: "Briefcase",
     schemaType: "SoftwareApplication",
+
+    sources: [officialSources.redundancyPay, officialSources.redundancyRights],
+    methodology:
+      "Statutory redundancy pay is calculated using GOV.UK's published age-banded formula and weekly pay cap, applied to your age, length of service and weekly pay.",
+    effectivePeriod: "2026/27",
+    lastVerifiedDate: "2026-08-20",
+    assumptions: [
+      "Assumes at least 2 years' continuous employment, the minimum needed to qualify for statutory redundancy pay.",
+      "Employers may offer enhanced redundancy pay above the statutory minimum; this covers the statutory entitlement only.",
+    ],
   },
   {
     slug: "split-bill-calculator-uk",
@@ -764,6 +1172,11 @@ export const calculators: CalculatorMeta[] = [
     keywords: ["split bill calculator uk", "restaurant bill splitter", "who pays what calculator"],
     icon: "LayoutGrid",
     schemaType: "SoftwareApplication",
+
+    sources: [],
+    methodology:
+      "Each person's share is calculated by dividing the bill total (plus any tip) by the number of people, or by item if itemised.",
+    lastVerifiedDate: "2026-08-20",
   },
   {
     slug: "child-benefit-calculator-uk",
@@ -779,6 +1192,15 @@ export const calculators: CalculatorMeta[] = [
     keywords: ["child benefit calculator uk 2026", "high income child benefit charge calculator", "how much child benefit will i get"],
     icon: "Users",
     schemaType: "SoftwareApplication",
+
+    sources: [officialSources.childBenefit, officialSources.childBenefitTaxCharge],
+    methodology:
+      "Payment amount and any High Income Child Benefit Charge are calculated using GOV.UK's published Child Benefit rates and HICBC thresholds.",
+    effectivePeriod: "2026/27",
+    lastVerifiedDate: "2026-08-20",
+    assumptions: [
+      "The High Income Child Benefit Charge is based on the higher earner's individual adjusted net income, not household income.",
+    ],
   },
   {
     slug: "universal-credit-calculator-uk",
@@ -794,6 +1216,16 @@ export const calculators: CalculatorMeta[] = [
     keywords: ["universal credit calculator uk 2026", "how much universal credit will i get", "uc calculator uk"],
     icon: "HandCoins",
     schemaType: "SoftwareApplication",
+
+    sources: [officialSources.universalCredit],
+    methodology:
+      "Estimated award is calculated from GOV.UK's published standard allowance and element rates, based on the household details you enter.",
+    effectivePeriod: "2026/27",
+    lastVerifiedDate: "2026-08-20",
+    assumptions: [
+      "Universal Credit depends on many individual circumstances; this is an estimate, not a benefits decision.",
+      "Use GOV.UK's own benefits calculator for a personalised assessment before making decisions.",
+    ],
   },
   {
     slug: "maternity-pay-calculator-uk",
@@ -809,6 +1241,16 @@ export const calculators: CalculatorMeta[] = [
     keywords: ["maternity pay calculator uk 2026", "smp calculator", "how much maternity pay will i get"],
     icon: "Baby",
     schemaType: "SoftwareApplication",
+
+    sources: [officialSources.maternityPayLeave],
+    methodology:
+      "Statutory Maternity Pay is calculated using GOV.UK's published 90%/flat-rate structure, applied to your average weekly earnings.",
+    effectivePeriod: "2026/27",
+    lastVerifiedDate: "2026-08-20",
+    assumptions: [
+      "Assumes eligibility for Statutory Maternity Pay; those who don't qualify may be eligible for Maternity Allowance instead.",
+      "Does not include enhanced contractual maternity pay, which many employers offer above the statutory minimum.",
+    ],
   },
   {
     slug: "salary-negotiation-calculator-uk",
@@ -824,6 +1266,14 @@ export const calculators: CalculatorMeta[] = [
     keywords: ["salary negotiation calculator uk", "should i ask for a pay rise calculator", "salary negotiation uk"],
     icon: "Handshake",
     schemaType: "SoftwareApplication",
+
+    sources: [],
+    methodology:
+      "Suggested salary range is calculated from the market data range and increase percentage you enter, alongside your current salary.",
+    lastVerifiedDate: "2026-08-20",
+    assumptions: [
+      "This is a planning tool based on figures you provide, not independent market data or a guarantee of any offer.",
+    ],
   },
   {
     slug: "mortgage-affordability-calculator-uk",
@@ -839,6 +1289,15 @@ export const calculators: CalculatorMeta[] = [
     keywords: ["mortgage affordability calculator uk", "how much can i borrow calculator", "mortgage borrowing calculator uk"],
     icon: "KeyRound",
     schemaType: "SoftwareApplication",
+
+    sources: [officialSources.mortgageAffordability, officialSources.firstTimeBuyer],
+    methodology:
+      "Affordability range is calculated using typical UK mortgage income multiples, benchmarked against MoneyHelper's independent mortgage affordability guidance.",
+    lastVerifiedDate: "2026-08-20",
+    assumptions: [
+      "Individual lender affordability assessments vary considerably and depend on credit history, existing debt and outgoings.",
+      "This is a general estimate only; a mortgage broker or lender's own calculator is needed for a figure you can rely on.",
+    ],
   },
   {
     slug: "rental-yield-calculator-uk",
@@ -854,6 +1313,14 @@ export const calculators: CalculatorMeta[] = [
     keywords: ["rental yield calculator uk", "buy to let yield calculator", "property investment calculator uk"],
     icon: "Building2",
     schemaType: "SoftwareApplication",
+
+    sources: [],
+    methodology:
+      "Rental yield is calculated as annual rental income divided by property value, expressed as a percentage, using the standard gross or net yield formula.",
+    lastVerifiedDate: "2026-08-20",
+    assumptions: [
+      "Net yield figures depend on the costs you enter; omitted costs such as void periods or major repairs will overstate the yield.",
+    ],
   },
   {
     slug: "simple-interest-calculator-uk",
@@ -869,6 +1336,11 @@ export const calculators: CalculatorMeta[] = [
     keywords: ["simple interest calculator uk", "simple interest calculator", "how to calculate simple interest"],
     icon: "Calculator",
     schemaType: "SoftwareApplication",
+
+    sources: [],
+    methodology:
+      "Interest is calculated using the standard simple interest formula (principal multiplied by rate multiplied by time), with no compounding.",
+    lastVerifiedDate: "2026-08-20",
   },
   {
     slug: "state-pension-age-calculator-uk",
@@ -884,6 +1356,14 @@ export const calculators: CalculatorMeta[] = [
     keywords: ["state pension age calculator", "check my state pension age", "when can i retire uk calculator"],
     icon: "CalendarClock",
     schemaType: "SoftwareApplication",
+
+    sources: [officialSources.statePensionAge, officialSources.newStatePension],
+    methodology:
+      "State Pension age is calculated using GOV.UK's published State Pension age timetable, based on the date of birth you enter.",
+    lastVerifiedDate: "2026-08-20",
+    assumptions: [
+      "The State Pension age is periodically reviewed by GOV.UK and could change again in future for younger age groups.",
+    ],
   },
   {
     slug: "debt-payoff-calculator-uk",
@@ -899,6 +1379,14 @@ export const calculators: CalculatorMeta[] = [
     keywords: ["debt payoff calculator uk", "debt snowball calculator", "debt avalanche calculator uk"],
     icon: "TrendingDown",
     schemaType: "SoftwareApplication",
+
+    sources: [],
+    methodology:
+      "Payoff time and total interest are calculated by applying each debt's interest rate and payment amount month by month, using the snowball or avalanche method you select.",
+    lastVerifiedDate: "2026-08-20",
+    assumptions: [
+      "Assumes no further borrowing is added to the debts during the payoff period, and that payment amounts stay consistent.",
+    ],
   },
   {
     slug: "minimum-wage-calculator-uk",
@@ -914,6 +1402,15 @@ export const calculators: CalculatorMeta[] = [
     keywords: ["minimum wage calculator uk", "national living wage calculator", "am i being paid minimum wage uk"],
     icon: "PoundSterling",
     schemaType: "SoftwareApplication",
+
+    sources: [officialSources.minimumWage],
+    methodology:
+      "Minimum pay due is calculated using GOV.UK's published National Living Wage and National Minimum Wage age-banded hourly rates.",
+    effectivePeriod: "2026/27",
+    lastVerifiedDate: "2026-08-20",
+    assumptions: [
+      "Assumes a standard worker category; apprentice and accommodation offset rules can change the rate that applies.",
+    ],
   },
   {
     slug: "overtime-pay-calculator-uk",
@@ -929,6 +1426,15 @@ export const calculators: CalculatorMeta[] = [
     keywords: ["overtime pay calculator uk", "time and a half calculator", "overtime calculator uk"],
     icon: "Hourglass",
     schemaType: "SoftwareApplication",
+
+    sources: [officialSources.minimumWage],
+    methodology:
+      "Overtime pay is calculated by applying your overtime rate multiplier to your base hourly rate, referenced against GOV.UK's published minimum wage rates to flag any shortfall.",
+    effectivePeriod: "2026/27",
+    lastVerifiedDate: "2026-08-20",
+    assumptions: [
+      "Assumes your contract's stated overtime multiplier; there's no separate statutory overtime rate in UK law beyond the National Minimum Wage floor.",
+    ],
   },
   {
     slug: "paternity-pay-calculator-uk",
@@ -944,6 +1450,15 @@ export const calculators: CalculatorMeta[] = [
     keywords: ["paternity pay calculator uk", "statutory paternity pay calculator", "spp calculator uk"],
     icon: "Baby",
     schemaType: "SoftwareApplication",
+
+    sources: [officialSources.paternityPayLeave],
+    methodology:
+      "Statutory Paternity Pay is calculated using GOV.UK's published flat-rate/90% structure, applied to your average weekly earnings.",
+    effectivePeriod: "2026/27",
+    lastVerifiedDate: "2026-08-20",
+    assumptions: [
+      "Assumes eligibility for Statutory Paternity Pay; enhanced contractual paternity pay is not included unless entered.",
+    ],
   },
   {
     slug: "car-depreciation-calculator-uk",
@@ -959,6 +1474,14 @@ export const calculators: CalculatorMeta[] = [
     keywords: ["car depreciation calculator uk", "car value calculator uk", "how much will my car be worth"],
     icon: "Car",
     schemaType: "SoftwareApplication",
+
+    sources: [],
+    methodology:
+      "Depreciation is calculated using a standard declining-balance formula, applied to the purchase price, annual depreciation rate and years of ownership you enter.",
+    lastVerifiedDate: "2026-08-20",
+    assumptions: [
+      "Actual resale value depends on mileage, condition, market demand and specific model, which a formula alone can't capture.",
+    ],
   },
   {
     slug: "solar-panel-savings-calculator-uk",
@@ -974,6 +1497,14 @@ export const calculators: CalculatorMeta[] = [
     keywords: ["solar panel savings calculator uk", "solar panel payback calculator", "is solar worth it uk calculator"],
     icon: "Sun",
     schemaType: "SoftwareApplication",
+
+    sources: [officialSources.energyPriceCap],
+    methodology:
+      "Savings estimate is calculated from your system size, typical UK solar generation figures and Ofgem's published energy price cap unit rate.",
+    lastVerifiedDate: "2026-08-20",
+    assumptions: [
+      "Actual generation depends on your roof orientation, shading, location and weather; this is an estimate, not a guaranteed output.",
+    ],
   },
   {
     slug: "corporation-tax-calculator-uk",
@@ -989,6 +1520,15 @@ export const calculators: CalculatorMeta[] = [
     keywords: ["corporation tax calculator uk", "corporation tax calculator", "marginal relief calculator"],
     icon: "Building2",
     schemaType: "SoftwareApplication",
+
+    sources: [officialSources.corporationTax],
+    methodology:
+      "Corporation Tax is calculated using HMRC's published small profits rate, main rate and marginal relief bands, applied to your company's taxable profit.",
+    effectivePeriod: "2026/27",
+    lastVerifiedDate: "2026-08-20",
+    assumptions: [
+      "Assumes standard (non-ring fence) trading profits; oil and gas ring-fence profits use separate rates.",
+    ],
   },
   {
     slug: "dividend-vs-salary-calculator-uk",
@@ -1004,6 +1544,16 @@ export const calculators: CalculatorMeta[] = [
     keywords: ["dividend vs salary calculator uk", "salary vs dividends calculator", "director pay calculator uk"],
     icon: "ArrowLeftRight",
     schemaType: "SoftwareApplication",
+
+    sources: [officialSources.dividendTax, officialSources.incomeTax, officialSources.nationalInsurance],
+    methodology:
+      "Both scenarios are calculated using HMRC's Income Tax, National Insurance and dividend tax rates, applied to the same total amount extracted from the company.",
+    effectivePeriod: "2026/27 tax year",
+    lastVerifiedDate: "2026-08-20",
+    assumptions: [
+      "Assumes a single director-shareholder taking a simple salary/dividend split; Corporation Tax on company profits is also factored in.",
+      "Does not account for pension contributions or other tax planning that could change the comparison.",
+    ],
   },
   {
     slug: "break-even-calculator-uk",
@@ -1019,6 +1569,14 @@ export const calculators: CalculatorMeta[] = [
     keywords: ["break even calculator", "break even calculator uk", "break even point calculator"],
     icon: "Target",
     schemaType: "SoftwareApplication",
+
+    sources: [],
+    methodology:
+      "Break-even point is calculated by dividing fixed costs by the contribution margin (price minus variable cost per unit).",
+    lastVerifiedDate: "2026-08-20",
+    assumptions: [
+      "Assumes fixed and variable costs stay constant at different volumes, which may not hold at very high or low output.",
+    ],
   },
   {
     slug: "profit-margin-calculator-uk",
@@ -1034,6 +1592,11 @@ export const calculators: CalculatorMeta[] = [
     keywords: ["profit margin calculator", "markup calculator", "profit margin calculator uk"],
     icon: "TrendingUp",
     schemaType: "SoftwareApplication",
+
+    sources: [],
+    methodology:
+      "Profit margin is calculated as profit divided by revenue, expressed as a percentage, for both gross and net margin.",
+    lastVerifiedDate: "2026-08-20",
   },
   {
     slug: "dog-age-calculator-uk",
@@ -1049,6 +1612,15 @@ export const calculators: CalculatorMeta[] = [
     keywords: ["dog age calculator", "dog years to human years", "dog age in human years calculator"],
     icon: "Dog",
     schemaType: "SoftwareApplication",
+
+    sources: [],
+    methodology:
+      "Human-equivalent age is calculated using a standard breed-size-adjusted formula, since dogs of different sizes age at different rates.",
+    lastVerifiedDate: "2026-08-20",
+    assumptions: [
+      "This is a general estimate; individual dogs age differently based on breed, health and lifestyle.",
+      "For any health or behaviour concern, speak to a vet rather than relying on an age estimate.",
+    ],
   },
   {
     slug: "cat-age-calculator-uk",
@@ -1064,6 +1636,15 @@ export const calculators: CalculatorMeta[] = [
     keywords: ["cat age calculator", "cat years to human years", "cat age in human years calculator"],
     icon: "Cat",
     schemaType: "SoftwareApplication",
+
+    sources: [],
+    methodology:
+      "Human-equivalent age is calculated using a standard formula reflecting a cat's faster early-life development and slower ageing after year two.",
+    lastVerifiedDate: "2026-08-20",
+    assumptions: [
+      "This is a general estimate; individual cats age differently based on breed, health and lifestyle.",
+      "For any health or behaviour concern, speak to a vet rather than relying on an age estimate.",
+    ],
   },
   {
     slug: "running-pace-calculator-uk",
@@ -1079,6 +1660,11 @@ export const calculators: CalculatorMeta[] = [
     keywords: ["running pace calculator", "race time predictor", "marathon pace calculator"],
     icon: "Footprints",
     schemaType: "SoftwareApplication",
+
+    sources: [],
+    methodology:
+      "Pace, time and distance are calculated using the standard speed-distance-time formula, converted between common race distances and units.",
+    lastVerifiedDate: "2026-08-20",
   },
   {
     slug: "one-rep-max-calculator-uk",
@@ -1094,6 +1680,15 @@ export const calculators: CalculatorMeta[] = [
     keywords: ["one rep max calculator", "1rm calculator", "epley formula calculator"],
     icon: "Dumbbell",
     schemaType: "SoftwareApplication",
+
+    sources: [],
+    methodology:
+      "Estimated one-rep max is calculated using the Epley or Brzycki formula, standard strength-training estimates based on weight lifted and reps completed.",
+    lastVerifiedDate: "2026-08-20",
+    assumptions: [
+      "This is a mathematical estimate, not a substitute for an actual tested lift; formulas become less accurate above around 10 reps.",
+      "Always use proper form and appropriate spotting or safety equipment when testing strength.",
+    ],
   },
   {
     slug: "student-loan-repayment-calculator-uk",
@@ -1109,6 +1704,15 @@ export const calculators: CalculatorMeta[] = [
     keywords: ["student loan repayment calculator", "student loan calculator uk", "plan 2 student loan calculator"],
     icon: "GraduationCap",
     schemaType: "SoftwareApplication",
+
+    sources: [officialSources.studentLoanRepayment],
+    methodology:
+      "Repayments are calculated using GOV.UK's published repayment threshold and rate for your loan plan, applied to your income above the threshold.",
+    effectivePeriod: "2026/27",
+    lastVerifiedDate: "2026-08-20",
+    assumptions: [
+      "Assumes repayment through UK PAYE employment; self-employed and overseas repayment rules differ slightly.",
+    ],
   },
   {
     slug: "student-budget-calculator-uk",
@@ -1124,6 +1728,14 @@ export const calculators: CalculatorMeta[] = [
     keywords: ["student budget calculator uk", "university budget calculator", "student budget planner"],
     icon: "Wallet",
     schemaType: "SoftwareApplication",
+
+    sources: [],
+    methodology:
+      "Budget breakdown is calculated from typical UK student living cost categories, scaled to the income and location details you enter.",
+    lastVerifiedDate: "2026-08-20",
+    assumptions: [
+      "Actual costs vary significantly by city, accommodation type and lifestyle; figures are general estimates, not a personal budget plan.",
+    ],
   },
   {
     slug: "degree-classification-calculator-uk",
@@ -1139,6 +1751,14 @@ export const calculators: CalculatorMeta[] = [
     keywords: ["degree classification calculator", "degree classification calculator uk", "2:1 calculator"],
     icon: "Scroll",
     schemaType: "SoftwareApplication",
+
+    sources: [],
+    methodology:
+      "Weighted average is calculated by applying standard UK degree classification weighting (commonly year 2 and year 3 marks) to the module marks you enter.",
+    lastVerifiedDate: "2026-08-20",
+    assumptions: [
+      "Exact weighting and classification boundaries vary by university; always confirm your institution's specific regulations.",
+    ],
   },
   {
     slug: "heart-rate-zone-calculator-uk",
@@ -1154,6 +1774,15 @@ export const calculators: CalculatorMeta[] = [
     keywords: ["heart rate zone calculator", "target heart rate calculator", "max heart rate calculator"],
     icon: "Heart",
     schemaType: "SoftwareApplication",
+
+    sources: [officialSources.nhsPhysicalActivity],
+    methodology:
+      "Heart rate zones are calculated using the standard age-based maximum heart rate formula, divided into training zones referenced against NHS physical activity guidance.",
+    lastVerifiedDate: "2026-08-20",
+    assumptions: [
+      "This is a population-average estimate; individual maximum heart rate can vary meaningfully from the age-based formula.",
+      "Speak to a doctor before starting a new exercise programme if you have an existing heart condition.",
+    ],
   },
   {
     slug: "late-payment-interest-calculator-uk",
@@ -1169,6 +1798,15 @@ export const calculators: CalculatorMeta[] = [
     keywords: ["late payment interest calculator", "statutory interest calculator uk", "late payment calculator uk"],
     icon: "HandCoins",
     schemaType: "SoftwareApplication",
+
+    sources: [officialSources.latePaymentInterest],
+    methodology:
+      "Statutory interest is calculated using the Late Payment of Commercial Debts (Interest) Act 1998 formula: the Bank of England base rate plus 8%, applied to the overdue amount and number of days late.",
+    lastVerifiedDate: "2026-08-20",
+    assumptions: [
+      "Applies to business-to-business commercial contracts only, not consumer contracts.",
+      "Fixed compensation amounts follow the statutory bands set out in the Act.",
+    ],
   },
   {
     slug: "dog-food-calculator-uk",
@@ -1184,6 +1822,15 @@ export const calculators: CalculatorMeta[] = [
     keywords: ["dog food calculator", "how much to feed my dog", "dog portion calculator"],
     icon: "Dog",
     schemaType: "SoftwareApplication",
+
+    sources: [],
+    methodology:
+      "Daily portion is calculated from your dog's weight and typical UK feeding guideline ratios for standard adult maintenance energy needs.",
+    lastVerifiedDate: "2026-08-20",
+    assumptions: [
+      "Feeding guidelines vary by food brand, your dog's activity level and life stage; always check your specific food's packaging.",
+      "For any concern about your dog's weight or diet, speak to a vet rather than relying on a calculator.",
+    ],
   },
   {
     slug: "time-duration-calculator-uk",
@@ -1199,6 +1846,11 @@ export const calculators: CalculatorMeta[] = [
     keywords: ["time duration calculator", "hours calculator", "time card calculator uk"],
     icon: "Clock",
     schemaType: "SoftwareApplication",
+
+    sources: [],
+    methodology:
+      "Duration is calculated as the exact difference between the start and end times you enter, including optional break deductions.",
+    lastVerifiedDate: "2026-08-20",
   },
 ];
 

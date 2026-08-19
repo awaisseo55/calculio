@@ -36,7 +36,7 @@ export const officialSources = {
   newStatePension: { label: "The new State Pension: eligibility (GOV.UK)", url: "https://www.gov.uk/new-state-pension" },
   statePensionAge: { label: "Check your State Pension age (GOV.UK)", url: "https://www.gov.uk/state-pension-age" },
   winterFuelPayment: { label: "Winter Fuel Payment (GOV.UK)", url: "https://www.gov.uk/winter-fuel-payment" },
-  childBenefit: { label: "Child Benefit: what you'll get (GOV.UK)", url: "https://www.gov.uk/child-benefit/what-youll-get" },
+  childBenefit: { label: "Child Benefit: how it works (GOV.UK)", url: "https://www.gov.uk/child-benefit" },
   childBenefitTaxCharge: { label: "High Income Child Benefit Charge (GOV.UK)", url: "https://www.gov.uk/child-benefit-tax-charge" },
   statutorySickPay: { label: "Statutory Sick Pay (SSP) (GOV.UK)", url: "https://www.gov.uk/statutory-sick-pay" },
   maternityPayLeave: { label: "Maternity pay and leave (GOV.UK)", url: "https://www.gov.uk/maternity-pay-leave" },
@@ -50,7 +50,7 @@ export const officialSources = {
   firstTimeBuyer: { label: "First-time home buyer guide (MoneyHelper)", url: "https://www.moneyhelper.org.uk/en/homes/buying-a-home/first-time-buyer-money-tips" },
   isaAllowance: { label: "Individual Savings Accounts (ISAs) (GOV.UK)", url: "https://www.gov.uk/individual-savings-accounts" },
   workplacePensions: { label: "Workplace pensions (GOV.UK)", url: "https://www.gov.uk/workplace-pensions" },
-  latePaymentInterest: { label: "Charging interest on late commercial payments (GOV.UK)", url: "https://www.gov.uk/late-commercial-payments-interest-debt-recovery" },
+  latePaymentInterest: { label: "Interest calculator guidance (Small Business Commissioner)", url: "https://www.smallbusinesscommissioner.gov.uk/help-and-guidance/interest-calculator/interest-calculator-guidance/" },
   energyPriceCap: { label: "Energy price cap unit rates and standing charges (Ofgem)", url: "https://www.ofgem.gov.uk/information-consumers/energy-advice-households/energy-price-cap-unit-rates-and-standing-charges" },
 } as const satisfies Record<string, OfficialSource>;
 
