@@ -5,6 +5,7 @@ import { CheckCircle2 } from "lucide-react";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { Button } from "@/components/ui/button";
+import { siteConfig } from "@/lib/site";
 
 export function ContactForm() {
   const [submitted, setSubmitted] = React.useState(false);
@@ -16,6 +17,11 @@ export function ContactForm() {
   function handleSubmit(e: React.FormEvent) {
     e.preventDefault();
     if (!name || !email || !message) return;
+    const body = `From: ${name} (${email})\n\n${message}`;
+    const mailtoSubject = subject || `Message from ${name} via Calculio contact form`;
+    window.location.href = `mailto:${siteConfig.email}?subject=${encodeURIComponent(
+      mailtoSubject
+    )}&body=${encodeURIComponent(body)}`;
     setSubmitted(true);
   }
 
@@ -23,11 +29,15 @@ export function ContactForm() {
     return (
       <div className="flex flex-col items-center gap-3 rounded-2xl border border-success/30 bg-success/5 p-10 text-center">
         <CheckCircle2 className="size-10 text-success" aria-hidden="true" />
-        <h2 className="text-lg font-semibold text-foreground">Message received</h2>
+        <h2 className="text-lg font-semibold text-foreground">Almost there</h2>
         <p className="max-w-sm text-sm text-muted-foreground">
-          Thanks, {name.split(" ")[0]} — this is a demo form with no backend connected
-          yet, but in production this is where we&apos;d confirm your message has been
-          sent.
+          Thanks, {name.split(" ")[0]}. Your email app should have opened with your
+          message ready to send to {siteConfig.email}. If it didn&apos;t open, email us
+          directly at{" "}
+          <a href={`mailto:${siteConfig.email}`} className="underline underline-offset-2">
+            {siteConfig.email}
+          </a>
+          .
         </p>
       </div>
     );

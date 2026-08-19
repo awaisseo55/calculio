@@ -2,7 +2,7 @@ import Link from "next/link";
 import { Logo } from "@/components/site/logo";
 import { XIcon, FacebookIcon, InstagramIcon, LinkedinIcon } from "@/components/site/social-icons";
 import { categories } from "@/lib/categories";
-import { getCalculator } from "@/lib/calculators";
+import { calculators, getCalculator } from "@/lib/calculators";
 import { siteConfig } from "@/lib/site";
 
 const TOP_CALCULATOR_SLUGS = [
@@ -50,14 +50,14 @@ export function Footer() {
             </p>
             <div className="mt-5 flex items-center gap-3">
               {socialLinks.map((social) => (
-                <a
+                <span
                   key={social.label}
-                  href={social.href}
+                  role="img"
                   aria-label={social.label}
-                  className="flex size-9 items-center justify-center rounded-full border border-border text-muted-foreground transition hover:border-primary/40 hover:text-primary"
+                  className="flex size-9 items-center justify-center rounded-full border border-border text-muted-foreground"
                 >
                   <social.icon className="size-4" aria-hidden="true" />
-                </a>
+                </span>
               ))}
             </div>
           </div>
@@ -96,7 +96,7 @@ export function Footer() {
               href="/calculators"
               className="mt-3 inline-block text-sm font-medium text-primary transition hover:text-primary/80"
             >
-              View all 64+ calculators &rarr;
+              View all {calculators.length} calculators &rarr;
             </Link>
           </div>
 
