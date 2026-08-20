@@ -184,7 +184,11 @@ export function ArticleContent() {
         <li>
           <strong>Forgetting Corporation Tax comes first.</strong> Dividends come from
           profit after Corporation Tax, currently 19% for profits up to £50,000 and 25%
-          above £250,000, with marginal relief in between. Our{" "}
+          above £250,000, with marginal relief in between (see our{" "}
+          <Link href="/blog/corporation-tax-uk-small-business-2026">
+            Corporation Tax guide
+          </Link>{" "}
+          for how marginal relief is worked out). Our{" "}
           <Link href="/calculators/corporation-tax-calculator-uk">
             Corporation Tax Calculator
           </Link>{" "}

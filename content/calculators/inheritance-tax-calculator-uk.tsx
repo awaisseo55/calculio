@@ -181,7 +181,12 @@ export function SeoContent() {
           first home cost guide
         </Link>{" "}
         covers the other side of property costs, for those buying rather
-        than inheriting.
+        than inheriting. For a fuller walkthrough of the nil-rate band,
+        residence nil-rate band and the 7-year gift rule, see our{" "}
+        <Link href="/blog/uk-inheritance-tax-guide-2026">
+          Inheritance Tax guide
+        </Link>
+        .
       </p>
     </div>
   );

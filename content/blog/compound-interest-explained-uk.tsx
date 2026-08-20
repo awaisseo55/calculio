@@ -269,8 +269,11 @@ export function ArticleContent() {
         homes for your savings and investments where possible, such as a{" "}
         <Link href="/calculators/isa-calculator-uk">
           Cash or Stocks and Shares ISA
-        </Link>
-        , so compounding growth isn&apos;t eroded by tax along the way. And
+        </Link>{" "}
+        (see our{" "}
+        <Link href="/blog/isa-guide-uk-2026-27">full ISA guide</Link> for how the
+        different types compare), so compounding growth isn&apos;t eroded by tax
+        along the way. And
         keep contributing regularly rather than saving in occasional lump
         sums, since consistent monthly contributions give compounding more
         opportunities to work throughout the year.

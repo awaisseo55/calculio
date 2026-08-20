@@ -181,7 +181,13 @@ export function SeoContent() {
         <Link href="/calculators/late-payment-interest-calculator-uk">
           late payment interest calculator
         </Link>{" "}
-        works out the statutory interest and compensation you can claim.
+        works out the statutory interest and compensation you can claim. For
+        a fuller walkthrough of the small profits rate, main rate and
+        marginal relief, see our{" "}
+        <Link href="/blog/corporation-tax-uk-small-business-2026">
+          Corporation Tax guide
+        </Link>
+        .
       </p>
     </div>
   );

@@ -146,7 +146,12 @@ export function SeoContent() {
         </Link>{" "}
         cover salary and dividend income, and our{" "}
         <Link href="/calculators/mortgage-calculator-uk">mortgage calculator</Link>{" "}
-        can help if you are buying another property with the proceeds.
+        can help if you are buying another property with the proceeds. For a fuller
+        walkthrough of the rates, allowance and reliefs covered here, see our{" "}
+        <Link href="/blog/capital-gains-tax-uk-2026-27">
+          Capital Gains Tax guide
+        </Link>
+        .
       </p>
     </div>
   );

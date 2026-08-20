@@ -185,6 +185,10 @@ export function ArticleContent() {
         the funds towards a first home worth £450,000 or less. Withdrawing for
         anything other than a first home or retirement before age 60 triggers a 25%
         government withdrawal charge, so it&apos;s worth being sure before you commit funds.
+        See our{" "}
+        <Link href="/blog/isa-guide-uk-2026-27">full ISA guide</Link> for how a LISA
+        compares to a Cash or Stocks and Shares ISA if you&apos;re still deciding where
+        to save.
       </p>
       <h3>Shared Ownership</h3>
       <p>

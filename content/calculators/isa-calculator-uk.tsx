@@ -170,7 +170,10 @@ export function SeoContent() {
         </Link>{" "}
         explains the underlying formula in more depth, and our{" "}
         <Link href="/blog/uk-income-tax-2026-27">income tax guide</Link>{" "}
-        covers how tax works on income outside an ISA.
+        covers how tax works on income outside an ISA. For a fuller
+        comparison of Cash, Stocks and Shares, Lifetime and Junior ISAs, see
+        our{" "}
+        <Link href="/blog/isa-guide-uk-2026-27">ISA guide</Link>.
       </p>
     </div>
   );

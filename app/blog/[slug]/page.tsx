@@ -187,6 +187,34 @@ const CTA_CONTENT: Record<
     buttonLabel: "Calculate my TDEE",
     href: "/calculators/tdee-calculator-uk",
   },
+  "capital-gains-tax-uk-2026-27": {
+    title: "Work out your Capital Gains Tax bill",
+    description:
+      "Enter your purchase price, sale price, costs and income for an instant estimate of what you'll owe.",
+    buttonLabel: "Calculate my Capital Gains Tax",
+    href: "/calculators/capital-gains-tax-calculator-uk",
+  },
+  "uk-inheritance-tax-guide-2026": {
+    title: "Estimate your Inheritance Tax bill",
+    description:
+      "Enter your estate value, home value and beneficiaries for an instant estimate, including the nil-rate band and residence nil-rate band.",
+    buttonLabel: "Calculate my Inheritance Tax",
+    href: "/calculators/inheritance-tax-calculator-uk",
+  },
+  "corporation-tax-uk-small-business-2026": {
+    title: "Work out your Corporation Tax bill",
+    description:
+      "Enter your company's taxable profit for an instant calculation, including marginal relief between £50,000 and £250,000.",
+    buttonLabel: "Calculate my Corporation Tax",
+    href: "/calculators/corporation-tax-calculator-uk",
+  },
+  "isa-guide-uk-2026-27": {
+    title: "Project your own ISA growth",
+    description:
+      "Enter your ISA type, starting balance and monthly contribution for an instant tax-free growth projection.",
+    buttonLabel: "Calculate my ISA growth",
+    href: "/calculators/isa-calculator-uk",
+  },
 };
 
 const DISCLAIMER =
@@ -334,6 +362,30 @@ const RELATED_CALCULATOR_SLUGS: Record<string, string[]> = {
     "bmr-calculator-uk",
     "ideal-weight-calculator-uk",
     "bmi-calculator-uk",
+  ],
+  "capital-gains-tax-uk-2026-27": [
+    "capital-gains-tax-calculator-uk",
+    "income-tax-calculator-uk",
+    "isa-calculator-uk",
+    "rental-yield-calculator-uk",
+  ],
+  "uk-inheritance-tax-guide-2026": [
+    "inheritance-tax-calculator-uk",
+    "pension-calculator-uk",
+    "isa-calculator-uk",
+    "capital-gains-tax-calculator-uk",
+  ],
+  "corporation-tax-uk-small-business-2026": [
+    "corporation-tax-calculator-uk",
+    "dividend-vs-salary-calculator-uk",
+    "break-even-calculator-uk",
+    "profit-margin-calculator-uk",
+  ],
+  "isa-guide-uk-2026-27": [
+    "isa-calculator-uk",
+    "compound-interest-calculator-uk",
+    "savings-goal-calculator-uk",
+    "pension-calculator-uk",
   ],
 };
 

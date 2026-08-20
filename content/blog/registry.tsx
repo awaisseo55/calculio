@@ -25,6 +25,10 @@ import * as studentLoanRepaymentGuide from "./uk-student-loan-repayment-guide-20
 import * as mortgageAffordabilityGuide from "./how-much-mortgage-can-i-afford-uk-2026";
 import * as salaryVsDividends from "./salary-vs-dividends-uk-2026";
 import * as tdeeVsBmr from "./tdee-vs-bmr-calories-explained";
+import * as capitalGainsTaxGuide from "./capital-gains-tax-uk-2026-27";
+import * as inheritanceTaxGuide from "./uk-inheritance-tax-guide-2026";
+import * as corporationTaxGuide from "./corporation-tax-uk-small-business-2026";
+import * as isaGuide from "./isa-guide-uk-2026-27";
 
 interface BlogPostContent {
   ArticleContent: ComponentType;
@@ -56,4 +60,8 @@ export const blogContent: Record<string, BlogPostContent> = {
   "how-much-mortgage-can-i-afford-uk-2026": mortgageAffordabilityGuide,
   "salary-vs-dividends-uk-2026": salaryVsDividends,
   "tdee-vs-bmr-calories-explained": tdeeVsBmr,
+  "capital-gains-tax-uk-2026-27": capitalGainsTaxGuide,
+  "uk-inheritance-tax-guide-2026": inheritanceTaxGuide,
+  "corporation-tax-uk-small-business-2026": corporationTaxGuide,
+  "isa-guide-uk-2026-27": isaGuide,
 };

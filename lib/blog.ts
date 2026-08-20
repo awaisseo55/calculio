@@ -722,6 +722,130 @@ export const blogPosts: BlogPostMeta[] = [
       "Does not account for individual body composition (muscle vs fat mass), which affects resting calorie burn but isn't captured by the formula's inputs.",
     ],
   },
+  {
+    slug: "capital-gains-tax-uk-2026-27",
+    title: "Capital Gains Tax UK 2026/27: How Much Will You Pay?",
+    metaTitle: "Capital Gains Tax UK 2026/27: Rates, Allowance & Example",
+    metaDescription:
+      "Work out UK Capital Gains Tax for 2026/27 on property or shares, with current rates, the £3,000 exempt amount, and a full worked example.",
+    excerpt:
+      "What counts as a capital gain, the £3,000 annual exempt amount, the 18% and 24% rates, and a full worked example on selling a rental property.",
+    category: "Tax",
+    categorySlug: "tax",
+    categoryHref: "/categories/tax",
+    tags: ["capital gains tax", "CGT", "HMRC", "property tax", "shares"],
+    authorSlug: "james-whitfield",
+    reviewerSlug: "emily-thorne",
+    publishDate: "2026-08-21",
+    updatedDate: "2026-08-21",
+    featuredImage:
+      "/og?title=Capital%20Gains%20Tax%20UK%202026%2F27%3A%20How%20Much%20Will%20You%20Pay%3F&subtitle=calculio.co.uk",
+    featuredImageAlt: "Calculio guide to UK Capital Gains Tax rates and allowances for 2026/27",
+    wordCount: 1708,
+
+    sources: [officialSources.capitalGainsTax],
+    methodology:
+      "Capital Gains Tax rates and the annual exempt amount are taken directly from HMRC's published Capital Gains Tax guidance, applied to the worked example in this guide.",
+    effectivePeriod: "2026/27 tax year",
+    lastVerifiedDate: "2026-08-21",
+    assumptions: [
+      "Assumes a standard chargeable asset such as a second property or shares held outside an ISA; different reliefs can apply to business assets.",
+      "The worked example assumes the whole gain falls within one tax band; a gain that straddles both basic and higher rate bands is split proportionally.",
+    ],
+  },
+  {
+    slug: "uk-inheritance-tax-guide-2026",
+    title: "UK Inheritance Tax Explained: Thresholds, Rates and How to Reduce Your Bill",
+    metaTitle: "UK Inheritance Tax Guide 2026/27: Thresholds & Rates",
+    metaDescription:
+      "How UK Inheritance Tax works for 2026/27: the nil-rate band, residence nil-rate band, 40% rate, the 7-year gift rule, and a full worked example.",
+    excerpt:
+      "The nil-rate band, the residence nil-rate band, how the 7-year gift rule works, and a worked example on a £950,000 estate left to children.",
+    category: "Tax",
+    categorySlug: "tax",
+    categoryHref: "/categories/tax",
+    tags: ["inheritance tax", "IHT", "estate planning", "HMRC", "nil-rate band"],
+    authorSlug: "james-whitfield",
+    reviewerSlug: "emily-thorne",
+    publishDate: "2026-08-21",
+    updatedDate: "2026-08-21",
+    featuredImage:
+      "/og?title=UK%20Inheritance%20Tax%20Explained%3A%20Thresholds%2C%20Rates%20and%20How%20to%20Reduce%20Your%20Bill&subtitle=calculio.co.uk",
+    featuredImageAlt: "Calculio guide to UK Inheritance Tax thresholds and rates for 2026/27",
+    wordCount: 1671,
+
+    sources: [officialSources.inheritanceTax],
+    methodology:
+      "Inheritance Tax thresholds and rates are taken directly from HMRC's published nil-rate band and residence nil-rate band guidance, applied to the worked example in this guide.",
+    effectivePeriod: "2026/27",
+    lastVerifiedDate: "2026-08-21",
+    assumptions: [
+      "Assumes a standard UK estate; trusts, business relief and agricultural relief can significantly change the amount due and are not covered in full.",
+      "The residence nil-rate band assumes the main home is left to direct descendants and the estate is below the £2,000,000 taper threshold.",
+    ],
+  },
+  {
+    slug: "corporation-tax-uk-small-business-2026",
+    title: "Corporation Tax for Small UK Companies: Rates, Marginal Relief and a Worked Example",
+    metaTitle: "Corporation Tax UK 2026/27: Rates & Marginal Relief",
+    metaDescription:
+      "UK Corporation Tax rates for 2026/27 explained: the 19% small profits rate, 25% main rate, marginal relief, and a full worked example for £100,000 profit.",
+    excerpt:
+      "The 19% small profits rate, the 25% main rate, how marginal relief tapers the two together, and a worked example for a company on £100,000 profit.",
+    category: "Business",
+    categorySlug: "business",
+    categoryHref: "/categories/business",
+    tags: ["corporation tax", "marginal relief", "limited company", "HMRC", "small business"],
+    authorSlug: "james-whitfield",
+    reviewerSlug: "emily-thorne",
+    publishDate: "2026-08-21",
+    updatedDate: "2026-08-21",
+    featuredImage:
+      "/og?title=Corporation%20Tax%20for%20Small%20UK%20Companies%3A%20Rates%2C%20Marginal%20Relief%20and%20a%20Worked%20Example&subtitle=calculio.co.uk",
+    featuredImageAlt: "Calculio guide to UK Corporation Tax rates and marginal relief for 2026/27",
+    wordCount: 1592,
+
+    sources: [officialSources.corporationTax],
+    methodology:
+      "Corporation Tax rates, thresholds and the marginal relief formula are taken directly from HMRC's published Corporation Tax rates guidance, applied to the worked example in this guide.",
+    effectivePeriod: "2026/27",
+    lastVerifiedDate: "2026-08-21",
+    assumptions: [
+      "Assumes a single company with no associated companies; the £50,000 and £250,000 thresholds are divided between associated companies.",
+      "Assumes standard trading profit with no augmented profits from dividends received from other companies, which can affect the marginal relief calculation.",
+    ],
+  },
+  {
+    slug: "isa-guide-uk-2026-27",
+    title: "ISA Guide 2026/27: Cash, Stocks and Shares, Lifetime or Junior, Which Should You Pick?",
+    metaTitle: "ISA Guide UK 2026/27: Cash vs Stocks & Shares vs LISA",
+    metaDescription:
+      "A plain English guide to UK ISAs for 2026/27: the £20,000 allowance, Cash vs Stocks and Shares vs Lifetime ISAs, and how much tax you could save.",
+    excerpt:
+      "The £20,000 ISA allowance, how the four main ISA types differ, how the Lifetime ISA's 25% bonus works, and a worked example against taxable savings.",
+    category: "Finance",
+    categorySlug: "finance",
+    categoryHref: "/categories/finance",
+    tags: ["ISA", "Lifetime ISA", "savings", "tax-free savings", "personal finance"],
+    authorSlug: "james-whitfield",
+    reviewerSlug: "emily-thorne",
+    publishDate: "2026-08-21",
+    updatedDate: "2026-08-21",
+    featuredImage:
+      "/og?title=ISA%20Guide%202026%2F27%3A%20Cash%2C%20Stocks%20and%20Shares%2C%20Lifetime%20or%20Junior%2C%20Which%20Should%20You%20Pick%3F&subtitle=calculio.co.uk",
+    featuredImageAlt: "Calculio guide comparing Cash, Stocks and Shares, Lifetime and Junior ISAs for 2026/27",
+    wordCount: 1542,
+
+    sources: [officialSources.isaAllowance],
+    methodology:
+      "ISA allowances and the Lifetime ISA bonus rate are taken directly from HMRC's published ISA guidance, applied to the worked example in this guide.",
+    effectivePeriod: "2026/27",
+    lastVerifiedDate: "2026-08-21",
+    assumptions: [
+      "The taxable savings comparison assumes a higher-rate taxpayer with a £500 Personal Savings Allowance and no other tax-free savings income used elsewhere.",
+      "Lifetime ISA figures assume an eligible saver aged 18 to 39 opening the account and using it for a first home worth up to £450,000 or retirement from age 60.",
+    ],
+  },
 ];
 
 export function getBlogPost(slug: string): BlogPostMeta | undefined {
