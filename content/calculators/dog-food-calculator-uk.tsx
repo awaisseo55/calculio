@@ -95,7 +95,9 @@ export function SeoContent() {
         <Link href="/calculators/cat-age-calculator-uk">cat age calculator</Link> works the same way for feline
         ages. When comparing bulk bags or multipack deals on food, our{" "}
         <Link href="/calculators/discount-calculator-uk">discount calculator</Link> can help you work out the real
-        saving on a per-kilogram basis.
+        saving on a per-kilogram basis. If you have a cat as well, our{" "}
+        <Link href="/calculators/cat-food-calculator-uk">cat food calculator</Link> works the same way for feline
+        portions.
       </p>
     </div>
   );

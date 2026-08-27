@@ -131,7 +131,9 @@ export function SeoContent() {
           Universal Credit calculator
         </Link>{" "}
         can help if your take-home pay is low enough that you might be
-        entitled to additional support.
+        entitled to additional support. If you are married or in a civil partnership, our{" "}
+        <Link href="/calculators/marriage-allowance-calculator-uk">Marriage Allowance calculator</Link> checks
+        whether transferring part of your Personal Allowance could reduce your household&apos;s tax bill.
       </p>
     </div>
   );

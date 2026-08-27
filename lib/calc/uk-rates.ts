@@ -448,3 +448,21 @@ export const CORPORATION_TAX_MARGINAL_RELIEF_FRACTION = 3 / 200;
 export const EMPLOYER_NI_RATE = 0.15;
 export const EMPLOYER_NI_SECONDARY_THRESHOLD = 5000;
 export const EMPLOYMENT_ALLOWANCE = 10500;
+
+// --- Marriage Allowance, 2026/27 -----------------------------------------------
+// Lets the lower earner transfer a fixed slice of their Personal Allowance to a
+// spouse or civil partner who pays tax at the basic rate. Unchanged since the
+// Personal Allowance freeze began; 10% of £12,570, rounded to the nearest £10.
+export const MARRIAGE_ALLOWANCE_TRANSFERABLE = 1260;
+
+// --- Approved Mileage Allowance Payments (AMAP), 2026/27 -----------------------
+// HMRC's tax-free mileage rates for employees and the self-employed using their
+// own vehicle for business travel. The car/van rate rose from 45p to 55p for the
+// first 10,000 business miles from 6 April 2026, the first change since 2011/12;
+// the rate for miles above that, and the motorcycle and bicycle rates, are
+// unchanged.
+export const MILEAGE_RATE_CAR_VAN_STANDARD = 0.55;
+export const MILEAGE_RATE_CAR_VAN_ADDITIONAL = 0.25;
+export const MILEAGE_RATE_MOTORCYCLE = 0.24;
+export const MILEAGE_RATE_BICYCLE = 0.2;
+export const MILEAGE_HIGHER_RATE_THRESHOLD_MILES = 10000;

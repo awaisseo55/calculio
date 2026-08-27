@@ -167,7 +167,8 @@ export function SeoContent() {
         </Link>{" "}
         can help divide shared costs, like a vet bill, between household
         members, whether you are splitting costs with a partner, flatmate
-        or family member.
+        or family member. To work out daily portions, try our{" "}
+        <Link href="/calculators/cat-food-calculator-uk">cat food calculator</Link>.
       </p>
     </div>
   );

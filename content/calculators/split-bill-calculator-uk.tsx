@@ -111,7 +111,9 @@ export function SeoContent() {
           salary to hourly calculator
         </Link>{" "}
         is handy if you are working out what a night out actually costs
-        against an hour of your pay.
+        against an hour of your pay. For comparing value on a shared shop, our{" "}
+        <Link href="/calculators/unit-price-calculator-uk">unit price calculator</Link> shows which pack size is
+        genuinely cheaper.
       </p>
     </div>
   );

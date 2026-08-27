@@ -52,6 +52,10 @@ export const officialSources = {
   workplacePensions: { label: "Workplace pensions (GOV.UK)", url: "https://www.gov.uk/workplace-pensions" },
   latePaymentInterest: { label: "Interest calculator guidance (Small Business Commissioner)", url: "https://www.smallbusinesscommissioner.gov.uk/help-and-guidance/interest-calculator/interest-calculator-guidance/" },
   energyPriceCap: { label: "Energy price cap unit rates and standing charges (Ofgem)", url: "https://www.ofgem.gov.uk/information-consumers/energy-advice-households/energy-price-cap-unit-rates-and-standing-charges" },
+  marriageAllowance: { label: "Marriage Allowance: how it works (GOV.UK)", url: "https://www.gov.uk/marriage-allowance" },
+  mileageAllowance: { label: "Travel, mileage and fuel rates and allowances (GOV.UK)", url: "https://www.gov.uk/government/publications/rates-and-allowances-travel-mileage-and-fuel-allowances/travel-mileage-and-fuel-rates-and-allowances" },
+  emergencySavings: { label: "How much to save for an emergency (MoneyHelper)", url: "https://www.moneyhelper.org.uk/en/savings/types-of-savings/emergency-savings-how-much-is-enough" },
+  ucasTariff: { label: "UCAS Tariff points tables (UCAS)", url: "https://www.ucas.com/sites/default/files/new-tariff-tables.pdf" },
 } as const satisfies Record<string, OfficialSource>;
 
 export type OfficialSourceKey = keyof typeof officialSources;

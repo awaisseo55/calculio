@@ -175,7 +175,10 @@ export function SeoContent() {
         <Link href="/calculators/salary-increase-calculator-uk">
           salary increase calculator
         </Link>{" "}
-        shows exactly how much extra you would take home each month.
+        shows exactly how much extra you would take home each month. If you are setting rates as a contractor
+        rather than an employee, our{" "}
+        <Link href="/calculators/freelance-day-rate-calculator-uk">freelance day rate calculator</Link> works
+        backwards from your income goal instead.
       </p>
     </div>
   );

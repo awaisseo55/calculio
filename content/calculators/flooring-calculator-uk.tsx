@@ -172,7 +172,9 @@ export function SeoContent() {
         <Link href="/blog/first-home-cost-uk-2026">
           first home cost guide
         </Link>{" "}
-        covers the wider costs of buying and improving a home.
+        covers the wider costs of buying and improving a home. For projects outside too, our{" "}
+        <Link href="/calculators/turf-calculator-uk">turf calculator</Link> helps you order the right amount of
+        lawn.
       </p>
     </div>
   );

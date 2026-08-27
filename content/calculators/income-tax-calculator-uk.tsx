@@ -121,7 +121,9 @@ export function SeoContent() {
         </Link>
         , <Link href="/calculators/stamp-duty-calculator-uk">stamp duty calculator</Link> and{" "}
         <Link href="/calculators/mortgage-calculator-uk">mortgage calculator</Link> can help
-        you plan the bigger picture.
+        you plan the bigger picture. If you are married or in a civil partnership, our{" "}
+        <Link href="/calculators/marriage-allowance-calculator-uk">Marriage Allowance calculator</Link> checks
+        whether you could reduce your bill further.
       </p>
     </div>
   );

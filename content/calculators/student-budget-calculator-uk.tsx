@@ -174,7 +174,9 @@ export function SeoContent() {
           degree classification calculator
         </Link>{" "}
         estimates your likely classification from your Year 2 and Year 3
-        marks.
+        marks. If you are still applying, our{" "}
+        <Link href="/calculators/ucas-points-calculator-uk">UCAS points calculator</Link> can help you check your
+        Tariff points against course offers.
       </p>
     </div>
   );

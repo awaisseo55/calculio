@@ -176,7 +176,8 @@ export function SeoContent() {
           mortgage calculator
         </Link>{" "}
         can help if home improvements are part of a wider house purchase or
-        remortgage plan.
+        remortgage plan. If you are landscaping the garden around a new path or patio, our{" "}
+        <Link href="/calculators/turf-calculator-uk">turf calculator</Link> works out how much lawn you need.
       </p>
     </div>
   );

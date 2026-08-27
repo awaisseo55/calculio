@@ -103,7 +103,9 @@ export function SeoContent() {
         Fuel is only part of the cost of owning a car — check our{" "}
         <Link href="/calculators/road-tax-calculator-uk">road tax calculator</Link> to see
         your annual VED bill, and factor both into your total motoring budget alongside
-        insurance, servicing and depreciation.
+        insurance, servicing and depreciation. If you use your own vehicle for work journeys, our{" "}
+        <Link href="/calculators/mileage-allowance-calculator-uk">mileage allowance calculator</Link> works out
+        what you can claim tax-free.
       </p>
     </div>
   );

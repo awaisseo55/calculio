@@ -153,7 +153,9 @@ export function SeoContent() {
         checking your{" "}
         <Link href="/calculators/take-home-pay-calculator-uk">take-home pay</Link>{" "}
         so your monthly contribution stays realistic alongside everything else you
-        need to cover.
+        need to cover. If your goal is a rainy day buffer rather than something specific, our{" "}
+        <Link href="/calculators/emergency-fund-calculator-uk">emergency fund calculator</Link> can help you set a
+        target.
       </p>
     </div>
   );

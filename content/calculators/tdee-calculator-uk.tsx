@@ -142,7 +142,8 @@ export function SeoContent() {
         <Link href="/calculators/pregnancy-due-date-calculator-uk">
           pregnancy due date calculator
         </Link>{" "}
-        may also be useful.
+        may also be useful. To see how a specific workout adds to your daily total, try our{" "}
+        <Link href="/calculators/calories-burned-calculator-uk">calories burned calculator</Link>.
       </p>
     </div>
   );

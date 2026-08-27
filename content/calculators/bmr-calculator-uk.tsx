@@ -154,7 +154,8 @@ export function SeoContent() {
           healthy BMI guide
         </Link>{" "}
         covers NHS weight categories in more depth if you want further
-        context.
+        context. To see how a specific workout adds to your daily total, try our{" "}
+        <Link href="/calculators/calories-burned-calculator-uk">calories burned calculator</Link>.
       </p>
     </div>
   );

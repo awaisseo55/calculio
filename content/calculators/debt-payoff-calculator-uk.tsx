@@ -124,8 +124,9 @@ export function SeoContent() {
         <Link href="/calculators/savings-goal-calculator-uk">
           savings goal calculator
         </Link>{" "}
-        can help you redirect that same monthly payment towards building an
-        emergency fund or savings goal instead. To understand why interest
+        can help you redirect that same monthly payment towards building an{" "}
+        <Link href="/calculators/emergency-fund-calculator-uk">emergency fund</Link> or savings goal instead. To
+        understand why interest
         rate matters so much to the avalanche method, see our guide to{" "}
         <Link href="/blog/compound-interest-explained-uk">
           compound interest explained

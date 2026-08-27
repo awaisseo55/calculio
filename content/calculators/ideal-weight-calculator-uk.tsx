@@ -134,7 +134,9 @@ export function SeoContent() {
         <Link href="/calculators/pregnancy-due-date-calculator-uk">
           pregnancy due date calculator
         </Link>{" "}
-        cover other everyday and life stage calculations you might find useful.
+        cover other everyday and life stage calculations you might find useful. For a body composition estimate
+        beyond weight alone, try our{" "}
+        <Link href="/calculators/body-fat-percentage-calculator-uk">body fat percentage calculator</Link>.
       </p>
     </div>
   );

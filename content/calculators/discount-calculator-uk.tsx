@@ -173,7 +173,9 @@ export function SeoContent() {
           compound interest
         </Link>{" "}
         explains how even small regular savings can add up significantly
-        over time.
+        over time. If you are comparing two different pack sizes rather than a straight discount, our{" "}
+        <Link href="/calculators/unit-price-calculator-uk">unit price calculator</Link> shows which is genuinely
+        cheaper.
       </p>
     </div>
   );

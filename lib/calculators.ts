@@ -1852,6 +1852,248 @@ export const calculators: CalculatorMeta[] = [
       "Duration is calculated as the exact difference between the start and end times you enter, including optional break deductions.",
     lastVerifiedDate: "2026-08-20",
   },
+  {
+    slug: "cat-food-calculator-uk",
+    name: "Cat Food Calculator",
+    shortName: "Cat Food",
+    h1: "Cat Food Calculator",
+    category: "pets",
+    description:
+      "Estimate how much to feed your cat each day, based on their weight, activity level and their food's energy content.",
+    metaTitle: "Cat Food Calculator UK | Daily Portion Estimate",
+    metaDescription:
+      "Work out an estimated daily food portion for your cat based on their weight, activity level and food's kcal content. A helpful starting point, not vet advice.",
+    keywords: ["cat food calculator", "how much to feed my cat", "cat portion calculator"],
+    icon: "Cat",
+    schemaType: "SoftwareApplication",
+
+    sources: [],
+    methodology:
+      "Daily portion is calculated from your cat's weight and typical feline nutrition guideline ratios for standard adult maintenance energy needs.",
+    lastVerifiedDate: "2026-08-28",
+    assumptions: [
+      "Feeding guidelines vary by food brand, your cat's activity level and life stage; always check your specific food's packaging.",
+      "For any concern about your cat's weight or diet, speak to a vet rather than relying on a calculator.",
+    ],
+  },
+  {
+    slug: "calories-burned-calculator-uk",
+    name: "Calories Burned Calculator",
+    shortName: "Calories Burned",
+    h1: "Calories Burned Calculator",
+    category: "fitness",
+    description:
+      "Estimate how many calories you burn during exercise, based on your weight, the activity and how long you do it for.",
+    metaTitle: "Calories Burned Calculator | Exercise Calorie Estimator",
+    metaDescription:
+      "Work out an estimated calorie burn for running, cycling, swimming, weights and more, based on your weight and session length.",
+    keywords: ["calories burned calculator", "exercise calorie calculator", "how many calories did I burn"],
+    icon: "Flame",
+    schemaType: "SoftwareApplication",
+
+    sources: [officialSources.nhsPhysicalActivity],
+    methodology:
+      "Calories burned are estimated using MET (Metabolic Equivalent of Task) values from the published Compendium of Physical Activities, applied to your bodyweight and session duration.",
+    lastVerifiedDate: "2026-08-28",
+    assumptions: [
+      "Actual energy burn varies with fitness level, effort, terrain and individual metabolism; treat this as a training estimate, not an exact figure.",
+      "MET values represent typical intensity for each activity; your actual effort may be higher or lower.",
+    ],
+  },
+  {
+    slug: "ucas-points-calculator-uk",
+    name: "UCAS Points Calculator",
+    shortName: "UCAS Points",
+    h1: "UCAS Tariff Points Calculator",
+    category: "education",
+    description:
+      "Add up your A-level and EPQ grades to get your total UCAS Tariff points for university applications.",
+    metaTitle: "UCAS Points Calculator | A-Level Tariff Points 2026",
+    metaDescription:
+      "Work out your total UCAS Tariff points from your A-level and EPQ grades, using the official UCAS points table.",
+    keywords: ["ucas points calculator", "ucas tariff points", "a level points calculator"],
+    icon: "GraduationCap",
+    schemaType: "SoftwareApplication",
+
+    sources: [officialSources.ucasTariff],
+    methodology:
+      "Points are calculated using the official UCAS Tariff tables for A-levels and the Extended Project Qualification, introduced for 2017 entry and unchanged since.",
+    lastVerifiedDate: "2026-08-28",
+    assumptions: [
+      "Covers A-levels and the EPQ only; other qualifications such as BTECs use separate Tariff tables.",
+      "Universities and courses vary in whether they use points, specific grades, or a mix; always check individual course entry requirements.",
+    ],
+  },
+  {
+    slug: "freelance-day-rate-calculator-uk",
+    name: "Freelance Day Rate Calculator",
+    shortName: "Day Rate",
+    h1: "Freelance Day Rate Calculator",
+    category: "business",
+    description:
+      "Work out the day rate you need to charge to hit your income target, after expenses, non-billable time and downtime.",
+    metaTitle: "Freelance Day Rate Calculator UK | Set Your Rate",
+    metaDescription:
+      "Calculate the day rate and hourly rate you need to charge as a UK freelancer, based on your income goal, expenses and billable days.",
+    keywords: ["freelance day rate calculator", "contractor day rate calculator", "how to calculate day rate"],
+    icon: "Banknote",
+    schemaType: "SoftwareApplication",
+
+    sources: [],
+    methodology:
+      "Day rate is calculated by dividing your target annual income plus expenses by your estimated billable working days, then adding a buffer percentage for downtime.",
+    lastVerifiedDate: "2026-08-28",
+    assumptions: [
+      "Does not account for Income Tax, National Insurance or VAT; these need to be budgeted separately.",
+      "Non-billable time and buffer assumptions are estimates you should adjust to match your own working pattern.",
+    ],
+  },
+  {
+    slug: "unit-price-calculator-uk",
+    name: "Unit Price Calculator",
+    shortName: "Unit Price",
+    h1: "Unit Price Comparison Calculator",
+    category: "everyday",
+    description:
+      "Compare two products by price per unit to see which one is genuinely better value, whatever the pack size.",
+    metaTitle: "Unit Price Calculator | Compare Value For Money",
+    metaDescription:
+      "Work out the price per unit for two products and see which is cheaper, with a clear percentage saving between them.",
+    keywords: ["unit price calculator", "price per unit calculator", "which is cheaper calculator"],
+    icon: "Scale",
+    schemaType: "SoftwareApplication",
+
+    sources: [],
+    methodology:
+      "Unit price is calculated by dividing each product's price by its quantity; the percentage saving compares the two resulting unit prices.",
+    lastVerifiedDate: "2026-08-28",
+    assumptions: [
+      "Assumes both products are entered using the same unit of measurement; results are not valid if units are mismatched.",
+      "Compares price only, not quality, ingredients or how much of the product you will actually use.",
+    ],
+  },
+  {
+    slug: "body-fat-percentage-calculator-uk",
+    name: "Body Fat Percentage Calculator",
+    shortName: "Body Fat %",
+    h1: "Body Fat Percentage Calculator",
+    category: "health",
+    description:
+      "Estimate your body fat percentage from tape measurements using the US Navy method.",
+    metaTitle: "Body Fat Percentage Calculator | Navy Method",
+    metaDescription:
+      "Estimate your body fat percentage from height, neck, waist and hip measurements using the US Navy tape measurement method.",
+    keywords: ["body fat percentage calculator", "navy body fat calculator", "body fat calculator uk"],
+    icon: "Percent",
+    schemaType: "SoftwareApplication",
+
+    sources: [officialSources.nhsHealthyWeight],
+    methodology:
+      "Body fat percentage is estimated using the US Navy circumference method (Hodgdon and Beckett, 1984), converting estimated body density to a percentage using the Siri equation.",
+    lastVerifiedDate: "2026-08-28",
+    assumptions: [
+      "A tape measurement estimate, not a clinical measurement such as DEXA scanning; accuracy depends on careful, consistent measuring.",
+      "General category bands are approximate and not a medical diagnosis; speak to a GP for any health concerns.",
+    ],
+  },
+  {
+    slug: "mileage-allowance-calculator-uk",
+    name: "Mileage Allowance Calculator",
+    shortName: "Mileage Allowance",
+    h1: "Mileage Allowance Calculator (AMAP Rates)",
+    category: "motoring",
+    description:
+      "Work out your HMRC approved mileage allowance and any tax relief you could claim if your employer pays you less.",
+    metaTitle: "Mileage Allowance Calculator UK | AMAP Rates 2026",
+    metaDescription:
+      "Calculate your HMRC approved mileage allowance for cars, vans, motorcycles and bicycles, and any Mileage Allowance Relief you could claim.",
+    keywords: ["mileage allowance calculator", "hmrc mileage rate", "45p per mile calculator"],
+    icon: "MapPin",
+    schemaType: "SoftwareApplication",
+
+    sources: [officialSources.mileageAllowance],
+    methodology:
+      "Approved amounts use HMRC's published Approved Mileage Allowance Payment rates: 55p per mile for the first 10,000 business miles by car or van and 25p per mile after that, 24p per mile for motorcycles, and 20p per mile for bicycles.",
+    effectivePeriod: "2026/27 tax year",
+    lastVerifiedDate: "2026-08-28",
+    assumptions: [
+      "Business mileage only; ordinary commuting to a permanent workplace does not qualify.",
+      "Estimated tax relief uses the basic rate of 20%; higher and additional rate taxpayers may be entitled to more.",
+    ],
+  },
+  {
+    slug: "emergency-fund-calculator-uk",
+    name: "Emergency Fund Calculator",
+    shortName: "Emergency Fund",
+    h1: "Emergency Fund Calculator",
+    category: "finance",
+    description:
+      "Work out how big your emergency fund should be, and how long it will take to reach your target.",
+    metaTitle: "Emergency Fund Calculator UK | How Much To Save",
+    metaDescription:
+      "Calculate your emergency fund target based on your essential monthly expenses, and see how long it will take to reach it.",
+    keywords: ["emergency fund calculator", "how much emergency fund uk", "emergency savings calculator"],
+    icon: "ShieldCheck",
+    schemaType: "SoftwareApplication",
+
+    sources: [officialSources.emergencySavings],
+    methodology:
+      "Target fund size is calculated by multiplying your monthly essential expenses by your chosen number of months of cover, in line with MoneyHelper's general savings guidance.",
+    lastVerifiedDate: "2026-08-28",
+    assumptions: [
+      "This is a general guide, not personalised financial advice; the right target depends on your own circumstances.",
+      "Assumes savings grow only through the regular monthly amount you enter, not interest earned.",
+    ],
+  },
+  {
+    slug: "marriage-allowance-calculator-uk",
+    name: "Marriage Allowance Calculator",
+    shortName: "Marriage Allowance",
+    h1: "Marriage Allowance Calculator",
+    category: "tax",
+    description:
+      "Check your eligibility for Marriage Allowance and see the net Income Tax saving for your household.",
+    metaTitle: "Marriage Allowance Calculator UK 2026/27 | Tax Saving",
+    metaDescription:
+      "Check if you're eligible for Marriage Allowance and calculate the net Income Tax saving for you and your partner in 2026/27.",
+    keywords: ["marriage allowance calculator", "marriage tax allowance", "transfer personal allowance"],
+    icon: "Handshake",
+    schemaType: "SoftwareApplication",
+
+    sources: [officialSources.marriageAllowance, officialSources.incomeTax],
+    methodology:
+      "Eligibility and savings are calculated using HMRC's Marriage Allowance rules: a fixed £1,260 transfer of Personal Allowance, valued at the basic rate of 20%, minus any extra tax the lower earner owes as a result of the transfer.",
+    effectivePeriod: "2026/27 tax year",
+    lastVerifiedDate: "2026-08-28",
+    assumptions: [
+      "Assumes both partners are UK taxpayers on the standard England, Wales and Northern Ireland Personal Allowance and basic rate band.",
+      "Does not cover Married Couple's Allowance, a separate allowance for couples where one partner was born before 6 April 1935.",
+    ],
+  },
+  {
+    slug: "turf-calculator-uk",
+    name: "Turf Calculator",
+    shortName: "Turf",
+    h1: "Turf Calculator",
+    category: "home",
+    description:
+      "Work out how many turf rolls you need for your lawn, including a wastage allowance and estimated cost.",
+    metaTitle: "Turf Calculator UK | How Many Rolls Do I Need?",
+    metaDescription:
+      "Calculate how many turf rolls you need for your lawn based on its size, with a wastage allowance and estimated total cost.",
+    keywords: ["turf calculator", "how much turf do i need", "lawn turf calculator uk"],
+    icon: "Sprout",
+    schemaType: "SoftwareApplication",
+
+    sources: [],
+    methodology:
+      "Rolls needed are calculated from your lawn's area, plus a wastage allowance, divided by the coverage of each turf roll and rounded up to a whole roll.",
+    lastVerifiedDate: "2026-08-28",
+    assumptions: [
+      "Roll coverage and pricing vary by supplier; always check the exact figures for the turf you plan to buy.",
+      "Irregular or curved lawns generally need a higher wastage allowance than a simple rectangular lawn.",
+    ],
+  },
 ];
 
 export function getCalculator(slug: string): CalculatorMeta | undefined {

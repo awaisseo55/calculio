@@ -130,7 +130,9 @@ export function SeoContent() {
         <Link href="/calculators/ideal-weight-calculator-uk">
           ideal weight calculator
         </Link>{" "}
-        shows a healthy weight range using a few different formulas.
+        shows a healthy weight range using a few different formulas. For a more detailed body composition
+        estimate, try our{" "}
+        <Link href="/calculators/body-fat-percentage-calculator-uk">body fat percentage calculator</Link>.
       </p>
     </div>
   );

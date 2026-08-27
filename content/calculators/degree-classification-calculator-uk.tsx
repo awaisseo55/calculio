@@ -111,7 +111,10 @@ export function SeoContent() {
         <Link href="/calculators/take-home-pay-calculator-uk">take-home pay calculator</Link> gives a fuller picture
         of your net income once you start working. For more detail on how repayments actually work, see our guide
         to{" "}
-        <Link href="/blog/uk-student-loan-repayment-guide-2026">UK student loan repayment in 2026</Link>.
+        <Link href="/blog/uk-student-loan-repayment-guide-2026">UK student loan repayment in 2026</Link>. If you
+        are still applying, our{" "}
+        <Link href="/calculators/ucas-points-calculator-uk">UCAS points calculator</Link> can help you check your
+        Tariff points.
       </p>
     </div>
   );

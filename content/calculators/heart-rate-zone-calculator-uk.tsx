@@ -100,8 +100,9 @@ export function SeoContent() {
         predicts race finish times. For strength training, our{" "}
         <Link href="/calculators/one-rep-max-calculator-uk">one-rep max calculator</Link> estimates your maximum lift
         and a percentage table for programming your sessions. To plan nutrition alongside your training, our{" "}
-        <Link href="/calculators/tdee-calculator-uk">TDEE calculator</Link> estimates your daily calorie needs. For
-        general background on healthy training, see our guide to{" "}
+        <Link href="/calculators/tdee-calculator-uk">TDEE calculator</Link> estimates your daily calorie needs, and our{" "}
+        <Link href="/calculators/calories-burned-calculator-uk">calories burned calculator</Link> shows the energy
+        cost of individual sessions. For general background on healthy training, see our guide to{" "}
         <Link href="/blog/healthy-bmi-adults-uk">healthy BMI for UK adults</Link>.
       </p>
     </div>

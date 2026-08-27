@@ -92,3 +92,30 @@ Added 5 calculators, filling gaps in thinly-populated categories (Fitness, Pets,
 No new constants added to `uk-rates.ts` (degree boundaries are academic convention not tax data; heart rate zones are sports-science convention; late payment statutory interest is expressed as base rate + 8% per the Late Payment of Commercial Debts (Interest) Act 1998, with base rate left as a user-editable input since it changes independently of the tax year).
 
 Running total: 81 calculators.
+
+### 2026-08-28
+
+Added 10 calculators (re-scanned `lib/calculators.ts` at session start: actual pre-session count was 79, not the 81 logged above), filling gaps in the thinnest categories (Pets, Fitness and Education had 3 each) and adding one calculator each to Business, Everyday, Health, Motoring, Finance, Tax and Home:
+
+| Calculator | Slug | Category |
+|---|---|---|
+| Cat Food Calculator | `cat-food-calculator-uk` | Pets |
+| Calories Burned Calculator | `calories-burned-calculator-uk` | Fitness |
+| UCAS Points Calculator | `ucas-points-calculator-uk` | Education |
+| Freelance Day Rate Calculator | `freelance-day-rate-calculator-uk` | Business |
+| Unit Price Calculator | `unit-price-calculator-uk` | Everyday |
+| Body Fat Percentage Calculator | `body-fat-percentage-calculator-uk` | Health |
+| Mileage Allowance Calculator | `mileage-allowance-calculator-uk` | Motoring |
+| Emergency Fund Calculator | `emergency-fund-calculator-uk` | Finance |
+| Marriage Allowance Calculator | `marriage-allowance-calculator-uk` | Tax |
+| Turf Calculator | `turf-calculator-uk` | Home |
+
+New constants added to `uk-rates.ts`:
+- `MARRIAGE_ALLOWANCE_TRANSFERABLE` (£1,260, 2026/27).
+- `MILEAGE_RATE_CAR_VAN_STANDARD` (55p, up from 45p from 6 April 2026, first change since 2011/12, verified against GOV.UK), `MILEAGE_RATE_CAR_VAN_ADDITIONAL` (25p), `MILEAGE_RATE_MOTORCYCLE` (24p), `MILEAGE_RATE_BICYCLE` (20p), `MILEAGE_HIGHER_RATE_THRESHOLD_MILES` (10,000).
+
+New `officialSources` entries added: `marriageAllowance`, `mileageAllowance`, `emergencySavings`, `ucasTariff`, all verified to resolve before adding.
+
+Each new calculator is cross-linked from two relevant existing calculator pages (see `git log` for this session's commit for the full list of touched files).
+
+Running total: 89 calculators.

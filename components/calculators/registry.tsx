@@ -77,6 +77,16 @@ import { HeartRateZoneCalculator } from "@/components/calculators/heart-rate-zon
 import { LatePaymentInterestCalculator } from "@/components/calculators/late-payment-interest-calculator";
 import { DogFoodCalculator } from "@/components/calculators/dog-food-calculator";
 import { TimeDurationCalculator } from "@/components/calculators/time-duration-calculator";
+import { CatFoodCalculator } from "@/components/calculators/cat-food-calculator";
+import { CaloriesBurnedCalculator } from "@/components/calculators/calories-burned-calculator";
+import { UcasPointsCalculator } from "@/components/calculators/ucas-points-calculator";
+import { FreelanceDayRateCalculator } from "@/components/calculators/freelance-day-rate-calculator";
+import { UnitPriceCalculator } from "@/components/calculators/unit-price-calculator";
+import { BodyFatPercentageCalculator } from "@/components/calculators/body-fat-percentage-calculator";
+import { MileageAllowanceCalculator } from "@/components/calculators/mileage-allowance-calculator";
+import { EmergencyFundCalculator } from "@/components/calculators/emergency-fund-calculator";
+import { MarriageAllowanceCalculator } from "@/components/calculators/marriage-allowance-calculator";
+import { TurfCalculator } from "@/components/calculators/turf-calculator";
 import type { ComponentType } from "react";
 
 export const calculatorComponents: Record<string, ComponentType> = {
@@ -159,4 +169,14 @@ export const calculatorComponents: Record<string, ComponentType> = {
   "late-payment-interest-calculator-uk": LatePaymentInterestCalculator,
   "dog-food-calculator-uk": DogFoodCalculator,
   "time-duration-calculator-uk": TimeDurationCalculator,
+  "cat-food-calculator-uk": CatFoodCalculator,
+  "calories-burned-calculator-uk": CaloriesBurnedCalculator,
+  "ucas-points-calculator-uk": UcasPointsCalculator,
+  "freelance-day-rate-calculator-uk": FreelanceDayRateCalculator,
+  "unit-price-calculator-uk": UnitPriceCalculator,
+  "body-fat-percentage-calculator-uk": BodyFatPercentageCalculator,
+  "mileage-allowance-calculator-uk": MileageAllowanceCalculator,
+  "emergency-fund-calculator-uk": EmergencyFundCalculator,
+  "marriage-allowance-calculator-uk": MarriageAllowanceCalculator,
+  "turf-calculator-uk": TurfCalculator,
 };

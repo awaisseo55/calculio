@@ -80,6 +80,16 @@ import * as heartRateZone from "./heart-rate-zone-calculator-uk";
 import * as latePaymentInterest from "./late-payment-interest-calculator-uk";
 import * as dogFood from "./dog-food-calculator-uk";
 import * as timeDuration from "./time-duration-calculator-uk";
+import * as catFood from "./cat-food-calculator-uk";
+import * as caloriesBurned from "./calories-burned-calculator-uk";
+import * as ucasPoints from "./ucas-points-calculator-uk";
+import * as freelanceDayRate from "./freelance-day-rate-calculator-uk";
+import * as unitPrice from "./unit-price-calculator-uk";
+import * as bodyFatPercentage from "./body-fat-percentage-calculator-uk";
+import * as mileageAllowance from "./mileage-allowance-calculator-uk";
+import * as emergencyFund from "./emergency-fund-calculator-uk";
+import * as marriageAllowance from "./marriage-allowance-calculator-uk";
+import * as turf from "./turf-calculator-uk";
 
 interface CalculatorContent {
   SeoContent: ComponentType;
@@ -166,4 +176,14 @@ export const calculatorContent: Record<string, CalculatorContent> = {
   "late-payment-interest-calculator-uk": latePaymentInterest,
   "dog-food-calculator-uk": dogFood,
   "time-duration-calculator-uk": timeDuration,
+  "cat-food-calculator-uk": catFood,
+  "calories-burned-calculator-uk": caloriesBurned,
+  "ucas-points-calculator-uk": ucasPoints,
+  "freelance-day-rate-calculator-uk": freelanceDayRate,
+  "unit-price-calculator-uk": unitPrice,
+  "body-fat-percentage-calculator-uk": bodyFatPercentage,
+  "mileage-allowance-calculator-uk": mileageAllowance,
+  "emergency-fund-calculator-uk": emergencyFund,
+  "marriage-allowance-calculator-uk": marriageAllowance,
+  "turf-calculator-uk": turf,
 };

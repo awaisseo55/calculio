@@ -165,7 +165,11 @@ export function SeoContent() {
           Child Benefit calculator
         </Link>{" "}
         can help if your profit puts you close to the High Income Child
-        Benefit Charge threshold.
+        Benefit Charge threshold. If you are setting your rates, our{" "}
+        <Link href="/calculators/freelance-day-rate-calculator-uk">freelance day rate calculator</Link> works out
+        what to charge, and our{" "}
+        <Link href="/calculators/mileage-allowance-calculator-uk">mileage allowance calculator</Link> covers
+        claiming for business travel in your own vehicle.
       </p>
     </div>
   );

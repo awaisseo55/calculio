@@ -62,6 +62,7 @@ import {
   Dog,
   Cat,
   Footprints,
+  Sprout,
   type LucideIcon,
 } from "lucide-react";
 
@@ -129,6 +130,7 @@ export const iconMap: Record<string, LucideIcon> = {
   Dog,
   Cat,
   Footprints,
+  Sprout,
 };
 
 export function getIcon(name: string): LucideIcon {
