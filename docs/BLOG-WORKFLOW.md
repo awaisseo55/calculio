@@ -93,3 +93,15 @@ Added 4 blog posts, each supporting an existing calculator that had no dedicated
 Topics were chosen by cross-referencing `lib/calculators.ts` (81 calculators) against `lib/blog.ts` (23 existing posts at the time) to find calculators with clear commercial/search intent and no supporting guide: Capital Gains Tax, Inheritance Tax, Corporation Tax and ISAs all had a working calculator but no blog post.
 
 Running total: 27 blog posts.
+
+### 2026-09-05
+
+Added 1 blog post supporting an existing calculator that had no dedicated blog post yet:
+
+| Title | Slug | Category | Word count |
+|---|---|---|---|
+| Marriage Allowance UK 2026/27: Eligibility, Backdating Rules, and How to Claim | `marriage-allowance-uk-guide-2026` | Tax | 1,585 |
+
+Topic was chosen to support `marriage-allowance-calculator-uk`, covering the £1,260 Personal Allowance transfer, the £252 basic-rate saving, four-year backdating for a £1,260 lump sum, the lower earner tax trap worked example, Scottish devolved band rules, direct GOV.UK claims, and avoiding predatory fee-charging firms. Cross-linked into `marriage-allowance-calculator-uk` and `uk-income-tax-2026-27`.
+
+Running total: 28 blog posts.

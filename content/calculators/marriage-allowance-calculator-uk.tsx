@@ -93,7 +93,10 @@ export function SeoContent() {
         <Link href="/calculators/income-tax-calculator-uk">income tax calculator</Link>. Our{" "}
         <Link href="/calculators/take-home-pay-calculator-uk">take-home pay calculator</Link> and{" "}
         <Link href="/calculators/national-insurance-calculator-uk">National Insurance calculator</Link> can help
-        you see the fuller picture of your household finances. For more on how Income Tax works, see our{" "}
+        you see the fuller picture of your household finances. For a complete breakdown of eligibility rules,
+        backdating, and claiming online, see our{" "}
+        <Link href="/blog/marriage-allowance-uk-guide-2026">Marriage Allowance guide</Link>. For more on how
+        tax bands work, read our{" "}
         <Link href="/blog/uk-income-tax-2026-27">UK Income Tax guide</Link>.
       </p>
     </div>

@@ -215,6 +215,13 @@ const CTA_CONTENT: Record<
     buttonLabel: "Calculate my ISA growth",
     href: "/calculators/isa-calculator-uk",
   },
+  "marriage-allowance-uk-guide-2026": {
+    title: "Check your Marriage Allowance saving",
+    description:
+      "Enter both partners' earnings for an instant eligibility check and net household tax saving calculation.",
+    buttonLabel: "Calculate my saving",
+    href: "/calculators/marriage-allowance-calculator-uk",
+  },
 };
 
 const DISCLAIMER =
@@ -386,6 +393,12 @@ const RELATED_CALCULATOR_SLUGS: Record<string, string[]> = {
     "compound-interest-calculator-uk",
     "savings-goal-calculator-uk",
     "pension-calculator-uk",
+  ],
+  "marriage-allowance-uk-guide-2026": [
+    "marriage-allowance-calculator-uk",
+    "take-home-pay-calculator-uk",
+    "income-tax-calculator-uk",
+    "national-insurance-calculator-uk",
   ],
 };
 

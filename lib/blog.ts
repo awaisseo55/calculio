@@ -846,6 +846,38 @@ export const blogPosts: BlogPostMeta[] = [
       "Lifetime ISA figures assume an eligible saver aged 18 to 39 opening the account and using it for a first home worth up to £450,000 or retirement from age 60.",
     ],
   },
+  {
+    slug: "marriage-allowance-uk-guide-2026",
+    title: "Marriage Allowance UK 2026/27: Eligibility, Backdating Rules, and How to Claim",
+    metaTitle: "Marriage Allowance UK 2026/27: How to Claim | Calculio",
+    metaDescription:
+      "Find out if you qualify for UK Marriage Allowance in 2026/27. Learn how the £1,260 transfer works, how to backdate up to £1,260, and calculate your savings.",
+    excerpt:
+      "How the £1,260 Personal Allowance transfer works, who qualifies in 2026/27, backdating rules for a £1,260 refund, and the lower earner tax trap explained.",
+    category: "Tax",
+    categorySlug: "tax",
+    categoryHref: "/categories/tax",
+    tags: ["marriage allowance", "HMRC", "tax relief", "personal allowance", "married tax allowance"],
+    authorSlug: "james-whitfield",
+    reviewerSlug: "emily-thorne",
+    publishDate: "2026-09-05",
+    updatedDate: "2026-09-05",
+    featuredImage:
+      "/og?title=Marriage%20Allowance%20UK%202026%2F27%3A%20Eligibility%2C%20Backdating%20and%20How%20to%20Claim&subtitle=calculio.co.uk",
+    featuredImageAlt:
+      "Calculio guide explaining UK Marriage Allowance rules, eligibility and backdating for 2026/27",
+    wordCount: 1585,
+
+    sources: [officialSources.marriageAllowance, officialSources.incomeTax],
+    methodology:
+      "Marriage Allowance transfer thresholds, rates, and backdating rules are taken directly from HMRC guidance and applied to the worked examples in this guide.",
+    effectivePeriod: "2026/27 tax year",
+    lastVerifiedDate: "2026-09-05",
+    assumptions: [
+      "Assumes a legally married couple or registered civil partnership where both partners are UK tax residents.",
+      "Assumes the transferring partner earns at or below £12,570 and the recipient partner pays Income Tax at the basic rate only.",
+    ],
+  },
 ];
 
 export function getBlogPost(slug: string): BlogPostMeta | undefined {

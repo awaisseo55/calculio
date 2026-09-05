@@ -227,9 +227,10 @@ export function ArticleContent() {
           self-assessment.
         </li>
         <li>
-          <strong>Marriage Allowance</strong> lets a non-taxpayer transfer 10% of their
-          Personal Allowance to a Basic Rate-taxpayer spouse or civil partner, worth
-          around £250 a year.
+          <Link href="/blog/marriage-allowance-uk-guide-2026">
+            <strong>Marriage Allowance</strong>
+          </Link>{" "}
+          lets a non-taxpayer transfer 10% of their Personal Allowance to a Basic Rate-taxpayer spouse or civil partner, saving up to £252 a year.
         </li>
         <li>
           <strong>ISAs</strong> don&apos;t reduce Income Tax on your salary directly, but
