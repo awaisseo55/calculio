@@ -5,7 +5,7 @@ export const faq: FaqItem[] = [
   {
     question: "How is my monthly mortgage repayment calculated?",
     answer:
-      "We use the standard capital repayment mortgage formula, which spreads your loan and the interest charged on it evenly across every monthly payment for the full term. Each month the split between interest and capital changes — early payments are mostly interest, later ones are mostly capital — but the total monthly amount stays the same for the length of any fixed or standard variable rate you enter.",
+      "We use the standard capital repayment mortgage formula, which spreads your loan and the interest charged on it evenly across every monthly payment for the full term. Each month the split between interest and capital changes, early payments are mostly interest, later ones are mostly capital, but the total monthly amount stays the same for the length of any fixed or standard variable rate you enter.",
   },
   {
     question: "Does this calculator include fees, insurance or overpayments?",
@@ -20,7 +20,7 @@ export const faq: FaqItem[] = [
   {
     question: "What happens if I overpay my mortgage?",
     answer:
-      "Overpaying reduces your outstanding balance faster, which cuts the total interest you pay over the life of the loan and can shorten your term. Most UK lenders allow overpayments of up to 10% of the outstanding balance per year without an early repayment charge, though this varies by product — always check your mortgage offer.",
+      "Overpaying reduces your outstanding balance faster, which cuts the total interest you pay over the life of the loan and can shorten your term. Most UK lenders allow overpayments of up to 10% of the outstanding balance per year without an early repayment charge, though this varies by product, so always check your mortgage offer.",
   },
   {
     question: "Should I choose a fixed or variable rate?",
@@ -42,11 +42,11 @@ export function SeoContent() {
         of each payment goes towards interest versus paying down the capital you borrowed.
       </p>
       <p>
-        This is designed for a standard capital repayment mortgage — the most common type
+        This is designed for a standard capital repayment mortgage, the most common type
         in the UK, where you pay off both the interest and a portion of the loan itself
         every month, so the balance reaches zero at the end of the term. If you&apos;re
         comparing an interest-only mortgage, remember that your monthly payment will be
-        lower, but none of it reduces the capital you owe — you&apos;ll need a separate
+        lower, but none of it reduces the capital you owe. You&apos;ll need a separate
         repayment plan for the full loan amount at the end of the term.
       </p>
 
@@ -63,7 +63,7 @@ export function SeoContent() {
       <p>
         This formula guarantees that if you pay exactly M every month for n months at a
         constant rate r, your balance will be reduced to precisely zero at the end of the
-        term — with the interest portion shrinking and the capital portion growing every
+        term, with the interest portion shrinking and the capital portion growing every
         month as your outstanding balance falls.
       </p>
 
@@ -79,8 +79,8 @@ export function SeoContent() {
         roughly <strong>£1,417</strong>. Over 25 years (300 monthly payments) you&apos;d
         repay a total of around <strong>£425,000</strong>, of which about{" "}
         <strong>£170,000</strong> is interest and £255,000 is the capital you originally
-        borrowed. In year one, the majority of each monthly payment is interest — around
-        £950 of the £1,417 — but by year 20, most of each payment is chipping away at the
+        borrowed. In year one, the majority of each monthly payment is interest, around
+        £950 of the £1,417, but by year 20, most of each payment is chipping away at the
         capital instead.
       </p>
       <p>
@@ -92,7 +92,7 @@ export function SeoContent() {
 
       <h2>What affects your mortgage rate</h2>
       <p>
-        UK mortgage lenders price their rates based mainly on your loan-to-value (LTV) —
+        UK mortgage lenders price their rates based mainly on your loan-to-value (LTV),
         the size of your mortgage relative to the property&apos;s value. A lower LTV
         (bigger deposit or more equity) typically unlocks cheaper rates because the
         lender&apos;s risk is lower if property prices fall. Your credit history,
@@ -109,7 +109,7 @@ export function SeoContent() {
         (often £0–£1,999, sometimes added to the loan itself), a valuation fee, legal
         (conveyancing) costs, and potentially an early repayment charge if you switch
         deals before a fixed or discounted period ends. It also assumes your interest
-        rate stays constant for the whole term — in reality, most UK mortgages have an
+        rate stays constant for the whole term. In reality, most UK mortgages have an
         initial fixed or discounted period (commonly 2–5 years) after which you&apos;ll
         move onto the lender&apos;s standard variable rate unless you remortgage.
       </p>
@@ -127,7 +127,11 @@ export function SeoContent() {
           mortgage overpayment calculator
         </Link>{" "}
         shows how much time and interest you could save by paying a little extra
-        each month.
+        each month. When your fixed deal is ending, our{" "}
+        <Link href="/calculators/remortgage-comparison-calculator-uk">
+          remortgage comparison calculator
+        </Link>{" "}
+        compares a new deal against your current rate, including fees and break-even point.
       </p>
     </div>
   );

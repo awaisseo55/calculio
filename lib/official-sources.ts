@@ -56,6 +56,10 @@ export const officialSources = {
   mileageAllowance: { label: "Travel, mileage and fuel rates and allowances (GOV.UK)", url: "https://www.gov.uk/government/publications/rates-and-allowances-travel-mileage-and-fuel-allowances/travel-mileage-and-fuel-rates-and-allowances" },
   emergencySavings: { label: "How much to save for an emergency (MoneyHelper)", url: "https://www.moneyhelper.org.uk/en/savings/types-of-savings/emergency-savings-how-much-is-enough" },
   ucasTariff: { label: "UCAS Tariff points tables (UCAS)", url: "https://www.ucas.com/sites/default/files/new-tariff-tables.pdf" },
+  onsInflation: { label: "Consumer price inflation, UK (Office for National Statistics)", url: "https://www.ons.gov.uk/economy/inflationandpriceindices/bulletins/consumerpriceinflation" },
+  rentAffordability: { label: "Can I afford to rent? (MoneyHelper)", url: "https://www.moneyhelper.org.uk/en/homes/renting/how-much-rent-can-you-afford" },
+  remortgaging: { label: "Remortgaging to get the best deal (MoneyHelper)", url: "https://www.moneyhelper.org.uk/en/homes/buying-a-home/remortgaging-to-cut-costs" },
+  mortgageRates: { label: "Mortgage interest rate options (MoneyHelper)", url: "https://www.moneyhelper.org.uk/en/homes/buying-a-home/mortgage-interest-rate-options" },
 } as const satisfies Record<string, OfficialSource>;
 
 export type OfficialSourceKey = keyof typeof officialSources;

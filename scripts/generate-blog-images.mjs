@@ -63,6 +63,16 @@ const images = [
     title: "TDEE vs BMR",
     subtitle: "How many calories you actually need",
   },
+  {
+    file: "rent-affordability-uk-2026.jpg",
+    title: "Rent Affordability UK",
+    subtitle: "Income rules and monthly budget checks",
+  },
+  {
+    file: "remortgage-guide-uk-2026.jpg",
+    title: "Remortgage Guide UK",
+    subtitle: "Rates, fees and when switching pays",
+  },
 ];
 
 for (const img of images) {

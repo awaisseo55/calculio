@@ -222,6 +222,20 @@ const CTA_CONTENT: Record<
     buttonLabel: "Calculate my saving",
     href: "/calculators/marriage-allowance-calculator-uk",
   },
+  "how-much-rent-can-i-afford-uk-2026": {
+    title: "Check your rent affordability",
+    description:
+      "Enter your income, take-home pay, bills and debt payments to estimate a sensible rent range.",
+    buttonLabel: "Calculate rent affordability",
+    href: "/calculators/rent-affordability-calculator-uk",
+  },
+  "remortgage-guide-uk-2026": {
+    title: "Compare your remortgage options",
+    description:
+      "Enter your balance, rates and fees to estimate monthly savings, total saving and break-even point.",
+    buttonLabel: "Compare remortgage deals",
+    href: "/calculators/remortgage-comparison-calculator-uk",
+  },
 };
 
 const DISCLAIMER =
@@ -399,6 +413,18 @@ const RELATED_CALCULATOR_SLUGS: Record<string, string[]> = {
     "take-home-pay-calculator-uk",
     "income-tax-calculator-uk",
     "national-insurance-calculator-uk",
+  ],
+  "how-much-rent-can-i-afford-uk-2026": [
+    "rent-affordability-calculator-uk",
+    "take-home-pay-calculator-uk",
+    "split-bill-calculator-uk",
+    "debt-to-income-calculator-uk",
+  ],
+  "remortgage-guide-uk-2026": [
+    "remortgage-comparison-calculator-uk",
+    "mortgage-calculator-uk",
+    "mortgage-overpayment-calculator-uk",
+    "mortgage-affordability-calculator-uk",
   ],
 };
 

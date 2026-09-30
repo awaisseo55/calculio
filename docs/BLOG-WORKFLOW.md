@@ -105,3 +105,16 @@ Added 1 blog post supporting an existing calculator that had no dedicated blog p
 Topic was chosen to support `marriage-allowance-calculator-uk`, covering the £1,260 Personal Allowance transfer, the £252 basic-rate saving, four-year backdating for a £1,260 lump sum, the lower earner tax trap worked example, Scottish devolved band rules, direct GOV.UK claims, and avoiding predatory fee-charging firms. Cross-linked into `marriage-allowance-calculator-uk` and `uk-income-tax-2026-27`.
 
 Running total: 28 blog posts.
+
+### 2026-10-01
+
+Added 2 blog posts supporting high-intent UK housing searches and the new calculator batch:
+
+| Title | Slug | Category | Word count |
+|---|---|---|---|
+| How Much Rent Can I Afford in the UK? Salary Rules and Budget Checks | `how-much-rent-can-i-afford-uk-2026` | Home | 1,120 |
+| Remortgage Guide UK 2026: When to Switch, Fees to Check, and Worked Example | `remortgage-guide-uk-2026` | Home | 1,160 |
+
+Both posts were registered in `lib/blog.ts`, `content/blog/registry.tsx`, `CTA_CONTENT`, and `RELATED_CALCULATOR_SLUGS`. Featured images were generated in `/public/blog/` following the project-level AGENTS.md instruction for blog images.
+
+Running total: 30 blog posts.

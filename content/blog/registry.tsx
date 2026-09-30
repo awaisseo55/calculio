@@ -30,6 +30,8 @@ import * as inheritanceTaxGuide from "./uk-inheritance-tax-guide-2026";
 import * as corporationTaxGuide from "./corporation-tax-uk-small-business-2026";
 import * as isaGuide from "./isa-guide-uk-2026-27";
 import * as marriageAllowanceGuide from "./marriage-allowance-uk-guide-2026";
+import * as rentAffordabilityGuide from "./how-much-rent-can-i-afford-uk-2026";
+import * as remortgageGuide from "./remortgage-guide-uk-2026";
 
 interface BlogPostContent {
   ArticleContent: ComponentType;
@@ -66,4 +68,6 @@ export const blogContent: Record<string, BlogPostContent> = {
   "corporation-tax-uk-small-business-2026": corporationTaxGuide,
   "isa-guide-uk-2026-27": isaGuide,
   "marriage-allowance-uk-guide-2026": marriageAllowanceGuide,
+  "how-much-rent-can-i-afford-uk-2026": rentAffordabilityGuide,
+  "remortgage-guide-uk-2026": remortgageGuide,
 };

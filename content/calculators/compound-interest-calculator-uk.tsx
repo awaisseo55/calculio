@@ -155,7 +155,10 @@ export function SeoContent() {
         deposit changes your monthly repayment. If you are carrying any debt
         alongside your savings, it is usually worth clearing higher interest debt
         first, since the interest rate on credit cards is normally far higher than
-        anything a savings account will pay you.
+        anything a savings account will pay you. To test whether rising prices could
+        erode your savings target, use our{" "}
+        <Link href="/calculators/inflation-calculator-uk">inflation calculator</Link>
+        .
       </p>
     </div>
   );

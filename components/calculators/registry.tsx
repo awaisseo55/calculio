@@ -87,6 +87,11 @@ import { MileageAllowanceCalculator } from "@/components/calculators/mileage-all
 import { EmergencyFundCalculator } from "@/components/calculators/emergency-fund-calculator";
 import { MarriageAllowanceCalculator } from "@/components/calculators/marriage-allowance-calculator";
 import { TurfCalculator } from "@/components/calculators/turf-calculator";
+import { InflationCalculator } from "@/components/calculators/inflation-calculator";
+import { RentAffordabilityCalculator } from "@/components/calculators/rent-affordability-calculator";
+import { NetWorthCalculator } from "@/components/calculators/net-worth-calculator";
+import { DebtToIncomeCalculator } from "@/components/calculators/debt-to-income-calculator";
+import { RemortgageComparisonCalculator } from "@/components/calculators/remortgage-comparison-calculator";
 import type { ComponentType } from "react";
 
 export const calculatorComponents: Record<string, ComponentType> = {
@@ -179,4 +184,9 @@ export const calculatorComponents: Record<string, ComponentType> = {
   "emergency-fund-calculator-uk": EmergencyFundCalculator,
   "marriage-allowance-calculator-uk": MarriageAllowanceCalculator,
   "turf-calculator-uk": TurfCalculator,
+  "inflation-calculator-uk": InflationCalculator,
+  "rent-affordability-calculator-uk": RentAffordabilityCalculator,
+  "net-worth-calculator-uk": NetWorthCalculator,
+  "debt-to-income-calculator-uk": DebtToIncomeCalculator,
+  "remortgage-comparison-calculator-uk": RemortgageComparisonCalculator,
 };

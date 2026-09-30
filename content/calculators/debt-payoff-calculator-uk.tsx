@@ -120,7 +120,11 @@ export function SeoContent() {
         <Link href="/calculators/loan-repayment-calculator-uk">
           loan repayment calculator
         </Link>{" "}
-        covers a standard personal loan. Once your debts are cleared, our{" "}
+        covers a standard personal loan. Our{" "}
+        <Link href="/calculators/debt-to-income-calculator-uk">
+          debt-to-income calculator
+        </Link>{" "}
+        shows how your monthly debt payments compare with your income. Once your debts are cleared, our{" "}
         <Link href="/calculators/savings-goal-calculator-uk">
           savings goal calculator
         </Link>{" "}

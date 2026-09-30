@@ -119,3 +119,23 @@ New `officialSources` entries added: `marriageAllowance`, `mileageAllowance`, `e
 Each new calculator is cross-linked from two relevant existing calculator pages (see `git log` for this session's commit for the full list of touched files).
 
 Running total: 89 calculators.
+
+### 2026-10-01
+
+Added 5 calculators after re-scanning `lib/calculators.ts` and checking for duplicates. Topics were chosen for UK search demand around housing and personal finance:
+
+| Calculator | Slug | Category |
+|---|---|---|
+| Inflation Calculator | `inflation-calculator-uk` | Finance |
+| Rent Affordability Calculator | `rent-affordability-calculator-uk` | Home |
+| Net Worth Calculator | `net-worth-calculator-uk` | Finance |
+| Debt-to-Income Calculator | `debt-to-income-calculator-uk` | Finance |
+| Remortgage Comparison Calculator | `remortgage-comparison-calculator-uk` | Home |
+
+No new constants added to `uk-rates.ts`. Inflation and mortgage rates are user-entered assumptions because they change independently of the tax year.
+
+New `officialSources` entries added: `onsInflation`, `rentAffordability`, `remortgaging`, `mortgageRates`.
+
+Each new calculator is cross-linked from a relevant existing calculator page.
+
+Running total: 94 calculators.

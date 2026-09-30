@@ -95,7 +95,10 @@ export function SeoContent() {
         <Link href="/calculators/debt-payoff-calculator-uk">debt payoff calculator</Link> can help you plan
         alongside your emergency fund, and our{" "}
         <Link href="/calculators/isa-calculator-uk">ISA calculator</Link> is useful once you are ready to save
-        tax-efficiently beyond your emergency fund.
+        tax-efficiently beyond your emergency fund. To see how your savings, debts, pension and property fit
+        together, try our{" "}
+        <Link href="/calculators/net-worth-calculator-uk">net worth calculator</Link>
+        .
       </p>
     </div>
   );

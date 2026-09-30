@@ -2094,6 +2094,126 @@ export const calculators: CalculatorMeta[] = [
       "Irregular or curved lawns generally need a higher wastage allowance than a simple rectangular lawn.",
     ],
   },
+  {
+    slug: "inflation-calculator-uk",
+    name: "Inflation Calculator",
+    shortName: "Inflation",
+    h1: "UK Inflation Calculator",
+    category: "finance",
+    description:
+      "Estimate how inflation could change future prices and reduce the buying power of your money.",
+    metaTitle: "Inflation Calculator UK | Future Buying Power | Calculio",
+    metaDescription:
+      "Use this UK inflation calculator to estimate future prices, extra cost and the buying power of money over time.",
+    keywords: ["inflation calculator uk", "cost of living calculator", "future value calculator uk"],
+    icon: "TrendingUp",
+    schemaType: "SoftwareApplication",
+
+    sources: [officialSources.onsInflation],
+    methodology:
+      "Future prices are estimated by compounding the annual inflation rate entered by the user over the chosen number of years.",
+    lastVerifiedDate: "2026-10-01",
+    assumptions: [
+      "Uses the inflation rate entered by the user rather than a fixed historic CPI table.",
+      "Individual households can experience higher or lower inflation than the headline ONS measure depending on their spending mix.",
+    ],
+  },
+  {
+    slug: "rent-affordability-calculator-uk",
+    name: "Rent Affordability Calculator",
+    shortName: "Rent Affordability",
+    h1: "Rent Affordability Calculator",
+    category: "home",
+    description:
+      "Work out how much rent you may be able to afford from your income, take-home pay, bills and debts.",
+    metaTitle: "Rent Affordability Calculator UK | How Much Rent? | Calculio",
+    metaDescription:
+      "Estimate how much rent you can afford in the UK using income, take-home pay, bills, debt payments and common affordability checks.",
+    keywords: ["rent affordability calculator", "how much rent can i afford uk", "rent calculator uk"],
+    icon: "Home",
+    schemaType: "SoftwareApplication",
+
+    sources: [officialSources.rentAffordability],
+    methodology:
+      "Suggested rent is the lowest of a 30% gross income guide, a common annual-income divided by 30 agent check, and a cash-flow based rent guide after bills and debts.",
+    lastVerifiedDate: "2026-10-01",
+    assumptions: [
+      "Landlords and letting agents can use their own criteria, so this is not a guarantee of approval.",
+      "Uses the monthly bills and debt payments entered by the user, not a full bank-statement affordability assessment.",
+    ],
+  },
+  {
+    slug: "net-worth-calculator-uk",
+    name: "Net Worth Calculator",
+    shortName: "Net Worth",
+    h1: "Net Worth Calculator",
+    category: "finance",
+    description:
+      "Add up your savings, investments, pension, property and debts to estimate your personal net worth.",
+    metaTitle: "Net Worth Calculator UK | Assets Minus Debts | Calculio",
+    metaDescription:
+      "Calculate your net worth from savings, investments, pensions, property, mortgage balances and other debts.",
+    keywords: ["net worth calculator uk", "personal net worth calculator", "assets minus debts calculator"],
+    icon: "Wallet",
+    schemaType: "SoftwareApplication",
+
+    sources: [],
+    methodology:
+      "Net worth is calculated as total assets minus total debts, with separate home equity and liquid net worth figures shown for context.",
+    lastVerifiedDate: "2026-10-01",
+    assumptions: [
+      "Asset values are user estimates and can change over time, especially property and investments.",
+      "Pension access, tax and selling costs are not deducted from the headline net worth figure.",
+    ],
+  },
+  {
+    slug: "debt-to-income-calculator-uk",
+    name: "Debt-to-Income Calculator",
+    shortName: "Debt-to-Income",
+    h1: "Debt-to-Income Ratio Calculator",
+    category: "finance",
+    description:
+      "Compare your monthly debt and housing payments with gross income to estimate your debt-to-income ratio.",
+    metaTitle: "Debt-to-Income Calculator UK | DTI Ratio | Calculio",
+    metaDescription:
+      "Calculate your debt-to-income ratio from income, rent or mortgage, credit cards, loans and car finance payments.",
+    keywords: ["debt to income calculator uk", "dti calculator", "debt ratio calculator"],
+    icon: "Scale",
+    schemaType: "SoftwareApplication",
+
+    sources: [],
+    methodology:
+      "Debt-to-income ratio is calculated by dividing monthly debt and housing payments by gross monthly income, then multiplying by 100.",
+    lastVerifiedDate: "2026-10-01",
+    assumptions: [
+      "This is a general affordability signal, not a lender decision or credit score.",
+      "Uses required monthly payments, not total outstanding balances.",
+    ],
+  },
+  {
+    slug: "remortgage-comparison-calculator-uk",
+    name: "Remortgage Comparison Calculator",
+    shortName: "Remortgage",
+    h1: "Remortgage Comparison Calculator",
+    category: "home",
+    description:
+      "Compare your current mortgage rate with a new deal, including fees, monthly saving and break-even point.",
+    metaTitle: "Remortgage Calculator UK | Compare Deals & Fees | Calculio",
+    metaDescription:
+      "Compare a current mortgage rate with a new remortgage deal, including product fees, exit costs, monthly savings and break-even point.",
+    keywords: ["remortgage calculator", "remortgage comparison calculator", "mortgage deal comparison"],
+    icon: "ArrowLeftRight",
+    schemaType: "SoftwareApplication",
+
+    sources: [officialSources.remortgaging, officialSources.mortgageRates],
+    methodology:
+      "Monthly payments use the standard repayment mortgage formula, comparing current and new rates over the same remaining term and adding fees to the comparison.",
+    lastVerifiedDate: "2026-10-01",
+    assumptions: [
+      "Assumes a repayment mortgage and does not model interest-only mortgages or offset mortgages.",
+      "Mortgage rates, fees and lender criteria change often; users should check current deal documents before making decisions.",
+    ],
+  },
 ];
 
 export function getCalculator(slug: string): CalculatorMeta | undefined {

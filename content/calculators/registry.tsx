@@ -90,6 +90,11 @@ import * as mileageAllowance from "./mileage-allowance-calculator-uk";
 import * as emergencyFund from "./emergency-fund-calculator-uk";
 import * as marriageAllowance from "./marriage-allowance-calculator-uk";
 import * as turf from "./turf-calculator-uk";
+import * as inflation from "./inflation-calculator-uk";
+import * as rentAffordability from "./rent-affordability-calculator-uk";
+import * as netWorth from "./net-worth-calculator-uk";
+import * as debtToIncome from "./debt-to-income-calculator-uk";
+import * as remortgageComparison from "./remortgage-comparison-calculator-uk";
 
 interface CalculatorContent {
   SeoContent: ComponentType;
@@ -186,4 +191,9 @@ export const calculatorContent: Record<string, CalculatorContent> = {
   "emergency-fund-calculator-uk": emergencyFund,
   "marriage-allowance-calculator-uk": marriageAllowance,
   "turf-calculator-uk": turf,
+  "inflation-calculator-uk": inflation,
+  "rent-affordability-calculator-uk": rentAffordability,
+  "net-worth-calculator-uk": netWorth,
+  "debt-to-income-calculator-uk": debtToIncome,
+  "remortgage-comparison-calculator-uk": remortgageComparison,
 };

@@ -878,6 +878,64 @@ export const blogPosts: BlogPostMeta[] = [
       "Assumes the transferring partner earns at or below £12,570 and the recipient partner pays Income Tax at the basic rate only.",
     ],
   },
+  {
+    slug: "how-much-rent-can-i-afford-uk-2026",
+    title: "How Much Rent Can I Afford in the UK? Salary Rules and Budget Checks",
+    metaTitle: "How Much Rent Can I Afford in the UK? 2026 Guide",
+    metaDescription:
+      "Learn how much rent you can afford in the UK using the 30% rule, agent income checks and a realistic monthly budget, with worked examples.",
+    excerpt:
+      "The 30% rent rule, common letting-agent income checks, take-home pay budgeting and a worked example for UK renters.",
+    category: "Home",
+    categorySlug: "home",
+    categoryHref: "/categories/home",
+    tags: ["rent affordability", "renting", "budgeting", "UK housing", "take-home pay"],
+    authorSlug: "james-whitfield",
+    reviewerSlug: "emily-thorne",
+    publishDate: "2026-10-01",
+    updatedDate: "2026-10-01",
+    featuredImage: "/blog/rent-affordability-uk-2026.jpg",
+    featuredImageAlt: "UK rent affordability guide with monthly rent and income figures",
+    wordCount: 1120,
+
+    sources: [officialSources.rentAffordability],
+    methodology:
+      "Rent affordability examples use MoneyHelper's 30% rent guidance, a common annual-income divided by 30 agent-style screen, and a cash-flow check based on take-home pay.",
+    lastVerifiedDate: "2026-10-01",
+    assumptions: [
+      "Letting agents and landlords can set their own affordability criteria, so the guide is not a guarantee of approval.",
+      "Worked examples are simplified and do not include every possible bill, benefit, guarantor or local housing rule.",
+    ],
+  },
+  {
+    slug: "remortgage-guide-uk-2026",
+    title: "Remortgage Guide UK 2026: When to Switch, Fees to Check, and Worked Example",
+    metaTitle: "Remortgage Guide UK 2026: Rates, Fees and Timing",
+    metaDescription:
+      "A plain English UK remortgage guide for 2026, covering when to start, SVRs, product fees, early repayment charges and true cost.",
+    excerpt:
+      "When to start comparing remortgage deals, why fees matter as much as rates, and how to work out the true saving before switching.",
+    category: "Home",
+    categorySlug: "home",
+    categoryHref: "/categories/home",
+    tags: ["remortgage", "mortgage rates", "SVR", "product fees", "homeowners"],
+    authorSlug: "james-whitfield",
+    reviewerSlug: "emily-thorne",
+    publishDate: "2026-10-01",
+    updatedDate: "2026-10-01",
+    featuredImage: "/blog/remortgage-guide-uk-2026.jpg",
+    featuredImageAlt: "UK remortgage guide comparing rates, fees and monthly repayments",
+    wordCount: 1160,
+
+    sources: [officialSources.remortgaging, officialSources.mortgageRates],
+    methodology:
+      "Worked examples use the standard repayment mortgage formula and compare total payments plus fees over the chosen fixed-rate period.",
+    lastVerifiedDate: "2026-10-01",
+    assumptions: [
+      "Assumes a repayment mortgage, not an interest-only, offset or specialist mortgage.",
+      "Mortgage products change frequently, so examples show method rather than a recommendation of any live deal.",
+    ],
+  },
 ];
 
 export function getBlogPost(slug: string): BlogPostMeta | undefined {
